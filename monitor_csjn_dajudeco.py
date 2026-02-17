@@ -1,82 +1,50 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-================================================================================
+=============================================================================
 MONITOR DE RESOLUCIONES CSJN - DAJUDECO
-================================================================================
-Script de monitoreo automático de resoluciones de la Corte Suprema de Justicia
-de la Nación (CSJN) que mencionen "Dirección de Asistencia Judicial".
+=============================================================================
+Monitorea la página de resoluciones de la Corte Suprema de Justicia de la
+Nación buscando menciones a "Dirección de Asistencia Judicial" y envía
+notificaciones por Telegram cuando encuentra resoluciones nuevas.
 
-Envía notificaciones por Telegram cuando se detectan nuevas resoluciones.
+IMPORTANTE: Usa requests.Session() para obtener cookies de sesión antes
+de consultar el endpoint de datos, simulando un navegador real.
 
-Autor: Generado para DAJUDECO (Dirección de Asistencia Judicial en Delitos
-       Complejos y Crimen Organizado)
-Fecha: Febrero 2026
-
-REQUISITOS:
-    pip install requests
-
-CÓMO CREAR EL BOT DE TELEGRAM:
-    1. Abrí Telegram y buscá @BotFather
-    2. Enviá /newbot y seguí las instrucciones (nombre y username del bot)
-    3. BotFather te dará un TOKEN (algo como 123456:ABC-DEF...). Copialo.
-    4. Buscá tu bot en Telegram y enviále cualquier mensaje (ej: "hola")
-    5. Para obtener tu CHAT_ID, abrí en el navegador:
-       https://api.telegram.org/bot<TU_TOKEN>/getUpdates
-    6. Buscá "chat":{"id": XXXXXXX} → ese número es tu CHAT_ID
-    7. Completá las variables TELEGRAM_BOT_TOKEN y TELEGRAM_CHAT_ID abajo
-
-    ALTERNATIVA para obtener CHAT_ID:
-    - Buscá @userinfobot en Telegram y enviále /start → te dice tu ID
-    - O buscá @RawDataBot y enviále /start
-
-    PARA GRUPOS: agregá el bot al grupo, enviá un mensaje en el grupo,
-    y consultá getUpdates. El chat_id del grupo será negativo (ej: -100123456)
+INSTRUCCIONES PARA TELEGRAM:
+1. Abrir Telegram y buscar @BotFather
+2. Enviar /newbot y seguir las instrucciones
+3. Copiar el token que te da y pegarlo en TELEGRAM_BOT_TOKEN
+4. Buscar @userinfobot en Telegram, enviar /start para obtener tu chat_id
+5. Pegar tu chat_id en TELEGRAM_CHAT_ID
 
 USO:
-    # Ejecución única (para testing):
-    python monitor_csjn_dajudeco.py --once
-
-    # Modo loop continuo (monitoreo permanente cada 4 horas):
-    python monitor_csjn_dajudeco.py
-
-    # Con intervalo personalizado (en segundos):
-    python monitor_csjn_dajudeco.py --interval 7200
-
-ENDPOINT DESCUBIERTO:
-    POST https://www.csjn.gov.ar/resoluciones/data
-    - Usa DataTables server-side processing
-    - Retorna JSON con campo "data" conteniendo las resoluciones
-    - Cada resolución tiene: docId, fecha, nroDoc, detalle, fechaCompleta, etc.
-    - PDFs en: https://www.csjn.gov.ar/documentos/descargar?ID={docId}
-================================================================================
+  python monitor_csjn_dajudeco.py --once    # Ejecutar una sola vez (testing/cron/GitHub Actions)
+  python monitor_csjn_dajudeco.py            # Modo loop continuo cada CHECK_INTERVAL_SECONDS
+=============================================================================
 """
 
-import requests
+import os
 import json
 import time
 import logging
-import argparse
-import os
 import sys
 from datetime import datetime
-from pathlib import Path
 
-# ==============================================================================
-# CONFIGURACIÓN — Modificá estas variables según tu entorno
-# ==============================================================================
+import requests
 
-# Token del bot de Telegram (obtener de @BotFather)
-# Si hay variable de entorno, usarla (para GitHub Actions); si no, usar el valor directo
+# =============================================================================
+# CONFIGURACIÓN (editar estos valores o usar variables de entorno)
+# =============================================================================
+
+# Telegram - se leen de variables de entorno (GitHub Actions) o se usan los defaults
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "TU_TOKEN_AQUI")
-
-# Chat ID de destino (tu usuario personal, o un grupo)
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "TU_CHAT_ID_AQUI")
 
-# Intervalo entre chequeos en segundos (default: 4 horas = 14400 segundos)
+# Intervalo entre chequeos en modo loop (4 horas = 14400 segundos)
 CHECK_INTERVAL_SECONDS = 14400
 
-# Término de búsqueda (con comillas para búsqueda exacta)
+# Término de búsqueda (con comillas internas)
 SEARCH_TERM = '"Dirección de Asistencia Judicial"'
 
 # Archivo donde se guardan las resoluciones ya vistas
@@ -85,598 +53,297 @@ SEEN_FILE = "seen_resoluciones.json"
 # Archivo de log
 LOG_FILE = "monitor_csjn.log"
 
-# URL del endpoint de la CSJN (descubierto por ingeniería inversa)
-CSJN_ENDPOINT = "https://www.csjn.gov.ar/resoluciones/data"
-
-# URL base para descargar PDFs
-CSJN_PDF_BASE = "https://www.csjn.gov.ar/documentos/descargar?ID="
-
-# URL de la página de resoluciones (para referencia en el mensaje)
-CSJN_PAGE_URL = "https://www.csjn.gov.ar/decisiones/resoluciones"
-
-# Fecha mínima: solo resoluciones desde esta fecha (formato dd/mm/aaaa)
+# Fecha mínima de búsqueda (dd/mm/yyyy) - solo trae resoluciones desde esta fecha
 FECHA_DESDE = "01/02/2026"
 
-# Cantidad máxima de resultados a solicitar por request
-MAX_RESULTS = 50
+# URLs del sitio CSJN
+URL_PAGINA_PRINCIPAL = "https://www.csjn.gov.ar/decisiones/resoluciones"
+URL_ENDPOINT_DATOS = "https://www.csjn.gov.ar/resoluciones/data"
+URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
 
-# Timeout para requests HTTP en segundos
-REQUEST_TIMEOUT = 30
-
-# ==============================================================================
+# =============================================================================
 # CONFIGURACIÓN DE LOGGING
-# ==============================================================================
+# =============================================================================
 
-def configurar_logging():
-    """Configura el sistema de logging con salida a archivo y consola."""
-    # Obtener directorio del script para poner el log ahí
-    script_dir = Path(__file__).parent.resolve()
-    log_path = script_dir / LOG_FILE
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    handlers=[
+        logging.FileHandler(LOG_FILE, encoding="utf-8"),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+logger = logging.getLogger(__name__)
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s [%(levelname)s] %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-        handlers=[
-            logging.FileHandler(log_path, encoding="utf-8"),
-            logging.StreamHandler(sys.stdout)
-        ]
-    )
-    return logging.getLogger(__name__)
+# =============================================================================
+# FUNCIONES PRINCIPALES
+# =============================================================================
 
-
-logger = configurar_logging()
-
-# ==============================================================================
-# FUNCIONES DE ACCESO AL ENDPOINT CSJN
-# ==============================================================================
-
-def construir_payload(termino_busqueda, start=0, length=MAX_RESULTS):
+def obtener_sesion():
     """
-    Construye el payload JSON para el endpoint de DataTables de la CSJN.
-
-    El formulario de búsqueda usa DataTables server-side processing.
-    El campo 'q' y 'qa' reciben el término de búsqueda.
-    Los campos con sufijo '_a' son los valores "anteriores" que el frontend
-    usa internamente para detectar cambios.
-
-    Args:
-        termino_busqueda: Texto a buscar (con comillas si es frase exacta)
-        start: Offset de resultados (para paginación)
-        length: Cantidad de resultados por página
-
-    Returns:
-        dict con el payload completo para el POST
+    Crea una sesión HTTP y visita la página principal de resoluciones
+    para obtener las cookies de sesión (JSESSIONID) necesarias.
+    Sin este paso, el servidor redirige a 'accesoDenegado'.
     """
-    return {
+    session = requests.Session()
+    
+    # Headers que simulan un navegador real
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Language": "es-AR,es;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+    })
+    
+    # Paso 1: Visitar la página principal para obtener cookies
+    logger.info(f"Obteniendo sesion desde: {URL_PAGINA_PRINCIPAL}")
+    resp_pagina = session.get(URL_PAGINA_PRINCIPAL, timeout=30, allow_redirects=True)
+    resp_pagina.raise_for_status()
+    
+    cookies = dict(session.cookies)
+    logger.info(f"Cookies obtenidas: {list(cookies.keys())}")
+    
+    if "JSESSIONID" not in cookies:
+        logger.warning("No se obtuvo JSESSIONID - el request podria fallar")
+    
+    return session
+
+
+def buscar_resoluciones(session):
+    """
+    Consulta el endpoint de datos de la CSJN usando DataTables server-side.
+    Retorna la lista de resoluciones encontradas.
+    """
+    logger.info(f"Buscando resoluciones con termino: {SEARCH_TERM}")
+    
+    # Payload que simula el request de DataTables (descubierto por ingeniería inversa)
+    payload = {
         "draw": 1,
-        "columns": [
-            {
-                "data": "function",
-                "name": "",
-                "searchable": True,
-                "orderable": False,
-                "search": {"value": "", "regex": False, "fixed": []}
-            }
-        ],
-        "order": [],
-        "start": start,
-        "length": length,
-        "search": {"value": "", "regex": False, "fixed": []},
+        "start": 0,
+        "length": 100,
         "formBusqueda": {
-            "qa": termino_busqueda,
-            "nroDoca": "",
-            "anioDoca": "",
-            "tipoDoc_a": "",
-            "temaPrincipal_a": "",
-            "subTema_a": "0",
-            "fechaDesde_a": FECHA_DESDE,
-            "fechaHasta_a": "",
-            "nroDoc": "",
-            "anioDoc": "",
-            "q": termino_busqueda,
+            "q": SEARCH_TERM,
+            "qa": SEARCH_TERM,
+            "nro": "",
+            "anio": "",
+            "tema": "",
+            "subtema": "",
             "fechaDesde": FECHA_DESDE,
+            "fechaDesde_a": FECHA_DESDE,
             "fechaHasta": "",
-            "temaPrincipal": "",
-            "subTema": "0"
+            "fechaHasta_a": ""
         }
     }
-
-
-def obtener_headers():
-    """
-    Headers HTTP necesarios para que el servidor acepte el request.
-    Simulan un navegador real accediendo desde la página de resoluciones.
-    """
-    return {
-        "Content-Type": "application/json",
+    
+    # Headers específicos para el POST JSON
+    headers = {
+        "Content-Type": "application/json;charset=UTF-8",
         "Accept": "application/json, text/javascript, */*; q=0.01",
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/120.0.0.0 Safari/537.36"
-        ),
-        "Referer": CSJN_PAGE_URL,
+        "X-Requested-With": "XMLHttpRequest",
+        "Referer": URL_PAGINA_PRINCIPAL,
         "Origin": "https://www.csjn.gov.ar",
-        "X-Requested-With": "XMLHttpRequest"
     }
-
-
-def buscar_resoluciones(termino=SEARCH_TERM):
-    """
-    Consulta el endpoint de la CSJN buscando resoluciones que contengan
-    el término especificado.
-
-    Args:
-        termino: Texto de búsqueda
-
-    Returns:
-        Lista de dicts con las resoluciones encontradas, cada una con:
-        - doc_id (int): ID único del documento
-        - numero (str): Número de resolución
-        - fecha (str): Fecha en formato dd/mm/aaaa
-        - fecha_completa (str): Fecha en texto largo
-        - detalle (str): Descripción/título de la resolución
-        - tipo (str): Tipo de documento (ej: "Resolución")
-        - expediente (str): Número de expediente
-        - temas (str): Clasificación temática
-        - url_pdf (str): URL directa al PDF
-
-    Raises:
-        requests.RequestException: Si hay error de conexión o HTTP
-    """
-    logger.info(f"Buscando resoluciones con término: {termino}")
-
-    payload = construir_payload(termino)
-    headers = obtener_headers()
-
-    # Usar Session para reutilizar conexión y manejar cookies
-    session = requests.Session()
-
-    # Primero visitar la página principal para obtener cookies/sesión
-    try:
-        session.get(CSJN_PAGE_URL, headers={
-            "User-Agent": headers["User-Agent"]
-        }, timeout=REQUEST_TIMEOUT)
-    except requests.RequestException:
-        # Si falla, intentamos igual el endpoint directo
-        logger.warning("No se pudo acceder a la página principal, intentando endpoint directo")
-
-    response = session.post(
-        CSJN_ENDPOINT,
+    
+    resp = session.post(
+        URL_ENDPOINT_DATOS,
         json=payload,
         headers=headers,
-        timeout=REQUEST_TIMEOUT
+        timeout=30,
+        allow_redirects=False  # No seguir redirecciones - detectar accesoDenegado
     )
-    response.raise_for_status()
-
-    data = response.json()
-
-    total = data.get("recordsFiltered", 0)
-    items = data.get("data", [])
-
-    logger.info(f"Encontradas {total} resoluciones (recibidas {len(items)} en esta página)")
-
-    resoluciones = []
-    for item in items:
-        doc_id = item.get("docId")
-        resolucion = {
-            "doc_id": doc_id,
-            "numero": item.get("nroDoc", "S/N"),
-            "fecha": item.get("fecha", ""),
-            "fecha_completa": item.get("fechaCompleta", ""),
-            "detalle": item.get("detalle", "Sin detalle"),
-            "tipo": item.get("descripcionTipo", "Resolución"),
-            "expediente": item.get("nroExpe", ""),
-            "temas": item.get("pathTemas", ""),
-            "url_pdf": f"{CSJN_PDF_BASE}{doc_id}" if doc_id else ""
-        }
-        resoluciones.append(resolucion)
-
+    
+    # Si redirige, es acceso denegado
+    if resp.status_code in (301, 302, 303):
+        location = resp.headers.get("Location", "desconocida")
+        raise Exception(f"Redireccion a {location} - sesion invalida o acceso denegado")
+    
+    resp.raise_for_status()
+    
+    data = resp.json()
+    resoluciones = data.get("data", [])
+    total = data.get("recordsTotal", 0)
+    filtradas = data.get("recordsFiltered", 0)
+    
+    logger.info(f"Resultados: {len(resoluciones)} resoluciones (total: {total}, filtradas: {filtradas})")
+    
     return resoluciones
 
 
-# ==============================================================================
-# FUNCIONES DE PERSISTENCIA (resoluciones ya vistas)
-# ==============================================================================
-
-def obtener_ruta_seen():
-    """Retorna la ruta absoluta del archivo de resoluciones vistas."""
-    return Path(__file__).parent.resolve() / SEEN_FILE
+def parsear_resolucion(item):
+    """
+    Extrae los datos relevantes de cada item del resultado.
+    Campos disponibles: docId, nroDoc, fecha, fechaCompleta, detalle,
+    descripcionTipo, nroExpe, pathTemas
+    """
+    doc_id = str(item.get("docId", ""))
+    return {
+        "id": doc_id,
+        "numero": item.get("nroDoc", "S/N"),
+        "fecha": item.get("fechaCompleta", item.get("fecha", "Sin fecha")),
+        "detalle": item.get("detalle", "Sin detalle"),
+        "tipo": item.get("descripcionTipo", ""),
+        "expediente": item.get("nroExpe", ""),
+        "url_pdf": f"{URL_BASE_PDF}{doc_id}" if doc_id else "",
+        "temas": item.get("pathTemas", ""),
+    }
 
 
 def cargar_vistas():
-    """
-    Carga el registro de resoluciones ya vistas desde el archivo JSON.
-
-    Returns:
-        dict con estructura:
-        {
-            "resoluciones": {
-                "<doc_id>": {
-                    "numero": ...,
-                    "fecha": ...,
-                    "detalle": ...,
-                    "primera_vez_visto": ...,
-                    "url_pdf": ...
-                }
-            },
-            "ultima_verificacion": "timestamp"
-        }
-    """
-    ruta = obtener_ruta_seen()
-
-    if not ruta.exists():
-        logger.info(f"Archivo {SEEN_FILE} no existe, creando nuevo registro")
-        return {"resoluciones": {}, "ultima_verificacion": None}
-
+    """Carga el archivo de resoluciones ya vistas. Retorna un dict."""
+    if not os.path.exists(SEEN_FILE):
+        return {}
     try:
-        with open(ruta, "r", encoding="utf-8") as f:
-            datos = json.load(f)
-            # Validar estructura mínima
-            if "resoluciones" not in datos:
-                datos["resoluciones"] = {}
-            return datos
-    except (json.JSONDecodeError, ValueError) as e:
-        logger.error(f"Archivo {SEEN_FILE} corrupto ({e}). Creando backup y empezando de cero.")
-        # Hacer backup del archivo corrupto
-        backup = ruta.with_suffix(f".backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
-        ruta.rename(backup)
-        logger.info(f"Backup guardado en: {backup}")
-        return {"resoluciones": {}, "ultima_verificacion": None}
+        with open(SEEN_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, IOError) as e:
+        logger.warning(f"Error al leer {SEEN_FILE}, creando nuevo: {e}")
+        return {}
 
 
-def guardar_vistas(datos):
-    """
-    Guarda el registro de resoluciones vistas en el archivo JSON.
-
-    Args:
-        datos: dict con la estructura de cargar_vistas()
-    """
-    ruta = obtener_ruta_seen()
-    datos["ultima_verificacion"] = datetime.now().isoformat()
-
-    try:
-        with open(ruta, "w", encoding="utf-8") as f:
-            json.dump(datos, f, ensure_ascii=False, indent=2)
-        logger.info(f"Registro actualizado: {len(datos['resoluciones'])} resoluciones guardadas")
-    except (IOError, OSError) as e:
-        logger.error(f"Error al guardar {SEEN_FILE}: {e}")
+def guardar_vistas(vistas):
+    """Guarda el diccionario de resoluciones vistas en el archivo JSON."""
+    with open(SEEN_FILE, "w", encoding="utf-8") as f:
+        json.dump(vistas, f, ensure_ascii=False, indent=2)
+    logger.info(f"Registro actualizado: {len(vistas)} resoluciones guardadas")
 
 
-def filtrar_nuevas(resoluciones, vistas):
-    """
-    Filtra las resoluciones que no han sido vistas anteriormente.
-
-    Usa doc_id como identificador único (es el ID interno de la CSJN).
-
-    Args:
-        resoluciones: Lista de dicts de buscar_resoluciones()
-        vistas: dict cargado con cargar_vistas()
-
-    Returns:
-        Lista de resoluciones nuevas (no presentes en vistas)
-    """
-    nuevas = []
-    for r in resoluciones:
-        clave = str(r["doc_id"])
-        if clave not in vistas["resoluciones"]:
-            nuevas.append(r)
-    return nuevas
-
-
-def registrar_vistas(resoluciones, vistas):
-    """
-    Agrega las resoluciones al registro de vistas.
-
-    Args:
-        resoluciones: Lista de resoluciones nuevas
-        vistas: dict de cargar_vistas() (se modifica in-place)
-    """
-    for r in resoluciones:
-        clave = str(r["doc_id"])
-        vistas["resoluciones"][clave] = {
-            "numero": r["numero"],
-            "fecha": r["fecha"],
-            "detalle": r["detalle"][:200],
-            "url_pdf": r["url_pdf"],
-            "primera_vez_visto": datetime.now().isoformat()
-        }
-
-
-# ==============================================================================
-# FUNCIONES DE NOTIFICACIÓN POR TELEGRAM
-# ==============================================================================
-
-def enviar_telegram(mensaje, parse_mode="HTML"):
-    """
-    Envía un mensaje por Telegram usando la Bot API.
-
-    Args:
-        mensaje: Texto del mensaje (soporta HTML básico)
-        parse_mode: Formato del mensaje ("HTML" o "Markdown")
-
-    Returns:
-        True si se envió correctamente, False en caso de error
-    """
+def enviar_telegram(mensaje):
+    """Envía un mensaje por Telegram usando la Bot API."""
     if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI" or TELEGRAM_CHAT_ID == "TU_CHAT_ID_AQUI":
-        logger.warning("⚠️  Token o Chat ID de Telegram no configurados. Mensaje NO enviado.")
-        logger.info(f"Mensaje que se habría enviado:\n{mensaje}")
+        logger.warning("Token o Chat ID de Telegram no configurados - mensaje NO enviado")
+        logger.info(f"Mensaje que se habria enviado:\n{mensaje}")
         return False
-
+    
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {
         "chat_id": TELEGRAM_CHAT_ID,
         "text": mensaje,
-        "parse_mode": parse_mode,
-        "disable_web_page_preview": False
+        "parse_mode": "HTML",
+        "disable_web_page_preview": False,
     }
-
+    
     try:
         resp = requests.post(url, json=payload, timeout=15)
         resp.raise_for_status()
         result = resp.json()
-
         if result.get("ok"):
-            logger.info("✅ Notificación enviada por Telegram exitosamente")
+            logger.info("Notificacion Telegram enviada correctamente")
             return True
         else:
-            logger.error(f"❌ Telegram respondió con error: {result}")
+            logger.error(f"Telegram respondio con error: {result}")
             return False
-
-    except requests.RequestException as e:
-        logger.error(f"❌ Error al enviar notificación por Telegram: {e}")
+    except Exception as e:
+        logger.error(f"Error al enviar mensaje Telegram: {e}")
         return False
 
 
 def formatear_mensaje(resolucion):
-    """
-    Formatea una resolución como mensaje de Telegram con HTML.
-
-    Args:
-        resolucion: dict con los datos de la resolución
-
-    Returns:
-        str con el mensaje formateado
-    """
-    # Escapar caracteres especiales de HTML en el detalle
-    detalle = (resolucion["detalle"]
-               .replace("&", "&amp;")
-               .replace("<", "&lt;")
-               .replace(">", "&gt;"))
-
-    # Truncar detalle si es muy largo (Telegram tiene límite de 4096 chars)
-    if len(detalle) > 500:
-        detalle = detalle[:497] + "..."
-
-    mensaje = (
-        f"🔔 <b>Nueva Resolución CSJN - DAJUDECO</b>\n\n"
-        f"📄 <b>Resolución N° {resolucion['numero']}</b> — {resolucion['fecha_completa']}\n\n"
-        f"📝 {detalle}\n\n"
-        f"📁 Exp. {resolucion['expediente']}\n"
-        f"🏷️ {resolucion['temas']}\n\n"
-        f"🔗 <a href=\"{resolucion['url_pdf']}\">Descargar PDF</a>\n\n"
-        f"<i>Búsqueda: {SEARCH_TERM}</i>"
+    """Formatea el mensaje de notificación para Telegram."""
+    msg = (
+        f"\U0001F514 <b>Nueva Resolucion CSJN - DAJUDECO</b>\n\n"
+        f"\U0001F4C4 Resolucion N\u00B0 {resolucion['numero']} - {resolucion['fecha']}\n"
+        f"\U0001F4DD {resolucion['detalle']}\n"
     )
-    return mensaje
+    if resolucion.get("expediente"):
+        msg += f"\U0001F4C1 Exp: {resolucion['expediente']}\n"
+    if resolucion.get("url_pdf"):
+        msg += f"\n\U0001F517 <a href=\"{resolucion['url_pdf']}\">Descargar PDF</a>\n"
+    msg += f"\n\U0001F50D Busqueda: {SEARCH_TERM}"
+    return msg
 
 
-def notificar_nuevas(resoluciones):
+def chequear_resoluciones():
     """
-    Envía una notificación por Telegram para cada resolución nueva.
-
-    Si hay muchas, agrupa para no hacer spam.
-
-    Args:
-        resoluciones: Lista de resoluciones nuevas
-
-    Returns:
-        int cantidad de mensajes enviados exitosamente
-    """
-    if not resoluciones:
-        return 0
-
-    enviados = 0
-
-    if len(resoluciones) <= 5:
-        # Enviar una notificación individual por cada resolución
-        for r in resoluciones:
-            mensaje = formatear_mensaje(r)
-            if enviar_telegram(mensaje):
-                enviados += 1
-            time.sleep(1)  # Pausa entre mensajes para no superar rate limit
-    else:
-        # Muchas resoluciones: enviar un resumen + las 3 más recientes individuales
-        resumen = (
-            f"🔔 <b>CSJN - DAJUDECO: {len(resoluciones)} nuevas resoluciones</b>\n\n"
-            f"Se encontraron {len(resoluciones)} resoluciones nuevas que mencionan "
-            f"{SEARCH_TERM}.\n\n"
-        )
-        for r in resoluciones:
-            resumen += f"• Res. {r['numero']} ({r['fecha']}) — {r['detalle'][:80]}...\n"
-
-        resumen += f"\n🔗 <a href=\"{CSJN_PAGE_URL}\">Ver en sitio CSJN</a>"
-
-        if enviar_telegram(resumen):
-            enviados += 1
-
-        # Las 3 más recientes con detalle completo
-        for r in resoluciones[:3]:
-            time.sleep(1)
-            mensaje = formatear_mensaje(r)
-            if enviar_telegram(mensaje):
-                enviados += 1
-
-    return enviados
-
-
-# ==============================================================================
-# FUNCIÓN PRINCIPAL DE CHEQUEO
-# ==============================================================================
-
-def chequear():
-    """
-    Ejecuta un ciclo completo de chequeo:
-    1. Busca resoluciones en la CSJN
-    2. Compara contra las ya vistas
-    3. Notifica las nuevas por Telegram
-    4. Actualiza el registro de vistas
-
-    Returns:
-        int cantidad de resoluciones nuevas encontradas
+    Función principal: obtiene sesión, busca resoluciones, detecta nuevas
+    y envía notificaciones.
     """
     logger.info("=" * 60)
     logger.info("Iniciando chequeo de resoluciones CSJN")
-    logger.info(f"Término de búsqueda: {SEARCH_TERM}")
-
+    logger.info(f"Termino de busqueda: {SEARCH_TERM}")
+    logger.info(f"Fecha desde: {FECHA_DESDE}")
+    
     try:
-        # 1. Buscar resoluciones
-        resoluciones = buscar_resoluciones()
-
-        if not resoluciones:
-            logger.info("No se encontraron resoluciones para el término buscado")
-            return 0
-
-        # 2. Cargar registro de vistas
+        # Paso 1: Obtener sesión con cookies
+        session = obtener_sesion()
+        
+        # Paso 2: Buscar resoluciones
+        resultados = buscar_resoluciones(session)
+        
+        if not resultados:
+            logger.info("No se encontraron resoluciones para el termino de busqueda")
+            return
+        
+        # Paso 3: Parsear resultados
+        resoluciones = [parsear_resolucion(item) for item in resultados]
+        
+        # Paso 4: Comparar con las ya vistas
         vistas = cargar_vistas()
-
-        # 3. Filtrar nuevas
-        nuevas = filtrar_nuevas(resoluciones, vistas)
-
+        nuevas = [r for r in resoluciones if r["id"] not in vistas]
+        
         if not nuevas:
-            logger.info(
-                f"Sin novedades. {len(resoluciones)} resoluciones encontradas, "
-                f"todas ya registradas."
-            )
-            # Igual actualizar timestamp de última verificación
-            guardar_vistas(vistas)
-            return 0
-
-        logger.info(f"🆕 {len(nuevas)} resoluciones NUEVAS detectadas!")
-
-        # 4. Notificar por Telegram
-        enviados = notificar_nuevas(nuevas)
-        logger.info(f"Notificaciones enviadas: {enviados}")
-
-        # 5. Registrar como vistas y guardar
-        registrar_vistas(nuevas, vistas)
+            logger.info(f"Sin novedades. {len(resoluciones)} resoluciones encontradas, todas ya vistas.")
+            return
+        
+        logger.info(f"Se encontraron {len(nuevas)} resoluciones NUEVAS")
+        
+        # Paso 5: Notificar por Telegram
+        for resolucion in nuevas:
+            mensaje = formatear_mensaje(resolucion)
+            enviar_telegram(mensaje)
+            # Marcar como vista
+            vistas[resolucion["id"]] = {
+                "numero": resolucion["numero"],
+                "fecha": resolucion["fecha"],
+                "detalle": resolucion["detalle"],
+                "url_pdf": resolucion["url_pdf"],
+                "notificado": datetime.now().isoformat(),
+            }
+            # Pequeña pausa entre mensajes para no saturar Telegram
+            time.sleep(1)
+        
+        # Paso 6: Guardar registro actualizado
         guardar_vistas(vistas)
-
-        return len(nuevas)
-
-    except requests.ConnectionError as e:
-        logger.error(f"Error de conexión con el servidor de la CSJN: {e}")
-        return -1
-    except requests.Timeout:
-        logger.error(f"Timeout al conectar con la CSJN (>{REQUEST_TIMEOUT}s)")
-        return -1
-    except requests.HTTPError as e:
+        
+        logger.info(f"Chequeo completado: {len(nuevas)} nuevas notificaciones enviadas")
+        
+    except requests.exceptions.HTTPError as e:
         logger.error(f"Error HTTP del servidor CSJN: {e}")
-        return -1
-    except json.JSONDecodeError as e:
-        logger.error(f"Respuesta inválida del servidor (no es JSON): {e}")
-        return -1
+        # Si es acceso denegado, loguear más detalle
+        if hasattr(e, 'response') and e.response is not None:
+            logger.error(f"URL final: {e.response.url}")
+            logger.error(f"Status: {e.response.status_code}")
+    except requests.exceptions.ConnectionError as e:
+        logger.error(f"Error de conexion: {e}")
+    except requests.exceptions.Timeout:
+        logger.error("Timeout al conectar con el servidor CSJN")
     except Exception as e:
-        logger.error(f"Error inesperado: {type(e).__name__}: {e}")
-        return -1
+        logger.error(f"Error inesperado: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
 
 
-# ==============================================================================
-# MODOS DE EJECUCIÓN
-# ==============================================================================
-
-def ejecutar_una_vez():
-    """Ejecuta un solo chequeo y muestra resultados."""
-    logger.info("Modo: ejecución única")
-    resultado = chequear()
-    if resultado > 0:
-        logger.info(f"✅ Se encontraron {resultado} resoluciones nuevas")
-    elif resultado == 0:
-        logger.info("✅ No hay resoluciones nuevas")
-    else:
-        logger.error("❌ El chequeo terminó con errores")
-    return resultado
-
-
-def ejecutar_loop(intervalo=CHECK_INTERVAL_SECONDS):
-    """
-    Ejecuta chequeos periódicos indefinidamente.
-
-    Args:
-        intervalo: Segundos entre cada chequeo
-    """
-    horas = intervalo / 3600
-    logger.info(f"Modo: loop continuo (cada {horas:.1f} horas / {intervalo} segundos)")
-    logger.info("Presioná Ctrl+C para detener")
-
-    ciclo = 0
-    while True:
-        ciclo += 1
-        logger.info(f"--- Ciclo #{ciclo} ---")
-        try:
-            chequear()
-        except KeyboardInterrupt:
-            raise
-        except Exception as e:
-            logger.error(f"Error en ciclo #{ciclo}: {e}")
-
-        logger.info(f"Próximo chequeo en {horas:.1f} horas...")
-        try:
-            time.sleep(intervalo)
-        except KeyboardInterrupt:
-            logger.info("Detenido por el usuario (Ctrl+C)")
-            break
-
-    logger.info("Monitor detenido.")
-
-
-# ==============================================================================
-# ENTRY POINT
-# ==============================================================================
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="Monitor de resoluciones CSJN para DAJUDECO",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Ejemplos:
-  python monitor_csjn_dajudeco.py --once          # Un solo chequeo
-  python monitor_csjn_dajudeco.py                  # Loop cada 4 horas
-  python monitor_csjn_dajudeco.py --interval 3600  # Loop cada 1 hora
-        """
-    )
-    parser.add_argument(
-        "--once",
-        action="store_true",
-        help="Ejecutar un solo chequeo y salir"
-    )
-    parser.add_argument(
-        "--interval",
-        type=int,
-        default=CHECK_INTERVAL_SECONDS,
-        help=f"Intervalo entre chequeos en segundos (default: {CHECK_INTERVAL_SECONDS})"
-    )
-
-    args = parser.parse_args()
-
-    # Validar configuración
-    logger.info("=" * 60)
-    logger.info("MONITOR CSJN - DAJUDECO")
-    logger.info(f"Endpoint: {CSJN_ENDPOINT}")
-    logger.info(f"Búsqueda: {SEARCH_TERM}")
-    logger.info(f"Archivo de registro: {obtener_ruta_seen()}")
-
-    if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI":
-        logger.warning(
-            "⚠️  TELEGRAM_BOT_TOKEN no configurado. "
-            "Las notificaciones se mostrarán solo en consola/log."
-        )
-
-    if args.once:
-        ejecutar_una_vez()
-    else:
-        ejecutar_loop(args.interval)
-
+# =============================================================================
+# PUNTO DE ENTRADA
+# =============================================================================
 
 if __name__ == "__main__":
-    main()
+    logger.info("=" * 60)
+    logger.info("MONITOR CSJN - DAJUDECO")
+    logger.info(f"Endpoint: {URL_ENDPOINT_DATOS}")
+    logger.info(f"Busqueda: {SEARCH_TERM}")
+    logger.info(f"Fecha desde: {FECHA_DESDE}")
+    logger.info(f"Archivo de registro: {SEEN_FILE}")
+    
+    if "--once" in sys.argv:
+        logger.info("Modo: ejecucion unica")
+        logger.info("=" * 60)
+        chequear_resoluciones()
+    else:
+        logger.info(f"Modo: loop continuo (cada {CHECK_INTERVAL_SECONDS // 3600} horas)")
+        logger.info("=" * 60)
+        while True:
+            chequear_resoluciones()
+            logger.info(f"Proximo chequeo en {CHECK_INTERVAL_SECONDS // 3600} horas...")
+            time.sleep(CHECK_INTERVAL_SECONDS)
