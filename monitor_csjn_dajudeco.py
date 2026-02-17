@@ -326,6 +326,7 @@ def chequear_resoluciones():
 
         if not resultados:
             logger.info("No se encontraron resoluciones")
+            enviar_telegram("\u2705 Chequeo completado. No se encontraron resoluciones.")
             return
 
         resoluciones = [parsear_resolucion(item) for item in resultados]
