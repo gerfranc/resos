@@ -163,3 +163,27 @@ Call log:
 2026-02-17 15:29:08 [INFO]   [2] N°45 - 11 de febrero de 2026 - Prórroga de adscripción - Gabriel Daniel VOLPI.-
 2026-02-17 15:29:08 [INFO] Navegador cerrado
 2026-02-17 15:29:08 [INFO] Sin novedades. 2 encontradas, todas ya vistas.
+2026-02-17 15:51:20 [INFO] ============================================================
+2026-02-17 15:51:20 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-17 15:51:20 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-17 15:51:20 [INFO] Busqueda: "Dirección de Asistencia Judicial"
+2026-02-17 15:51:20 [INFO] Modo: ejecucion unica
+2026-02-17 15:51:20 [INFO] ============================================================
+2026-02-17 15:51:20 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-17 15:51:20 [INFO] Termino: "Dirección de Asistencia Judicial" | Desde: 10/02/2026
+2026-02-17 15:51:21 [INFO] Iniciando navegador Chromium headless...
+2026-02-17 15:51:21 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-17 15:51:25 [INFO] Pagina cargada
+2026-02-17 15:51:25 [INFO] Request interceptado - q: "Dirección de Asistencia Judicial"
+2026-02-17 15:51:26 [INFO] Respuesta capturada: 2 resultados
+2026-02-17 15:51:28 [INFO] Campo encontrado: input#q
+2026-02-17 15:51:28 [INFO] Campo completado con: "Dirección de Asistencia Judicial"
+2026-02-17 15:51:28 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-17 15:51:28 [INFO] Click en Buscar
+2026-02-17 15:51:28 [INFO] Esperando resultados...
+2026-02-17 15:51:36 [INFO] Tabla con resultados detectada
+2026-02-17 15:51:36 [INFO] JSON: 2 resoluciones (total: 2, filtradas: 2)
+2026-02-17 15:51:36 [INFO]   [1] N°71 - 13 de febrero de 2026 - Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infrae
+2026-02-17 15:51:36 [INFO]   [2] N°45 - 11 de febrero de 2026 - Prórroga de adscripción - Gabriel Daniel VOLPI.-
+2026-02-17 15:51:36 [INFO] Navegador cerrado
+2026-02-17 15:51:36 [INFO] Sin novedades. 2 encontradas, todas ya vistas.
