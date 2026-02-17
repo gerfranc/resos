@@ -37,7 +37,7 @@ CHECK_INTERVAL_SECONDS = 14400  # 4 horas
 SEARCH_TERM = '"Dirección de Asistencia Judicial"'
 SEEN_FILE = "seen_resoluciones.json"
 LOG_FILE = "monitor_csjn.log"
-FECHA_DESDE = "01/02/2026"
+FECHA_DESDE = "10/02/2026"
 
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
 URL_ENDPOINT = "https://www.csjn.gov.ar/resoluciones/data"
