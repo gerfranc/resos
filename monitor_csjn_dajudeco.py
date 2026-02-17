@@ -126,7 +126,7 @@ def buscar_con_playwright():
 
         # --- Paso 1: Navegar a la pagina ---
         logger.info(f"Navegando a {URL_PAGINA}")
-        page.goto(URL_PAGINA, wait_until="networkidle", timeout=60000)
+        page.goto(URL_PAGINA, wait_until="domcontentloaded", timeout=120000)
         logger.info("Pagina cargada")
         page.wait_for_timeout(3000)
 
