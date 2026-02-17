@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Instalar requests
-        run: pip install requests
+      - name: Instalar dependencias
+        run: |
+          pip install requests playwright
+          playwright install chromium
+          playwright install-deps chromium
 
       - name: Restaurar registro previo
         continue-on-error: true
