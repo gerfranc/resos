@@ -4,9 +4,9 @@
 =============================================================================
 MONITOR DE RESOLUCIONES CSJN - DAJUDECO (version Playwright)
 =============================================================================
-Usa un navegador headless real (Chromium) para buscar resoluciones en la
-pagina de la CSJN. Intercepta el request de busqueda y fuerza los
-parametros correctos con comillas para busqueda exacta.
+Usa Chromium headless para buscar resoluciones en la CSJN.
+Intercepta el request POST al endpoint de datos y fuerza los parametros
+de busqueda con comillas para garantizar busqueda exacta.
 
 REQUISITOS:
   pip install playwright requests
@@ -14,7 +14,7 @@ REQUISITOS:
 
 USO:
   python monitor_csjn_dajudeco.py --once    # Una sola vez (GitHub Actions/cron)
-  python monitor_csjn_dajudeco.py            # Loop continuo cada 4 horas
+  python monitor_csjn_dajudeco.py            # Loop continuo
 =============================================================================
 """
 
@@ -33,14 +33,13 @@ import requests
 
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "TU_TOKEN_AQUI")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "TU_CHAT_ID_AQUI")
-CHECK_INTERVAL_SECONDS = 14400  # 4 horas
+CHECK_INTERVAL_SECONDS = 7200  # 2 horas
 SEARCH_TERM = '"Dirección de Asistencia Judicial"'
 SEEN_FILE = "seen_resoluciones.json"
 LOG_FILE = "monitor_csjn.log"
-FECHA_DESDE = "01/02/2026"
+FECHA_DESDE = "10/02/2026"
 
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
-URL_ENDPOINT = "https://www.csjn.gov.ar/resoluciones/data"
 URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
 
 # =============================================================================
@@ -64,10 +63,12 @@ logger = logging.getLogger(__name__)
 
 def buscar_con_playwright():
     """
-    Estrategia: abrir la pagina de la CSJN para obtener una sesion valida,
-    luego interceptar el request de DataTables y forzar los parametros
-    de busqueda correctos (con comillas) directamente en el payload JSON.
-    Esto garantiza que la busqueda sea exacta.
+    Estrategia:
+    1. Abrir la pagina con Playwright (sesion real)
+    2. Llenar el formulario y hacer click en Buscar
+    3. Interceptar el request POST saliente al endpoint /resoluciones/data
+       y MODIFICAR el payload para forzar las comillas en q y qa
+    4. Capturar la respuesta JSON
     """
     from playwright.sync_api import sync_playwright
 
@@ -84,87 +85,168 @@ def buscar_con_playwright():
         )
         page = context.new_page()
 
-        # --- Paso 1: Navegar a la pagina para establecer sesion ---
+        # --- Interceptar y modificar el request saliente ---
+        def interceptar_request(route, request):
+            """
+            Intercepta el POST al endpoint de datos y modifica el payload
+            para asegurar que q y qa tengan las comillas.
+            """
+            if "/resoluciones/data" in request.url and request.method == "POST":
+                try:
+                    body = json.loads(request.post_data)
+                    # Forzar comillas en los campos de busqueda
+                    if "formBusqueda" in body:
+                        body["formBusqueda"]["q"] = SEARCH_TERM
+                        body["formBusqueda"]["qa"] = SEARCH_TERM
+                        body["formBusqueda"]["fechaDesde"] = FECHA_DESDE
+                        body["formBusqueda"]["fechaDesde_a"] = FECHA_DESDE
+                    logger.info(f"Request interceptado - q: {body.get('formBusqueda',{}).get('q','?')}")
+                    route.continue_(post_data=json.dumps(body))
+                except Exception as e:
+                    logger.error(f"Error al interceptar request: {e}")
+                    route.continue_()
+            else:
+                route.continue_()
+
+        page.route("**/resoluciones/data", interceptar_request)
+
+        # --- Interceptar la respuesta para capturar los datos ---
+        respuesta_capturada = []
+
+        def capturar_respuesta(response):
+            if "/resoluciones/data" in response.url:
+                try:
+                    data = response.json()
+                    respuesta_capturada.append(data)
+                    logger.info(f"Respuesta capturada: {len(data.get('data', []))} resultados")
+                except Exception as e:
+                    logger.error(f"Error al parsear respuesta: {e}")
+
+        page.on("response", capturar_respuesta)
+
+        # --- Paso 1: Navegar a la pagina ---
         logger.info(f"Navegando a {URL_PAGINA}")
         page.goto(URL_PAGINA, wait_until="networkidle", timeout=60000)
-        logger.info("Pagina cargada, sesion establecida")
-        page.wait_for_timeout(2000)
+        logger.info("Pagina cargada")
+        page.wait_for_timeout(3000)
 
-        # --- Paso 2: Hacer el request directo al endpoint usando la sesion del navegador ---
-        # Usamos page.evaluate() para hacer un fetch desde el contexto del navegador,
-        # aprovechando las cookies de sesion ya establecidas.
-        logger.info(f"Ejecutando busqueda: {SEARCH_TERM}")
+        # --- Paso 2: Llenar el campo de busqueda ---
+        # Buscar el campo "cualquier dato disponible"
+        campo_busqueda = None
+        selectores = [
+            'input[name="formBusqueda.q"]',
+            'input#q',
+            'input[placeholder*="cualquier"]',
+            'input[placeholder*="dato"]',
+        ]
 
-        payload = {
-            "draw": 1,
-            "start": 0,
-            "length": 100,
-            "formBusqueda": {
-                "q": SEARCH_TERM,
-                "qa": SEARCH_TERM,
-                "nro": "",
-                "anio": "",
-                "tema": "",
-                "subtema": "",
-                "fechaDesde": FECHA_DESDE,
-                "fechaDesde_a": FECHA_DESDE,
-                "fechaHasta": "",
-                "fechaHasta_a": ""
-            }
-        }
+        for selector in selectores:
+            try:
+                elem = page.query_selector(selector)
+                if elem and elem.is_visible():
+                    campo_busqueda = elem
+                    logger.info(f"Campo encontrado: {selector}")
+                    break
+            except:
+                continue
 
-        # Ejecutar fetch desde el navegador (con cookies de sesion)
-        result = page.evaluate("""
-            async (payload) => {
-                try {
-                    const resp = await fetch('https://www.csjn.gov.ar/resoluciones/data', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json;charset=UTF-8',
-                            'X-Requested-With': 'XMLHttpRequest',
-                        },
-                        body: JSON.stringify(payload)
-                    });
-                    if (!resp.ok) {
-                        return { error: `HTTP ${resp.status}: ${resp.statusText}`, url: resp.url };
-                    }
-                    const text = await resp.text();
-                    // Verificar si es una redireccion a accesoDenegado
-                    if (text.includes('accesoDenegado') || text.includes('<html')) {
-                        return { error: 'Redireccion a accesoDenegado', body: text.substring(0, 200) };
-                    }
-                    return JSON.parse(text);
-                } catch (e) {
-                    return { error: e.toString() };
-                }
-            }
-        """, payload)
+        if not campo_busqueda:
+            logger.info("Buscando campo de texto en formulario...")
+            inputs = page.query_selector_all('input[type="text"]')
+            visibles = []
+            for inp in inputs:
+                try:
+                    if inp.is_visible():
+                        visibles.append(inp)
+                except:
+                    pass
+
+            if len(visibles) >= 3:
+                campo_busqueda = visibles[2]
+                logger.info(f"Usando tercer input visible de {len(visibles)}")
+            elif visibles:
+                campo_busqueda = visibles[-1]
+                logger.info(f"Usando ultimo input visible de {len(visibles)}")
+
+        if not campo_busqueda:
+            page.screenshot(path="debug_formulario.png")
+            raise Exception("No se encontro el campo de busqueda")
+
+        # Llenar con el termino (las comillas se fuerzan en el interceptor)
+        campo_busqueda.click()
+        campo_busqueda.fill(SEARCH_TERM)
+        logger.info(f"Campo completado con: {SEARCH_TERM}")
+
+        # --- Paso 3: Click en Buscar ---
+        boton_buscar = None
+        for selector in ['button:has-text("Buscar")', 'input[value="Buscar"]', 'a:has-text("Buscar")']:
+            try:
+                elems = page.query_selector_all(selector)
+                for elem in elems:
+                    if elem.is_visible():
+                        boton_buscar = elem
+                        logger.info(f"Boton encontrado: {selector}")
+                        break
+                if boton_buscar:
+                    break
+            except:
+                continue
+
+        if not boton_buscar:
+            raise Exception("No se encontro el boton Buscar")
+
+        boton_buscar.click()
+        logger.info("Click en Buscar")
+
+        # --- Paso 4: Esperar respuesta ---
+        logger.info("Esperando resultados...")
+        page.wait_for_timeout(8000)
+
+        try:
+            page.wait_for_selector("table tbody tr", timeout=15000)
+            logger.info("Tabla con resultados detectada")
+        except:
+            logger.info("No se detecto tabla (puede no haber resultados)")
+
+        # --- Paso 5: Extraer datos ---
+        if respuesta_capturada:
+            data = respuesta_capturada[-1]
+            resoluciones_data = data.get("data", [])
+            total = data.get("recordsTotal", 0)
+            filtradas = data.get("recordsFiltered", 0)
+            logger.info(f"JSON: {len(resoluciones_data)} resoluciones "
+                         f"(total: {total}, filtradas: {filtradas})")
+        else:
+            # Fallback: extraer del DOM
+            logger.info("Sin JSON interceptado, extrayendo del DOM...")
+            filas = page.query_selector_all("table tbody tr")
+            for fila in filas:
+                celdas = fila.query_selector_all("td")
+                if len(celdas) >= 3:
+                    link = fila.query_selector("a[href*='descargar']")
+                    href = link.get_attribute("href") if link else ""
+                    doc_id = href.split("ID=")[-1] if "ID=" in href else ""
+                    resoluciones_data.append({
+                        "docId": doc_id,
+                        "nroDoc": celdas[0].inner_text().strip(),
+                        "fechaCompleta": celdas[1].inner_text().strip() if len(celdas) > 1 else "",
+                        "detalle": celdas[2].inner_text().strip() if len(celdas) > 2 else "",
+                    })
+            logger.info(f"DOM: {len(resoluciones_data)} resoluciones")
+
+        # Log primeros resultados
+        for i, item in enumerate(resoluciones_data[:3]):
+            logger.info(f"  [{i+1}] N\u00B0{item.get('nroDoc','?')} - "
+                         f"{item.get('fechaCompleta','?')} - "
+                         f"{item.get('detalle','?')[:80]}")
 
         browser.close()
         logger.info("Navegador cerrado")
-
-        # --- Paso 3: Procesar resultado ---
-        if isinstance(result, dict) and "error" in result:
-            raise Exception(f"Error en fetch: {result['error']}")
-
-        resoluciones_data = result.get("data", [])
-        total = result.get("recordsTotal", 0)
-        filtradas = result.get("recordsFiltered", 0)
-
-        logger.info(f"Resultados: {len(resoluciones_data)} resoluciones "
-                     f"(total: {total}, filtradas: {filtradas})")
-
-        # Log de los primeros resultados para verificar
-        for i, item in enumerate(resoluciones_data[:3]):
-            logger.info(f"  [{i+1}] N°{item.get('nroDoc','?')} - "
-                         f"{item.get('fechaCompleta','?')} - "
-                         f"{item.get('detalle','?')[:80]}")
 
     return resoluciones_data
 
 
 def parsear_resolucion(item):
-    """Extrae datos relevantes de cada resultado."""
     doc_id = str(item.get("docId", ""))
     return {
         "id": doc_id,
@@ -280,7 +362,7 @@ def chequear_resoluciones():
 if __name__ == "__main__":
     logger.info("=" * 60)
     logger.info("MONITOR CSJN - DAJUDECO (Playwright)")
-    logger.info(f"Endpoint: {URL_ENDPOINT}")
+    logger.info(f"Pagina: {URL_PAGINA}")
     logger.info(f"Busqueda: {SEARCH_TERM}")
 
     if "--once" in sys.argv:
