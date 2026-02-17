@@ -5,18 +5,12 @@
 MONITOR DE RESOLUCIONES CSJN - DAJUDECO (version Playwright)
 =============================================================================
 Usa un navegador headless real (Chromium) para buscar resoluciones en la
-pagina de la CSJN. Esto evita el bloqueo "accesoDenegado" del servidor.
+pagina de la CSJN. Intercepta el request de busqueda y fuerza los
+parametros correctos con comillas para busqueda exacta.
 
 REQUISITOS:
   pip install playwright requests
   playwright install chromium
-
-INSTRUCCIONES PARA TELEGRAM:
-1. Abrir Telegram y buscar @BotFather
-2. Enviar /newbot y seguir las instrucciones
-3. Copiar el token y pegarlo en TELEGRAM_BOT_TOKEN
-4. Buscar @userinfobot, enviar /start para obtener tu chat_id
-5. Pegar tu chat_id en TELEGRAM_CHAT_ID
 
 USO:
   python monitor_csjn_dajudeco.py --once    # Una sola vez (GitHub Actions/cron)
@@ -46,6 +40,7 @@ LOG_FILE = "monitor_csjn.log"
 FECHA_DESDE = "01/02/2026"
 
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
+URL_ENDPOINT = "https://www.csjn.gov.ar/resoluciones/data"
 URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
 
 # =============================================================================
@@ -69,152 +64,102 @@ logger = logging.getLogger(__name__)
 
 def buscar_con_playwright():
     """
-    Abre la pagina de resoluciones con un navegador headless real,
-    completa el formulario, hace click en Buscar, intercepta la
-    respuesta JSON del endpoint de datos, y retorna las resoluciones.
+    Estrategia: abrir la pagina de la CSJN para obtener una sesion valida,
+    luego interceptar el request de DataTables y forzar los parametros
+    de busqueda correctos (con comillas) directamente en el payload JSON.
+    Esto garantiza que la busqueda sea exacta.
     """
     from playwright.sync_api import sync_playwright
-    
+
     resoluciones_data = []
-    
+
     with sync_playwright() as p:
         logger.info("Iniciando navegador Chromium headless...")
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/131.0.0.0 Safari/537.36",
             locale="es-AR",
         )
         page = context.new_page()
-        
-        # Interceptar la respuesta del endpoint de datos
-        respuesta_capturada = []
-        
-        def capturar_respuesta(response):
-            if "/resoluciones/data" in response.url:
-                try:
-                    data = response.json()
-                    respuesta_capturada.append(data)
-                    logger.info(f"Respuesta JSON capturada: {len(data.get('data', []))} resultados")
-                except Exception as e:
-                    logger.error(f"Error al parsear respuesta interceptada: {e}")
-        
-        page.on("response", capturar_respuesta)
-        
-        # Paso 1: Navegar a la pagina
+
+        # --- Paso 1: Navegar a la pagina para establecer sesion ---
         logger.info(f"Navegando a {URL_PAGINA}")
         page.goto(URL_PAGINA, wait_until="networkidle", timeout=60000)
-        logger.info("Pagina cargada")
-        
-        # Paso 2: Esperar que el formulario este listo
-        page.wait_for_timeout(3000)
-        
-        # Paso 3: Completar el campo "cualquier dato disponible"
-        campo_busqueda = None
-        selectores = [
-            'input[name="formBusqueda.q"]',
-            'input#q',
-            'input[placeholder*="cualquier"]',
-            'input[placeholder*="dato"]',
-        ]
-        
-        for selector in selectores:
-            try:
-                elem = page.query_selector(selector)
-                if elem and elem.is_visible():
-                    campo_busqueda = elem
-                    logger.info(f"Campo encontrado: {selector}")
-                    break
-            except:
-                continue
-        
-        if not campo_busqueda:
-            # Buscar todos los inputs de texto visibles
-            logger.info("Buscando campo de texto en formulario...")
-            inputs = page.query_selector_all('input[type="text"]')
-            visibles = []
-            for inp in inputs:
-                try:
-                    if inp.is_visible():
-                        visibles.append(inp)
-                except:
-                    pass
-            
-            if len(visibles) >= 3:
-                # El tercero suele ser "cualquier dato disponible"
-                campo_busqueda = visibles[2]
-                logger.info(f"Usando tercer input visible de {len(visibles)}")
-            elif visibles:
-                campo_busqueda = visibles[-1]
-                logger.info(f"Usando ultimo input visible de {len(visibles)}")
-        
-        if not campo_busqueda:
-            # Screenshot para debug
-            page.screenshot(path="debug_formulario.png")
-            raise Exception("No se encontro el campo de busqueda")
-        
-        campo_busqueda.click()
-        campo_busqueda.fill(SEARCH_TERM)
-        logger.info(f"Campo completado con: {SEARCH_TERM}")
-        
-        # Paso 4: Click en Buscar
-        boton_buscar = None
-        for selector in ['button:has-text("Buscar")', 'input[value="Buscar"]', 'a:has-text("Buscar")']:
-            try:
-                elems = page.query_selector_all(selector)
-                for elem in elems:
-                    if elem.is_visible():
-                        boton_buscar = elem
-                        logger.info(f"Boton Buscar encontrado: {selector}")
-                        break
-                if boton_buscar:
-                    break
-            except:
-                continue
-        
-        if not boton_buscar:
-            raise Exception("No se encontro el boton Buscar")
-        
-        boton_buscar.click()
-        logger.info("Click en Buscar")
-        
-        # Paso 5: Esperar respuesta
-        logger.info("Esperando resultados...")
-        page.wait_for_timeout(8000)
-        
-        # Intentar esperar la tabla
-        try:
-            page.wait_for_selector("table tbody tr", timeout=15000)
-            logger.info("Tabla con resultados detectada")
-        except:
-            logger.info("No se detecto tabla de resultados")
-        
-        # Paso 6: Extraer datos
-        if respuesta_capturada:
-            data = respuesta_capturada[-1]
-            resoluciones_data = data.get("data", [])
-            total = data.get("recordsTotal", 0)
-            logger.info(f"JSON interceptado: {len(resoluciones_data)} resoluciones (total: {total})")
-        else:
-            # Fallback: extraer del DOM
-            logger.info("Sin JSON interceptado, extrayendo del DOM...")
-            filas = page.query_selector_all("table tbody tr")
-            for fila in filas:
-                celdas = fila.query_selector_all("td")
-                if len(celdas) >= 3:
-                    link = fila.query_selector("a[href*='descargar']")
-                    href = link.get_attribute("href") if link else ""
-                    doc_id = href.split("ID=")[-1] if "ID=" in href else ""
-                    resoluciones_data.append({
-                        "docId": doc_id,
-                        "nroDoc": celdas[0].inner_text().strip(),
-                        "fechaCompleta": celdas[1].inner_text().strip() if len(celdas) > 1 else "",
-                        "detalle": celdas[2].inner_text().strip() if len(celdas) > 2 else "",
-                    })
-            logger.info(f"DOM: {len(resoluciones_data)} resoluciones extraidas")
-        
+        logger.info("Pagina cargada, sesion establecida")
+        page.wait_for_timeout(2000)
+
+        # --- Paso 2: Hacer el request directo al endpoint usando la sesion del navegador ---
+        # Usamos page.evaluate() para hacer un fetch desde el contexto del navegador,
+        # aprovechando las cookies de sesion ya establecidas.
+        logger.info(f"Ejecutando busqueda: {SEARCH_TERM}")
+
+        payload = {
+            "draw": 1,
+            "start": 0,
+            "length": 100,
+            "formBusqueda": {
+                "q": SEARCH_TERM,
+                "qa": SEARCH_TERM,
+                "nro": "",
+                "anio": "",
+                "tema": "",
+                "subtema": "",
+                "fechaDesde": FECHA_DESDE,
+                "fechaDesde_a": FECHA_DESDE,
+                "fechaHasta": "",
+                "fechaHasta_a": ""
+            }
+        }
+
+        # Ejecutar fetch desde el navegador (con cookies de sesion)
+        result = page.evaluate("""
+            async (payload) => {
+                try {
+                    const resp = await fetch('/resoluciones/data', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json;charset=UTF-8',
+                            'X-Requested-With': 'XMLHttpRequest',
+                        },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!resp.ok) {
+                        return { error: `HTTP ${resp.status}: ${resp.statusText}`, url: resp.url };
+                    }
+                    const text = await resp.text();
+                    // Verificar si es una redireccion a accesoDenegado
+                    if (text.includes('accesoDenegado') || text.includes('<html')) {
+                        return { error: 'Redireccion a accesoDenegado', body: text.substring(0, 200) };
+                    }
+                    return JSON.parse(text);
+                } catch (e) {
+                    return { error: e.toString() };
+                }
+            }
+        """, payload)
+
         browser.close()
         logger.info("Navegador cerrado")
-    
+
+        # --- Paso 3: Procesar resultado ---
+        if isinstance(result, dict) and "error" in result:
+            raise Exception(f"Error en fetch: {result['error']}")
+
+        resoluciones_data = result.get("data", [])
+        total = result.get("recordsTotal", 0)
+        filtradas = result.get("recordsFiltered", 0)
+
+        logger.info(f"Resultados: {len(resoluciones_data)} resoluciones "
+                     f"(total: {total}, filtradas: {filtradas})")
+
+        # Log de los primeros resultados para verificar
+        for i, item in enumerate(resoluciones_data[:3]):
+            logger.info(f"  [{i+1}] N°{item.get('nroDoc','?')} - "
+                         f"{item.get('fechaCompleta','?')} - "
+                         f"{item.get('detalle','?')[:80]}")
+
     return resoluciones_data
 
 
@@ -255,7 +200,7 @@ def enviar_telegram(mensaje):
         logger.warning("Telegram no configurado")
         logger.info(f"Mensaje:\n{mensaje}")
         return False
-    
+
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
         resp = requests.post(url, json={
@@ -293,24 +238,24 @@ def chequear_resoluciones():
     logger.info("=" * 60)
     logger.info("Iniciando chequeo de resoluciones CSJN")
     logger.info(f"Termino: {SEARCH_TERM} | Desde: {FECHA_DESDE}")
-    
+
     try:
         resultados = buscar_con_playwright()
-        
+
         if not resultados:
             logger.info("No se encontraron resoluciones")
             return
-        
+
         resoluciones = [parsear_resolucion(item) for item in resultados]
         vistas = cargar_vistas()
         nuevas = [r for r in resoluciones if r["id"] and r["id"] not in vistas]
-        
+
         if not nuevas:
             logger.info(f"Sin novedades. {len(resoluciones)} encontradas, todas ya vistas.")
             return
-        
+
         logger.info(f"{len(nuevas)} resoluciones NUEVAS")
-        
+
         for r in nuevas:
             enviar_telegram(formatear_mensaje(r))
             vistas[r["id"]] = {
@@ -321,10 +266,10 @@ def chequear_resoluciones():
                 "notificado": datetime.now().isoformat(),
             }
             time.sleep(1)
-        
+
         guardar_vistas(vistas)
         logger.info(f"Completado: {len(nuevas)} notificaciones enviadas")
-        
+
     except Exception as e:
         logger.error(f"Error: {e}")
         import traceback
@@ -335,9 +280,9 @@ def chequear_resoluciones():
 if __name__ == "__main__":
     logger.info("=" * 60)
     logger.info("MONITOR CSJN - DAJUDECO (Playwright)")
-    logger.info(f"Pagina: {URL_PAGINA}")
+    logger.info(f"Endpoint: {URL_ENDPOINT}")
     logger.info(f"Busqueda: {SEARCH_TERM}")
-    
+
     if "--once" in sys.argv:
         logger.info("Modo: ejecucion unica")
         chequear_resoluciones()
