@@ -334,6 +334,7 @@ def chequear_resoluciones():
 
         if not nuevas:
             logger.info(f"Sin novedades. {len(resoluciones)} encontradas, todas ya vistas.")
+            enviar_telegram("\u2705 Chequeo completado. No hay resoluciones nuevas.")
             return
 
         logger.info(f"{len(nuevas)} resoluciones NUEVAS")
