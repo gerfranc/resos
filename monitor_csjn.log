@@ -753,3 +753,31 @@ Call log:
 2026-02-19 01:04:08 [INFO] Navegador cerrado
 2026-02-19 01:04:08 [INFO] Sin novedades. 2 encontradas, todas ya vistas.
 2026-02-19 01:04:09 [INFO] Telegram: mensaje enviado
+2026-02-19 05:16:44 [INFO] ============================================================
+2026-02-19 05:16:44 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-19 05:16:44 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-19 05:16:44 [INFO] Busqueda: "Dirección de Asistencia Judicial"
+2026-02-19 05:16:44 [INFO] Modo: ejecucion unica
+2026-02-19 05:16:44 [INFO] ============================================================
+2026-02-19 05:16:44 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-19 05:16:44 [INFO] Termino: "Dirección de Asistencia Judicial" | Desde: 10/02/2026
+2026-02-19 05:16:44 [INFO] Iniciando navegador Chromium headless...
+2026-02-19 05:16:46 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-19 05:16:51 [INFO] Pagina cargada
+2026-02-19 05:16:51 [INFO] Request interceptado - q: "Dirección de Asistencia Judicial"
+2026-02-19 05:16:51 [INFO] Respuesta capturada: 3 resultados
+2026-02-19 05:16:54 [INFO] Campo encontrado: input#q
+2026-02-19 05:16:54 [INFO] Campo completado con: "Dirección de Asistencia Judicial"
+2026-02-19 05:16:54 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-19 05:16:54 [INFO] Click en Buscar
+2026-02-19 05:16:54 [INFO] Esperando resultados...
+2026-02-19 05:17:02 [INFO] Tabla con resultados detectada
+2026-02-19 05:17:02 [INFO] JSON: 3 resoluciones (total: 3, filtradas: 3)
+2026-02-19 05:17:02 [INFO]   [1] N°74 - 18 de febrero de 2026 - Contratar con la firma EMELEC S.A. el servicio de relevamiento e informe técnico
+2026-02-19 05:17:02 [INFO]   [2] N°71 - 13 de febrero de 2026 - Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infrae
+2026-02-19 05:17:02 [INFO]   [3] N°45 - 11 de febrero de 2026 - Prórroga de adscripción - Gabriel Daniel VOLPI.-
+2026-02-19 05:17:02 [INFO] Navegador cerrado
+2026-02-19 05:17:02 [INFO] 1 resoluciones NUEVAS
+2026-02-19 05:17:03 [INFO] Telegram: mensaje enviado
+2026-02-19 05:17:04 [INFO] Registro: 3 resoluciones guardadas
+2026-02-19 05:17:04 [INFO] Completado: 1 notificaciones enviadas
