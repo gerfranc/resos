@@ -963,3 +963,29 @@ Call log:
 2026-02-20 08:28:29 [INFO] Navegador cerrado
 2026-02-20 08:28:29 [INFO] Sin novedades. 3 encontradas, todas ya vistas.
 2026-02-20 08:28:29 [INFO] Telegram: mensaje enviado
+2026-02-20 12:30:23 [INFO] ============================================================
+2026-02-20 12:30:23 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-20 12:30:23 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-20 12:30:23 [INFO] Busqueda: "Dirección de Asistencia Judicial"
+2026-02-20 12:30:23 [INFO] Modo: ejecucion unica
+2026-02-20 12:30:23 [INFO] ============================================================
+2026-02-20 12:30:23 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-20 12:30:23 [INFO] Termino: "Dirección de Asistencia Judicial" | Desde: 10/02/2026
+2026-02-20 12:30:24 [INFO] Iniciando navegador Chromium headless...
+2026-02-20 12:30:25 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-20 12:30:29 [INFO] Pagina cargada
+2026-02-20 12:30:29 [INFO] Request interceptado - q: "Dirección de Asistencia Judicial"
+2026-02-20 12:30:30 [INFO] Respuesta capturada: 3 resultados
+2026-02-20 12:30:32 [INFO] Campo encontrado: input#q
+2026-02-20 12:30:32 [INFO] Campo completado con: "Dirección de Asistencia Judicial"
+2026-02-20 12:30:32 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-20 12:30:32 [INFO] Click en Buscar
+2026-02-20 12:30:32 [INFO] Esperando resultados...
+2026-02-20 12:30:40 [INFO] Tabla con resultados detectada
+2026-02-20 12:30:40 [INFO] JSON: 3 resoluciones (total: 3, filtradas: 3)
+2026-02-20 12:30:40 [INFO]   [1] N°74 - 18 de febrero de 2026 - Contratar con la firma EMELEC S.A. el servicio de relevamiento e informe técnico
+2026-02-20 12:30:40 [INFO]   [2] N°71 - 13 de febrero de 2026 - Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infrae
+2026-02-20 12:30:40 [INFO]   [3] N°45 - 11 de febrero de 2026 - Prórroga de adscripción - Gabriel Daniel VOLPI.-
+2026-02-20 12:30:40 [INFO] Navegador cerrado
+2026-02-20 12:30:40 [INFO] Sin novedades. 3 encontradas, todas ya vistas.
+2026-02-20 12:30:41 [INFO] Telegram: mensaje enviado
