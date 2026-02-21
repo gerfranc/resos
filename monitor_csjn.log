@@ -1356,3 +1356,206 @@ Call log:
 2026-02-21 17:13:52 [INFO] Total resoluciones obtenidas: 60
 2026-02-21 17:13:52 [INFO] Sin novedades. 60 resoluciones, todas ya procesadas.
 2026-02-21 17:13:52 [INFO] Telegram: mensaje enviado
+2026-02-21 17:15:16 [INFO] ============================================================
+2026-02-21 17:15:16 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-21 17:15:16 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-21 17:15:16 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-21 17:15:16 [INFO] Modo: ejecucion unica
+2026-02-21 17:15:16 [INFO] ============================================================
+2026-02-21 17:15:16 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-21 17:15:16 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-21 17:15:16 [INFO] Iniciando navegador Chromium headless...
+2026-02-21 17:15:17 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-21 17:15:21 [INFO] Pagina cargada
+2026-02-21 17:15:21 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-21 17:15:22 [INFO] Respuesta capturada: 60 resultados
+2026-02-21 17:15:24 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-21 17:15:24 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-21 17:15:24 [INFO] Esperando resultados...
+2026-02-21 17:15:32 [INFO] Tabla con resultados detectada
+2026-02-21 17:15:32 [INFO] JSON: 60 resoluciones (total servidor: 60, filtradas: 60)
+2026-02-21 17:15:32 [INFO] Navegador cerrado
+2026-02-21 17:15:32 [INFO] Total resoluciones obtenidas: 60
+2026-02-21 17:15:32 [WARNING] Error al leer seen_resoluciones.json: Expecting value: line 2 column 1 (char 1)
+2026-02-21 17:15:32 [INFO] 60 resoluciones no procesadas, filtrando por contenido...
+2026-02-21 17:15:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153202
+2026-02-21 17:15:34 [INFO] PDF: 2344 caracteres extraidos con pdfplumber
+2026-02-21 17:15:34 [INFO]   No relevante: N°90 - Bonificación adicional por título a favor de María VISCONTI 
+2026-02-21 17:15:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153196
+2026-02-21 17:15:36 [INFO] PDF: 1684 caracteres extraidos con pdfplumber
+2026-02-21 17:15:36 [INFO]   No relevante: N°89 - Anticipo de jubilación a favor de Liliana Beatriz CISNEROS.-
+2026-02-21 17:15:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153198
+2026-02-21 17:15:38 [INFO] PDF: 1740 caracteres extraidos con pdfplumber
+2026-02-21 17:15:38 [INFO]   No relevante: N°88 - Anticipo de jubilación a favor de Marina Inés ANDRINO.-
+2026-02-21 17:15:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153197
+2026-02-21 17:15:39 [INFO] PDF: 1686 caracteres extraidos con pdfplumber
+2026-02-21 17:15:39 [INFO]   No relevante: N°87 - Anticipo de jubilación a favor de Francisco José GRECO.-
+2026-02-21 17:15:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153200
+2026-02-21 17:15:40 [INFO] PDF: 1696 caracteres extraidos con pdfplumber
+2026-02-21 17:15:40 [INFO]   No relevante: N°86 - Anticipo de jubilación a favor de Liliana Cristina MORENO.-
+2026-02-21 17:15:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153199
+2026-02-21 17:15:42 [INFO] PDF: 1648 caracteres extraidos con pdfplumber
+2026-02-21 17:15:42 [INFO]   No relevante: N°85 - Anticipo de jubilación a favor de Marisa GACIO.-
+2026-02-21 17:15:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153201
+2026-02-21 17:15:43 [INFO] PDF: 1661 caracteres extraidos con pdfplumber
+2026-02-21 17:15:43 [INFO]   No relevante: N°84 - Anticipo de jubilación a favor de Silvia Mabel SEGURO.-
+2026-02-21 17:15:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153203
+2026-02-21 17:15:45 [INFO] PDF: 3116 caracteres extraidos con pdfplumber
+2026-02-21 17:15:45 [INFO]   No relevante: N°83 - Efectivización de agentes - Corte Suprema de Justicia de la 
+2026-02-21 17:15:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153204
+2026-02-21 17:15:47 [INFO] PDF: 1329 caracteres extraidos con pdfplumber
+2026-02-21 17:15:47 [INFO]   No relevante: N°82 - Efectivización de agentes interinos - Corte Suprema de Justi
+2026-02-21 17:15:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153194
+2026-02-21 17:15:49 [INFO] PDF: 2283 caracteres extraidos con pdfplumber
+2026-02-21 17:15:49 [INFO]   No relevante: N°81 - Cambio de nombre de contrato - Tribunal Oral en lo Criminal 
+2026-02-21 17:15:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153193
+2026-02-21 17:15:51 [INFO] PDF: 1477 caracteres extraidos con pdfplumber
+2026-02-21 17:15:51 [INFO]   No relevante: N°80 - Transferir el cargo de escribiente, con su actual titular, T
+2026-02-21 17:15:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153178
+2026-02-21 17:15:52 [INFO] PDF: 1860 caracteres extraidos con pdfplumber
+2026-02-21 17:15:52 [INFO]   No relevante: N°79 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-02-21 17:15:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153179
+2026-02-21 17:15:54 [INFO] PDF: 2487 caracteres extraidos con pdfplumber
+2026-02-21 17:15:54 [INFO]   No relevante: N°78 - Contratar con GARGANO TOMÁS EDUARDO la provisión de tablas d
+2026-02-21 17:15:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153181
+2026-02-21 17:15:55 [INFO] PDF: 3207 caracteres extraidos con pdfplumber
+2026-02-21 17:15:55 [INFO]   No relevante: N°77 - Contratar con KNAS PATRICIA SILVINA, OMNILAB S.R.L. y CUSPID
+2026-02-21 17:15:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153180
+2026-02-21 17:15:56 [INFO] PDF: 2406 caracteres extraidos con pdfplumber
+2026-02-21 17:15:56 [INFO]   No relevante: N°76 - Efectuar el llamado a licitación pública con el objeto de co
+2026-02-21 17:15:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153175
+2026-02-21 17:15:59 [INFO] PDF: 2629 caracteres extraidos con pdfplumber
+2026-02-21 17:15:59 [INFO]   No relevante: N°75 - Contratar con la firma BIOMED BROKERS S.R.L.la provisión de 
+2026-02-21 17:15:59 [INFO]   MATCH en detalle: N°74 - Contratar con la firma EMELEC S.A. el servicio de relevamien
+2026-02-21 17:15:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153174
+2026-02-21 17:16:00 [INFO] PDF: 3410 caracteres extraidos con pdfplumber
+2026-02-21 17:16:00 [INFO]   No relevante: N°73 - Contratar con la firma SERELEC ARGENTINA S.A. el desmontaje 
+2026-02-21 17:16:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153156
+2026-02-21 17:16:01 [INFO] PDF: 1559 caracteres extraidos con pdfplumber
+2026-02-21 17:16:01 [INFO]   No relevante: N°72 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-02-21 17:16:01 [INFO]   MATCH en detalle: N°71 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-02-21 17:16:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153154
+2026-02-21 17:16:03 [INFO] PDF: 1440 caracteres extraidos con pdfplumber
+2026-02-21 17:16:03 [INFO]   No relevante: N°70 - Autorizar a liquidar y abonar a ESCOFE VICTOR DANIEL la suma
+2026-02-21 17:16:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153146
+2026-02-21 17:16:04 [INFO] PDF: 1516 caracteres extraidos con pdfplumber
+2026-02-21 17:16:04 [INFO]   No relevante: N°69 - Prórroga de adscripción - Claudia Beatriz CERREDELO.-
+2026-02-21 17:16:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153147
+2026-02-21 17:16:06 [INFO] PDF: 1250 caracteres extraidos con pdfplumber
+2026-02-21 17:16:06 [INFO]   No relevante: N°68 - Prórroga de adscripción - Federico FORNASARI.- 
+2026-02-21 17:16:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153145
+2026-02-21 17:16:08 [INFO] PDF: 1079 caracteres extraidos con pdfplumber
+2026-02-21 17:16:08 [INFO]   No relevante: N°67 - Prórroga de adscripción - Sandra Elizabeth AYUNTA.-
+2026-02-21 17:16:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153144
+2026-02-21 17:16:10 [INFO] PDF: 1101 caracteres extraidos con pdfplumber
+2026-02-21 17:16:10 [INFO]   No relevante: N°66 - Prórroga de adscripción - Fernando Javier CALDERÓN.-
+2026-02-21 17:16:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153143
+2026-02-21 17:16:12 [INFO] PDF: 1494 caracteres extraidos con pdfplumber
+2026-02-21 17:16:12 [INFO]   No relevante: N°65 - Prórroga de adscripción - Luciana CONTI.-
+2026-02-21 17:16:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153141
+2026-02-21 17:16:13 [INFO] PDF: 1448 caracteres extraidos con pdfplumber
+2026-02-21 17:16:13 [INFO]   No relevante: N°64 - Prórroga de adscripción - Ana María CAVAGNA MARTÍNEZ.-
+2026-02-21 17:16:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153142
+2026-02-21 17:16:15 [INFO] PDF: 1448 caracteres extraidos con pdfplumber
+2026-02-21 17:16:15 [INFO]   No relevante: N°63 - Prórroga de adscripción - Gustavo MARTINEZ.-
+2026-02-21 17:16:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153139
+2026-02-21 17:16:17 [INFO] PDF: 1452 caracteres extraidos con pdfplumber
+2026-02-21 17:16:17 [INFO]   No relevante: N°62 - Prórroga de licencia sin goce de haberes - Sara VIDAL.-
+2026-02-21 17:16:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153140
+2026-02-21 17:16:18 [INFO] PDF: 1389 caracteres extraidos con pdfplumber
+2026-02-21 17:16:18 [INFO]   No relevante: N°61 - Prórroga de adscripción - María Daniela EMBEITA.-
+2026-02-21 17:16:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153134
+2026-02-21 17:16:21 [INFO] PDF: 580 caracteres extraidos con pdfplumber
+2026-02-21 17:16:21 [INFO]   No relevante: N°60 - Aceptar la renuncia presentada por el Señor Leonardo Humbert
+2026-02-21 17:16:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153137
+2026-02-21 17:16:23 [INFO] PDF: 580 caracteres extraidos con pdfplumber
+2026-02-21 17:16:23 [INFO]   No relevante: N°59 - Aceptar la renuncia presentada por el Señor Gustavo Rubén TO
+2026-02-21 17:16:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153136
+2026-02-21 17:16:25 [INFO] PDF: 583 caracteres extraidos con pdfplumber
+2026-02-21 17:16:25 [INFO]   No relevante: N°58 - Aceptar la renuncia presentada por el Señor Jorge Alfonso BE
+2026-02-21 17:16:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153138
+2026-02-21 17:16:26 [INFO] PDF: 594 caracteres extraidos con pdfplumber
+2026-02-21 17:16:26 [INFO]   No relevante: N°57 - Aceptar la renuncia presentada por la Licenciada Mariana WIT
+2026-02-21 17:16:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153135
+2026-02-21 17:16:28 [INFO] PDF: 1251 caracteres extraidos con pdfplumber
+2026-02-21 17:16:28 [INFO]   No relevante: N°56 - Prórroga de licencia sin goce de haberes - Manuel LAIÑO DOND
+2026-02-21 17:16:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153132
+2026-02-21 17:16:29 [INFO] PDF: 1737 caracteres extraidos con pdfplumber
+2026-02-21 17:16:29 [INFO]   No relevante: N°55 - Autorizar a liquidar y abonar a la firma TELEFONICA MOVILES 
+2026-02-21 17:16:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153129
+2026-02-21 17:16:30 [INFO] PDF: 1607 caracteres extraidos con pdfplumber
+2026-02-21 17:16:30 [INFO]   No relevante: N°54 - Anticipo de jubilación a favor de Natalia Vanesa MÉCOLI.-
+2026-02-21 17:16:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153128
+2026-02-21 17:16:32 [INFO] PDF: 1723 caracteres extraidos con pdfplumber
+2026-02-21 17:16:32 [INFO]   No relevante: N°53 - Anticipo de jubilación a favor de Patricia Silvia RUSSO.-
+2026-02-21 17:16:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153130
+2026-02-21 17:16:33 [INFO] PDF: 1691 caracteres extraidos con pdfplumber
+2026-02-21 17:16:33 [INFO]   No relevante: N°52 - Anticipo de jubilación a favor de Silvana Susana COMERCI.-
+2026-02-21 17:16:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153131
+2026-02-21 17:16:34 [INFO] PDF: 1691 caracteres extraidos con pdfplumber
+2026-02-21 17:16:34 [INFO]   No relevante: N°51 - Anticipo de jubilación en favor de Stella Maris CONIGLIO.-
+2026-02-21 17:16:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153127
+2026-02-21 17:16:37 [INFO] PDF: 2242 caracteres extraidos con pdfplumber
+2026-02-21 17:16:37 [INFO]   No relevante: N°50 - Bonificación adicional por título a favor de Florencia CORRA
+2026-02-21 17:16:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153123
+2026-02-21 17:16:38 [INFO] PDF: 588 caracteres extraidos con pdfplumber
+2026-02-21 17:16:38 [INFO]   No relevante: N°49 - Aceptar la renuncia presentada por el Señor Pablo Adolfo FER
+2026-02-21 17:16:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153124
+2026-02-21 17:16:40 [INFO] PDF: 566 caracteres extraidos con pdfplumber
+2026-02-21 17:16:40 [INFO]   No relevante: N°48 - Aceptar la renuncia presentada por el Señor Daniel BOU.-
+2026-02-21 17:16:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153125
+2026-02-21 17:16:42 [INFO] PDF: 588 caracteres extraidos con pdfplumber
+2026-02-21 17:16:42 [INFO]   No relevante: N°47 - Aceptar la renuncia presentada por el Señor Eduardo Jorge FR
+2026-02-21 17:16:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153126
+2026-02-21 17:16:43 [INFO] PDF: 1238 caracteres extraidos con pdfplumber
+2026-02-21 17:16:43 [INFO]   No relevante: N°46 - Prórroga de licencia sin goce de haberes - Magdalena RODRÍGU
+2026-02-21 17:16:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153120
+2026-02-21 17:16:45 [INFO] PDF: 1700 caracteres extraidos con pdfplumber
+2026-02-21 17:16:45 [INFO]   No relevante: N°45 - Prórroga de adscripción - Gabriel Daniel VOLPI.-
+2026-02-21 17:16:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153118
+2026-02-21 17:16:47 [INFO] PDF: 1411 caracteres extraidos con pdfplumber
+2026-02-21 17:16:47 [INFO]   No relevante: N°44 - Prórroga de adscripción - María Eugenia SARTI.-
+2026-02-21 17:16:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153121
+2026-02-21 17:16:49 [INFO] PDF: 1363 caracteres extraidos con pdfplumber
+2026-02-21 17:16:49 [INFO]   No relevante: N°43 - Prórroga de adscripción - Justo Javier BONNET JUSTO.-
+2026-02-21 17:16:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153119
+2026-02-21 17:16:51 [INFO] PDF: 1504 caracteres extraidos con pdfplumber
+2026-02-21 17:16:51 [INFO]   No relevante: N°42 - Prórroga de adscripción - Felisa SANTA MARÍA.-
+2026-02-21 17:16:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153122
+2026-02-21 17:16:52 [INFO] PDF: 1387 caracteres extraidos con pdfplumber
+2026-02-21 17:16:52 [INFO]   No relevante: N°41 - Prórroga de adscripción - Sergio Horacio MAURIZIO.-
+2026-02-21 17:16:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153115
+2026-02-21 17:16:54 [INFO] PDF: 1400 caracteres extraidos con pdfplumber
+2026-02-21 17:16:54 [INFO]   No relevante: N°40 - Prórroga de licencia sin goce de haberes - Candela FERNÁNDEZ
+2026-02-21 17:16:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153116
+2026-02-21 17:16:56 [INFO] PDF: 1356 caracteres extraidos con pdfplumber
+2026-02-21 17:16:56 [INFO]   No relevante: N°39 - Prórroga de licencia sin goce de haberes - Nicolás Francisco
+2026-02-21 17:16:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153117
+2026-02-21 17:16:57 [INFO] PDF: 1403 caracteres extraidos con pdfplumber
+2026-02-21 17:16:57 [INFO]   No relevante: N°38 - Prórroga de licencia sin goce de haberes - Nicolás MAGUIRE V
+2026-02-21 17:16:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153114
+2026-02-21 17:17:01 [INFO] PDF: 20941 caracteres extraidos con pdfplumber
+2026-02-21 17:17:01 [INFO]   No relevante: N°37 - Modificar la distribución de créditos del SAF 335 -Corte Sup
+2026-02-21 17:17:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153113
+2026-02-21 17:17:03 [INFO] PDF: 1671 caracteres extraidos con pdfplumber
+2026-02-21 17:17:03 [INFO]   No relevante: N°36 - Determinar el valor de la Unidad de Medida Arancelaria (UMA)
+2026-02-21 17:17:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153097
+2026-02-21 17:17:04 [INFO] PDF: 2498 caracteres extraidos con pdfplumber
+2026-02-21 17:17:04 [INFO]   No relevante: N°35 - Contratar con la firma NYSSA S.R.L. la provisión de etiqueta
+2026-02-21 17:17:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153096
+2026-02-21 17:17:05 [INFO] PDF: 1846 caracteres extraidos con pdfplumber
+2026-02-21 17:17:05 [INFO]   No relevante: N°34 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-02-21 17:17:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153094
+2026-02-21 17:17:06 [INFO] PDF: 3923 caracteres extraidos con pdfplumber
+2026-02-21 17:17:06 [INFO]   No relevante: N°33 - Contratar con GENDARMEÍA NACIONAL ARGENTINA el servicio de p
+2026-02-21 17:17:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153095
+2026-02-21 17:17:08 [INFO] PDF: 3104 caracteres extraidos con pdfplumber
+2026-02-21 17:17:08 [INFO]   No relevante: N°32 - Contratar con las firmas QUÍMICA CÓRDOBA S.A., MEDISTORE S.R
+2026-02-21 17:17:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153093
+2026-02-21 17:17:09 [INFO] PDF: 3947 caracteres extraidos con pdfplumber
+2026-02-21 17:17:09 [INFO]   No relevante: N°31 - Adjudicar a la firma PROVINCIA SEGUROS S.A. el servicio de s
+2026-02-21 17:17:09 [INFO] 2 resoluciones RELEVANTES encontradas
+2026-02-21 17:17:11 [INFO] Telegram: mensaje enviado
+2026-02-21 17:17:17 [INFO] Telegram: mensaje enviado
+2026-02-21 17:17:18 [INFO] Registro: 60 resoluciones guardadas
+2026-02-21 17:17:18 [INFO] Completado: 2 relevantes de 60 nuevas
