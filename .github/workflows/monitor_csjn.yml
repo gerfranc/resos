@@ -2,7 +2,7 @@ name: Monitor CSJN - DAJUDECO
 
 on:
   schedule:
-    - cron: '0 */4 * * 1-5'
+    - cron: '0 */2 * * 1-5'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install requests playwright
+          pip install requests playwright pdfplumber
           playwright install chromium
           playwright install-deps chromium
 
