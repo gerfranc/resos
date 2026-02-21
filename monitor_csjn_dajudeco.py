@@ -4,9 +4,10 @@
 =============================================================================
 MONITOR DE RESOLUCIONES CSJN - DAJUDECO (version Playwright)
 =============================================================================
-Usa Chromium headless para buscar resoluciones en la CSJN.
-Intercepta el request POST al endpoint de datos y fuerza los parametros
-de busqueda con comillas para garantizar busqueda exacta.
+Estrategia: trae TODAS las resoluciones recientes (sin filtro de texto en
+el buscador de la CSJN, porque el indice tarda en actualizarse) y luego
+filtra localmente cuales mencionan "Asistencia Judicial" en el detalle
+o en el contenido del PDF.
 
 REQUISITOS:
   pip install playwright requests
@@ -23,6 +24,7 @@ import json
 import time
 import logging
 import sys
+import re
 from datetime import datetime
 
 import requests
@@ -34,10 +36,13 @@ import requests
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "TU_TOKEN_AQUI")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "TU_CHAT_ID_AQUI")
 CHECK_INTERVAL_SECONDS = 7200  # 2 horas
-SEARCH_TERM = '"Dirección de Asistencia Judicial"'
 SEEN_FILE = "seen_resoluciones.json"
 LOG_FILE = "monitor_csjn.log"
 FECHA_DESDE = "10/02/2026"
+
+# Palabras clave para filtrar (se buscan en detalle + contenido PDF)
+# Se busca que TODAS las palabras aparezcan (case insensitive)
+FILTRO_PALABRAS = ["asistencia", "judicial"]
 
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
 URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
@@ -61,14 +66,11 @@ logger = logging.getLogger(__name__)
 # FUNCIONES
 # =============================================================================
 
-def buscar_con_playwright():
+def obtener_todas_las_resoluciones():
     """
-    Estrategia:
-    1. Abrir la pagina con Playwright (sesion real)
-    2. Llenar el formulario y hacer click en Buscar
-    3. Interceptar el request POST saliente al endpoint /resoluciones/data
-       y MODIFICAR el payload para forzar las comillas en q y qa
-    4. Capturar la respuesta JSON
+    Abre la pagina de resoluciones SIN filtro de texto.
+    Solo aplica filtro de fecha. Captura la respuesta JSON
+    con todas las resoluciones recientes.
     """
     from playwright.sync_api import sync_playwright
 
@@ -88,19 +90,24 @@ def buscar_con_playwright():
         # --- Interceptar y modificar el request saliente ---
         def interceptar_request(route, request):
             """
-            Intercepta el POST al endpoint de datos y modifica el payload
-            para asegurar que q y qa tengan las comillas.
+            Intercepta el POST al endpoint de datos.
+            Limpia los campos de busqueda de texto (q, qa) para traer TODO
+            y solo aplica el filtro de fecha.
+            Pide hasta 200 resultados para no perder ninguno.
             """
             if "/resoluciones/data" in request.url and request.method == "POST":
                 try:
                     body = json.loads(request.post_data)
-                    # Forzar comillas en los campos de busqueda
                     if "formBusqueda" in body:
-                        body["formBusqueda"]["q"] = SEARCH_TERM
-                        body["formBusqueda"]["qa"] = SEARCH_TERM
+                        # Sin filtro de texto - traer todas
+                        body["formBusqueda"]["q"] = ""
+                        body["formBusqueda"]["qa"] = ""
+                        # Filtro de fecha
                         body["formBusqueda"]["fechaDesde"] = FECHA_DESDE
                         body["formBusqueda"]["fechaDesde_a"] = FECHA_DESDE
-                    logger.info(f"Request interceptado - q: {body.get('formBusqueda',{}).get('q','?')}")
+                    # Pedir mas resultados
+                    body["length"] = 200
+                    logger.info(f"Request interceptado - sin filtro texto, fechaDesde: {FECHA_DESDE}")
                     route.continue_(post_data=json.dumps(body))
                 except Exception as e:
                     logger.error(f"Error al interceptar request: {e}")
@@ -110,7 +117,7 @@ def buscar_con_playwright():
 
         page.route("**/resoluciones/data", interceptar_request)
 
-        # --- Interceptar la respuesta para capturar los datos ---
+        # --- Interceptar la respuesta ---
         respuesta_capturada = []
 
         def capturar_respuesta(response):
@@ -130,54 +137,7 @@ def buscar_con_playwright():
         logger.info("Pagina cargada")
         page.wait_for_timeout(3000)
 
-        # --- Paso 2: Llenar el campo de busqueda ---
-        # Buscar el campo "cualquier dato disponible"
-        campo_busqueda = None
-        selectores = [
-            'input[name="formBusqueda.q"]',
-            'input#q',
-            'input[placeholder*="cualquier"]',
-            'input[placeholder*="dato"]',
-        ]
-
-        for selector in selectores:
-            try:
-                elem = page.query_selector(selector)
-                if elem and elem.is_visible():
-                    campo_busqueda = elem
-                    logger.info(f"Campo encontrado: {selector}")
-                    break
-            except:
-                continue
-
-        if not campo_busqueda:
-            logger.info("Buscando campo de texto en formulario...")
-            inputs = page.query_selector_all('input[type="text"]')
-            visibles = []
-            for inp in inputs:
-                try:
-                    if inp.is_visible():
-                        visibles.append(inp)
-                except:
-                    pass
-
-            if len(visibles) >= 3:
-                campo_busqueda = visibles[2]
-                logger.info(f"Usando tercer input visible de {len(visibles)}")
-            elif visibles:
-                campo_busqueda = visibles[-1]
-                logger.info(f"Usando ultimo input visible de {len(visibles)}")
-
-        if not campo_busqueda:
-            page.screenshot(path="debug_formulario.png")
-            raise Exception("No se encontro el campo de busqueda")
-
-        # Llenar con el termino (las comillas se fuerzan en el interceptor)
-        campo_busqueda.click()
-        campo_busqueda.fill(SEARCH_TERM)
-        logger.info(f"Campo completado con: {SEARCH_TERM}")
-
-        # --- Paso 3: Click en Buscar ---
+        # --- Paso 2: Click en Buscar (sin llenar campo de texto) ---
         boton_buscar = None
         for selector in ['button:has-text("Buscar")', 'input[value="Buscar"]', 'a:has-text("Buscar")']:
             try:
@@ -196,9 +156,9 @@ def buscar_con_playwright():
             raise Exception("No se encontro el boton Buscar")
 
         boton_buscar.click()
-        logger.info("Click en Buscar")
+        logger.info("Click en Buscar (sin filtro de texto)")
 
-        # --- Paso 4: Esperar respuesta ---
+        # --- Paso 3: Esperar respuesta ---
         logger.info("Esperando resultados...")
         page.wait_for_timeout(8000)
 
@@ -206,44 +166,75 @@ def buscar_con_playwright():
             page.wait_for_selector("table tbody tr", timeout=15000)
             logger.info("Tabla con resultados detectada")
         except:
-            logger.info("No se detecto tabla (puede no haber resultados)")
+            logger.info("No se detecto tabla")
 
-        # --- Paso 5: Extraer datos ---
+        # --- Paso 4: Extraer datos ---
         if respuesta_capturada:
             data = respuesta_capturada[-1]
             resoluciones_data = data.get("data", [])
             total = data.get("recordsTotal", 0)
             filtradas = data.get("recordsFiltered", 0)
             logger.info(f"JSON: {len(resoluciones_data)} resoluciones "
-                         f"(total: {total}, filtradas: {filtradas})")
+                         f"(total servidor: {total}, filtradas: {filtradas})")
         else:
-            # Fallback: extraer del DOM
-            logger.info("Sin JSON interceptado, extrayendo del DOM...")
-            filas = page.query_selector_all("table tbody tr")
-            for fila in filas:
-                celdas = fila.query_selector_all("td")
-                if len(celdas) >= 3:
-                    link = fila.query_selector("a[href*='descargar']")
-                    href = link.get_attribute("href") if link else ""
-                    doc_id = href.split("ID=")[-1] if "ID=" in href else ""
-                    resoluciones_data.append({
-                        "docId": doc_id,
-                        "nroDoc": celdas[0].inner_text().strip(),
-                        "fechaCompleta": celdas[1].inner_text().strip() if len(celdas) > 1 else "",
-                        "detalle": celdas[2].inner_text().strip() if len(celdas) > 2 else "",
-                    })
-            logger.info(f"DOM: {len(resoluciones_data)} resoluciones")
-
-        # Log primeros resultados
-        for i, item in enumerate(resoluciones_data[:3]):
-            logger.info(f"  [{i+1}] N\u00B0{item.get('nroDoc','?')} - "
-                         f"{item.get('fechaCompleta','?')} - "
-                         f"{item.get('detalle','?')[:80]}")
+            logger.warning("No se intercepto respuesta JSON")
 
         browser.close()
         logger.info("Navegador cerrado")
 
     return resoluciones_data
+
+
+def contiene_palabras_clave(texto):
+    """Verifica si el texto contiene TODAS las palabras clave del filtro."""
+    texto_lower = texto.lower()
+    return all(palabra.lower() in texto_lower for palabra in FILTRO_PALABRAS)
+
+
+def verificar_pdf(url_pdf):
+    """
+    Descarga el PDF y busca las palabras clave en su contenido.
+    Retorna True si las contiene, False si no.
+    """
+    try:
+        logger.info(f"Descargando PDF: {url_pdf}")
+        resp = requests.get(url_pdf, timeout=30, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        })
+        resp.raise_for_status()
+
+        # Extraer texto del PDF de forma simple
+        # Los PDFs de la CSJN suelen tener texto extraible
+        contenido = resp.content
+
+        # Intentar con pdfplumber si esta disponible
+        try:
+            import pdfplumber
+            import io
+            texto = ""
+            with pdfplumber.open(io.BytesIO(contenido)) as pdf:
+                for pagina in pdf.pages:
+                    texto += pagina.extract_text() or ""
+            if texto:
+                logger.info(f"PDF: {len(texto)} caracteres extraidos con pdfplumber")
+                return contiene_palabras_clave(texto)
+        except ImportError:
+            pass
+
+        # Fallback: buscar texto directamente en el binario del PDF
+        # Los PDFs suelen tener el texto embebido como strings
+        texto_raw = contenido.decode("latin-1", errors="ignore")
+        if contiene_palabras_clave(texto_raw):
+            logger.info("PDF: palabras clave encontradas en contenido raw")
+            return True
+
+        logger.info("PDF: palabras clave NO encontradas")
+        return False
+
+    except Exception as e:
+        logger.warning(f"Error al verificar PDF {url_pdf}: {e}")
+        # En caso de error, no filtrar (incluir por las dudas)
+        return True
 
 
 def parsear_resolucion(item):
@@ -312,47 +303,87 @@ def formatear_mensaje(r):
         msg += f"\U0001F4C1 Exp: {r['expediente']}\n"
     if r.get("url_pdf"):
         msg += f"\n\U0001F517 <a href=\"{r['url_pdf']}\">Descargar PDF</a>\n"
-    msg += f"\n\U0001F50D Busqueda: {SEARCH_TERM}"
+    msg += f"\n\U0001F50D Filtro: Asistencia Judicial"
     return msg
 
 
 def chequear_resoluciones():
     logger.info("=" * 60)
     logger.info("Iniciando chequeo de resoluciones CSJN")
-    logger.info(f"Termino: {SEARCH_TERM} | Desde: {FECHA_DESDE}")
+    logger.info(f"Filtro: {FILTRO_PALABRAS} | Desde: {FECHA_DESDE}")
 
     try:
-        resultados = buscar_con_playwright()
+        # Paso 1: Traer TODAS las resoluciones recientes
+        resultados = obtener_todas_las_resoluciones()
 
         if not resultados:
             logger.info("No se encontraron resoluciones")
             enviar_telegram("\u2705 Chequeo completado. No se encontraron resoluciones.")
             return
 
-        resoluciones = [parsear_resolucion(item) for item in resultados]
-        vistas = cargar_vistas()
-        nuevas = [r for r in resoluciones if r["id"] and r["id"] not in vistas]
+        logger.info(f"Total resoluciones obtenidas: {len(resultados)}")
 
-        if not nuevas:
-            logger.info(f"Sin novedades. {len(resoluciones)} encontradas, todas ya vistas.")
+        # Paso 2: Parsear
+        resoluciones = [parsear_resolucion(item) for item in resultados]
+
+        # Paso 3: Filtrar solo las nuevas (no vistas antes)
+        vistas = cargar_vistas()
+        no_vistas = [r for r in resoluciones if r["id"] and r["id"] not in vistas]
+
+        if not no_vistas:
+            logger.info(f"Sin novedades. {len(resoluciones)} resoluciones, todas ya procesadas.")
             enviar_telegram("\u2705 Chequeo completado. No hay resoluciones nuevas.")
             return
 
-        logger.info(f"{len(nuevas)} resoluciones NUEVAS")
+        logger.info(f"{len(no_vistas)} resoluciones no procesadas, filtrando por contenido...")
 
-        for r in nuevas:
-            enviar_telegram(formatear_mensaje(r))
+        # Paso 4: Filtrar por palabras clave (primero en detalle, luego en PDF)
+        relevantes = []
+        no_relevantes = []
+
+        for r in no_vistas:
+            # Primero chequear en el campo detalle
+            if contiene_palabras_clave(r["detalle"]):
+                logger.info(f"  MATCH en detalle: N\u00B0{r['numero']} - {r['detalle'][:60]}")
+                relevantes.append(r)
+            elif r["url_pdf"]:
+                # Si no esta en el detalle, buscar dentro del PDF
+                if verificar_pdf(r["url_pdf"]):
+                    logger.info(f"  MATCH en PDF: N\u00B0{r['numero']} - {r['detalle'][:60]}")
+                    relevantes.append(r)
+                else:
+                    logger.info(f"  No relevante: N\u00B0{r['numero']} - {r['detalle'][:60]}")
+                    no_relevantes.append(r)
+            else:
+                no_relevantes.append(r)
+
+        # Marcar TODAS las no vistas como procesadas (relevantes y no relevantes)
+        for r in no_vistas:
             vistas[r["id"]] = {
                 "numero": r["numero"],
                 "fecha": r["fecha"],
                 "detalle": r["detalle"],
                 "url_pdf": r["url_pdf"],
-                "notificado": datetime.now().isoformat(),
+                "relevante": r in relevantes,
+                "procesado": datetime.now().isoformat(),
             }
-            time.sleep(1)
 
+        # Paso 5: Notificar solo las relevantes
+        if relevantes:
+            logger.info(f"{len(relevantes)} resoluciones RELEVANTES encontradas")
+            for r in relevantes:
+                enviar_telegram(formatear_mensaje(r))
+                time.sleep(1)
+        else:
+            logger.info(f"Ninguna de las {len(no_vistas)} nuevas es relevante")
+            enviar_telegram(
+                f"\u2705 Chequeo completado. {len(no_vistas)} resoluciones nuevas "
+                f"procesadas, ninguna menciona Asistencia Judicial."
+            )
+
+        # Paso 6: Guardar registro
         guardar_vistas(vistas)
-        logger.info(f"Completado: {len(nuevas)} notificaciones enviadas")
+        logger.info(f"Completado: {len(relevantes)} relevantes de {len(no_vistas)} nuevas")
 
     except Exception as e:
         logger.error(f"Error: {e}")
@@ -365,7 +396,7 @@ if __name__ == "__main__":
     logger.info("=" * 60)
     logger.info("MONITOR CSJN - DAJUDECO (Playwright)")
     logger.info(f"Pagina: {URL_PAGINA}")
-    logger.info(f"Busqueda: {SEARCH_TERM}")
+    logger.info(f"Filtro: {FILTRO_PALABRAS}")
 
     if "--once" in sys.argv:
         logger.info("Modo: ejecucion unica")
