@@ -42,7 +42,7 @@ FECHA_DESDE = "10/02/2026"
 
 # Palabras clave para filtrar (se buscan en detalle + contenido PDF)
 # Se busca que TODAS las palabras aparezcan (case insensitive)
-FILTRO_PALABRAS = ["asistencia", "judicial"]
+FILTRO_PALABRAS = ["Delitos Complejos y Crimen Organizado"]
 
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
 URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
