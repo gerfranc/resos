@@ -1703,3 +1703,43 @@ Call log:
 2026-02-23 12:45:48 [INFO] Telegram: mensaje enviado
 2026-02-23 12:45:49 [INFO] Registro: 63 resoluciones guardadas
 2026-02-23 12:45:49 [INFO] Completado: 1 relevantes de 3 nuevas
+2026-02-23 14:32:35 [INFO] ============================================================
+2026-02-23 14:32:35 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-23 14:32:35 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 14:32:35 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-23 14:32:35 [INFO] Modo: ejecucion unica
+2026-02-23 14:32:35 [INFO] ============================================================
+2026-02-23 14:32:35 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-23 14:32:35 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-23 14:32:35 [INFO] Iniciando navegador Chromium headless...
+2026-02-23 14:32:36 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 14:32:40 [INFO] Pagina cargada
+2026-02-23 14:32:40 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-23 14:32:41 [INFO] Respuesta capturada: 68 resultados
+2026-02-23 14:32:43 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-23 14:32:43 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-23 14:32:43 [INFO] Esperando resultados...
+2026-02-23 14:32:51 [INFO] Tabla con resultados detectada
+2026-02-23 14:32:51 [INFO] JSON: 68 resoluciones (total servidor: 68, filtradas: 68)
+2026-02-23 14:32:51 [INFO] Navegador cerrado
+2026-02-23 14:32:51 [INFO] Total resoluciones obtenidas: 68
+2026-02-23 14:32:51 [INFO] 5 resoluciones no procesadas, filtrando por contenido...
+2026-02-23 14:32:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153240
+2026-02-23 14:32:53 [INFO] PDF: 3272 caracteres extraidos con pdfplumber
+2026-02-23 14:32:53 [INFO]   No relevante: N°98 - Prorrogar la orden de compra Nº 626/2024 -Renglón N° 3- con 
+2026-02-23 14:32:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153239
+2026-02-23 14:32:54 [INFO] PDF: 4075 caracteres extraidos con pdfplumber
+2026-02-23 14:32:54 [INFO]   No relevante: N°97 - Contratar con la firma ACLIMA DE ESCOFE VICTOR DANIEL el ser
+2026-02-23 14:32:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153238
+2026-02-23 14:32:55 [INFO] PDF: 4141 caracteres extraidos con pdfplumber
+2026-02-23 14:32:55 [INFO]   No relevante: N°96 - Contratar con la firma TEKNIK S.R.L. el servicio de mantenim
+2026-02-23 14:32:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153237
+2026-02-23 14:32:57 [INFO] PDF: 4236 caracteres extraidos con pdfplumber
+2026-02-23 14:32:57 [INFO]   No relevante: N°95 - Contratar con la firma TEKNIK S.R.L. el servicio de mantenim
+2026-02-23 14:32:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153236
+2026-02-23 14:32:58 [INFO] PDF: 4277 caracteres extraidos con pdfplumber
+2026-02-23 14:32:58 [INFO]   No relevante: N°94 - Contratar con la firma ACLIMA DE ESCOFE VICTOR DANIEL el ser
+2026-02-23 14:32:58 [INFO] Ninguna de las 5 nuevas es relevante
+2026-02-23 14:32:59 [INFO] Telegram: mensaje enviado
+2026-02-23 14:32:59 [INFO] Registro: 68 resoluciones guardadas
+2026-02-23 14:32:59 [INFO] Completado: 0 relevantes de 5 nuevas
