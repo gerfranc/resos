@@ -478,5 +478,29 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=153093",
     "relevante": false,
     "procesado": "2026-02-21T17:17:09.463462"
+  },
+  "153235": {
+    "numero": "93",
+    "fecha": "23 de febrero de 2026",
+    "detalle": "Contratar con la firma INGENIERIA CAAMAÑO S.A. el servicio de mantenimiento integral, preventivo y correctivo de los ascensores y monta expedientes, instalados en diversos Edificios pertenecientes a la Corte Suprema de Justicia de la Nación, por la suma total de $14.240.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=153235",
+    "relevante": false,
+    "procesado": "2026-02-23T12:45:47.787685"
+  },
+  "153234": {
+    "numero": "92",
+    "fecha": "23 de febrero de 2026",
+    "detalle": "Contratar con la firma FISCHETTI Y CIA S.R.L. el servicio de dispensers de agua frío-calor y botellones retornables de agua purificada e ionizada con destino a diversas dependencias de la Corte Suprema de Justicia de la Nación, por la suma total de $46.222.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=153234",
+    "relevante": false,
+    "procesado": "2026-02-23T12:45:47.787695"
+  },
+  "153233": {
+    "numero": "91",
+    "fecha": "23 de febrero de 2026",
+    "detalle": "Aplicar una multa por mora en la entrega a la firma HIPSOMETRICA S.R.L., por el\r\nimporte equivalente a $458.564,00.- y $2.588.020.- respectivamente, y una sanción de apercibimiento.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=153233",
+    "relevante": true,
+    "procesado": "2026-02-23T12:45:47.787699"
   }
 }

@@ -1669,3 +1669,37 @@ Call log:
 2026-02-23 10:43:28 [INFO] Total resoluciones obtenidas: 60
 2026-02-23 10:43:28 [INFO] Sin novedades. 60 resoluciones, todas ya procesadas.
 2026-02-23 10:43:28 [INFO] Telegram: mensaje enviado
+2026-02-23 12:45:26 [INFO] ============================================================
+2026-02-23 12:45:26 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-23 12:45:26 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 12:45:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-23 12:45:26 [INFO] Modo: ejecucion unica
+2026-02-23 12:45:26 [INFO] ============================================================
+2026-02-23 12:45:26 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-23 12:45:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-23 12:45:27 [INFO] Iniciando navegador Chromium headless...
+2026-02-23 12:45:27 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 12:45:31 [INFO] Pagina cargada
+2026-02-23 12:45:31 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-23 12:45:32 [INFO] Respuesta capturada: 63 resultados
+2026-02-23 12:45:34 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-23 12:45:34 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-23 12:45:34 [INFO] Esperando resultados...
+2026-02-23 12:45:42 [INFO] Tabla con resultados detectada
+2026-02-23 12:45:42 [INFO] JSON: 63 resoluciones (total servidor: 63, filtradas: 63)
+2026-02-23 12:45:42 [INFO] Navegador cerrado
+2026-02-23 12:45:42 [INFO] Total resoluciones obtenidas: 63
+2026-02-23 12:45:42 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-02-23 12:45:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153235
+2026-02-23 12:45:44 [INFO] PDF: 4214 caracteres extraidos con pdfplumber
+2026-02-23 12:45:44 [INFO]   No relevante: N°93 - Contratar con la firma INGENIERIA CAAMAÑO S.A. el servicio d
+2026-02-23 12:45:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153234
+2026-02-23 12:45:46 [INFO] PDF: 4423 caracteres extraidos con pdfplumber
+2026-02-23 12:45:46 [INFO]   No relevante: N°92 - Contratar con la firma FISCHETTI Y CIA S.R.L. el servicio de
+2026-02-23 12:45:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153233
+2026-02-23 12:45:47 [INFO] PDF: 2614 caracteres extraidos con pdfplumber
+2026-02-23 12:45:47 [INFO]   MATCH en PDF: N°91 - Aplicar una multa por mora en la entrega a la firma HIPSOMET
+2026-02-23 12:45:47 [INFO] 1 resoluciones RELEVANTES encontradas
+2026-02-23 12:45:48 [INFO] Telegram: mensaje enviado
+2026-02-23 12:45:49 [INFO] Registro: 63 resoluciones guardadas
+2026-02-23 12:45:49 [INFO] Completado: 1 relevantes de 3 nuevas
