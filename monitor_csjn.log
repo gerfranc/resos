@@ -1796,3 +1796,67 @@ Call log:
 2026-02-23 16:47:16 [INFO] Telegram: mensaje enviado
 2026-02-23 16:47:16 [INFO] Registro: 70 resoluciones guardadas
 2026-02-23 16:47:16 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-02-23 18:54:37 [INFO] ============================================================
+2026-02-23 18:54:37 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-23 18:54:37 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 18:54:37 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-23 18:54:37 [INFO] Modo: ejecucion unica
+2026-02-23 18:54:37 [INFO] ============================================================
+2026-02-23 18:54:37 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-23 18:54:37 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-23 18:54:38 [INFO] Iniciando navegador Chromium headless...
+2026-02-23 18:54:40 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-23 18:54:45 [INFO] Pagina cargada
+2026-02-23 18:54:45 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-23 18:54:46 [INFO] Respuesta capturada: 83 resultados
+2026-02-23 18:54:48 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-23 18:54:48 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-23 18:54:48 [INFO] Esperando resultados...
+2026-02-23 18:54:56 [INFO] Tabla con resultados detectada
+2026-02-23 18:54:56 [INFO] JSON: 83 resoluciones (total servidor: 83, filtradas: 83)
+2026-02-23 18:54:56 [INFO] Navegador cerrado
+2026-02-23 18:54:56 [INFO] Total resoluciones obtenidas: 83
+2026-02-23 18:54:56 [INFO] 13 resoluciones no procesadas, filtrando por contenido...
+2026-02-23 18:54:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153260
+2026-02-23 18:54:58 [INFO] PDF: 597 caracteres extraidos con pdfplumber
+2026-02-23 18:54:58 [INFO]   No relevante: N°113 - Aceptar la renuncia presentada por el señor José Daniel SABA
+2026-02-23 18:54:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153259
+2026-02-23 18:55:00 [INFO] PDF: 602 caracteres extraidos con pdfplumber
+2026-02-23 18:55:00 [INFO]   No relevante: N°112 - Aceptar la renuncia presentada por la señora Fabiana Gabriel
+2026-02-23 18:55:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153258
+2026-02-23 18:55:03 [INFO] PDF: 593 caracteres extraidos con pdfplumber
+2026-02-23 18:55:03 [INFO]   No relevante: N°111 - Aceptar la renuncia presentada por la señora Ana Dolores TRA
+2026-02-23 18:55:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153257
+2026-02-23 18:55:06 [INFO] PDF: 564 caracteres extraidos con pdfplumber
+2026-02-23 18:55:06 [INFO]   No relevante: N°110 - Acepta la renuncia presentada por el señor Roberto GONZÁLEZ.
+2026-02-23 18:55:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153256
+2026-02-23 18:55:08 [INFO] PDF: 1207 caracteres extraidos con pdfplumber
+2026-02-23 18:55:08 [INFO]   No relevante: N°109 - Prórroga de adscripción - Alfredo Domingo DUCASSE.-
+2026-02-23 18:55:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153254
+2026-02-23 18:55:10 [INFO] PDF: 1253 caracteres extraidos con pdfplumber
+2026-02-23 18:55:10 [INFO]   No relevante: N°108 - Prórroga de adscripción - Patricia Daniela MARTÍNEZ.-
+2026-02-23 18:55:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153252
+2026-02-23 18:55:13 [INFO] PDF: 1536 caracteres extraidos con pdfplumber
+2026-02-23 18:55:13 [INFO]   No relevante: N°107 - Prórroga de adscripción - María Sol RINCÓN VIOLA.-
+2026-02-23 18:55:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153255
+2026-02-23 18:55:15 [INFO] PDF: 1179 caracteres extraidos con pdfplumber
+2026-02-23 18:55:15 [INFO]   No relevante: N°106 - Prórroga de adscripción - Carlos Fabián CUESTA.-
+2026-02-23 18:55:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153253
+2026-02-23 18:55:18 [INFO] PDF: 1090 caracteres extraidos con pdfplumber
+2026-02-23 18:55:18 [INFO]   No relevante: N°105 - Prórroga de adscripción - Analía GUERRERO.-
+2026-02-23 18:55:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153251
+2026-02-23 18:55:20 [INFO] PDF: 1231 caracteres extraidos con pdfplumber
+2026-02-23 18:55:20 [INFO]   No relevante: N°104 - Prórroga de licencia sin goce de haberes - Natalia Paola MAR
+2026-02-23 18:55:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153250
+2026-02-23 18:55:22 [INFO] PDF: 1218 caracteres extraidos con pdfplumber
+2026-02-23 18:55:22 [INFO]   No relevante: N°103 - Prórroga de licencia sin goce de haberes - Santiago Tomás FA
+2026-02-23 18:55:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153249
+2026-02-23 18:55:25 [INFO] PDF: 1335 caracteres extraidos con pdfplumber
+2026-02-23 18:55:25 [INFO]   No relevante: N°102 - Prórroga de licencia sin goce de haberes - Sofía BRUDEZAN.-
+2026-02-23 18:55:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153248
+2026-02-23 18:55:27 [INFO] PDF: 1613 caracteres extraidos con pdfplumber
+2026-02-23 18:55:27 [INFO]   No relevante: N°101 - Prórroga de licencia sin goce de haberes - Jorge Tomás MOERE
+2026-02-23 18:55:27 [INFO] Ninguna de las 13 nuevas es relevante
+2026-02-23 18:55:28 [INFO] Telegram: mensaje enviado
+2026-02-23 18:55:28 [INFO] Registro: 83 resoluciones guardadas
+2026-02-23 18:55:28 [INFO] Completado: 0 relevantes de 13 nuevas
