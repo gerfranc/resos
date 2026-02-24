@@ -2153,3 +2153,43 @@ Call log:
 2026-02-24 16:59:26 [ERROR] Error Telegram: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
 2026-02-24 16:59:26 [INFO] Registro: 97 resoluciones guardadas
 2026-02-24 16:59:26 [INFO] Completado: 0 relevantes de 1 nuevas
+2026-02-24 18:52:46 [INFO] ============================================================
+2026-02-24 18:52:46 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-24 18:52:46 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-24 18:52:46 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-24 18:52:46 [INFO] Modo: ejecucion unica
+2026-02-24 18:52:46 [INFO] ============================================================
+2026-02-24 18:52:46 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-24 18:52:46 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-24 18:52:46 [INFO] Iniciando navegador Chromium headless...
+2026-02-24 18:52:47 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-24 18:52:50 [INFO] Pagina cargada
+2026-02-24 18:52:50 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-24 18:52:51 [INFO] Respuesta capturada: 102 resultados
+2026-02-24 18:52:53 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-24 18:52:53 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-24 18:52:53 [INFO] Esperando resultados...
+2026-02-24 18:53:01 [INFO] Tabla con resultados detectada
+2026-02-24 18:53:01 [INFO] JSON: 102 resoluciones (total servidor: 102, filtradas: 102)
+2026-02-24 18:53:01 [INFO] Navegador cerrado
+2026-02-24 18:53:01 [INFO] Total resoluciones obtenidas: 102
+2026-02-24 18:53:01 [INFO] 5 resoluciones no procesadas, filtrando por contenido...
+2026-02-24 18:53:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153296
+2026-02-24 18:53:03 [INFO] PDF: 3703 caracteres extraidos con pdfplumber
+2026-02-24 18:53:03 [INFO]   No relevante: N°132 - Contratar con la firma SOLUCIONES INTEGRALES APLICADAS S.R.L
+2026-02-24 18:53:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153295
+2026-02-24 18:53:04 [INFO] PDF: 4575 caracteres extraidos con pdfplumber
+2026-02-24 18:53:04 [INFO]   No relevante: N°131 - Contratar con la firma ASC TELESI S.R.L. el servicio de mant
+2026-02-24 18:53:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153294
+2026-02-24 18:53:05 [INFO] PDF: 2442 caracteres extraidos con pdfplumber
+2026-02-24 18:53:05 [INFO]   No relevante: N°130 - Contratar con la firma GARGANO TOMAS EDUARDO la provisión de
+2026-02-24 18:53:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153293
+2026-02-24 18:53:07 [INFO] PDF: 4165 caracteres extraidos con pdfplumber
+2026-02-24 18:53:07 [INFO]   No relevante: N°129 - Contratar con la firma GRUPO EFIA S.R.L. el servicio de desr
+2026-02-24 18:53:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153292
+2026-02-24 18:53:08 [INFO] PDF: 1839 caracteres extraidos con pdfplumber
+2026-02-24 18:53:08 [INFO]   No relevante: N°128 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-02-24 18:53:08 [INFO] Ninguna de las 5 nuevas es relevante
+2026-02-24 18:53:09 [INFO] Telegram: mensaje enviado
+2026-02-24 18:53:09 [INFO] Registro: 102 resoluciones guardadas
+2026-02-24 18:53:09 [INFO] Completado: 0 relevantes de 5 nuevas
