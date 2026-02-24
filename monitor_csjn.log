@@ -2014,3 +2014,37 @@ Call log:
 2026-02-24 10:42:01 [INFO] Total resoluciones obtenidas: 83
 2026-02-24 10:42:01 [INFO] Sin novedades. 83 resoluciones, todas ya procesadas.
 2026-02-24 10:42:02 [INFO] Telegram: mensaje enviado
+2026-02-24 12:46:28 [INFO] ============================================================
+2026-02-24 12:46:28 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-24 12:46:28 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-24 12:46:28 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-24 12:46:28 [INFO] Modo: ejecucion unica
+2026-02-24 12:46:28 [INFO] ============================================================
+2026-02-24 12:46:28 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-24 12:46:28 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-24 12:46:29 [INFO] Iniciando navegador Chromium headless...
+2026-02-24 12:46:30 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-24 12:46:33 [INFO] Pagina cargada
+2026-02-24 12:46:34 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-24 12:46:34 [INFO] Respuesta capturada: 86 resultados
+2026-02-24 12:46:36 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-24 12:46:36 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-24 12:46:36 [INFO] Esperando resultados...
+2026-02-24 12:46:44 [INFO] Tabla con resultados detectada
+2026-02-24 12:46:44 [INFO] JSON: 86 resoluciones (total servidor: 86, filtradas: 86)
+2026-02-24 12:46:44 [INFO] Navegador cerrado
+2026-02-24 12:46:44 [INFO] Total resoluciones obtenidas: 86
+2026-02-24 12:46:44 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-02-24 12:46:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153275
+2026-02-24 12:46:46 [INFO] PDF: 2435 caracteres extraidos con pdfplumber
+2026-02-24 12:46:46 [INFO]   No relevante: N°116 - Contratar con la firma JMS PACKAGING S.A. la adquisición de 
+2026-02-24 12:46:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153274
+2026-02-24 12:46:47 [INFO] PDF: 3026 caracteres extraidos con pdfplumber
+2026-02-24 12:46:47 [INFO]   No relevante: N°115 - Contratar con la firma SAGE S.R.L. el servicio de mantenimie
+2026-02-24 12:46:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153273
+2026-02-24 12:46:48 [INFO] PDF: 1698 caracteres extraidos con pdfplumber
+2026-02-24 12:46:48 [INFO]   No relevante: N°114 - Tomar conocimiento del cambio de denominación social de ROER
+2026-02-24 12:46:48 [INFO] Ninguna de las 3 nuevas es relevante
+2026-02-24 12:46:49 [INFO] Telegram: mensaje enviado
+2026-02-24 12:46:49 [INFO] Registro: 86 resoluciones guardadas
+2026-02-24 12:46:49 [INFO] Completado: 0 relevantes de 3 nuevas
