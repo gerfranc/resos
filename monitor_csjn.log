@@ -2432,3 +2432,53 @@ Call log:
 2026-02-25 12:46:02 [INFO] Total resoluciones obtenidas: 102
 2026-02-25 12:46:02 [INFO] Sin novedades. 102 resoluciones, todas ya procesadas.
 2026-02-25 12:46:03 [INFO] Telegram: mensaje enviado
+2026-02-25 14:44:23 [INFO] ============================================================
+2026-02-25 14:44:23 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-25 14:44:23 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-25 14:44:23 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-25 14:44:23 [INFO] Modo: ejecucion unica
+2026-02-25 14:44:23 [INFO] ============================================================
+2026-02-25 14:44:23 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-25 14:44:23 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-25 14:44:24 [INFO] Iniciando navegador Chromium headless...
+2026-02-25 14:44:24 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-25 14:44:28 [INFO] Pagina cargada
+2026-02-25 14:44:28 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-25 14:44:29 [INFO] Respuesta capturada: 110 resultados
+2026-02-25 14:44:31 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-25 14:44:31 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-25 14:44:31 [INFO] Esperando resultados...
+2026-02-25 14:44:39 [INFO] Tabla con resultados detectada
+2026-02-25 14:44:39 [INFO] JSON: 110 resoluciones (total servidor: 110, filtradas: 110)
+2026-02-25 14:44:39 [INFO] Navegador cerrado
+2026-02-25 14:44:39 [INFO] Total resoluciones obtenidas: 110
+2026-02-25 14:44:39 [INFO] 8 resoluciones no procesadas, filtrando por contenido...
+2026-02-25 14:44:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153320
+2026-02-25 14:44:41 [INFO] PDF: 1774 caracteres extraidos con pdfplumber
+2026-02-25 14:44:41 [INFO]   No relevante: N°140 - Adscribir al Doctor Ezequiel Emilio IGLESIAS BERRONDO al Juz
+2026-02-25 14:44:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153318
+2026-02-25 14:44:43 [INFO] PDF: 1610 caracteres extraidos con pdfplumber
+2026-02-25 14:44:43 [INFO]   No relevante: N°139 - Adscribir al Señor José María GONZÁLEZ a la Cámara Nacional 
+2026-02-25 14:44:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153319
+2026-02-25 14:44:45 [INFO] PDF: 1614 caracteres extraidos con pdfplumber
+2026-02-25 14:44:45 [INFO]   No relevante: N°138 - Adscribir al Señor Sergio Antonio Raúl MALDONADO a la Cámara
+2026-02-25 14:44:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153317
+2026-02-25 14:44:46 [INFO] PDF: 1672 caracteres extraidos con pdfplumber
+2026-02-25 14:44:46 [INFO]   No relevante: N°137 - Adscribir al Señor Claudio Fabián DI GIACOMO al Juzgado Fede
+2026-02-25 14:44:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153315
+2026-02-25 14:44:48 [INFO] PDF: 1664 caracteres extraidos con pdfplumber
+2026-02-25 14:44:48 [INFO]   No relevante: N°136 - Adscribir al Señor Javier Ismael ESTEVEZ al Juzgado Federal 
+2026-02-25 14:44:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153316
+2026-02-25 14:44:50 [INFO] PDF: 1706 caracteres extraidos con pdfplumber
+2026-02-25 14:44:50 [INFO]   No relevante: N°135 - Adscribir al Señor Carlos Alberto SENA al Juzgado Federal de
+2026-02-25 14:44:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153314
+2026-02-25 14:44:51 [INFO] PDF: 1979 caracteres extraidos con pdfplumber
+2026-02-25 14:44:51 [INFO]   MATCH en PDF: N°134 - Autorizar al Doctor Juan Tomás RODRÍGUEZ PONTE, a trasladars
+2026-02-25 14:44:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153313
+2026-02-25 14:44:53 [INFO] PDF: 1902 caracteres extraidos con pdfplumber
+2026-02-25 14:44:53 [INFO]   MATCH en PDF: N°133 - Autorizar al Doctor Juan Tomás RODRÍGUEZ PONTE, a trasladars
+2026-02-25 14:44:53 [INFO] 2 resoluciones RELEVANTES encontradas
+2026-02-25 14:44:54 [INFO] Telegram: mensaje enviado
+2026-02-25 14:44:55 [INFO] Telegram: mensaje enviado
+2026-02-25 14:44:56 [INFO] Registro: 110 resoluciones guardadas
+2026-02-25 14:44:56 [INFO] Completado: 2 relevantes de 8 nuevas
