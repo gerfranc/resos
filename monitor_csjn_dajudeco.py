@@ -332,7 +332,7 @@ def chequear_resoluciones():
 
         if not no_vistas:
             logger.info(f"Sin novedades. {len(resoluciones)} resoluciones, todas ya procesadas.")
-            enviar_telegram("\u2705 Chequeo completado. No hay resoluciones nuevas.")
+            #enviar_telegram("\u2705 Chequeo completado. No hay resoluciones nuevas.")
             return
 
         logger.info(f"{len(no_vistas)} resoluciones no procesadas, filtrando por contenido...")
