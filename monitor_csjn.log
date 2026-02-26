@@ -2759,3 +2759,31 @@ Call log:
 2026-02-26 12:46:49 [INFO] Navegador cerrado
 2026-02-26 12:46:49 [INFO] Total resoluciones obtenidas: 123
 2026-02-26 12:46:49 [INFO] Sin novedades. 123 resoluciones, todas ya procesadas.
+2026-02-26 14:43:07 [INFO] ============================================================
+2026-02-26 14:43:07 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-26 14:43:07 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-26 14:43:07 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-26 14:43:07 [INFO] Modo: ejecucion unica
+2026-02-26 14:43:07 [INFO] ============================================================
+2026-02-26 14:43:07 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-26 14:43:07 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-26 14:43:08 [INFO] Iniciando navegador Chromium headless...
+2026-02-26 14:43:08 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-26 14:43:13 [INFO] Pagina cargada
+2026-02-26 14:43:13 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-26 14:43:14 [INFO] Respuesta capturada: 124 resultados
+2026-02-26 14:43:16 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-26 14:43:16 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-26 14:43:16 [INFO] Esperando resultados...
+2026-02-26 14:43:24 [INFO] Tabla con resultados detectada
+2026-02-26 14:43:24 [INFO] JSON: 124 resoluciones (total servidor: 124, filtradas: 124)
+2026-02-26 14:43:24 [INFO] Navegador cerrado
+2026-02-26 14:43:24 [INFO] Total resoluciones obtenidas: 124
+2026-02-26 14:43:24 [INFO] 1 resoluciones no procesadas, filtrando por contenido...
+2026-02-26 14:43:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153356
+2026-02-26 14:43:26 [INFO] PDF: 3419 caracteres extraidos con pdfplumber
+2026-02-26 14:43:26 [INFO]   No relevante: N°154 - Contratar con la firma PELCO S.A. el servicio recolección, t
+2026-02-26 14:43:26 [INFO] Ninguna de las 1 nuevas es relevante
+2026-02-26 14:43:26 [INFO] Telegram: mensaje enviado
+2026-02-26 14:43:26 [INFO] Registro: 124 resoluciones guardadas
+2026-02-26 14:43:26 [INFO] Completado: 0 relevantes de 1 nuevas
