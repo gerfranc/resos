@@ -3080,3 +3080,52 @@ Call log:
 2026-02-27 14:35:56 [INFO] Telegram: mensaje enviado
 2026-02-27 14:35:56 [INFO] Registro: 131 resoluciones guardadas
 2026-02-27 14:35:56 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-02-27 16:33:09 [INFO] ============================================================
+2026-02-27 16:33:09 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-02-27 16:33:09 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-27 16:33:09 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-02-27 16:33:09 [INFO] Modo: ejecucion unica
+2026-02-27 16:33:09 [INFO] ============================================================
+2026-02-27 16:33:09 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-02-27 16:33:09 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-02-27 16:33:09 [INFO] Iniciando navegador Chromium headless...
+2026-02-27 16:33:10 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-02-27 16:33:14 [INFO] Pagina cargada
+2026-02-27 16:33:15 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-02-27 16:33:16 [INFO] Respuesta capturada: 139 resultados
+2026-02-27 16:33:18 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-02-27 16:33:18 [INFO] Click en Buscar (sin filtro de texto)
+2026-02-27 16:33:18 [INFO] Esperando resultados...
+2026-02-27 16:33:26 [INFO] Tabla con resultados detectada
+2026-02-27 16:33:26 [INFO] JSON: 139 resoluciones (total servidor: 139, filtradas: 139)
+2026-02-27 16:33:26 [INFO] Navegador cerrado
+2026-02-27 16:33:26 [INFO] Total resoluciones obtenidas: 139
+2026-02-27 16:33:26 [INFO] 8 resoluciones no procesadas, filtrando por contenido...
+2026-02-27 16:33:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153387
+2026-02-27 16:33:28 [INFO] PDF: 1393 caracteres extraidos con pdfplumber
+2026-02-27 16:33:28 [INFO]   No relevante: N°169 - Prórroga de licencia sin goce de haberes - Carolina del Carm
+2026-02-27 16:33:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153386
+2026-02-27 16:33:30 [INFO] PDF: 1377 caracteres extraidos con pdfplumber
+2026-02-27 16:33:30 [INFO]   No relevante: N°168 - Prórroga de licencia sin goce de haberes - María Dolores CAV
+2026-02-27 16:33:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153385
+2026-02-27 16:33:32 [INFO] PDF: 1246 caracteres extraidos con pdfplumber
+2026-02-27 16:33:32 [INFO]   No relevante: N°167 - Prórroga de licencia sin goce de haberes - María Belén CHION
+2026-02-27 16:33:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153382
+2026-02-27 16:33:34 [INFO] PDF: 1336 caracteres extraidos con pdfplumber
+2026-02-27 16:33:34 [INFO]   No relevante: N°166 - Prórroga de licencia sin goce de haberes -  Laura FARIDE SAR
+2026-02-27 16:33:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153381
+2026-02-27 16:33:36 [INFO] PDF: 1329 caracteres extraidos con pdfplumber
+2026-02-27 16:33:36 [INFO]   No relevante: N°165 - Prórroga de licencia sin goce de haberes - Francisco MIGLIOR
+2026-02-27 16:33:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153384
+2026-02-27 16:33:39 [INFO] PDF: 1398 caracteres extraidos con pdfplumber
+2026-02-27 16:33:39 [INFO]   No relevante: N°164 - Prórroga de adscripción - Norberto Alejandro AGUILAR.-
+2026-02-27 16:33:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153383
+2026-02-27 16:33:41 [INFO] PDF: 1224 caracteres extraidos con pdfplumber
+2026-02-27 16:33:41 [INFO]   No relevante: N°163 - Prórroga de adscripción - Leticia BRUN.-
+2026-02-27 16:33:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153380
+2026-02-27 16:33:43 [INFO] PDF: 1345 caracteres extraidos con pdfplumber
+2026-02-27 16:33:43 [INFO]   No relevante: N°162 - Prórroga de adscripción - Paola Eugenia INTERLANDI.-
+2026-02-27 16:33:43 [INFO] Ninguna de las 8 nuevas es relevante
+2026-02-27 16:33:43 [INFO] Telegram: mensaje enviado
+2026-02-27 16:33:43 [INFO] Registro: 139 resoluciones guardadas
+2026-02-27 16:33:43 [INFO] Completado: 0 relevantes de 8 nuevas
