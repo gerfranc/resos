@@ -3653,3 +3653,37 @@ Call log:
 2026-03-03 14:40:01 [INFO] Navegador cerrado
 2026-03-03 14:40:01 [INFO] Total resoluciones obtenidas: 139
 2026-03-03 14:40:01 [INFO] Sin novedades. 139 resoluciones, todas ya procesadas.
+2026-03-03 16:38:31 [INFO] ============================================================
+2026-03-03 16:38:31 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-03 16:38:31 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-03 16:38:31 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-03 16:38:31 [INFO] Modo: ejecucion unica
+2026-03-03 16:38:31 [INFO] ============================================================
+2026-03-03 16:38:31 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-03 16:38:31 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-03 16:38:32 [INFO] Iniciando navegador Chromium headless...
+2026-03-03 16:38:32 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-03 16:38:38 [INFO] Pagina cargada
+2026-03-03 16:38:38 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-03 16:38:39 [INFO] Respuesta capturada: 142 resultados
+2026-03-03 16:38:41 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-03 16:38:41 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-03 16:38:41 [INFO] Esperando resultados...
+2026-03-03 16:38:49 [INFO] Tabla con resultados detectada
+2026-03-03 16:38:49 [INFO] JSON: 142 resoluciones (total servidor: 142, filtradas: 142)
+2026-03-03 16:38:49 [INFO] Navegador cerrado
+2026-03-03 16:38:49 [INFO] Total resoluciones obtenidas: 142
+2026-03-03 16:38:49 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-03-03 16:38:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153415
+2026-03-03 16:38:51 [INFO] PDF: 2036 caracteres extraidos con pdfplumber
+2026-03-03 16:38:51 [INFO]   No relevante: N°172 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-03 16:38:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153414
+2026-03-03 16:38:52 [INFO] PDF: 1792 caracteres extraidos con pdfplumber
+2026-03-03 16:38:52 [INFO]   No relevante: N°171 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-03 16:38:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153413
+2026-03-03 16:38:53 [INFO] PDF: 2723 caracteres extraidos con pdfplumber
+2026-03-03 16:38:53 [INFO]   No relevante: N°170 - Efectuar el correspondiente llamado a licitación pública con
+2026-03-03 16:38:53 [INFO] Ninguna de las 3 nuevas es relevante
+2026-03-03 16:38:54 [INFO] Telegram: mensaje enviado
+2026-03-03 16:38:54 [INFO] Registro: 142 resoluciones guardadas
+2026-03-03 16:38:54 [INFO] Completado: 0 relevantes de 3 nuevas
