@@ -4049,3 +4049,61 @@ Call log:
 2026-03-04 18:38:32 [INFO] Telegram: mensaje enviado
 2026-03-04 18:38:32 [INFO] Registro: 159 resoluciones guardadas
 2026-03-04 18:38:32 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-03-04 20:25:43 [INFO] ============================================================
+2026-03-04 20:25:43 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-04 20:25:43 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-04 20:25:43 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-04 20:25:43 [INFO] Modo: ejecucion unica
+2026-03-04 20:25:43 [INFO] ============================================================
+2026-03-04 20:25:43 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-04 20:25:43 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-04 20:25:44 [INFO] Iniciando navegador Chromium headless...
+2026-03-04 20:25:46 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-04 20:25:50 [INFO] Pagina cargada
+2026-03-04 20:25:50 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-04 20:25:51 [INFO] Respuesta capturada: 170 resultados
+2026-03-04 20:25:53 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-04 20:25:53 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-04 20:25:53 [INFO] Esperando resultados...
+2026-03-04 20:26:01 [INFO] Tabla con resultados detectada
+2026-03-04 20:26:01 [INFO] JSON: 170 resoluciones (total servidor: 170, filtradas: 170)
+2026-03-04 20:26:01 [INFO] Navegador cerrado
+2026-03-04 20:26:01 [INFO] Total resoluciones obtenidas: 170
+2026-03-04 20:26:01 [INFO] 11 resoluciones no procesadas, filtrando por contenido...
+2026-03-04 20:26:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153476
+2026-03-04 20:26:03 [INFO] PDF: 3688 caracteres extraidos con pdfplumber
+2026-03-04 20:26:03 [INFO]   No relevante: N°200 - Afectar a la Corte Suprema de Justicia de la Nación dos vehí
+2026-03-04 20:26:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153475
+2026-03-04 20:26:04 [INFO] PDF: 3793 caracteres extraidos con pdfplumber
+2026-03-04 20:26:04 [INFO]   No relevante: N°199 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-04 20:26:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153474
+2026-03-04 20:26:06 [INFO] PDF: 2973 caracteres extraidos con pdfplumber
+2026-03-04 20:26:06 [INFO]   No relevante: N°198 - Asignar un automotor marca Toyota, modelo Hilux, a la Secció
+2026-03-04 20:26:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153473
+2026-03-04 20:26:07 [INFO] PDF: 3652 caracteres extraidos con pdfplumber
+2026-03-04 20:26:07 [INFO]   No relevante: N°197 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-04 20:26:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153472
+2026-03-04 20:26:09 [INFO] PDF: 4062 caracteres extraidos con pdfplumber
+2026-03-04 20:26:09 [INFO]   No relevante: N°196 - Afectar a la Corte Suprema de Justicia de la Nación dos vehí
+2026-03-04 20:26:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153471
+2026-03-04 20:26:11 [INFO] PDF: 3441 caracteres extraidos con pdfplumber
+2026-03-04 20:26:11 [INFO]   No relevante: N°195 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-04 20:26:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153470
+2026-03-04 20:26:12 [INFO] PDF: 4031 caracteres extraidos con pdfplumber
+2026-03-04 20:26:12 [INFO]   No relevante: N°194 - Afectar a la Corte Suprema de Justicia de la Nación dos auto
+2026-03-04 20:26:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153469
+2026-03-04 20:26:14 [INFO] PDF: 1369 caracteres extraidos con pdfplumber
+2026-03-04 20:26:14 [INFO]   No relevante: N°193 - Transferir el cargo de escribiente auxiliar, con su actual t
+2026-03-04 20:26:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153468
+2026-03-04 20:26:15 [INFO] PDF: 1788 caracteres extraidos con pdfplumber
+2026-03-04 20:26:15 [INFO]   No relevante: N°192 - Aprobar la inversión de la suma de $36.029.772,25.-, importe
+2026-03-04 20:26:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153467
+2026-03-04 20:26:17 [INFO] PDF: 2858 caracteres extraidos con pdfplumber
+2026-03-04 20:26:17 [INFO]   No relevante: N°191 - Autorizar a la Dirección de Administración a efectuar el cor
+2026-03-04 20:26:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153466
+2026-03-04 20:26:18 [INFO] PDF: 2970 caracteres extraidos con pdfplumber
+2026-03-04 20:26:18 [INFO]   No relevante: N°190 - Autorizar a la Dirección de Administración a efectuar el cor
+2026-03-04 20:26:18 [INFO] Ninguna de las 11 nuevas es relevante
+2026-03-04 20:26:19 [INFO] Telegram: mensaje enviado
+2026-03-04 20:26:19 [INFO] Registro: 170 resoluciones guardadas
+2026-03-04 20:26:19 [INFO] Completado: 0 relevantes de 11 nuevas
