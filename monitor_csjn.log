@@ -3955,3 +3955,37 @@ Call log:
 2026-03-04 12:39:40 [INFO] Navegador cerrado
 2026-03-04 12:39:40 [INFO] Total resoluciones obtenidas: 152
 2026-03-04 12:39:40 [INFO] Sin novedades. 152 resoluciones, todas ya procesadas.
+2026-03-04 14:34:30 [INFO] ============================================================
+2026-03-04 14:34:30 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-04 14:34:30 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-04 14:34:30 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-04 14:34:30 [INFO] Modo: ejecucion unica
+2026-03-04 14:34:30 [INFO] ============================================================
+2026-03-04 14:34:30 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-04 14:34:30 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-04 14:34:31 [INFO] Iniciando navegador Chromium headless...
+2026-03-04 14:34:32 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-04 14:34:38 [INFO] Pagina cargada
+2026-03-04 14:34:38 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-04 14:34:39 [INFO] Respuesta capturada: 155 resultados
+2026-03-04 14:34:41 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-04 14:34:41 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-04 14:34:41 [INFO] Esperando resultados...
+2026-03-04 14:34:49 [INFO] Tabla con resultados detectada
+2026-03-04 14:34:49 [INFO] JSON: 155 resoluciones (total servidor: 155, filtradas: 155)
+2026-03-04 14:34:49 [INFO] Navegador cerrado
+2026-03-04 14:34:49 [INFO] Total resoluciones obtenidas: 155
+2026-03-04 14:34:49 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-03-04 14:34:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153459
+2026-03-04 14:34:52 [INFO] PDF: 1391 caracteres extraidos con pdfplumber
+2026-03-04 14:34:52 [INFO]   No relevante: N°185 - Cambio de nombre de contrato - Cámara Federal de Apelaciones
+2026-03-04 14:34:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153458
+2026-03-04 14:34:54 [INFO] PDF: 2237 caracteres extraidos con pdfplumber
+2026-03-04 14:34:54 [INFO]   No relevante: N°184 - Cambio de nombre de contrato - Dirección General de Gestión 
+2026-03-04 14:34:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=153456
+2026-03-04 14:34:56 [INFO] PDF: 1912 caracteres extraidos con pdfplumber
+2026-03-04 14:34:56 [INFO]   No relevante: N°183 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-04 14:34:56 [INFO] Ninguna de las 3 nuevas es relevante
+2026-03-04 14:34:56 [INFO] Telegram: mensaje enviado
+2026-03-04 14:34:56 [INFO] Registro: 155 resoluciones guardadas
+2026-03-04 14:34:56 [INFO] Completado: 0 relevantes de 3 nuevas
