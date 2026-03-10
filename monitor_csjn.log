@@ -5342,3 +5342,64 @@ Call log:
 2026-03-10 16:51:32 [INFO] Telegram: mensaje enviado
 2026-03-10 16:51:32 [INFO] Registro: 240 resoluciones guardadas
 2026-03-10 16:51:32 [INFO] Completado: 0 relevantes de 22 nuevas
+2026-03-10 18:38:28 [INFO] ============================================================
+2026-03-10 18:38:28 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-10 18:38:28 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-10 18:38:28 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-10 18:38:28 [INFO] Modo: ejecucion unica
+2026-03-10 18:38:28 [INFO] ============================================================
+2026-03-10 18:38:28 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-10 18:38:28 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-10 18:38:29 [INFO] Iniciando navegador Chromium headless...
+2026-03-10 18:38:30 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-10 18:38:35 [INFO] Pagina cargada
+2026-03-10 18:38:36 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-10 18:38:36 [INFO] Respuesta capturada: 200 resultados
+2026-03-10 18:38:38 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-10 18:38:38 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-10 18:38:38 [INFO] Esperando resultados...
+2026-03-10 18:38:46 [INFO] Tabla con resultados detectada
+2026-03-10 18:38:46 [INFO] JSON: 200 resoluciones (total servidor: 252, filtradas: 252)
+2026-03-10 18:38:46 [INFO] Navegador cerrado
+2026-03-10 18:38:46 [INFO] Total resoluciones obtenidas: 200
+2026-03-10 18:38:46 [INFO] 12 resoluciones no procesadas, filtrando por contenido...
+2026-03-10 18:38:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157350
+2026-03-10 18:38:48 [INFO] PDF: 1158 caracteres extraidos con pdfplumber
+2026-03-10 18:38:48 [INFO]   No relevante: N°282 - Licencia gremial - José Irinarco RODRÍGUEZ.-
+2026-03-10 18:38:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157353
+2026-03-10 18:38:49 [INFO] PDF: 1266 caracteres extraidos con pdfplumber
+2026-03-10 18:38:49 [INFO]   No relevante: N°281 - Licencia gremial - Mauricio SQUADRITO.-
+2026-03-10 18:38:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157351
+2026-03-10 18:38:50 [INFO] PDF: 1113 caracteres extraidos con pdfplumber
+2026-03-10 18:38:50 [INFO]   No relevante: N°280 - Licencia gremial - Diego CABRERA.-
+2026-03-10 18:38:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157352
+2026-03-10 18:38:52 [INFO] PDF: 1205 caracteres extraidos con pdfplumber
+2026-03-10 18:38:52 [INFO]   No relevante: N°279 - Licencia gremial - Pablo N. AMODEY DEMARCO, Aldo A. BIANCHI 
+2026-03-10 18:38:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157348
+2026-03-10 18:38:53 [INFO] PDF: 1107 caracteres extraidos con pdfplumber
+2026-03-10 18:38:53 [INFO]   No relevante: N°278 - Licencia gremial - Diego CABRERA.-
+2026-03-10 18:38:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157349
+2026-03-10 18:38:55 [INFO] PDF: 1133 caracteres extraidos con pdfplumber
+2026-03-10 18:38:55 [INFO]   No relevante: N°277 - Licencia gremial - Estefanía BURGOS.-
+2026-03-10 18:38:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157347
+2026-03-10 18:38:56 [INFO] PDF: 1113 caracteres extraidos con pdfplumber
+2026-03-10 18:38:56 [INFO]   No relevante: N°276 - Licencia gremial - Rubén ELIZONDO.-
+2026-03-10 18:38:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157346
+2026-03-10 18:38:57 [INFO] PDF: 3338 caracteres extraidos con pdfplumber
+2026-03-10 18:38:57 [INFO]   No relevante: N°275 - Contratar con la firma ORTELLI S.R.L. el servicio de manteni
+2026-03-10 18:38:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157345
+2026-03-10 18:38:59 [INFO] PDF: 2091 caracteres extraidos con pdfplumber
+2026-03-10 18:38:59 [INFO]   No relevante: N°274 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-10 18:38:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157344
+2026-03-10 18:39:00 [INFO] PDF: 2575 caracteres extraidos con pdfplumber
+2026-03-10 18:39:00 [INFO]   No relevante: N°273 - Contratar con la firma SISTEMAS ANALITICOS S.A. la provisión
+2026-03-10 18:39:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157343
+2026-03-10 18:39:01 [INFO] PDF: 2561 caracteres extraidos con pdfplumber
+2026-03-10 18:39:01 [INFO]   No relevante: N°272 - Contratar con la firma GARCIA LORENA MAGALI el servicio de c
+2026-03-10 18:39:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157342
+2026-03-10 18:39:03 [INFO] PDF: 2685 caracteres extraidos con pdfplumber
+2026-03-10 18:39:03 [INFO]   No relevante: N°271 - Contratar con la firma LUIS MARSAN S.A.S. la provisión de út
+2026-03-10 18:39:03 [INFO] Ninguna de las 12 nuevas es relevante
+2026-03-10 18:39:03 [INFO] Telegram: mensaje enviado
+2026-03-10 18:39:03 [INFO] Registro: 252 resoluciones guardadas
+2026-03-10 18:39:03 [INFO] Completado: 0 relevantes de 12 nuevas
