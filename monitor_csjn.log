@@ -5507,3 +5507,24 @@ Call log:
 
 
 2026-03-11 04:06:00 [INFO] Telegram: mensaje enviado
+2026-03-11 06:42:44 [INFO] ============================================================
+2026-03-11 06:42:44 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-11 06:42:44 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-11 06:42:44 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-11 06:42:44 [INFO] Modo: ejecucion unica
+2026-03-11 06:42:44 [INFO] ============================================================
+2026-03-11 06:42:44 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-11 06:42:44 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-11 06:42:44 [INFO] Iniciando navegador Chromium headless...
+2026-03-11 06:42:45 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-11 06:42:50 [INFO] Pagina cargada
+2026-03-11 06:42:50 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-11 06:42:51 [INFO] Respuesta capturada: 200 resultados
+2026-03-11 06:42:53 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-11 06:42:53 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-11 06:42:53 [INFO] Esperando resultados...
+2026-03-11 06:43:01 [INFO] Tabla con resultados detectada
+2026-03-11 06:43:01 [INFO] JSON: 200 resoluciones (total servidor: 252, filtradas: 252)
+2026-03-11 06:43:01 [INFO] Navegador cerrado
+2026-03-11 06:43:01 [INFO] Total resoluciones obtenidas: 200
+2026-03-11 06:43:01 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
