@@ -5725,3 +5725,43 @@ Call log:
 2026-03-11 20:27:56 [INFO] Navegador cerrado
 2026-03-11 20:27:56 [INFO] Total resoluciones obtenidas: 200
 2026-03-11 20:27:56 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-11 22:21:17 [INFO] ============================================================
+2026-03-11 22:21:17 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-11 22:21:17 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-11 22:21:17 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-11 22:21:17 [INFO] Modo: ejecucion unica
+2026-03-11 22:21:17 [INFO] ============================================================
+2026-03-11 22:21:17 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-11 22:21:17 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-11 22:21:18 [INFO] Iniciando navegador Chromium headless...
+2026-03-11 22:21:19 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-11 22:21:23 [INFO] Pagina cargada
+2026-03-11 22:21:23 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-11 22:21:24 [INFO] Respuesta capturada: 200 resultados
+2026-03-11 22:21:26 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-11 22:21:26 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-11 22:21:26 [INFO] Esperando resultados...
+2026-03-11 22:21:34 [INFO] Tabla con resultados detectada
+2026-03-11 22:21:34 [INFO] JSON: 200 resoluciones (total servidor: 259, filtradas: 259)
+2026-03-11 22:21:34 [INFO] Navegador cerrado
+2026-03-11 22:21:34 [INFO] Total resoluciones obtenidas: 200
+2026-03-11 22:21:34 [INFO] 5 resoluciones no procesadas, filtrando por contenido...
+2026-03-11 22:21:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157398
+2026-03-11 22:21:36 [INFO] PDF: 3172 caracteres extraidos con pdfplumber
+2026-03-11 22:21:36 [INFO]   No relevante: N°289 - Contratar con la firma BIO-OPTIC S.R.L. el servicio de mante
+2026-03-11 22:21:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157397
+2026-03-11 22:21:38 [INFO] PDF: 3098 caracteres extraidos con pdfplumber
+2026-03-11 22:21:38 [INFO]   No relevante: N°288 - Contratar con la firma RESAICAR S.R.L. el servicio de manten
+2026-03-11 22:21:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157396
+2026-03-11 22:21:39 [INFO] PDF: 3503 caracteres extraidos con pdfplumber
+2026-03-11 22:21:39 [INFO]   No relevante: N°287 - Prorrogar la orden de compra Nº 57/2025 con la firma ASCENSO
+2026-03-11 22:21:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157395
+2026-03-11 22:21:41 [INFO] PDF: 2881 caracteres extraidos con pdfplumber
+2026-03-11 22:21:41 [INFO]   No relevante: N°286 - Contratar con la firma NSS S.A. el servicio de enlace de dat
+2026-03-11 22:21:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157394
+2026-03-11 22:21:42 [INFO] PDF: 3258 caracteres extraidos con pdfplumber
+2026-03-11 22:21:42 [INFO]   No relevante: N°285 - Contratar con la firma GEMATEC S.R.L. el servicio de manteni
+2026-03-11 22:21:42 [INFO] Ninguna de las 5 nuevas es relevante
+2026-03-11 22:21:43 [INFO] Telegram: mensaje enviado
+2026-03-11 22:21:43 [INFO] Registro: 259 resoluciones guardadas
+2026-03-11 22:21:43 [INFO] Completado: 0 relevantes de 5 nuevas
