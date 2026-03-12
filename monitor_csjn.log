@@ -5954,3 +5954,46 @@ Call log:
 2026-03-12 18:43:09 [INFO] Navegador cerrado
 2026-03-12 18:43:09 [INFO] Total resoluciones obtenidas: 200
 2026-03-12 18:43:09 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-12 20:27:19 [INFO] ============================================================
+2026-03-12 20:27:19 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-12 20:27:19 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-12 20:27:19 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-12 20:27:19 [INFO] Modo: ejecucion unica
+2026-03-12 20:27:19 [INFO] ============================================================
+2026-03-12 20:27:19 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-12 20:27:19 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-12 20:27:19 [INFO] Iniciando navegador Chromium headless...
+2026-03-12 20:27:20 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-12 20:27:25 [INFO] Pagina cargada
+2026-03-12 20:27:25 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-12 20:27:27 [INFO] Respuesta capturada: 200 resultados
+2026-03-12 20:27:28 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-12 20:27:28 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-12 20:27:28 [INFO] Esperando resultados...
+2026-03-12 20:27:36 [INFO] Tabla con resultados detectada
+2026-03-12 20:27:36 [INFO] JSON: 200 resoluciones (total servidor: 265, filtradas: 265)
+2026-03-12 20:27:36 [INFO] Navegador cerrado
+2026-03-12 20:27:36 [INFO] Total resoluciones obtenidas: 200
+2026-03-12 20:27:36 [INFO] 6 resoluciones no procesadas, filtrando por contenido...
+2026-03-12 20:27:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157437
+2026-03-12 20:27:38 [INFO] PDF: 1184 caracteres extraidos con pdfplumber
+2026-03-12 20:27:38 [INFO]   No relevante: N°295 - Licencia gremial - Patricio M. DE LA IGLESIA.-
+2026-03-12 20:27:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157438
+2026-03-12 20:27:40 [INFO] PDF: 1200 caracteres extraidos con pdfplumber
+2026-03-12 20:27:40 [INFO]   No relevante: N°294 - Licencia gremial -José I. RODRIGUEZ y Martín J. PAREDEZ.-
+2026-03-12 20:27:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157436
+2026-03-12 20:27:41 [INFO] PDF: 2320 caracteres extraidos con pdfplumber
+2026-03-12 20:27:41 [INFO]   No relevante: N°293 - Bonificación adicional por título a favor de Zaira DECLERCQ 
+2026-03-12 20:27:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157435
+2026-03-12 20:27:43 [INFO] PDF: 2081 caracteres extraidos con pdfplumber
+2026-03-12 20:27:43 [INFO]   No relevante: N°292 - Compensación funcional por título a favor de María Laura VEN
+2026-03-12 20:27:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157434
+2026-03-12 20:27:45 [INFO] PDF: 2363 caracteres extraidos con pdfplumber
+2026-03-12 20:27:45 [INFO]   No relevante: N°291 - Bonificación adicional por título a favor de Paola Sabrina L
+2026-03-12 20:27:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157433
+2026-03-12 20:27:47 [INFO] PDF: 1907 caracteres extraidos con pdfplumber
+2026-03-12 20:27:47 [INFO]   No relevante: N°290 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-12 20:27:47 [INFO] Ninguna de las 6 nuevas es relevante
+2026-03-12 20:27:47 [INFO] Telegram: mensaje enviado
+2026-03-12 20:27:47 [INFO] Registro: 265 resoluciones guardadas
+2026-03-12 20:27:47 [INFO] Completado: 0 relevantes de 6 nuevas
