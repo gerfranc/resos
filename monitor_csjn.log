@@ -6242,3 +6242,40 @@ Call log:
 2026-03-13 16:32:23 [INFO] Telegram: mensaje enviado
 2026-03-13 16:32:23 [INFO] Registro: 281 resoluciones guardadas
 2026-03-13 16:32:23 [INFO] Completado: 0 relevantes de 1 nuevas
+2026-03-13 18:32:12 [INFO] ============================================================
+2026-03-13 18:32:12 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-13 18:32:12 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-13 18:32:12 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-13 18:32:12 [INFO] Modo: ejecucion unica
+2026-03-13 18:32:12 [INFO] ============================================================
+2026-03-13 18:32:12 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-13 18:32:12 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-13 18:32:13 [INFO] Iniciando navegador Chromium headless...
+2026-03-13 18:32:15 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-13 18:32:18 [INFO] Pagina cargada
+2026-03-13 18:32:19 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-13 18:32:20 [INFO] Respuesta capturada: 200 resultados
+2026-03-13 18:32:22 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-13 18:32:22 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-13 18:32:22 [INFO] Esperando resultados...
+2026-03-13 18:32:30 [INFO] Tabla con resultados detectada
+2026-03-13 18:32:30 [INFO] JSON: 200 resoluciones (total servidor: 285, filtradas: 285)
+2026-03-13 18:32:30 [INFO] Navegador cerrado
+2026-03-13 18:32:30 [INFO] Total resoluciones obtenidas: 200
+2026-03-13 18:32:30 [INFO] 4 resoluciones no procesadas, filtrando por contenido...
+2026-03-13 18:32:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157498
+2026-03-13 18:32:31 [INFO] PDF: 1592 caracteres extraidos con pdfplumber
+2026-03-13 18:32:31 [INFO]   No relevante: N°315 - Autorizar a liquidar y abonar a la firma TELEFONICA MOVILES 
+2026-03-13 18:32:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157497
+2026-03-13 18:32:33 [INFO] PDF: 2253 caracteres extraidos con pdfplumber
+2026-03-13 18:32:33 [INFO]   No relevante: N°314 - Contratar con la firma SERVICIOS GLOBALES DE INFORMÁTICA S.A
+2026-03-13 18:32:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157496
+2026-03-13 18:32:34 [INFO] PDF: 2744 caracteres extraidos con pdfplumber
+2026-03-13 18:32:34 [INFO]   No relevante: N°313 - Contratar con la firma BIO ESANCO S.A. la provisión de un ki
+2026-03-13 18:32:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157495
+2026-03-13 18:32:35 [INFO] PDF: 2395 caracteres extraidos con pdfplumber
+2026-03-13 18:32:35 [INFO]   No relevante: N°312 - Contratar con la firma TIGRE Y TITAN S.R.L. la adquisición d
+2026-03-13 18:32:35 [INFO] Ninguna de las 4 nuevas es relevante
+2026-03-13 18:32:35 [INFO] Telegram: mensaje enviado
+2026-03-13 18:32:35 [INFO] Registro: 285 resoluciones guardadas
+2026-03-13 18:32:35 [INFO] Completado: 0 relevantes de 4 nuevas
