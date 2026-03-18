@@ -7052,3 +7052,34 @@ Call log:
 2026-03-18 10:44:27 [INFO] Navegador cerrado
 2026-03-18 10:44:27 [INFO] Total resoluciones obtenidas: 200
 2026-03-18 10:44:27 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-18 12:54:07 [INFO] ============================================================
+2026-03-18 12:54:07 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-18 12:54:07 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-18 12:54:07 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-18 12:54:07 [INFO] Modo: ejecucion unica
+2026-03-18 12:54:07 [INFO] ============================================================
+2026-03-18 12:54:07 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-18 12:54:07 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-18 12:54:08 [INFO] Iniciando navegador Chromium headless...
+2026-03-18 12:54:08 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-18 12:54:12 [INFO] Pagina cargada
+2026-03-18 12:54:12 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-18 12:54:12 [INFO] Respuesta capturada: 200 resultados
+2026-03-18 12:54:15 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-18 12:54:15 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-18 12:54:15 [INFO] Esperando resultados...
+2026-03-18 12:54:23 [INFO] Tabla con resultados detectada
+2026-03-18 12:54:23 [INFO] JSON: 200 resoluciones (total servidor: 319, filtradas: 319)
+2026-03-18 12:54:23 [INFO] Navegador cerrado
+2026-03-18 12:54:23 [INFO] Total resoluciones obtenidas: 200
+2026-03-18 12:54:23 [INFO] 2 resoluciones no procesadas, filtrando por contenido...
+2026-03-18 12:54:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157576
+2026-03-18 12:54:24 [INFO] PDF: 2451 caracteres extraidos con pdfplumber
+2026-03-18 12:54:24 [INFO]   MATCH en PDF: N°349 - Bonificación adicional por título a favor de Orlando Emilio 
+2026-03-18 12:54:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157575
+2026-03-18 12:54:26 [INFO] PDF: 2049 caracteres extraidos con pdfplumber
+2026-03-18 12:54:26 [INFO]   No relevante: N°348 - No hacer lugar a lo solicitud de ejercicio de la profesión e
+2026-03-18 12:54:26 [INFO] 1 resoluciones RELEVANTES encontradas
+2026-03-18 12:54:26 [INFO] Telegram: mensaje enviado
+2026-03-18 12:54:27 [INFO] Registro: 319 resoluciones guardadas
+2026-03-18 12:54:27 [INFO] Completado: 1 relevantes de 2 nuevas
