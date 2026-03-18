@@ -7181,3 +7181,43 @@ Call log:
 2026-03-18 16:53:32 [INFO] Telegram: mensaje enviado
 2026-03-18 16:53:32 [INFO] Registro: 335 resoluciones guardadas
 2026-03-18 16:53:32 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-03-18 18:50:48 [INFO] ============================================================
+2026-03-18 18:50:48 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-18 18:50:48 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-18 18:50:48 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-18 18:50:48 [INFO] Modo: ejecucion unica
+2026-03-18 18:50:48 [INFO] ============================================================
+2026-03-18 18:50:48 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-18 18:50:48 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-18 18:50:48 [INFO] Iniciando navegador Chromium headless...
+2026-03-18 18:50:51 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-18 18:50:54 [INFO] Pagina cargada
+2026-03-18 18:50:54 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-18 18:50:55 [INFO] Respuesta capturada: 200 resultados
+2026-03-18 18:50:57 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-18 18:50:57 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-18 18:50:57 [INFO] Esperando resultados...
+2026-03-18 18:51:05 [INFO] Tabla con resultados detectada
+2026-03-18 18:51:05 [INFO] JSON: 200 resoluciones (total servidor: 340, filtradas: 340)
+2026-03-18 18:51:05 [INFO] Navegador cerrado
+2026-03-18 18:51:05 [INFO] Total resoluciones obtenidas: 200
+2026-03-18 18:51:05 [INFO] 5 resoluciones no procesadas, filtrando por contenido...
+2026-03-18 18:51:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157598
+2026-03-18 18:51:07 [INFO] PDF: 2557 caracteres extraidos con pdfplumber
+2026-03-18 18:51:07 [INFO]   No relevante: N°370 - Contratar con la firma ABAL ACCION CARGAS S.R.L. el servicio
+2026-03-18 18:51:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157597
+2026-03-18 18:51:09 [INFO] PDF: 1844 caracteres extraidos con pdfplumber
+2026-03-18 18:51:09 [INFO]   No relevante: N°369 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-18 18:51:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157596
+2026-03-18 18:51:10 [INFO] PDF: 2621 caracteres extraidos con pdfplumber
+2026-03-18 18:51:10 [INFO]   No relevante: N°368 - Contratar con la firma LABORTEKNIC S.R.L. la provisión de in
+2026-03-18 18:51:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157594
+2026-03-18 18:51:12 [INFO] PDF: 1400 caracteres extraidos con pdfplumber
+2026-03-18 18:51:12 [INFO]   No relevante: N°367 - Prórroga de licencia sin goce de haberes - Ladislao Raúl ABA
+2026-03-18 18:51:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157595
+2026-03-18 18:51:14 [INFO] PDF: 1363 caracteres extraidos con pdfplumber
+2026-03-18 18:51:14 [INFO]   No relevante: N°366 - Prórroga de licencia sin goce de haberes - Tamar Orlando GAT
+2026-03-18 18:51:14 [INFO] Ninguna de las 5 nuevas es relevante
+2026-03-18 18:51:15 [INFO] Telegram: mensaje enviado
+2026-03-18 18:51:15 [INFO] Registro: 340 resoluciones guardadas
+2026-03-18 18:51:15 [INFO] Completado: 0 relevantes de 5 nuevas
