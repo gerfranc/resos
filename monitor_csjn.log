@@ -7573,3 +7573,37 @@ Call log:
 2026-03-19 18:46:04 [INFO] Telegram: mensaje enviado
 2026-03-19 18:46:04 [INFO] Registro: 371 resoluciones guardadas
 2026-03-19 18:46:04 [INFO] Completado: 0 relevantes de 4 nuevas
+2026-03-19 20:29:26 [INFO] ============================================================
+2026-03-19 20:29:26 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-19 20:29:26 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-19 20:29:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-19 20:29:26 [INFO] Modo: ejecucion unica
+2026-03-19 20:29:26 [INFO] ============================================================
+2026-03-19 20:29:26 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-19 20:29:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-19 20:29:26 [INFO] Iniciando navegador Chromium headless...
+2026-03-19 20:29:27 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-19 20:29:31 [INFO] Pagina cargada
+2026-03-19 20:29:31 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-19 20:29:32 [INFO] Respuesta capturada: 200 resultados
+2026-03-19 20:29:34 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-19 20:29:34 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-19 20:29:34 [INFO] Esperando resultados...
+2026-03-19 20:29:42 [INFO] Tabla con resultados detectada
+2026-03-19 20:29:42 [INFO] JSON: 200 resoluciones (total servidor: 374, filtradas: 374)
+2026-03-19 20:29:42 [INFO] Navegador cerrado
+2026-03-19 20:29:42 [INFO] Total resoluciones obtenidas: 200
+2026-03-19 20:29:42 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-03-19 20:29:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157655
+2026-03-19 20:29:44 [INFO] PDF: 1280 caracteres extraidos con pdfplumber
+2026-03-19 20:29:44 [INFO]   No relevante: N°404 - Designar en la Unidad de Redeterminación de Precios a Robert
+2026-03-19 20:29:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157654
+2026-03-19 20:29:46 [INFO] PDF: 2792 caracteres extraidos con pdfplumber
+2026-03-19 20:29:46 [INFO]   No relevante: N°403 - Autorizar a la Dirección de Administración a efectuar el cor
+2026-03-19 20:29:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157653
+2026-03-19 20:29:47 [INFO] PDF: 3585 caracteres extraidos con pdfplumber
+2026-03-19 20:29:47 [INFO]   No relevante: N°402 - Contratar con la firma NEGOCIOS INFORMÁTICOS S.A. la adquisi
+2026-03-19 20:29:47 [INFO] Ninguna de las 3 nuevas es relevante
+2026-03-19 20:29:48 [INFO] Telegram: mensaje enviado
+2026-03-19 20:29:48 [INFO] Registro: 374 resoluciones guardadas
+2026-03-19 20:29:48 [INFO] Completado: 0 relevantes de 3 nuevas
