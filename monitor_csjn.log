@@ -8564,3 +8564,31 @@ Call log:
 2026-03-25 18:46:48 [INFO] Navegador cerrado
 2026-03-25 18:46:48 [INFO] Total resoluciones obtenidas: 200
 2026-03-25 18:46:48 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-25 20:31:58 [INFO] ============================================================
+2026-03-25 20:31:58 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-25 20:31:58 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-25 20:31:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-25 20:31:58 [INFO] Modo: ejecucion unica
+2026-03-25 20:31:58 [INFO] ============================================================
+2026-03-25 20:31:58 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-25 20:31:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-25 20:31:58 [INFO] Iniciando navegador Chromium headless...
+2026-03-25 20:31:59 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-25 20:32:04 [INFO] Pagina cargada
+2026-03-25 20:32:04 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-25 20:32:05 [INFO] Respuesta capturada: 200 resultados
+2026-03-25 20:32:07 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-25 20:32:07 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-25 20:32:07 [INFO] Esperando resultados...
+2026-03-25 20:32:15 [INFO] Tabla con resultados detectada
+2026-03-25 20:32:15 [INFO] JSON: 200 resoluciones (total servidor: 391, filtradas: 391)
+2026-03-25 20:32:15 [INFO] Navegador cerrado
+2026-03-25 20:32:15 [INFO] Total resoluciones obtenidas: 200
+2026-03-25 20:32:15 [INFO] 1 resoluciones no procesadas, filtrando por contenido...
+2026-03-25 20:32:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157716
+2026-03-25 20:32:17 [INFO] PDF: 2669 caracteres extraidos con pdfplumber
+2026-03-25 20:32:17 [INFO]   No relevante: N°421 - Contratar con la firma PRUNUS S.R.L. la provisión de útiles 
+2026-03-25 20:32:17 [INFO] Ninguna de las 1 nuevas es relevante
+2026-03-25 20:32:18 [INFO] Telegram: mensaje enviado
+2026-03-25 20:32:18 [INFO] Registro: 391 resoluciones guardadas
+2026-03-25 20:32:18 [INFO] Completado: 0 relevantes de 1 nuevas
