@@ -8485,3 +8485,40 @@ Call log:
 2026-03-25 12:52:31 [INFO] Navegador cerrado
 2026-03-25 12:52:31 [INFO] Total resoluciones obtenidas: 200
 2026-03-25 12:52:31 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-25 15:05:13 [INFO] ============================================================
+2026-03-25 15:05:13 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-25 15:05:13 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-25 15:05:13 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-25 15:05:13 [INFO] Modo: ejecucion unica
+2026-03-25 15:05:13 [INFO] ============================================================
+2026-03-25 15:05:13 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-25 15:05:13 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-25 15:05:14 [INFO] Iniciando navegador Chromium headless...
+2026-03-25 15:05:14 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-25 15:05:22 [INFO] Pagina cargada
+2026-03-25 15:05:23 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-25 15:05:23 [INFO] Respuesta capturada: 200 resultados
+2026-03-25 15:05:25 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-25 15:05:25 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-25 15:05:25 [INFO] Esperando resultados...
+2026-03-25 15:05:33 [INFO] Tabla con resultados detectada
+2026-03-25 15:05:33 [INFO] JSON: 200 resoluciones (total servidor: 390, filtradas: 390)
+2026-03-25 15:05:33 [INFO] Navegador cerrado
+2026-03-25 15:05:33 [INFO] Total resoluciones obtenidas: 200
+2026-03-25 15:05:33 [INFO] 4 resoluciones no procesadas, filtrando por contenido...
+2026-03-25 15:05:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157700
+2026-03-25 15:05:35 [INFO] PDF: 1515 caracteres extraidos con pdfplumber
+2026-03-25 15:05:35 [INFO]   No relevante: N°420 - Autorizar a liquidar y abonar a la firma AMX ARGENTINA S.A. 
+2026-03-25 15:05:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157699
+2026-03-25 15:05:36 [INFO] PDF: 1572 caracteres extraidos con pdfplumber
+2026-03-25 15:05:36 [INFO]   No relevante: N°419 - Autorizar a liquidar y abonar a la firma TELEFONICA MOVILES 
+2026-03-25 15:05:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157698
+2026-03-25 15:05:38 [INFO] PDF: 2607 caracteres extraidos con pdfplumber
+2026-03-25 15:05:38 [INFO]   No relevante: N°418 - Contratar con la firma JM SERVICIOS LOGÍSTICOS S.R.L. la rea
+2026-03-25 15:05:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157697
+2026-03-25 15:05:39 [INFO] PDF: 3082 caracteres extraidos con pdfplumber
+2026-03-25 15:05:39 [INFO]   No relevante: N°417 - Contratar la provisión de productos metálicos con destino al
+2026-03-25 15:05:39 [INFO] Ninguna de las 4 nuevas es relevante
+2026-03-25 15:05:39 [INFO] Telegram: mensaje enviado
+2026-03-25 15:05:39 [INFO] Registro: 390 resoluciones guardadas
+2026-03-25 15:05:39 [INFO] Completado: 0 relevantes de 4 nuevas

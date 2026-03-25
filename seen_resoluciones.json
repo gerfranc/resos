@@ -3086,5 +3086,37 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157673",
     "relevante": true,
     "procesado": "2026-03-20T18:38:30.827558"
+  },
+  "157700": {
+    "numero": "420",
+    "fecha": "25 de marzo de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la firma AMX ARGENTINA S.A. la suma total de $147.199,21.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157700",
+    "relevante": false,
+    "procesado": "2026-03-25T15:05:39.249888"
+  },
+  "157699": {
+    "numero": "419",
+    "fecha": "25 de marzo de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la firma TELEFONICA MOVILES ARGENTINA S.A. la suma total de $1.044.009,19.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157699",
+    "relevante": false,
+    "procesado": "2026-03-25T15:05:39.249898"
+  },
+  "157698": {
+    "numero": "418",
+    "fecha": "25 de marzo de 2026",
+    "detalle": "Contratar con la firma JM SERVICIOS LOGÍSTICOS S.R.L. la realización de trabajos menores de adecuación de espacios del Palacio de Justicia de la Nación, sito en Talcahuano 550 en la Ciudad Autónoma de Buenos Aires, por la suma total de $11.744.981,10.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157698",
+    "relevante": false,
+    "procesado": "2026-03-25T15:05:39.249902"
+  },
+  "157697": {
+    "numero": "417",
+    "fecha": "25 de marzo de 2026",
+    "detalle": "Contratar la provisión de productos metálicos con destino al Laboratorio de Anátomo-Histo-Citopatología de la Morgue Judicial, con las firmas AZCURRA JULIO JAVIER, ARMANDO CROCCE S.A. y SPM S.A.S., por la suma total de $19.617.291.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157697",
+    "relevante": false,
+    "procesado": "2026-03-25T15:05:39.249910"
   }
 }
