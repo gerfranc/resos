@@ -8924,3 +8924,64 @@ Call log:
 2026-03-26 20:30:14 [INFO] Telegram: mensaje enviado
 2026-03-26 20:30:14 [INFO] Registro: 422 resoluciones guardadas
 2026-03-26 20:30:14 [INFO] Completado: 0 relevantes de 10 nuevas
+2026-03-26 22:21:58 [INFO] ============================================================
+2026-03-26 22:21:58 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-26 22:21:58 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-26 22:21:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-26 22:21:58 [INFO] Modo: ejecucion unica
+2026-03-26 22:21:58 [INFO] ============================================================
+2026-03-26 22:21:58 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-26 22:21:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-26 22:21:58 [INFO] Iniciando navegador Chromium headless...
+2026-03-26 22:21:58 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-26 22:22:04 [INFO] Pagina cargada
+2026-03-26 22:22:04 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-26 22:22:05 [INFO] Respuesta capturada: 200 resultados
+2026-03-26 22:22:07 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-26 22:22:07 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-26 22:22:07 [INFO] Esperando resultados...
+2026-03-26 22:22:15 [INFO] Tabla con resultados detectada
+2026-03-26 22:22:15 [INFO] JSON: 200 resoluciones (total servidor: 434, filtradas: 434)
+2026-03-26 22:22:15 [INFO] Navegador cerrado
+2026-03-26 22:22:15 [INFO] Total resoluciones obtenidas: 200
+2026-03-26 22:22:15 [INFO] 12 resoluciones no procesadas, filtrando por contenido...
+2026-03-26 22:22:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157795
+2026-03-26 22:22:17 [INFO] PDF: 3456 caracteres extraidos con pdfplumber
+2026-03-26 22:22:17 [INFO]   No relevante: N°464 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157794
+2026-03-26 22:22:19 [INFO] PDF: 3563 caracteres extraidos con pdfplumber
+2026-03-26 22:22:19 [INFO]   No relevante: N°463 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:19 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157793
+2026-03-26 22:22:20 [INFO] PDF: 3667 caracteres extraidos con pdfplumber
+2026-03-26 22:22:20 [INFO]   No relevante: N°462 - Afectar a la Corte Suprema de Justicia de la Nación dos vehí
+2026-03-26 22:22:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157792
+2026-03-26 22:22:22 [INFO] PDF: 3731 caracteres extraidos con pdfplumber
+2026-03-26 22:22:22 [INFO]   No relevante: N°461 - Afectar a la Corte Suprema de Justicia de la Nación dos vehí
+2026-03-26 22:22:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157791
+2026-03-26 22:22:23 [INFO] PDF: 3521 caracteres extraidos con pdfplumber
+2026-03-26 22:22:23 [INFO]   No relevante: N°460 - Dejar sin efecto la asignación dispuesta por Resolución N° <
+2026-03-26 22:22:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157790
+2026-03-26 22:22:25 [INFO] PDF: 3598 caracteres extraidos con pdfplumber
+2026-03-26 22:22:25 [INFO]   No relevante: N°459 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157789
+2026-03-26 22:22:26 [INFO] PDF: 3978 caracteres extraidos con pdfplumber
+2026-03-26 22:22:26 [INFO]   No relevante: N°458 - Afectar a la Corte Suprema de Justicia de la Nación dos vehí
+2026-03-26 22:22:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157788
+2026-03-26 22:22:28 [INFO] PDF: 3598 caracteres extraidos con pdfplumber
+2026-03-26 22:22:28 [INFO]   No relevante: N°457 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157787
+2026-03-26 22:22:29 [INFO] PDF: 3312 caracteres extraidos con pdfplumber
+2026-03-26 22:22:29 [INFO]   No relevante: N°456 - Dejar sin efecto la asignación establecida por Resolución N°
+2026-03-26 22:22:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157786
+2026-03-26 22:22:31 [INFO] PDF: 3671 caracteres extraidos con pdfplumber
+2026-03-26 22:22:31 [INFO]   No relevante: N°455 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157785
+2026-03-26 22:22:32 [INFO] PDF: 3470 caracteres extraidos con pdfplumber
+2026-03-26 22:22:32 [INFO]   No relevante: N°454 - Afectar a la Corte Suprema de Justicia de la Nación un vehíc
+2026-03-26 22:22:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157784
+2026-03-26 22:22:34 [INFO] PDF: 3062 caracteres extraidos con pdfplumber
+2026-03-26 22:22:34 [INFO]   No relevante: N°453 - Asignar a la Sala V de la Cámara Nacional de Apelaciones en 
+2026-03-26 22:22:34 [INFO] Ninguna de las 12 nuevas es relevante
+2026-03-26 22:22:34 [INFO] Telegram: mensaje enviado
+2026-03-26 22:22:34 [INFO] Registro: 434 resoluciones guardadas
+2026-03-26 22:22:34 [INFO] Completado: 0 relevantes de 12 nuevas
