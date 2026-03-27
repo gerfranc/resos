@@ -9090,3 +9090,46 @@ Call log:
 2026-03-27 10:41:08 [INFO] Navegador cerrado
 2026-03-27 10:41:08 [INFO] Total resoluciones obtenidas: 200
 2026-03-27 10:41:08 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-27 12:45:42 [INFO] ============================================================
+2026-03-27 12:45:42 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-27 12:45:42 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-27 12:45:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-27 12:45:42 [INFO] Modo: ejecucion unica
+2026-03-27 12:45:42 [INFO] ============================================================
+2026-03-27 12:45:42 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-27 12:45:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-27 12:45:42 [INFO] Iniciando navegador Chromium headless...
+2026-03-27 12:45:43 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-27 12:45:47 [INFO] Pagina cargada
+2026-03-27 12:45:47 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-27 12:45:48 [INFO] Respuesta capturada: 200 resultados
+2026-03-27 12:45:50 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-27 12:45:50 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-27 12:45:50 [INFO] Esperando resultados...
+2026-03-27 12:45:58 [INFO] Tabla con resultados detectada
+2026-03-27 12:45:58 [INFO] JSON: 200 resoluciones (total servidor: 440, filtradas: 440)
+2026-03-27 12:45:58 [INFO] Navegador cerrado
+2026-03-27 12:45:58 [INFO] Total resoluciones obtenidas: 200
+2026-03-27 12:45:58 [INFO] 6 resoluciones no procesadas, filtrando por contenido...
+2026-03-27 12:45:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157822
+2026-03-27 12:45:59 [INFO] PDF: 2287 caracteres extraidos con pdfplumber
+2026-03-27 12:45:59 [INFO]   No relevante: N°470 - Dejar sin efecto la asignación establecida por Resolución N°
+2026-03-27 12:45:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157821
+2026-03-27 12:46:02 [INFO] PDF: 2208 caracteres extraidos con pdfplumber
+2026-03-27 12:46:02 [INFO]   No relevante: N°469 - Dejar sin efecto la asignación establecida por Resolución N°
+2026-03-27 12:46:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157820
+2026-03-27 12:46:03 [INFO] PDF: 2186 caracteres extraidos con pdfplumber
+2026-03-27 12:46:03 [INFO]   No relevante: N°468 - Dejar sin efecto la asignación establecida por Resolución N°
+2026-03-27 12:46:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157819
+2026-03-27 12:46:04 [INFO] PDF: 2501 caracteres extraidos con pdfplumber
+2026-03-27 12:46:04 [INFO]   No relevante: N°467 - Bonificación adicional por título a favor de Mauro David COR
+2026-03-27 12:46:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157818
+2026-03-27 12:46:05 [INFO] PDF: 1593 caracteres extraidos con pdfplumber
+2026-03-27 12:46:05 [INFO]   No relevante: N°466 - Autorizar a liquidar y abonar a la Dirección de Sistemas del
+2026-03-27 12:46:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157817
+2026-03-27 12:46:07 [INFO] PDF: 2625 caracteres extraidos con pdfplumber
+2026-03-27 12:46:07 [INFO]   No relevante: N°465 - Contratar con la firma JM SERVICIOS LOGISTICOS S.R.L. la rea
+2026-03-27 12:46:07 [INFO] Ninguna de las 6 nuevas es relevante
+2026-03-27 12:46:07 [INFO] Telegram: mensaje enviado
+2026-03-27 12:46:07 [INFO] Registro: 440 resoluciones guardadas
+2026-03-27 12:46:07 [INFO] Completado: 0 relevantes de 6 nuevas
