@@ -9161,3 +9161,106 @@ Call log:
 2026-03-27 14:44:48 [INFO] Telegram: mensaje enviado
 2026-03-27 14:44:48 [INFO] Registro: 441 resoluciones guardadas
 2026-03-27 14:44:48 [INFO] Completado: 0 relevantes de 1 nuevas
+2026-03-27 16:45:05 [INFO] ============================================================
+2026-03-27 16:45:05 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-27 16:45:05 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-27 16:45:05 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-27 16:45:05 [INFO] Modo: ejecucion unica
+2026-03-27 16:45:05 [INFO] ============================================================
+2026-03-27 16:45:05 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-27 16:45:05 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-27 16:45:06 [INFO] Iniciando navegador Chromium headless...
+2026-03-27 16:45:06 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-27 16:45:12 [INFO] Pagina cargada
+2026-03-27 16:45:13 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-27 16:45:13 [INFO] Respuesta capturada: 200 resultados
+2026-03-27 16:45:15 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-27 16:45:16 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-27 16:45:16 [INFO] Esperando resultados...
+2026-03-27 16:45:24 [INFO] Tabla con resultados detectada
+2026-03-27 16:45:24 [INFO] JSON: 200 resoluciones (total servidor: 467, filtradas: 467)
+2026-03-27 16:45:24 [INFO] Navegador cerrado
+2026-03-27 16:45:24 [INFO] Total resoluciones obtenidas: 200
+2026-03-27 16:45:24 [INFO] 26 resoluciones no procesadas, filtrando por contenido...
+2026-03-27 16:45:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157850
+2026-03-27 16:45:25 [INFO] PDF: 3005 caracteres extraidos con pdfplumber
+2026-03-27 16:45:25 [INFO]   No relevante: N°497 - Designar en el Órgano de Control de la Obra Social del Poder
+2026-03-27 16:45:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157849
+2026-03-27 16:45:27 [INFO] PDF: 1635 caracteres extraidos con pdfplumber
+2026-03-27 16:45:27 [INFO]   No relevante: N°496 - Autorizar a liquidar y abonar al Cuerpo Médico Forense la su
+2026-03-27 16:45:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157846
+2026-03-27 16:45:28 [INFO] PDF: 1706 caracteres extraidos con pdfplumber
+2026-03-27 16:45:28 [INFO]   No relevante: N°495 - Anticipo de jubilación a favor del Doctor Juan Carlos GEMIGN
+2026-03-27 16:45:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157845
+2026-03-27 16:45:30 [INFO] PDF: 1733 caracteres extraidos con pdfplumber
+2026-03-27 16:45:30 [INFO]   No relevante: N°494 - Anticipo de jubilación a favor del señor Norberto Orlando PA
+2026-03-27 16:45:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157848
+2026-03-27 16:45:31 [INFO] PDF: 1686 caracteres extraidos con pdfplumber
+2026-03-27 16:45:31 [INFO]   No relevante: N°493 - Anticipo de jubilación a favor de la señora Mónica Mabel SCA
+2026-03-27 16:45:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157847
+2026-03-27 16:45:32 [INFO] PDF: 1695 caracteres extraidos con pdfplumber
+2026-03-27 16:45:32 [INFO]   No relevante: N°492 - Anticipo de jubilación a favor de la señora María Valeria SA
+2026-03-27 16:45:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157842
+2026-03-27 16:45:34 [INFO] PDF: 1660 caracteres extraidos con pdfplumber
+2026-03-27 16:45:34 [INFO]   No relevante: N°491 - Anticipo de jubilación a favor de la señora Flavia Irene MEL
+2026-03-27 16:45:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157844
+2026-03-27 16:45:35 [INFO] PDF: 1705 caracteres extraidos con pdfplumber
+2026-03-27 16:45:35 [INFO]   No relevante: N°490 - Anticipo de jubilación a favor de la Doctora Priscila Belén 
+2026-03-27 16:45:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157843
+2026-03-27 16:45:37 [INFO] PDF: 1700 caracteres extraidos con pdfplumber
+2026-03-27 16:45:37 [INFO]   No relevante: N°489 - Anticipo de jubilación a favor de la señora Patricia Rosario
+2026-03-27 16:45:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157841
+2026-03-27 16:45:38 [INFO] PDF: 1696 caracteres extraidos con pdfplumber
+2026-03-27 16:45:38 [INFO]   No relevante: N°488 - Anticipo de jubilación a favor de la señora Myriam Virginia 
+2026-03-27 16:45:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157840
+2026-03-27 16:45:40 [INFO] PDF: 1651 caracteres extraidos con pdfplumber
+2026-03-27 16:45:40 [INFO]   No relevante: N°487 - Anticipo de jubilación a favor de la señora María Laura TOSC
+2026-03-27 16:45:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157834
+2026-03-27 16:45:41 [INFO] PDF: 1660 caracteres extraidos con pdfplumber
+2026-03-27 16:45:41 [INFO]   No relevante: N°486 - Anticipo de jubilación a favor del señor Alberto NUÑEZ.-
+2026-03-27 16:45:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157835
+2026-03-27 16:45:42 [INFO] PDF: 1655 caracteres extraidos con pdfplumber
+2026-03-27 16:45:42 [INFO]   No relevante: N°485 - Anticipo de jubilación a favor de la señora Carmen Beatriz V
+2026-03-27 16:45:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157831
+2026-03-27 16:45:44 [INFO] PDF: 1518 caracteres extraidos con pdfplumber
+2026-03-27 16:45:44 [INFO]   No relevante: N°484 - Anticipo de jubilación a favor de la señora Silvia Noemí PÉR
+2026-03-27 16:45:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157839
+2026-03-27 16:45:45 [INFO] PDF: 1660 caracteres extraidos con pdfplumber
+2026-03-27 16:45:45 [INFO]   No relevante: N°483 - Anticipo de jubilación a favor de la señora María Claudia IG
+2026-03-27 16:45:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157836
+2026-03-27 16:45:46 [INFO] PDF: 1685 caracteres extraidos con pdfplumber
+2026-03-27 16:45:46 [INFO]   No relevante: N°482 - Anticipo de jubilación a favor de la Doctora Marcela Patrici
+2026-03-27 16:45:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157830
+2026-03-27 16:45:48 [INFO] PDF: 1702 caracteres extraidos con pdfplumber
+2026-03-27 16:45:48 [INFO]   No relevante: N°481 - Anticipo de jubilación a favor de la señora Silvia Susana AN
+2026-03-27 16:45:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157838
+2026-03-27 16:45:49 [INFO] PDF: 1660 caracteres extraidos con pdfplumber
+2026-03-27 16:45:49 [INFO]   No relevante: N°480 - Anticipo de jubilación a favor del señor Luis Alejandro MART
+2026-03-27 16:45:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157833
+2026-03-27 16:45:50 [INFO] PDF: 1684 caracteres extraidos con pdfplumber
+2026-03-27 16:45:50 [INFO]   No relevante: N°479 - Anticipo de jubilación a favor del Doctor Rafael Ángel GONZÁ
+2026-03-27 16:45:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157837
+2026-03-27 16:45:52 [INFO] PDF: 1721 caracteres extraidos con pdfplumber
+2026-03-27 16:45:52 [INFO]   No relevante: N°478 - Anticipo de jubilación a favor de la Doctora Beatriz Ethel F
+2026-03-27 16:45:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157832
+2026-03-27 16:45:53 [INFO] PDF: 1667 caracteres extraidos con pdfplumber
+2026-03-27 16:45:53 [INFO]   No relevante: N°477 - Anticipo de jubilación a favor de la señora María Marta SABA
+2026-03-27 16:45:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157829
+2026-03-27 16:45:54 [INFO] PDF: 1546 caracteres extraidos con pdfplumber
+2026-03-27 16:45:54 [INFO]   No relevante: N°476 - Prórroga de licencia sin goce de haberes - Leandro KUNUSCH R
+2026-03-27 16:45:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157828
+2026-03-27 16:45:56 [INFO] PDF: 2207 caracteres extraidos con pdfplumber
+2026-03-27 16:45:56 [INFO]   No relevante: N°475 - Bonificación adicional por título a favor de Martín MEDIN - 
+2026-03-27 16:45:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157827
+2026-03-27 16:45:57 [INFO] PDF: 2213 caracteres extraidos con pdfplumber
+2026-03-27 16:45:57 [INFO]   No relevante: N°474 - Bonificación adicional por título a favor de Lucía ARMENGOL 
+2026-03-27 16:45:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157826
+2026-03-27 16:45:58 [INFO] PDF: 2412 caracteres extraidos con pdfplumber
+2026-03-27 16:45:58 [INFO]   No relevante: N°473 - Bonificación adicional por título a favor de Marcos Lautaro 
+2026-03-27 16:45:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157825
+2026-03-27 16:46:00 [INFO] PDF: 1972 caracteres extraidos con pdfplumber
+2026-03-27 16:46:00 [INFO]   No relevante: N°472 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-03-27 16:46:00 [INFO] Ninguna de las 26 nuevas es relevante
+2026-03-27 16:46:00 [INFO] Telegram: mensaje enviado
+2026-03-27 16:46:00 [INFO] Registro: 467 resoluciones guardadas
+2026-03-27 16:46:00 [INFO] Completado: 0 relevantes de 26 nuevas
