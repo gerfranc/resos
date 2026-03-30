@@ -9576,3 +9576,49 @@ Call log:
 2026-03-30 14:58:26 [INFO] Telegram: mensaje enviado
 2026-03-30 14:58:26 [INFO] Registro: 497 resoluciones guardadas
 2026-03-30 14:58:26 [INFO] Completado: 0 relevantes de 21 nuevas
+2026-03-30 16:49:45 [INFO] ============================================================
+2026-03-30 16:49:45 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-30 16:49:45 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-30 16:49:45 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-30 16:49:45 [INFO] Modo: ejecucion unica
+2026-03-30 16:49:45 [INFO] ============================================================
+2026-03-30 16:49:45 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-30 16:49:45 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-30 16:49:46 [INFO] Iniciando navegador Chromium headless...
+2026-03-30 16:49:46 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-30 16:49:51 [INFO] Pagina cargada
+2026-03-30 16:49:52 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-30 16:49:52 [INFO] Respuesta capturada: 200 resultados
+2026-03-30 16:49:55 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-30 16:49:55 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-30 16:49:55 [INFO] Esperando resultados...
+2026-03-30 16:50:03 [INFO] Tabla con resultados detectada
+2026-03-30 16:50:03 [INFO] JSON: 200 resoluciones (total servidor: 504, filtradas: 504)
+2026-03-30 16:50:03 [INFO] Navegador cerrado
+2026-03-30 16:50:03 [INFO] Total resoluciones obtenidas: 200
+2026-03-30 16:50:03 [INFO] 7 resoluciones no procesadas, filtrando por contenido...
+2026-03-30 16:50:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157904
+2026-03-30 16:50:05 [INFO] PDF: 1165 caracteres extraidos con pdfplumber
+2026-03-30 16:50:05 [INFO]   No relevante: N°534 - Dejar sin efecto la Resolución N° <a class='text-secondary' 
+2026-03-30 16:50:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157903
+2026-03-30 16:50:07 [INFO] PDF: 1354 caracteres extraidos con pdfplumber
+2026-03-30 16:50:07 [INFO]   No relevante: N°533 - Prórroga de licencia sin goce de haberes - Facundo Martín CA
+2026-03-30 16:50:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157899
+2026-03-30 16:50:09 [INFO] PDF: 1162 caracteres extraidos con pdfplumber
+2026-03-30 16:50:09 [INFO]   No relevante: N°532 - Prórroga de licencia sin goce de haberes - Clarisa CACIORGNA
+2026-03-30 16:50:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157900
+2026-03-30 16:50:11 [INFO] PDF: 1229 caracteres extraidos con pdfplumber
+2026-03-30 16:50:11 [INFO]   No relevante: N°531 - Prórroga de adscripción - Cristina Rosana BUSTAMANTE.-
+2026-03-30 16:50:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157902
+2026-03-30 16:50:13 [INFO] PDF: 1384 caracteres extraidos con pdfplumber
+2026-03-30 16:50:13 [INFO]   No relevante: N°530 - Prórroga de adscripción - Nicolás QUINN.-
+2026-03-30 16:50:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157901
+2026-03-30 16:50:15 [INFO] PDF: 1514 caracteres extraidos con pdfplumber
+2026-03-30 16:50:15 [INFO]   No relevante: N°529 - Prórroga de adscripción - Giselle AGNESE.-
+2026-03-30 16:50:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157897
+2026-03-30 16:50:17 [INFO] PDF: 1674 caracteres extraidos con pdfplumber
+2026-03-30 16:50:17 [INFO]   No relevante: N°528 - Prórroga de licencia sin goce de haberes - Nicolás Mariano T
+2026-03-30 16:50:17 [INFO] Ninguna de las 7 nuevas es relevante
+2026-03-30 16:50:18 [INFO] Telegram: mensaje enviado
+2026-03-30 16:50:18 [INFO] Registro: 504 resoluciones guardadas
+2026-03-30 16:50:18 [INFO] Completado: 0 relevantes de 7 nuevas
