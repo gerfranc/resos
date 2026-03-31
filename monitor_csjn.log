@@ -9866,3 +9866,34 @@ Call log:
 2026-03-31 16:51:33 [INFO] Navegador cerrado
 2026-03-31 16:51:33 [INFO] Total resoluciones obtenidas: 200
 2026-03-31 16:51:33 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-03-31 18:52:26 [INFO] ============================================================
+2026-03-31 18:52:26 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-31 18:52:26 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-31 18:52:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-31 18:52:26 [INFO] Modo: ejecucion unica
+2026-03-31 18:52:26 [INFO] ============================================================
+2026-03-31 18:52:26 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-31 18:52:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-31 18:52:27 [INFO] Iniciando navegador Chromium headless...
+2026-03-31 18:52:27 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-31 18:52:35 [INFO] Pagina cargada
+2026-03-31 18:52:35 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-31 18:52:36 [INFO] Respuesta capturada: 200 resultados
+2026-03-31 18:52:38 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-31 18:52:38 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-31 18:52:38 [INFO] Esperando resultados...
+2026-03-31 18:52:46 [INFO] Tabla con resultados detectada
+2026-03-31 18:52:46 [INFO] JSON: 200 resoluciones (total servidor: 509, filtradas: 509)
+2026-03-31 18:52:46 [INFO] Navegador cerrado
+2026-03-31 18:52:46 [INFO] Total resoluciones obtenidas: 200
+2026-03-31 18:52:46 [INFO] 2 resoluciones no procesadas, filtrando por contenido...
+2026-03-31 18:52:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157938
+2026-03-31 18:52:48 [INFO] PDF: 1912 caracteres extraidos con pdfplumber
+2026-03-31 18:52:48 [INFO]   No relevante: N°539 - Creaciones de cargos en la dotación de Magistrados, Funciona
+2026-03-31 18:52:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157935
+2026-03-31 18:52:50 [INFO] PDF: 1665 caracteres extraidos con pdfplumber
+2026-03-31 18:52:50 [INFO]   No relevante: N°538 - Determinar el valor de la Unidad de Medida Arancelaria (UMA)
+2026-03-31 18:52:50 [INFO] Ninguna de las 2 nuevas es relevante
+2026-03-31 18:52:51 [INFO] Telegram: mensaje enviado
+2026-03-31 18:52:51 [INFO] Registro: 509 resoluciones guardadas
+2026-03-31 18:52:51 [INFO] Completado: 0 relevantes de 2 nuevas
