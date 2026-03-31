@@ -9897,3 +9897,40 @@ Call log:
 2026-03-31 18:52:51 [INFO] Telegram: mensaje enviado
 2026-03-31 18:52:51 [INFO] Registro: 509 resoluciones guardadas
 2026-03-31 18:52:51 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-03-31 20:36:40 [INFO] ============================================================
+2026-03-31 20:36:40 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-03-31 20:36:40 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-31 20:36:40 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-03-31 20:36:40 [INFO] Modo: ejecucion unica
+2026-03-31 20:36:40 [INFO] ============================================================
+2026-03-31 20:36:40 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-03-31 20:36:40 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-03-31 20:36:41 [INFO] Iniciando navegador Chromium headless...
+2026-03-31 20:36:42 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-03-31 20:36:48 [INFO] Pagina cargada
+2026-03-31 20:36:48 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-03-31 20:36:49 [INFO] Respuesta capturada: 200 resultados
+2026-03-31 20:36:51 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-03-31 20:36:51 [INFO] Click en Buscar (sin filtro de texto)
+2026-03-31 20:36:51 [INFO] Esperando resultados...
+2026-03-31 20:36:59 [INFO] Tabla con resultados detectada
+2026-03-31 20:36:59 [INFO] JSON: 200 resoluciones (total servidor: 513, filtradas: 513)
+2026-03-31 20:36:59 [INFO] Navegador cerrado
+2026-03-31 20:36:59 [INFO] Total resoluciones obtenidas: 200
+2026-03-31 20:36:59 [INFO] 4 resoluciones no procesadas, filtrando por contenido...
+2026-03-31 20:36:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157942
+2026-03-31 20:37:02 [INFO] PDF: 1696 caracteres extraidos con pdfplumber
+2026-03-31 20:37:02 [INFO]   No relevante: N°543 - Cambio de nombre de contrato - Juzgado Nacional de Primera I
+2026-03-31 20:37:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157941
+2026-03-31 20:37:03 [INFO] PDF: 2156 caracteres extraidos con pdfplumber
+2026-03-31 20:37:03 [INFO]   No relevante: N°542 - Conceder licencia sin goce de haberes a Ignacio Manuel ONORA
+2026-03-31 20:37:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157939
+2026-03-31 20:37:05 [INFO] PDF: 2519 caracteres extraidos con pdfplumber
+2026-03-31 20:37:05 [INFO]   No relevante: N°541 - Bonificación adicional por título a favor de Nelson Andrés G
+2026-03-31 20:37:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157940
+2026-03-31 20:37:07 [INFO] PDF: 2488 caracteres extraidos con pdfplumber
+2026-03-31 20:37:07 [INFO]   No relevante: N°540 - Bonificación adicional por título a favor de Facundo Julián 
+2026-03-31 20:37:07 [INFO] Ninguna de las 4 nuevas es relevante
+2026-03-31 20:37:07 [INFO] Telegram: mensaje enviado
+2026-03-31 20:37:07 [INFO] Registro: 513 resoluciones guardadas
+2026-03-31 20:37:07 [INFO] Completado: 0 relevantes de 4 nuevas
