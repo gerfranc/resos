@@ -10081,3 +10081,34 @@ Call log:
 2026-04-01 13:02:31 [INFO] Navegador cerrado
 2026-04-01 13:02:31 [INFO] Total resoluciones obtenidas: 200
 2026-04-01 13:02:31 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-04-01 14:58:24 [INFO] ============================================================
+2026-04-01 14:58:24 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-01 14:58:24 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-01 14:58:24 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-01 14:58:24 [INFO] Modo: ejecucion unica
+2026-04-01 14:58:24 [INFO] ============================================================
+2026-04-01 14:58:24 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-04-01 14:58:24 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-04-01 14:58:24 [INFO] Iniciando navegador Chromium headless...
+2026-04-01 14:58:25 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-01 14:58:30 [INFO] Pagina cargada
+2026-04-01 14:58:30 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-04-01 14:58:31 [INFO] Respuesta capturada: 200 resultados
+2026-04-01 14:58:33 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-04-01 14:58:33 [INFO] Click en Buscar (sin filtro de texto)
+2026-04-01 14:58:33 [INFO] Esperando resultados...
+2026-04-01 14:58:41 [INFO] Tabla con resultados detectada
+2026-04-01 14:58:41 [INFO] JSON: 200 resoluciones (total servidor: 515, filtradas: 515)
+2026-04-01 14:58:41 [INFO] Navegador cerrado
+2026-04-01 14:58:41 [INFO] Total resoluciones obtenidas: 200
+2026-04-01 14:58:41 [INFO] 2 resoluciones no procesadas, filtrando por contenido...
+2026-04-01 14:58:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157954
+2026-04-01 14:58:43 [INFO] PDF: 1289 caracteres extraidos con pdfplumber
+2026-04-01 14:58:43 [INFO]   No relevante: N°545 - No hacer lugar a la solicitud de bonificación adicional por 
+2026-04-01 14:58:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157953
+2026-04-01 14:58:45 [INFO] PDF: 2853 caracteres extraidos con pdfplumber
+2026-04-01 14:58:45 [INFO]   No relevante: N°544 - Bonificación adicional por título a favor de Maitena SIPIS -
+2026-04-01 14:58:45 [INFO] Ninguna de las 2 nuevas es relevante
+2026-04-01 14:58:46 [INFO] Telegram: mensaje enviado
+2026-04-01 14:58:46 [INFO] Registro: 515 resoluciones guardadas
+2026-04-01 14:58:46 [INFO] Completado: 0 relevantes de 2 nuevas
