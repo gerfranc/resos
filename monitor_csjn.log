@@ -10112,3 +10112,24 @@ Call log:
 2026-04-01 14:58:46 [INFO] Telegram: mensaje enviado
 2026-04-01 14:58:46 [INFO] Registro: 515 resoluciones guardadas
 2026-04-01 14:58:46 [INFO] Completado: 0 relevantes de 2 nuevas
+2026-04-01 16:45:42 [INFO] ============================================================
+2026-04-01 16:45:42 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-01 16:45:42 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-01 16:45:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-01 16:45:42 [INFO] Modo: ejecucion unica
+2026-04-01 16:45:42 [INFO] ============================================================
+2026-04-01 16:45:42 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-04-01 16:45:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-04-01 16:45:42 [INFO] Iniciando navegador Chromium headless...
+2026-04-01 16:45:43 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-01 16:45:47 [INFO] Pagina cargada
+2026-04-01 16:45:48 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-04-01 16:45:48 [INFO] Respuesta capturada: 200 resultados
+2026-04-01 16:45:50 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-04-01 16:45:50 [INFO] Click en Buscar (sin filtro de texto)
+2026-04-01 16:45:50 [INFO] Esperando resultados...
+2026-04-01 16:45:58 [INFO] Tabla con resultados detectada
+2026-04-01 16:45:58 [INFO] JSON: 200 resoluciones (total servidor: 515, filtradas: 515)
+2026-04-01 16:45:59 [INFO] Navegador cerrado
+2026-04-01 16:45:59 [INFO] Total resoluciones obtenidas: 200
+2026-04-01 16:45:59 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
