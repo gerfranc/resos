@@ -59,6 +59,21 @@ GitHub Actions (`.github/workflows/monitor_csjn.yml`):
 - Disparo manual con `workflow_dispatch`
 - Después de ejecutar, commitea y pushea `seen_resoluciones.json` y `monitor_csjn.log`
 
+## Testing
+
+```bash
+# Prueba rápida sin scraping (verificar lógica de pendientes y filtros)
+python monitor_csjn_dajudeco.py --test
+
+# Prueba local completa con scraping real (renombrar JSON antes)
+mv seen_resoluciones.json seen_resoluciones.backup.json
+python monitor_csjn_dajudeco.py --once
+mv seen_resoluciones.backup.json seen_resoluciones.json
+
+# Prueba en GitHub Actions desde el branch (sin mergear)
+# Ir a Actions → Monitor CSJN → Run workflow → seleccionar branch
+```
+
 ## Notas para desarrollo
 
 - No hay test suite ni linter configurado
