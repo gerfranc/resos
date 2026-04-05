@@ -10678,3 +10678,90 @@ Call log:
 2026-04-03 22:26:38 [INFO] Navegador cerrado
 2026-04-03 22:26:38 [INFO] Total resoluciones obtenidas: 200
 2026-04-03 22:26:38 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-04-05 20:32:48 [INFO] ============================================================
+2026-04-05 20:32:48 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-05 20:32:48 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-05 20:32:48 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-05 20:32:48 [INFO] Modo: TEST (sin scraping real)
+2026-04-05 20:32:48 [INFO] ============================================================
+2026-04-05 20:32:48 [INFO] MODO TEST - Sin scraping real, Telegram simulado
+2026-04-05 20:32:48 [INFO] Registro: 2 resoluciones guardadas
+2026-04-05 20:32:48 [INFO] Re-verificando 1 resoluciones pendientes...
+2026-04-05 20:32:48 [INFO]   Expirada: N°88888/2026
+2026-04-05 20:32:48 [INFO] Pendientes re-verificadas: 1 | Nuevas relevantes: 0 | Expiradas: 1
+2026-04-05 20:32:48 [INFO] Registro: 2 resoluciones guardadas
+2026-04-05 20:32:48 [INFO] Total resoluciones obtenidas (fixtures): 3
+2026-04-05 20:32:48 [INFO] 2 resoluciones no procesadas, filtrando por contenido...
+2026-04-05 20:32:48 [INFO]   MATCH en detalle: N°11111/2026 - Designar personal - Delitos Complejos y Crimen Organizado
+2026-04-05 20:32:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=22222
+2026-04-05 20:32:48 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=22222: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=22222 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+2026-04-05 20:32:48 [INFO]   MATCH en PDF: N°22222/2026 - Resolucion administrativa general sin palabras clave
+2026-04-05 20:32:48 [INFO] TEST - Telegram simulado: 🔔 <b>Nueva Resolucion CSJN - DAJUDECO</b>
+
+📄 Resolucion N° 11111/2026 - 05/04/2026
+📝 Designar personal - Delitos Complejos y Crimen Organizado
+📁 Exp: EXP-2026-001
+
+🔗 <a href="https://www.csjn.gov.ar/documentos/descargar?ID=11111">Descargar PDF</a>
+
+🔍 Filtro: Asistencia Judicial
+2026-04-05 20:32:48 [INFO] TEST - Telegram simulado: 🔔 <b>Nueva Resolucion CSJN - DAJUDECO</b>
+
+📄 Resolucion N° 22222/2026 - 05/04/2026
+📝 Resolucion administrativa general sin palabras clave
+📁 Exp: EXP-2026-002
+
+🔗 <a href="https://www.csjn.gov.ar/documentos/descargar?ID=22222">Descargar PDF</a>
+
+🔍 Filtro: Asistencia Judicial
+2026-04-05 20:32:48 [INFO] Registro: 4 resoluciones guardadas
+2026-04-05 20:32:48 [INFO] 
+2026-04-05 20:32:48 [INFO] ============================================================
+2026-04-05 20:32:48 [INFO] RESUMEN TEST - Resultados esperados vs obtenidos
+2026-04-05 20:32:48 [INFO] ============================================================
+2026-04-05 20:32:48 [INFO] Caso 1 (match en detalle):    esperado=relevante    | obtenido=relevante    | OK
+2026-04-05 20:32:48 [INFO] Caso 2 (sin match, sin PDF):  esperado=pendiente    | obtenido=relevante    | FALLO
+2026-04-05 20:32:48 [INFO] Caso 3 (ya vista, ignorada):  esperado=no_relevante | obtenido=no_relevante    | OK
+2026-04-05 20:32:48 [INFO] Caso 4 (pendiente expirada):  esperado=no_relevante | obtenido=no_relevante    | OK
+2026-04-05 20:32:48 [INFO] 
+Resultado: 3/4 casos correctos
+2026-04-05 20:32:48 [INFO] ============================================================
+2026-04-05 20:32:48 [INFO] Archivo seen_resoluciones.json restaurado desde backup
+2026-04-05 20:33:08 [INFO] ============================================================
+2026-04-05 20:33:08 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-05 20:33:08 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-05 20:33:08 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-05 20:33:08 [INFO] Modo: TEST (sin scraping real)
+2026-04-05 20:33:08 [INFO] ============================================================
+2026-04-05 20:33:08 [INFO] MODO TEST - Sin scraping real, Telegram simulado
+2026-04-05 20:33:08 [INFO] Registro: 2 resoluciones guardadas
+2026-04-05 20:33:08 [INFO] Re-verificando 1 resoluciones pendientes...
+2026-04-05 20:33:08 [INFO]   Expirada: N°88888/2026
+2026-04-05 20:33:08 [INFO] Pendientes re-verificadas: 1 | Nuevas relevantes: 0 | Expiradas: 1
+2026-04-05 20:33:08 [INFO] Registro: 2 resoluciones guardadas
+2026-04-05 20:33:08 [INFO] Total resoluciones obtenidas (fixtures): 3
+2026-04-05 20:33:08 [INFO] 2 resoluciones no procesadas, filtrando por contenido...
+2026-04-05 20:33:08 [INFO]   MATCH en detalle: N°11111/2026 - Designar personal - Delitos Complejos y Crimen Organizado
+2026-04-05 20:33:08 [INFO]   Sin PDF, no relevante: N°22222/2026 - Resolucion administrativa general sin palabras clave
+2026-04-05 20:33:08 [INFO] TEST - Telegram simulado: 🔔 <b>Nueva Resolucion CSJN - DAJUDECO</b>
+
+📄 Resolucion N° 11111/2026 - 05/04/2026
+📝 Designar personal - Delitos Complejos y Crimen Organizado
+📁 Exp: EXP-2026-001
+
+🔗 <a href="https://www.csjn.gov.ar/documentos/descargar?ID=11111">Descargar PDF</a>
+
+🔍 Filtro: Asistencia Judicial
+2026-04-05 20:33:08 [INFO] Registro: 4 resoluciones guardadas
+2026-04-05 20:33:08 [INFO] 
+2026-04-05 20:33:08 [INFO] ============================================================
+2026-04-05 20:33:08 [INFO] RESUMEN TEST - Resultados esperados vs obtenidos
+2026-04-05 20:33:08 [INFO] ============================================================
+2026-04-05 20:33:08 [INFO] Caso 1 (match en detalle):    esperado=relevante    | obtenido=relevante    | OK
+2026-04-05 20:33:08 [INFO] Caso 2 (sin match, sin PDF):  esperado=pendiente    | obtenido=pendiente    | OK
+2026-04-05 20:33:08 [INFO] Caso 3 (ya vista, ignorada):  esperado=no_relevante | obtenido=no_relevante    | OK
+2026-04-05 20:33:08 [INFO] Caso 4 (pendiente expirada):  esperado=no_relevante | obtenido=no_relevante    | OK
+2026-04-05 20:33:08 [INFO] 
+Resultado: 4/4 casos correctos
+2026-04-05 20:33:08 [INFO] ============================================================
+2026-04-05 20:33:08 [INFO] Archivo seen_resoluciones.json restaurado desde backup
