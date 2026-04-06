@@ -10842,3 +10842,29 @@ Resultado: 4/4 casos correctos
 2026-04-06 01:51:14 [INFO] Navegador cerrado
 2026-04-06 01:51:14 [INFO] Total resoluciones obtenidas: 200
 2026-04-06 01:51:14 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-04-06 04:39:41 [INFO] ============================================================
+2026-04-06 04:39:41 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-06 04:39:41 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-06 04:39:41 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-06 04:39:41 [INFO] Modo: ejecucion unica
+2026-04-06 04:39:41 [INFO] ============================================================
+2026-04-06 04:39:41 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-04-06 04:39:41 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-04-06 04:39:41 [INFO] Re-verificando 1 resoluciones pendientes...
+2026-04-06 04:39:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=157953
+2026-04-06 04:39:47 [INFO] PDF: 2853 caracteres extraidos con pdfplumber
+2026-04-06 04:39:47 [INFO] Pendientes re-verificadas: 1 | Nuevas relevantes: 0 | Expiradas: 0
+2026-04-06 04:39:47 [INFO] Registro: 519 resoluciones guardadas
+2026-04-06 04:39:47 [INFO] Iniciando navegador Chromium headless...
+2026-04-06 04:39:49 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-06 04:39:54 [INFO] Pagina cargada
+2026-04-06 04:39:54 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-04-06 04:39:55 [INFO] Respuesta capturada (auto): 200 resultados
+2026-04-06 04:39:57 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-04-06 04:39:57 [INFO] Click en Buscar (sin filtro de texto)
+2026-04-06 04:39:57 [INFO] Esperando resultados...
+2026-04-06 04:40:05 [INFO] Tabla con resultados detectada
+2026-04-06 04:40:05 [INFO] Fuente auto: 200 resultados | Fuente buscar: 0 resultados | Merge: 200 unicos
+2026-04-06 04:40:05 [INFO] Navegador cerrado
+2026-04-06 04:40:05 [INFO] Total resoluciones obtenidas: 200
+2026-04-06 04:40:05 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
