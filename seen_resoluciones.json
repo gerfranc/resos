@@ -4150,7 +4150,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157953",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-05T23:18:44.378924",
     "expira": "2026-04-10T23:18:44.378924",
     "procesado": "2026-04-05T23:18:44.378924"
@@ -4162,7 +4162,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157977",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 16,
+    "intentos": 17,
     "primera_vez": "2026-04-06T12:54:19.500602",
     "expira": "2026-04-11T12:54:19.500602",
     "procesado": "2026-04-06T12:54:19.500602"
@@ -4174,7 +4174,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157976",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 16,
+    "intentos": 17,
     "primera_vez": "2026-04-06T12:54:19.500602",
     "expira": "2026-04-11T12:54:19.500602",
     "procesado": "2026-04-06T12:54:19.500602"
@@ -4186,7 +4186,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157975",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 16,
+    "intentos": 17,
     "primera_vez": "2026-04-06T12:54:19.500602",
     "expira": "2026-04-11T12:54:19.500602",
     "procesado": "2026-04-06T12:54:19.500602"
@@ -4198,7 +4198,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157974",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 16,
+    "intentos": 17,
     "primera_vez": "2026-04-06T12:54:19.500602",
     "expira": "2026-04-11T12:54:19.500602",
     "procesado": "2026-04-06T12:54:19.500602"
@@ -4210,7 +4210,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157973",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 16,
+    "intentos": 17,
     "primera_vez": "2026-04-06T12:54:19.500602",
     "expira": "2026-04-11T12:54:19.500602",
     "procesado": "2026-04-06T12:54:19.500602"
@@ -4222,7 +4222,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=157993",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 14,
+    "intentos": 15,
     "primera_vez": "2026-04-06T16:38:57.737935",
     "expira": "2026-04-11T16:38:57.737935",
     "procesado": "2026-04-06T16:38:57.737935"
@@ -4234,7 +4234,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158013",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 3,
+    "intentos": 4,
     "primera_vez": "2026-04-07T15:02:24.268034",
     "expira": "2026-04-12T15:02:24.268034",
     "procesado": "2026-04-07T15:02:24.268034"
@@ -4246,7 +4246,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158017",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-04-07T18:54:25.935232",
     "expira": "2026-04-12T18:54:25.935232",
     "procesado": "2026-04-07T18:54:25.935232"
@@ -4267,7 +4267,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158015",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-04-07T18:54:25.935232",
     "expira": "2026-04-12T18:54:25.935232",
     "procesado": "2026-04-07T18:54:25.935232"
@@ -4279,9 +4279,45 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158014",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-04-07T18:54:25.935232",
     "expira": "2026-04-12T18:54:25.935232",
     "procesado": "2026-04-07T18:54:25.935232"
+  },
+  "158018": {
+    "numero": "563",
+    "fecha": "7 de abril de 2026",
+    "detalle": "Contratar con la firma PLM GROUP SERVICIOS EMPRESARIALES S.R.L. el servicio integral de limpieza de la Dirección de Mandamientos, por la suma de $27.712.080.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158018",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-07T20:40:02.386534",
+    "expira": "2026-04-12T20:40:02.386534",
+    "procesado": "2026-04-07T20:40:02.386534"
+  },
+  "158019": {
+    "numero": "562",
+    "fecha": "7 de abril de 2026",
+    "detalle": "Contratar con la firma EXTERNAL MARKET S.R.L. el servicio de locación, mantenimiento y conservación de equipos fotocopiadores, por la suma de hasta $65.684.730.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158019",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-07T20:40:02.386534",
+    "expira": "2026-04-12T20:40:02.386534",
+    "procesado": "2026-04-07T20:40:02.386534"
+  },
+  "158020": {
+    "numero": "561",
+    "fecha": "7 de abril de 2026",
+    "detalle": "Contratar con la firma DISTRIBON S.R.L. el servicio de limpieza del edificio sito en Lavalle 1250 de CABA, por la suma de $71.780.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158020",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-07T20:40:02.386534",
+    "expira": "2026-04-12T20:40:02.386534",
+    "procesado": "2026-04-07T20:40:02.386534"
   }
 }
