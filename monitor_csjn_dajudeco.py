@@ -337,6 +337,278 @@ def formatear_mensaje(r):
     return msg
 
 
+def buscar_en_csjn(termino):
+    """
+    Usa el buscador de la pagina de resoluciones de la CSJN.
+    Llena el campo "cualquier dato disponible" con el termino
+    y clickea Buscar. Captura la respuesta JSON y retorna
+    los ultimos 10 resultados parseados.
+    """
+    from playwright.sync_api import sync_playwright
+
+    resultados_raw = []
+
+    with sync_playwright() as p:
+        logger.info(f"[Buscar] Iniciando navegador para buscar: '{termino}'")
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/131.0.0.0 Safari/537.36",
+            locale="es-AR",
+        )
+        page = context.new_page()
+
+        # Capturar la respuesta del endpoint de datos (sin interceptar el request)
+        def capturar_respuesta(response):
+            if "/resoluciones/data" in response.url:
+                try:
+                    data = response.json()
+                    items = data.get("data", [])
+                    logger.info(f"[Buscar] Respuesta capturada: {len(items)} resultados")
+                    resultados_raw.extend(items)
+                except Exception as e:
+                    logger.error(f"[Buscar] Error al parsear respuesta: {e}")
+
+        page.on("response", capturar_respuesta)
+
+        # Navegar a la pagina
+        logger.info(f"[Buscar] Navegando a {URL_PAGINA}")
+        page.goto(URL_PAGINA, wait_until="domcontentloaded", timeout=120000)
+        page.wait_for_timeout(3000)
+
+        # Llenar el campo de busqueda "cualquier dato disponible"
+        input_busqueda = None
+        for selector in [
+            'input#busqueda',
+            'input[name="q"]',
+            'input[placeholder*="cualquier dato"]',
+            'input[placeholder*="Cualquier dato"]',
+            'input[type="text"]',
+        ]:
+            try:
+                elem = page.query_selector(selector)
+                if elem and elem.is_visible():
+                    input_busqueda = elem
+                    logger.info(f"[Buscar] Campo de busqueda encontrado: {selector}")
+                    break
+            except:
+                continue
+
+        if not input_busqueda:
+            logger.error("[Buscar] No se encontro el campo de busqueda")
+            browser.close()
+            return []
+
+        input_busqueda.fill(termino)
+        logger.info(f"[Buscar] Campo llenado con: '{termino}'")
+
+        # Click en Buscar
+        boton_buscar = None
+        for selector in ['button:has-text("Buscar")', 'input[value="Buscar"]', 'a:has-text("Buscar")']:
+            try:
+                elems = page.query_selector_all(selector)
+                for elem in elems:
+                    if elem.is_visible():
+                        boton_buscar = elem
+                        break
+                if boton_buscar:
+                    break
+            except:
+                continue
+
+        if not boton_buscar:
+            logger.error("[Buscar] No se encontro el boton Buscar")
+            browser.close()
+            return []
+
+        boton_buscar.click()
+        logger.info("[Buscar] Click en Buscar")
+
+        # Esperar resultados
+        page.wait_for_timeout(8000)
+        try:
+            page.wait_for_selector("table tbody tr", timeout=15000)
+        except:
+            logger.info("[Buscar] No se detecto tabla de resultados")
+
+        browser.close()
+        logger.info(f"[Buscar] Navegador cerrado. {len(resultados_raw)} resultados obtenidos")
+
+    # Parsear y retornar los ultimos 10
+    resultados = [parsear_resolucion(item) for item in resultados_raw]
+    return resultados[:10]
+
+
+def formatear_resultados_busqueda(resultados, termino, total=None):
+    """Formatea los resultados de busqueda en un solo mensaje para Telegram."""
+    if not resultados:
+        return f"\U0001F50D No se encontraron resultados para \"<b>{termino}</b>\""
+
+    total_str = f" de {total}" if total else ""
+    msg = f"\U0001F50D Resultados para \"<b>{termino}</b>\" ({len(resultados)}{total_str})\n"
+    msg += "\u2500" * 30 + "\n\n"
+
+    for i, r in enumerate(resultados, 1):
+        msg += f"<b>{i}.</b> Res. N\u00B0 {r['numero']} \u2014 {r['fecha']}\n"
+        # Truncar detalle a 100 caracteres
+        detalle = r['detalle']
+        if len(detalle) > 100:
+            detalle = detalle[:97] + "..."
+        msg += f"   {detalle}\n"
+        if r.get("expediente"):
+            msg += f"   \U0001F4C1 Exp: {r['expediente']}\n"
+        if r.get("url_pdf"):
+            msg += f"   \U0001F4CE <a href=\"{r['url_pdf']}\">Ver PDF</a>\n"
+        msg += "\n"
+
+    return msg
+
+
+def responder_telegram(chat_id, mensaje):
+    """Envia un mensaje a un chat_id especifico de Telegram."""
+    if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI":
+        logger.warning("Telegram no configurado")
+        logger.info(f"Mensaje:\n{mensaje}")
+        return False
+
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    try:
+        resp = requests.post(url, json={
+            "chat_id": chat_id,
+            "text": mensaje,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True,
+        }, timeout=15)
+        resp.raise_for_status()
+        if resp.json().get("ok"):
+            logger.info(f"Telegram: mensaje enviado a {chat_id}")
+            return True
+        logger.error(f"Telegram error: {resp.json()}")
+        return False
+    except Exception as e:
+        logger.error(f"Error Telegram: {e}")
+        return False
+
+
+def procesar_comando_buscar(termino, chat_id):
+    """Procesa el comando /buscar: busca en la CSJN y envia resultados."""
+    if not termino.strip():
+        responder_telegram(chat_id, "\u2139\uFE0F <b>Uso:</b> /buscar &lt;término&gt;\n\nEjemplo: /buscar asistencia judicial")
+        return
+
+    # Feedback inmediato
+    responder_telegram(chat_id, f"\U0001F50E Buscando \"<b>{termino}</b>\" en CSJN...\nEsto puede tardar unos segundos.")
+
+    try:
+        resultados = buscar_en_csjn(termino)
+        mensaje = formatear_resultados_busqueda(resultados, termino)
+        responder_telegram(chat_id, mensaje)
+    except Exception as e:
+        logger.error(f"Error en busqueda '{termino}': {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        responder_telegram(chat_id, f"\u26A0\uFE0F Error al buscar: {str(e)[:200]}")
+
+
+def obtener_updates_telegram(offset=None):
+    """Obtiene updates pendientes de Telegram usando long polling."""
+    if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI":
+        logger.warning("Telegram no configurado, no se puede hacer polling")
+        return [], offset
+
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/getUpdates"
+    params = {"timeout": 30}
+    if offset is not None:
+        params["offset"] = offset
+
+    try:
+        resp = requests.get(url, params=params, timeout=35)
+        resp.raise_for_status()
+        data = resp.json()
+        if not data.get("ok"):
+            logger.error(f"getUpdates error: {data}")
+            return [], offset
+
+        updates = data.get("result", [])
+        if updates:
+            offset = updates[-1]["update_id"] + 1
+        return updates, offset
+
+    except requests.exceptions.Timeout:
+        # Timeout normal del long polling, no es error
+        return [], offset
+    except Exception as e:
+        logger.error(f"Error en getUpdates: {e}")
+        return [], offset
+
+
+def polling_telegram():
+    """
+    Loop principal del bot de Telegram.
+    Escucha comandos via long polling y responde.
+    """
+    logger.info("=" * 60)
+    logger.info("BOT TELEGRAM - Modo polling iniciado")
+    logger.info("Esperando comandos... (Ctrl+C para detener)")
+    logger.info("=" * 60)
+
+    offset = None
+    # Ids de chat autorizados (si TELEGRAM_CHAT_ID esta configurado, solo ese)
+    chat_autorizado = TELEGRAM_CHAT_ID if TELEGRAM_CHAT_ID != "TU_CHAT_ID_AQUI" else None
+
+    while True:
+        try:
+            updates, offset = obtener_updates_telegram(offset)
+
+            for update in updates:
+                mensaje = update.get("message", {})
+                texto = mensaje.get("text", "")
+                chat_id = str(mensaje.get("chat", {}).get("id", ""))
+                usuario = mensaje.get("from", {}).get("first_name", "Desconocido")
+
+                if not texto or not chat_id:
+                    continue
+
+                # Verificar autorizacion
+                if chat_autorizado and chat_id != chat_autorizado:
+                    logger.info(f"Mensaje ignorado de chat no autorizado: {chat_id}")
+                    responder_telegram(chat_id, "\u26D4 No estás autorizado para usar este bot.")
+                    continue
+
+                logger.info(f"Mensaje de {usuario} (chat {chat_id}): {texto}")
+
+                # Parsear comandos
+                if texto.startswith("/buscar"):
+                    termino = texto[len("/buscar"):].strip()
+                    procesar_comando_buscar(termino, chat_id)
+                elif texto.startswith("/start"):
+                    responder_telegram(chat_id,
+                        "\U0001F916 <b>Bot Monitor CSJN</b>\n\n"
+                        "Comandos disponibles:\n"
+                        "/buscar &lt;término&gt; - Buscar resoluciones en la CSJN\n\n"
+                        "Ejemplo: /buscar asistencia judicial"
+                    )
+                elif texto.startswith("/help") or texto.startswith("/ayuda"):
+                    responder_telegram(chat_id,
+                        "\U0001F4AC <b>Ayuda</b>\n\n"
+                        "/buscar &lt;término&gt; - Buscar en el buscador de resoluciones de la CSJN\n"
+                        "Muestra los últimos 10 resultados.\n\n"
+                        "Ejemplo: /buscar Delitos Complejos"
+                    )
+                else:
+                    responder_telegram(chat_id,
+                        "No entiendo ese comando.\nUsá /buscar &lt;término&gt; para buscar resoluciones."
+                    )
+
+        except KeyboardInterrupt:
+            logger.info("Bot detenido por el usuario")
+            break
+        except Exception as e:
+            logger.error(f"Error en polling: {e}")
+            time.sleep(5)
+
+
 def rechequear_pendientes(vistas):
     """
     Re-verifica resoluciones pendientes descargando sus PDFs.
@@ -711,6 +983,9 @@ if __name__ == "__main__":
     if "--test" in sys.argv:
         logger.info("Modo: TEST (sin scraping real)")
         ejecutar_test()
+    elif "--bot" in sys.argv:
+        logger.info("Modo: BOT Telegram (polling de comandos)")
+        polling_telegram()
     elif "--once" in sys.argv:
         logger.info("Modo: ejecucion unica")
         chequear_resoluciones()
