@@ -5247,7 +5247,7 @@
     "detalle": "Contratar con la firma WATER SERVICE INTERNATIONAL S.R.L. la provisión, instalación y puesta en marcha del sistema de electroósmosis inversa en el subsuelo del Palacio de Justicia de la Nación, por la suma total de $24.805.000,00.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158255",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 34,
     "primera_vez": "2026-04-15T15:15:09.219970",
     "expira": "2026-04-20T15:15:09.219970",
@@ -5259,7 +5259,7 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.478.778,03.-, en concepto de reposición del fondo especial para automotores.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158254",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 34,
     "primera_vez": "2026-04-15T15:15:09.219970",
     "expira": "2026-04-20T15:15:09.219970",
@@ -5271,7 +5271,7 @@
     "detalle": "Contratar la provisión de artículos de limpieza con destino a la Oficina de Servicios Generales de la Morgue Judicial con las firmas SERVICIOS PARA LA HIGIENE S.A. y GARGANO TOMAS EDUARDO, por la suma total de $6.636.360,60.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158253",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 34,
     "primera_vez": "2026-04-15T15:15:09.219970",
     "expira": "2026-04-20T15:15:09.219970",
@@ -5284,7 +5284,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158313",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5296,7 +5296,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158311",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5308,7 +5308,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158310",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5320,7 +5320,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158312",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5332,7 +5332,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158309",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5344,7 +5344,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158315",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5356,7 +5356,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158314",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5368,7 +5368,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158308",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5380,7 +5380,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158307",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5392,7 +5392,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158304",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5404,7 +5404,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158305",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5416,7 +5416,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158306",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5428,7 +5428,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158302",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5440,7 +5440,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158301",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5452,7 +5452,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158300",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5464,7 +5464,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158299",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5476,7 +5476,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158303",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5488,7 +5488,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158298",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5500,7 +5500,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158297",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5512,7 +5512,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158296",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5524,7 +5524,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158294",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5536,7 +5536,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158293",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5548,7 +5548,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158295",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5560,7 +5560,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158291",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5572,7 +5572,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158292",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5584,7 +5584,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158290",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5596,7 +5596,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158289",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5608,7 +5608,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158287",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5620,7 +5620,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158288",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5632,7 +5632,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158286",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5644,7 +5644,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158284",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5656,7 +5656,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158285",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5668,7 +5668,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158281",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5680,7 +5680,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158283",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5692,7 +5692,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158280",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5704,7 +5704,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158282",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5716,7 +5716,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158276",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5728,7 +5728,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158277",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5740,7 +5740,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158278",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5752,7 +5752,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158279",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5764,7 +5764,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158275",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5776,7 +5776,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158274",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 32,
+    "intentos": 33,
     "primera_vez": "2026-04-15T19:06:40.442443",
     "expira": "2026-04-20T19:06:40.442443",
     "procesado": "2026-04-15T19:06:40.442443"
@@ -5788,7 +5788,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158350",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5800,7 +5800,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158349",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5812,7 +5812,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158348",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5824,7 +5824,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158347",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5836,7 +5836,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158346",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5848,7 +5848,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158345",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5860,7 +5860,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158344",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5872,7 +5872,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158343",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5884,7 +5884,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158342",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5896,7 +5896,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158341",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5908,7 +5908,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158339",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5920,7 +5920,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158337",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5932,7 +5932,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158336",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5944,7 +5944,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158338",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5956,7 +5956,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158335",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-04-16T17:09:28.797632",
     "expira": "2026-04-21T17:09:28.797632",
     "procesado": "2026-04-16T17:09:28.797632"
@@ -5968,7 +5968,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158352",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 21,
+    "intentos": 22,
     "primera_vez": "2026-04-16T19:05:57.432505",
     "expira": "2026-04-21T19:05:57.432505",
     "procesado": "2026-04-16T19:05:57.432505"
@@ -5980,7 +5980,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158351",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 21,
+    "intentos": 22,
     "primera_vez": "2026-04-16T19:05:57.432505",
     "expira": "2026-04-21T19:05:57.432505",
     "procesado": "2026-04-16T19:05:57.432505"
@@ -5992,7 +5992,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158353",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 20,
+    "intentos": 21,
     "primera_vez": "2026-04-16T20:43:57.768419",
     "expira": "2026-04-21T20:43:57.768419",
     "procesado": "2026-04-16T20:43:57.768419"
@@ -6004,7 +6004,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158373",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 13,
+    "intentos": 14,
     "primera_vez": "2026-04-17T13:05:12.350606",
     "expira": "2026-04-22T13:05:12.350606",
     "procesado": "2026-04-17T13:05:12.350606"
@@ -6016,7 +6016,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158374",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 13,
+    "intentos": 14,
     "primera_vez": "2026-04-17T13:05:12.350606",
     "expira": "2026-04-22T13:05:12.350606",
     "procesado": "2026-04-17T13:05:12.350606"
@@ -6028,7 +6028,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158393",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-04-17T16:50:52.960353",
     "expira": "2026-04-22T16:50:52.960353",
     "procesado": "2026-04-17T16:50:52.960353"
@@ -6040,7 +6040,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158395",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-04-17T18:51:28.012152",
     "expira": "2026-04-22T18:51:28.012152",
     "procesado": "2026-04-17T18:51:28.012152"
@@ -6052,9 +6052,273 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158394",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-04-17T18:51:28.012152",
     "expira": "2026-04-22T18:51:28.012152",
     "procesado": "2026-04-17T18:51:28.012152"
+  },
+  "158473": {
+    "numero": "731",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Ana María PARODI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158473",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158474": {
+    "numero": "730",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Mónica Alejandrina MICHELUCCI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158474",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158466": {
+    "numero": "729",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora María Cristina HERRERA.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158466",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158463": {
+    "numero": "728",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Alejandra Beatriz GONZÁLEZ.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158463",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158468": {
+    "numero": "727",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora María Laura YAMAGUCHI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158468",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158470": {
+    "numero": "726",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la Doctora María Alejandra SANTANTONIN.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158470",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158464": {
+    "numero": "725",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor del señor Néstor Rubén BLANDO.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158464",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158467": {
+    "numero": "724",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora María del Carmen CORTI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158467",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158472": {
+    "numero": "723",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la Doctora Gloria MANRIQUEZ.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158472",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158471": {
+    "numero": "722",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Graciela Margarita VILLALBA.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158471",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158469": {
+    "numero": "721",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Andrea MARINO.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158469",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158465": {
+    "numero": "720",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor del señor Daniel Gustavo LAVERGNE.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158465",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158455": {
+    "numero": "719",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Julia Alejandra CHAVARRÍA.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158455",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158460": {
+    "numero": "718",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Marta Viviana PALEARI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158460",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158456": {
+    "numero": "717",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Nora Norma GRATTI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158456",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158459": {
+    "numero": "716",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la Doctora Mónica Alicia COPANI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158459",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158462": {
+    "numero": "715",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Vilma Beatriz RUIZ.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158462",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158461": {
+    "numero": "714",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la Doctora Claudia Mariana GÓMEZ.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158461",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158453": {
+    "numero": "713",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Graciela Emilia ÁLVAREZ.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158453",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158457": {
+    "numero": "712",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Marcela Inés LAGEZE.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158457",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158454": {
+    "numero": "711",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora María Elena DOLJANIN.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158454",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
+  },
+  "158458": {
+    "numero": "710",
+    "fecha": "20 de abril de 2026",
+    "detalle": "Anticipo de jubilación a favor de la señora Evangelina Norma PICHOT.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=158458",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-04-20T17:00:52.539988",
+    "expira": "2026-04-25T17:00:52.539988",
+    "procesado": "2026-04-20T17:00:52.539988"
   }
 }
