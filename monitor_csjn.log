@@ -33784,3 +33784,82 @@ Resultado: 4/4 casos correctos
 2026-04-29 17:21:43 [INFO] Navegador cerrado
 2026-04-29 17:21:43 [INFO] Total resoluciones obtenidas: 200
 2026-04-29 17:21:43 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-04-29 19:13:26 [INFO] ============================================================
+2026-04-29 19:13:26 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-04-29 19:13:26 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-29 19:13:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-04-29 19:13:26 [INFO] Modo: ejecucion unica
+2026-04-29 19:13:26 [INFO] ============================================================
+2026-04-29 19:13:26 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-04-29 19:13:26 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-04-29 19:13:26 [INFO] Re-verificando 26 resoluciones pendientes...
+2026-04-29 19:13:26 [INFO]   Expirada: N°795
+2026-04-29 19:13:26 [INFO]   Expirada: N°794
+2026-04-29 19:13:26 [INFO]   Expirada: N°793
+2026-04-29 19:13:26 [INFO]   Expirada: N°792
+2026-04-29 19:13:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158591
+2026-04-29 19:13:29 [INFO] PDF: 1168 caracteres extraidos con pdfplumber
+2026-04-29 19:13:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158590
+2026-04-29 19:13:31 [INFO] PDF: 1920 caracteres extraidos con pdfplumber
+2026-04-29 19:13:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158589
+2026-04-29 19:13:33 [INFO] PDF: 1457 caracteres extraidos con pdfplumber
+2026-04-29 19:13:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158593
+2026-04-29 19:13:35 [INFO] PDF: 1937 caracteres extraidos con pdfplumber
+2026-04-29 19:13:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158599
+2026-04-29 19:13:37 [INFO] PDF: 2437 caracteres extraidos con pdfplumber
+2026-04-29 19:13:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158600
+2026-04-29 19:13:39 [INFO] PDF: 2598 caracteres extraidos con pdfplumber
+2026-04-29 19:13:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158595
+2026-04-29 19:13:41 [INFO] PDF: 1674 caracteres extraidos con pdfplumber
+2026-04-29 19:13:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158594
+2026-04-29 19:13:44 [INFO] PDF: 1656 caracteres extraidos con pdfplumber
+2026-04-29 19:13:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158597
+2026-04-29 19:13:45 [INFO] PDF: 1707 caracteres extraidos con pdfplumber
+2026-04-29 19:13:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158598
+2026-04-29 19:13:47 [INFO] PDF: 1683 caracteres extraidos con pdfplumber
+2026-04-29 19:13:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158596
+2026-04-29 19:13:48 [INFO] PDF: 1712 caracteres extraidos con pdfplumber
+2026-04-29 19:13:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158619
+2026-04-29 19:13:50 [INFO] PDF: 3395 caracteres extraidos con pdfplumber
+2026-04-29 19:13:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158618
+2026-04-29 19:13:51 [INFO] PDF: 1583 caracteres extraidos con pdfplumber
+2026-04-29 19:13:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158617
+2026-04-29 19:13:53 [INFO] PDF: 2794 caracteres extraidos con pdfplumber
+2026-04-29 19:13:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158616
+2026-04-29 19:13:54 [INFO] PDF: 2194 caracteres extraidos con pdfplumber
+2026-04-29 19:13:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158615
+2026-04-29 19:13:56 [INFO] PDF: 1680 caracteres extraidos con pdfplumber
+2026-04-29 19:13:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158614
+2026-04-29 19:13:57 [INFO] PDF: 1962 caracteres extraidos con pdfplumber
+2026-04-29 19:13:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158613
+2026-04-29 19:13:59 [INFO] PDF: 3108 caracteres extraidos con pdfplumber
+2026-04-29 19:13:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158623
+2026-04-29 19:14:00 [INFO] PDF: 2998 caracteres extraidos con pdfplumber
+2026-04-29 19:14:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158622
+2026-04-29 19:14:01 [INFO] PDF: 2519 caracteres extraidos con pdfplumber
+2026-04-29 19:14:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158621
+2026-04-29 19:14:03 [INFO] PDF: 3651 caracteres extraidos con pdfplumber
+2026-04-29 19:14:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158633
+2026-04-29 19:14:05 [INFO] PDF: 1953 caracteres extraidos con pdfplumber
+2026-04-29 19:14:05 [INFO] Pendientes re-verificadas: 26 | Nuevas relevantes: 0 | Expiradas: 4
+2026-04-29 19:14:05 [INFO] Registro: 787 resoluciones guardadas
+2026-04-29 19:14:05 [INFO] Iniciando navegador Chromium headless...
+2026-04-29 19:14:05 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-04-29 19:14:11 [INFO] Pagina cargada
+2026-04-29 19:14:11 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-04-29 19:14:12 [INFO] Respuesta capturada (auto): 200 resultados
+2026-04-29 19:14:14 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-04-29 19:14:14 [INFO] Click en Buscar (sin filtro de texto)
+2026-04-29 19:14:14 [INFO] Esperando resultados...
+2026-04-29 19:14:22 [INFO] Tabla con resultados detectada
+2026-04-29 19:14:22 [INFO] Fuente auto: 200 resultados | Fuente buscar: 0 resultados | Merge: 200 unicos
+2026-04-29 19:14:22 [INFO] Navegador cerrado
+2026-04-29 19:14:22 [INFO] Total resoluciones obtenidas: 200
+2026-04-29 19:14:22 [INFO] 1 resoluciones no procesadas, filtrando por contenido...
+2026-04-29 19:14:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158656
+2026-04-29 19:14:23 [INFO] PDF: 2618 caracteres extraidos con pdfplumber
+2026-04-29 19:14:23 [INFO]   No relevante: N°818 - Contratar con la firma POLIURETANO Y PLÁSTICO PROYECTADO S.R
+2026-04-29 19:14:23 [INFO] Ninguna de las 1 nuevas es relevante
+2026-04-29 19:14:24 [INFO] Telegram: mensaje enviado
+2026-04-29 19:14:24 [INFO] Registro: 788 resoluciones guardadas
+2026-04-29 19:14:24 [INFO] Completado: 0 relevantes de 1 nuevas
