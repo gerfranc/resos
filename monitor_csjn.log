@@ -40007,3 +40007,99 @@ Resultado: 4/4 casos correctos
 2026-05-06 16:00:00 [INFO] Navegador cerrado
 2026-05-06 16:00:00 [INFO] Total resoluciones obtenidas: 200
 2026-05-06 16:00:00 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-05-06 17:42:22 [INFO] ============================================================
+2026-05-06 17:42:22 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-05-06 17:42:22 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-05-06 17:42:22 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-05-06 17:42:22 [INFO] Modo: ejecucion unica
+2026-05-06 17:42:22 [INFO] ============================================================
+2026-05-06 17:42:22 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-05-06 17:42:22 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-05-06 17:42:22 [INFO] Re-verificando 25 resoluciones pendientes...
+2026-05-06 17:42:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158756
+2026-05-06 17:42:23 [INFO] PDF: 1582 caracteres extraidos con pdfplumber
+2026-05-06 17:42:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158755
+2026-05-06 17:42:25 [INFO] PDF: 1837 caracteres extraidos con pdfplumber
+2026-05-06 17:42:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158753
+2026-05-06 17:42:26 [INFO] PDF: 1678 caracteres extraidos con pdfplumber
+2026-05-06 17:42:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158754
+2026-05-06 17:42:28 [INFO] PDF: 1950 caracteres extraidos con pdfplumber
+2026-05-06 17:42:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158809
+2026-05-06 17:42:30 [INFO] PDF: 1957 caracteres extraidos con pdfplumber
+2026-05-06 17:42:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158808
+2026-05-06 17:42:32 [INFO] PDF: 2379 caracteres extraidos con pdfplumber
+2026-05-06 17:42:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158807
+2026-05-06 17:42:33 [INFO] PDF: 2379 caracteres extraidos con pdfplumber
+2026-05-06 17:42:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158806
+2026-05-06 17:42:35 [INFO] PDF: 1505 caracteres extraidos con pdfplumber
+2026-05-06 17:42:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158805
+2026-05-06 17:42:36 [INFO] PDF: 1503 caracteres extraidos con pdfplumber
+2026-05-06 17:42:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158802
+2026-05-06 17:42:38 [INFO] PDF: 1098 caracteres extraidos con pdfplumber
+2026-05-06 17:42:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158803
+2026-05-06 17:42:39 [INFO] PDF: 1130 caracteres extraidos con pdfplumber
+2026-05-06 17:42:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158804
+2026-05-06 17:42:41 [INFO] PDF: 1098 caracteres extraidos con pdfplumber
+2026-05-06 17:42:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158797
+2026-05-06 17:42:43 [INFO] PDF: 1696 caracteres extraidos con pdfplumber
+2026-05-06 17:42:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158795
+2026-05-06 17:42:44 [INFO] PDF: 1692 caracteres extraidos con pdfplumber
+2026-05-06 17:42:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158794
+2026-05-06 17:42:46 [INFO] PDF: 1702 caracteres extraidos con pdfplumber
+2026-05-06 17:42:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158800
+2026-05-06 17:42:47 [INFO] PDF: 1716 caracteres extraidos con pdfplumber
+2026-05-06 17:42:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158801
+2026-05-06 17:42:49 [INFO] PDF: 1668 caracteres extraidos con pdfplumber
+2026-05-06 17:42:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158799
+2026-05-06 17:42:50 [INFO] PDF: 1706 caracteres extraidos con pdfplumber
+2026-05-06 17:42:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158796
+2026-05-06 17:42:52 [INFO] PDF: 1723 caracteres extraidos con pdfplumber
+2026-05-06 17:42:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158798
+2026-05-06 17:42:53 [INFO] PDF: 1717 caracteres extraidos con pdfplumber
+2026-05-06 17:42:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158793
+2026-05-06 17:42:55 [INFO] PDF: 1508 caracteres extraidos con pdfplumber
+2026-05-06 17:42:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158812
+2026-05-06 17:42:56 [INFO] PDF: 2566 caracteres extraidos con pdfplumber
+2026-05-06 17:42:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158817
+2026-05-06 17:42:57 [INFO] PDF: 1971 caracteres extraidos con pdfplumber
+2026-05-06 17:42:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158816
+2026-05-06 17:42:59 [INFO] PDF: 2693 caracteres extraidos con pdfplumber
+2026-05-06 17:42:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158833
+2026-05-06 17:43:00 [INFO] PDF: 3329 caracteres extraidos con pdfplumber
+2026-05-06 17:43:00 [INFO] Pendientes re-verificadas: 25 | Nuevas relevantes: 0 | Expiradas: 0
+2026-05-06 17:43:00 [INFO] Registro: 869 resoluciones guardadas
+2026-05-06 17:43:01 [INFO] Iniciando navegador Chromium headless...
+2026-05-06 17:43:01 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-05-06 17:43:06 [INFO] Pagina cargada
+2026-05-06 17:43:07 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-05-06 17:43:07 [INFO] Respuesta capturada (auto): 200 resultados
+2026-05-06 17:43:09 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-05-06 17:43:09 [INFO] Click en Buscar (sin filtro de texto)
+2026-05-06 17:43:09 [INFO] Esperando resultados...
+2026-05-06 17:43:17 [INFO] Tabla con resultados detectada
+2026-05-06 17:43:17 [INFO] Fuente auto: 200 resultados | Fuente buscar: 0 resultados | Merge: 200 unicos
+2026-05-06 17:43:17 [INFO] Navegador cerrado
+2026-05-06 17:43:17 [INFO] Total resoluciones obtenidas: 200
+2026-05-06 17:43:17 [INFO] 6 resoluciones no procesadas, filtrando por contenido...
+2026-05-06 17:43:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158841
+2026-05-06 17:43:20 [INFO] PDF: 1467 caracteres extraidos con pdfplumber
+2026-05-06 17:43:20 [INFO]   No relevante: N°905 - Prórroga de contratos - Tribunal Oral Criminal Federal N° 8
+2026-05-06 17:43:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158840
+2026-05-06 17:43:23 [INFO] PDF: 1662 caracteres extraidos con pdfplumber
+2026-05-06 17:43:23 [INFO]   No relevante: N°904 - Prórroga de contrato - Tribunal Oral en lo Criminal Federal 
+2026-05-06 17:43:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158842
+2026-05-06 17:43:25 [INFO] PDF: 1716 caracteres extraidos con pdfplumber
+2026-05-06 17:43:25 [INFO]   No relevante: N°903 - Prórroga de contrato - Juzgado Federal de Ushuaia.-
+2026-05-06 17:43:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158839
+2026-05-06 17:43:27 [INFO] PDF: 1665 caracteres extraidos con pdfplumber
+2026-05-06 17:43:27 [INFO]   No relevante: N°902 - Prórroga de contratos - Tribunal Oral en lo Criminal Federal
+2026-05-06 17:43:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158837
+2026-05-06 17:43:30 [INFO] PDF: 608 caracteres extraidos con pdfplumber
+2026-05-06 17:43:30 [INFO]   No relevante: N°901 - Aceptar la renuncia presentada por el señor Juan Carlos VIOL
+2026-05-06 17:43:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=158836
+2026-05-06 17:43:31 [INFO] PDF: 2430 caracteres extraidos con pdfplumber
+2026-05-06 17:43:31 [INFO]   No relevante: N°900 - Bonificación adicional por título a favor de Federico LORENZ
+2026-05-06 17:43:31 [INFO] Ninguna de las 6 nuevas es relevante
+2026-05-06 17:43:32 [INFO] Telegram: mensaje enviado
+2026-05-06 17:43:32 [INFO] Registro: 875 resoluciones guardadas
+2026-05-06 17:43:32 [INFO] Completado: 0 relevantes de 6 nuevas
