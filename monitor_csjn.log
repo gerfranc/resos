@@ -70201,3 +70201,57 @@ Resultado: 4/4 casos correctos
 2026-06-17 13:37:39 [INFO] Navegador cerrado
 2026-06-17 13:37:39 [INFO] Total resoluciones obtenidas: 200
 2026-06-17 13:37:39 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-06-17 16:51:58 [INFO] ============================================================
+2026-06-17 16:51:58 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-06-17 16:51:58 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-17 16:51:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-06-17 16:51:58 [INFO] Modo: ejecucion unica
+2026-06-17 16:51:58 [INFO] ============================================================
+2026-06-17 16:51:58 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-06-17 16:51:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-06-17 16:51:58 [INFO] Re-verificando 8 resoluciones pendientes...
+2026-06-17 16:51:58 [INFO]   Expirada: N°1395
+2026-06-17 16:51:58 [INFO]   Expirada: N°1394
+2026-06-17 16:51:58 [INFO]   Expirada: N°1393
+2026-06-17 16:51:58 [INFO]   Expirada: N°1392
+2026-06-17 16:51:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159743
+2026-06-17 16:51:59 [INFO] PDF: 2560 caracteres extraidos con pdfplumber
+2026-06-17 16:51:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159754
+2026-06-17 16:52:01 [INFO] PDF: 3271 caracteres extraidos con pdfplumber
+2026-06-17 16:52:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159757
+2026-06-17 16:52:03 [INFO] PDF: 3018 caracteres extraidos con pdfplumber
+2026-06-17 16:52:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159755
+2026-06-17 16:52:04 [INFO] PDF: 1681 caracteres extraidos con pdfplumber
+2026-06-17 16:52:04 [INFO] Pendientes re-verificadas: 8 | Nuevas relevantes: 0 | Expiradas: 4
+2026-06-17 16:52:04 [INFO] Registro: 1371 resoluciones guardadas
+2026-06-17 16:52:04 [INFO] Iniciando navegador Chromium headless...
+2026-06-17 16:52:05 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-17 16:52:10 [INFO] Pagina cargada
+2026-06-17 16:52:11 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-17 16:52:11 [INFO] Respuesta capturada (auto): 200 resultados
+2026-06-17 16:52:13 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-06-17 16:52:13 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-17 16:52:13 [INFO] Click en Buscar (sin filtro de texto)
+2026-06-17 16:52:13 [INFO] Esperando resultados...
+2026-06-17 16:52:14 [INFO] Respuesta capturada (buscar): 200 resultados
+2026-06-17 16:52:21 [INFO] Tabla con resultados detectada
+2026-06-17 16:52:21 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-06-17 16:52:21 [INFO] Navegador cerrado
+2026-06-17 16:52:21 [INFO] Total resoluciones obtenidas: 200
+2026-06-17 16:52:21 [INFO] 4 resoluciones no procesadas, filtrando por contenido...
+2026-06-17 16:52:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159776
+2026-06-17 16:52:23 [INFO] PDF: 1828 caracteres extraidos con pdfplumber
+2026-06-17 16:52:23 [INFO]   No relevante: N°1403 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-06-17 16:52:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159775
+2026-06-17 16:52:24 [INFO] PDF: 1681 caracteres extraidos con pdfplumber
+2026-06-17 16:52:24 [INFO]   No relevante: N°1402 - Autorizar a liquidar y abonar a favor de la Dirección Genera
+2026-06-17 16:52:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159774
+2026-06-17 16:52:26 [INFO] PDF: 1986 caracteres extraidos con pdfplumber
+2026-06-17 16:52:26 [INFO]   No relevante: N°1401 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-06-17 16:52:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159773
+2026-06-17 16:52:28 [INFO] PDF: 2358 caracteres extraidos con pdfplumber
+2026-06-17 16:52:28 [INFO]   No relevante: N°1400 - Autorizar al Secretario de Juzgado, al Secretario Electoral 
+2026-06-17 16:52:28 [INFO] Ninguna de las 4 nuevas es relevante
+2026-06-17 16:52:28 [INFO] Telegram: mensaje enviado
+2026-06-17 16:52:28 [INFO] Registro: 1375 resoluciones guardadas
+2026-06-17 16:52:28 [INFO] Completado: 0 relevantes de 4 nuevas
