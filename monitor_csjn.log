@@ -70075,3 +70075,45 @@ Resultado: 4/4 casos correctos
 2026-06-16 22:07:07 [INFO] Navegador cerrado
 2026-06-16 22:07:07 [INFO] Total resoluciones obtenidas: 200
 2026-06-16 22:07:07 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-06-17 02:55:02 [INFO] ============================================================
+2026-06-17 02:55:02 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-06-17 02:55:02 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-17 02:55:02 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-06-17 02:55:02 [INFO] Modo: ejecucion unica
+2026-06-17 02:55:02 [INFO] ============================================================
+2026-06-17 02:55:02 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-06-17 02:55:02 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-06-17 02:55:02 [INFO] Re-verificando 8 resoluciones pendientes...
+2026-06-17 02:55:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159740
+2026-06-17 02:55:03 [INFO] PDF: 1552 caracteres extraidos con pdfplumber
+2026-06-17 02:55:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159739
+2026-06-17 02:55:05 [INFO] PDF: 2495 caracteres extraidos con pdfplumber
+2026-06-17 02:55:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159738
+2026-06-17 02:55:06 [INFO] PDF: 2465 caracteres extraidos con pdfplumber
+2026-06-17 02:55:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159737
+2026-06-17 02:55:08 [INFO] PDF: 3203 caracteres extraidos con pdfplumber
+2026-06-17 02:55:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159743
+2026-06-17 02:55:09 [INFO] PDF: 2560 caracteres extraidos con pdfplumber
+2026-06-17 02:55:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159754
+2026-06-17 02:55:11 [INFO] PDF: 3271 caracteres extraidos con pdfplumber
+2026-06-17 02:55:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159757
+2026-06-17 02:55:12 [INFO] PDF: 3018 caracteres extraidos con pdfplumber
+2026-06-17 02:55:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159755
+2026-06-17 02:55:13 [INFO] PDF: 1681 caracteres extraidos con pdfplumber
+2026-06-17 02:55:13 [INFO] Pendientes re-verificadas: 8 | Nuevas relevantes: 0 | Expiradas: 0
+2026-06-17 02:55:13 [INFO] Registro: 1371 resoluciones guardadas
+2026-06-17 02:55:14 [INFO] Iniciando navegador Chromium headless...
+2026-06-17 02:55:15 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-17 02:55:19 [INFO] Pagina cargada
+2026-06-17 02:55:19 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-17 02:55:20 [INFO] Respuesta capturada (auto): 200 resultados
+2026-06-17 02:55:22 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-06-17 02:55:22 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-17 02:55:22 [INFO] Click en Buscar (sin filtro de texto)
+2026-06-17 02:55:22 [INFO] Esperando resultados...
+2026-06-17 02:55:24 [INFO] Respuesta capturada (buscar): 200 resultados
+2026-06-17 02:55:30 [INFO] Tabla con resultados detectada
+2026-06-17 02:55:30 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-06-17 02:55:30 [INFO] Navegador cerrado
+2026-06-17 02:55:30 [INFO] Total resoluciones obtenidas: 200
+2026-06-17 02:55:30 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
