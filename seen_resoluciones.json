@@ -15343,7 +15343,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159899",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15355,7 +15355,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159898",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15367,7 +15367,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159897",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15379,7 +15379,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159896",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15391,7 +15391,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159895",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15403,7 +15403,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159894",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15415,9 +15415,33 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159893",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
+  },
+  "159914": {
+    "numero": "1494",
+    "fecha": "22 de junio de 2026",
+    "detalle": "Contratar con la firma LAREDO Y ASOCIADOS S.R.L. el servicio de limpieza integral, por la suma de $490.000.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159914",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-22T19:19:43.068809",
+    "expira": "2026-06-27T19:19:43.068809",
+    "procesado": "2026-06-22T19:19:43.068809"
+  },
+  "159913": {
+    "numero": "1493",
+    "fecha": "22 de junio de 2026",
+    "detalle": "Aprobar la rendición de gastos del fondo de caja chica asignado por resoluciones N° 2177/99 y 2448/2024 y autorizar al Departamento de Tesorería de la Dirección de Administración a efectuar su reintegro por la suma de $96.232.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159913",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-22T19:19:43.068809",
+    "expira": "2026-06-27T19:19:43.068809",
+    "procesado": "2026-06-22T19:19:43.068809"
   }
 }
