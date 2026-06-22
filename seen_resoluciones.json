@@ -15343,7 +15343,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159899",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15355,7 +15355,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159898",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15367,7 +15367,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159897",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15379,7 +15379,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159896",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15391,7 +15391,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159895",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15403,7 +15403,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159894",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15415,7 +15415,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159893",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 2,
+    "intentos": 3,
     "primera_vez": "2026-06-22T15:14:43.843371",
     "expira": "2026-06-27T15:14:43.843371",
     "procesado": "2026-06-22T15:14:43.843371"
@@ -15427,7 +15427,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159914",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T19:19:43.068809",
     "expira": "2026-06-27T19:19:43.068809",
     "procesado": "2026-06-22T19:19:43.068809"
@@ -15439,9 +15439,42 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159913",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-06-22T19:19:43.068809",
     "expira": "2026-06-27T19:19:43.068809",
     "procesado": "2026-06-22T19:19:43.068809"
+  },
+  "159917": {
+    "numero": "1497",
+    "fecha": "22 de junio de 2026",
+    "detalle": "Contratar con la firma  MONTEBIO S.R.L. la provisión de test rápido marca CELEREST para el Laboratorio de Toxicología y Química Legal de la Morgue Judicial, por la suma de $32.622.832.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159917",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-22T21:57:13.982272",
+    "expira": "2026-06-27T21:57:13.982272",
+    "procesado": "2026-06-22T21:57:13.982272"
+  },
+  "159916": {
+    "numero": "1496",
+    "fecha": "22 de junio de 2026",
+    "detalle": "Contratar con la firma ASCENSORES LA PLATA S.R.L. el servicio de mantenimiento del ascensor instalado en el edificio de Lavalle 1250, por la suma de $4.974.240.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159916",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-22T21:57:13.982272",
+    "expira": "2026-06-27T21:57:13.982272",
+    "procesado": "2026-06-22T21:57:13.982272"
+  },
+  "159915": {
+    "numero": "1495",
+    "fecha": "22 de junio de 2026",
+    "detalle": "Aplicar una multa por mora a la firma ROYAL DOOR S.R.L. por la suma total de $3.652.836,61.-  y una sanción de apercibimiento.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159915",
+    "relevante": true,
+    "estado": "relevante",
+    "procesado": "2026-06-22T21:57:13.982272"
   }
 }
