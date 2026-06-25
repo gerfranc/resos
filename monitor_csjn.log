@@ -75111,3 +75111,290 @@ Call log:
 2026-06-25 18:07:49 [INFO] Telegram: mensaje enviado
 2026-06-25 18:07:50 [INFO] Registro: 1538 resoluciones guardadas
 2026-06-25 18:07:50 [INFO] Completado: 1 relevantes de 6 nuevas
+2026-06-25 21:24:32 [INFO] ============================================================
+2026-06-25 21:24:32 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-06-25 21:24:32 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-25 21:24:32 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-06-25 21:24:32 [INFO] Modo: ejecucion unica
+2026-06-25 21:24:32 [INFO] ============================================================
+2026-06-25 21:24:32 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-06-25 21:24:32 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-06-25 21:24:32 [INFO] Re-verificando 79 resoluciones pendientes...
+2026-06-25 21:24:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159899
+2026-06-25 21:24:34 [INFO] PDF: 3107 caracteres extraidos con pdfplumber
+2026-06-25 21:24:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159898
+2026-06-25 21:24:35 [INFO] PDF: 4072 caracteres extraidos con pdfplumber
+2026-06-25 21:24:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159897
+2026-06-25 21:24:37 [INFO] PDF: 3072 caracteres extraidos con pdfplumber
+2026-06-25 21:24:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159896
+2026-06-25 21:24:38 [INFO] PDF: 4623 caracteres extraidos con pdfplumber
+2026-06-25 21:24:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159895
+2026-06-25 21:24:39 [INFO] PDF: 4480 caracteres extraidos con pdfplumber
+2026-06-25 21:24:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159894
+2026-06-25 21:24:41 [INFO] PDF: 3104 caracteres extraidos con pdfplumber
+2026-06-25 21:24:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159893
+2026-06-25 21:24:42 [INFO] PDF: 4350 caracteres extraidos con pdfplumber
+2026-06-25 21:24:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159914
+2026-06-25 21:24:44 [INFO] PDF: 4157 caracteres extraidos con pdfplumber
+2026-06-25 21:24:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159913
+2026-06-25 21:24:45 [INFO] PDF: 1713 caracteres extraidos con pdfplumber
+2026-06-25 21:24:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159917
+2026-06-25 21:24:47 [INFO] PDF: 2615 caracteres extraidos con pdfplumber
+2026-06-25 21:24:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159916
+2026-06-25 21:24:48 [INFO] PDF: 4110 caracteres extraidos con pdfplumber
+2026-06-25 21:24:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159977
+2026-06-25 21:24:50 [INFO] PDF: 1564 caracteres extraidos con pdfplumber
+2026-06-25 21:24:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159978
+2026-06-25 21:24:51 [INFO] PDF: 1549 caracteres extraidos con pdfplumber
+2026-06-25 21:24:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159975
+2026-06-25 21:24:52 [INFO] PDF: 1615 caracteres extraidos con pdfplumber
+2026-06-25 21:24:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159974
+2026-06-25 21:24:54 [INFO] PDF: 1623 caracteres extraidos con pdfplumber
+2026-06-25 21:24:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159976
+2026-06-25 21:24:55 [INFO] PDF: 1589 caracteres extraidos con pdfplumber
+2026-06-25 21:24:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159973
+2026-06-25 21:24:56 [INFO] PDF: 1508 caracteres extraidos con pdfplumber
+2026-06-25 21:24:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159972
+2026-06-25 21:24:57 [INFO] PDF: 1711 caracteres extraidos con pdfplumber
+2026-06-25 21:24:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159968
+2026-06-25 21:24:59 [INFO] PDF: 1141 caracteres extraidos con pdfplumber
+2026-06-25 21:24:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159970
+2026-06-25 21:25:01 [INFO] PDF: 1163 caracteres extraidos con pdfplumber
+2026-06-25 21:25:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159969
+2026-06-25 21:25:02 [INFO] PDF: 1148 caracteres extraidos con pdfplumber
+2026-06-25 21:25:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159971
+2026-06-25 21:25:04 [INFO] PDF: 1115 caracteres extraidos con pdfplumber
+2026-06-25 21:25:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159966
+2026-06-25 21:25:05 [INFO] PDF: 1144 caracteres extraidos con pdfplumber
+2026-06-25 21:25:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159967
+2026-06-25 21:25:07 [INFO] PDF: 1110 caracteres extraidos con pdfplumber
+2026-06-25 21:25:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159965
+2026-06-25 21:25:08 [INFO] PDF: 1084 caracteres extraidos con pdfplumber
+2026-06-25 21:25:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159962
+2026-06-25 21:25:09 [INFO] PDF: 1120 caracteres extraidos con pdfplumber
+2026-06-25 21:25:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159963
+2026-06-25 21:25:10 [INFO] PDF: 1054 caracteres extraidos con pdfplumber
+2026-06-25 21:25:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159961
+2026-06-25 21:25:12 [INFO] PDF: 1125 caracteres extraidos con pdfplumber
+2026-06-25 21:25:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159964
+2026-06-25 21:25:13 [INFO] PDF: 1149 caracteres extraidos con pdfplumber
+2026-06-25 21:25:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159958
+2026-06-25 21:25:14 [INFO] PDF: 2244 caracteres extraidos con pdfplumber
+2026-06-25 21:25:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159959
+2026-06-25 21:25:15 [INFO] PDF: 2349 caracteres extraidos con pdfplumber
+2026-06-25 21:25:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159960
+2026-06-25 21:25:16 [INFO] PDF: 2421 caracteres extraidos con pdfplumber
+2026-06-25 21:25:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159954
+2026-06-25 21:25:18 [INFO] PDF: 1804 caracteres extraidos con pdfplumber
+2026-06-25 21:25:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159955
+2026-06-25 21:25:19 [INFO] PDF: 1731 caracteres extraidos con pdfplumber
+2026-06-25 21:25:19 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159951
+2026-06-25 21:25:20 [INFO] PDF: 1661 caracteres extraidos con pdfplumber
+2026-06-25 21:25:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159950
+2026-06-25 21:25:22 [INFO] PDF: 1666 caracteres extraidos con pdfplumber
+2026-06-25 21:25:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159952
+2026-06-25 21:25:23 [INFO] PDF: 1673 caracteres extraidos con pdfplumber
+2026-06-25 21:25:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159953
+2026-06-25 21:25:24 [INFO] PDF: 1720 caracteres extraidos con pdfplumber
+2026-06-25 21:25:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159947
+2026-06-25 21:25:25 [INFO] PDF: 1729 caracteres extraidos con pdfplumber
+2026-06-25 21:25:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159949
+2026-06-25 21:25:27 [INFO] PDF: 1668 caracteres extraidos con pdfplumber
+2026-06-25 21:25:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159948
+2026-06-25 21:25:28 [INFO] PDF: 1668 caracteres extraidos con pdfplumber
+2026-06-25 21:25:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159944
+2026-06-25 21:25:29 [INFO] PDF: 1670 caracteres extraidos con pdfplumber
+2026-06-25 21:25:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159945
+2026-06-25 21:25:31 [INFO] PDF: 1684 caracteres extraidos con pdfplumber
+2026-06-25 21:25:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159946
+2026-06-25 21:25:32 [INFO] PDF: 1693 caracteres extraidos con pdfplumber
+2026-06-25 21:25:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159941
+2026-06-25 21:25:33 [INFO] PDF: 1668 caracteres extraidos con pdfplumber
+2026-06-25 21:25:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159942
+2026-06-25 21:25:35 [INFO] PDF: 1671 caracteres extraidos con pdfplumber
+2026-06-25 21:25:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159943
+2026-06-25 21:25:36 [INFO] PDF: 1662 caracteres extraidos con pdfplumber
+2026-06-25 21:25:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159940
+2026-06-25 21:25:37 [INFO] PDF: 1699 caracteres extraidos con pdfplumber
+2026-06-25 21:25:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159939
+2026-06-25 21:25:38 [INFO] PDF: 1698 caracteres extraidos con pdfplumber
+2026-06-25 21:25:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159938
+2026-06-25 21:25:40 [INFO] PDF: 1692 caracteres extraidos con pdfplumber
+2026-06-25 21:25:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159934
+2026-06-25 21:25:41 [INFO] PDF: 1662 caracteres extraidos con pdfplumber
+2026-06-25 21:25:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159937
+2026-06-25 21:25:43 [INFO] PDF: 1698 caracteres extraidos con pdfplumber
+2026-06-25 21:25:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159935
+2026-06-25 21:25:45 [INFO] PDF: 1714 caracteres extraidos con pdfplumber
+2026-06-25 21:25:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159936
+2026-06-25 21:25:47 [INFO] PDF: 1678 caracteres extraidos con pdfplumber
+2026-06-25 21:25:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159997
+2026-06-25 21:25:48 [INFO] PDF: 1850 caracteres extraidos con pdfplumber
+2026-06-25 21:25:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159995
+2026-06-25 21:25:50 [INFO] PDF: 4338 caracteres extraidos con pdfplumber
+2026-06-25 21:25:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159996
+2026-06-25 21:25:51 [INFO] PDF: 4025 caracteres extraidos con pdfplumber
+2026-06-25 21:25:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=159994
+2026-06-25 21:25:53 [INFO] PDF: 4706 caracteres extraidos con pdfplumber
+2026-06-25 21:25:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160014
+2026-06-25 21:25:54 [INFO] PDF: 1704 caracteres extraidos con pdfplumber
+2026-06-25 21:25:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160013
+2026-06-25 21:25:55 [INFO] PDF: 1916 caracteres extraidos con pdfplumber
+2026-06-25 21:25:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160012
+2026-06-25 21:25:57 [INFO] PDF: 2592 caracteres extraidos con pdfplumber
+2026-06-25 21:25:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160011
+2026-06-25 21:25:59 [INFO] PDF: 598 caracteres extraidos con pdfplumber
+2026-06-25 21:25:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160010
+2026-06-25 21:26:01 [INFO] PDF: 596 caracteres extraidos con pdfplumber
+2026-06-25 21:26:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160008
+2026-06-25 21:26:02 [INFO] PDF: 1237 caracteres extraidos con pdfplumber
+2026-06-25 21:26:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160001
+2026-06-25 21:26:04 [INFO] PDF: 1214 caracteres extraidos con pdfplumber
+2026-06-25 21:26:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160002
+2026-06-25 21:26:06 [INFO] PDF: 1280 caracteres extraidos con pdfplumber
+2026-06-25 21:26:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160003
+2026-06-25 21:26:08 [INFO] PDF: 1459 caracteres extraidos con pdfplumber
+2026-06-25 21:26:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160006
+2026-06-25 21:26:09 [INFO] PDF: 1442 caracteres extraidos con pdfplumber
+2026-06-25 21:26:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160009
+2026-06-25 21:26:11 [INFO] PDF: 1449 caracteres extraidos con pdfplumber
+2026-06-25 21:26:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160005
+2026-06-25 21:26:13 [INFO] PDF: 1084 caracteres extraidos con pdfplumber
+2026-06-25 21:26:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160007
+2026-06-25 21:26:15 [INFO] PDF: 1328 caracteres extraidos con pdfplumber
+2026-06-25 21:26:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160004
+2026-06-25 21:26:17 [INFO] PDF: 1213 caracteres extraidos con pdfplumber
+2026-06-25 21:26:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160000
+2026-06-25 21:26:18 [INFO] PDF: 1690 caracteres extraidos con pdfplumber
+2026-06-25 21:26:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160039
+2026-06-25 21:26:21 [INFO] PDF: 1981 caracteres extraidos con pdfplumber
+2026-06-25 21:26:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160046
+2026-06-25 21:26:22 [INFO] PDF: 1715 caracteres extraidos con pdfplumber
+2026-06-25 21:26:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160044
+2026-06-25 21:26:23 [INFO] PDF: 1550 caracteres extraidos con pdfplumber
+2026-06-25 21:26:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160042
+2026-06-25 21:26:24 [INFO] PDF: 1917 caracteres extraidos con pdfplumber
+2026-06-25 21:26:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160040
+2026-06-25 21:26:25 [INFO] PDF: 1681 caracteres extraidos con pdfplumber
+2026-06-25 21:26:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160041
+2026-06-25 21:26:27 [INFO] PDF: 1515 caracteres extraidos con pdfplumber
+2026-06-25 21:26:27 [INFO] Pendientes re-verificadas: 79 | Nuevas relevantes: 0 | Expiradas: 0
+2026-06-25 21:26:27 [INFO] Registro: 1538 resoluciones guardadas
+2026-06-25 21:26:27 [INFO] Iniciando navegador Chromium headless...
+2026-06-25 21:26:29 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-25 21:26:33 [INFO] Pagina cargada
+2026-06-25 21:26:33 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-25 21:26:34 [INFO] Respuesta capturada (auto): 200 resultados
+2026-06-25 21:26:36 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-06-25 21:26:36 [INFO] Request interceptado - sin filtro texto, fechaDesde: 10/02/2026
+2026-06-25 21:26:36 [INFO] Click en Buscar (sin filtro de texto)
+2026-06-25 21:26:36 [INFO] Esperando resultados...
+2026-06-25 21:26:38 [INFO] Respuesta capturada (buscar): 200 resultados
+2026-06-25 21:26:44 [INFO] Tabla con resultados detectada
+2026-06-25 21:26:44 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-06-25 21:26:44 [INFO] Navegador cerrado
+2026-06-25 21:26:44 [INFO] Total resoluciones obtenidas: 200
+2026-06-25 21:26:44 [INFO] 33 resoluciones no procesadas, filtrando por contenido...
+2026-06-25 21:26:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160076
+2026-06-25 21:26:46 [INFO] PDF: 1355 caracteres extraidos con pdfplumber
+2026-06-25 21:26:46 [INFO]   No relevante: N°1599 - Horas Extras - Dirección General de Gestión Interna e Infrae
+2026-06-25 21:26:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160078
+2026-06-25 21:26:48 [INFO] PDF: 1305 caracteres extraidos con pdfplumber
+2026-06-25 21:26:48 [INFO]   No relevante: N°1598 - Horas Extras - Dirección General de Gestión Interna e Infrae
+2026-06-25 21:26:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160080
+2026-06-25 21:26:50 [INFO] PDF: 1210 caracteres extraidos con pdfplumber
+2026-06-25 21:26:50 [INFO]   No relevante: N°1597 - Horas Extras - Dirección General de Gestión Interna e Infrae
+2026-06-25 21:26:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160079
+2026-06-25 21:26:52 [INFO] PDF: 1228 caracteres extraidos con pdfplumber
+2026-06-25 21:26:52 [INFO]   No relevante: N°1596 - Horas Extras - Dirección de Sistemas - Comisión de Gestión J
+2026-06-25 21:26:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160082
+2026-06-25 21:26:54 [INFO] PDF: 1302 caracteres extraidos con pdfplumber
+2026-06-25 21:26:54 [INFO]   No relevante: N°1595 - Horas Extras - Dirección General de Gestión Interna e Infrae
+2026-06-25 21:26:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160081
+2026-06-25 21:26:56 [INFO] PDF: 1285 caracteres extraidos con pdfplumber
+2026-06-25 21:26:56 [INFO]   No relevante: N°1594 - Horas Extras - Secretaría Judicial N° 6.-
+2026-06-25 21:26:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160077
+2026-06-25 21:26:58 [INFO] PDF: 1315 caracteres extraidos con pdfplumber
+2026-06-25 21:26:58 [INFO]   No relevante: N°1593 - Horas Extras - Dirección de Sistemas.-
+2026-06-25 21:26:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160074
+2026-06-25 21:27:00 [INFO] PDF: 1524 caracteres extraidos con pdfplumber
+2026-06-25 21:27:00 [INFO]   No relevante: N°1592 - Horas Extras - Dirección General de Gestión Interna e Infrae
+2026-06-25 21:27:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160071
+2026-06-25 21:27:03 [INFO] PDF: 1262 caracteres extraidos con pdfplumber
+2026-06-25 21:27:03 [INFO]   No relevante: N°1591 - Horas Extras - Dirección de Sistemas.-
+2026-06-25 21:27:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160067
+2026-06-25 21:27:05 [INFO] PDF: 1306 caracteres extraidos con pdfplumber
+2026-06-25 21:27:05 [INFO]   No relevante: N°1590 - Horas Extras - Dirección General de Control Interno y Audito
+2026-06-25 21:27:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160068
+2026-06-25 21:27:09 [INFO] PDF: 1356 caracteres extraidos con pdfplumber
+2026-06-25 21:27:09 [INFO]   No relevante: N°1589 - Horas Extras - Secretaría Judicial N° 7.-
+2026-06-25 21:27:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160073
+2026-06-25 21:27:11 [INFO] PDF: 1548 caracteres extraidos con pdfplumber
+2026-06-25 21:27:11 [INFO]   No relevante: N°1588 - Horas Extras - Dirección General de Bibliotecas y Museo.-
+2026-06-25 21:27:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160066
+2026-06-25 21:27:13 [INFO] PDF: 1270 caracteres extraidos con pdfplumber
+2026-06-25 21:27:13 [INFO]   No relevante: N°1587 - Horas Extras - Dirección de Ceremonial y Protocolo.-
+2026-06-25 21:27:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160069
+2026-06-25 21:27:15 [INFO] PDF: 1273 caracteres extraidos con pdfplumber
+2026-06-25 21:27:15 [INFO]   No relevante: N°1586 - Horas Extras - Dirección de Despacho.-
+2026-06-25 21:27:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160070
+2026-06-25 21:27:17 [INFO] PDF: 1337 caracteres extraidos con pdfplumber
+2026-06-25 21:27:17 [INFO]   No relevante: N°1585 - Horas Extras - Dirección de Despacho.-
+2026-06-25 21:27:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160075
+2026-06-25 21:27:19 [INFO] PDF: 1261 caracteres extraidos con pdfplumber
+2026-06-25 21:27:19 [INFO]   No relevante: N°1584 - Horas Extras - Oficina Base General de Datos de Niños, Niñas
+2026-06-25 21:27:19 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160072
+2026-06-25 21:27:20 [INFO] PDF: 1293 caracteres extraidos con pdfplumber
+2026-06-25 21:27:20 [INFO]   No relevante: N°1583 - Horas Extras - Secretaría Judicial N° 3.-
+2026-06-25 21:27:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160061
+2026-06-25 21:27:22 [INFO] PDF: 1592 caracteres extraidos con pdfplumber
+2026-06-25 21:27:22 [INFO]   No relevante: N°1582 - Horas Extras - Cuerpo Médico Forense.-
+2026-06-25 21:27:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160060
+2026-06-25 21:27:24 [INFO] PDF: 1680 caracteres extraidos con pdfplumber
+2026-06-25 21:27:24 [INFO]   No relevante: N°1581 - Horas Extras - Dirección General de Notificaciones.-
+2026-06-25 21:27:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160057
+2026-06-25 21:27:26 [INFO] PDF: 1311 caracteres extraidos con pdfplumber
+2026-06-25 21:27:26 [INFO]   No relevante: N°1580 - Horas Extras - Dirección de Comunicación y Gobierno Abierto.
+2026-06-25 21:27:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160062
+2026-06-25 21:27:28 [INFO] PDF: 1290 caracteres extraidos con pdfplumber
+2026-06-25 21:27:28 [INFO]   No relevante: N°1579 - Horas Extras - Secretaría Penal Especial.-
+2026-06-25 21:27:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160063
+2026-06-25 21:27:31 [INFO] PDF: 1274 caracteres extraidos con pdfplumber
+2026-06-25 21:27:31 [INFO]   No relevante: N°1578 - Horas Extras - Secretaría Judicial de Relaciones de Consumo.
+2026-06-25 21:27:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160064
+2026-06-25 21:27:33 [INFO] PDF: 1368 caracteres extraidos con pdfplumber
+2026-06-25 21:27:33 [INFO]   No relevante: N°1577 - Horas Extras - Subdirección de Seguridad.-
+2026-06-25 21:27:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160058
+2026-06-25 21:27:35 [INFO] PDF: 1347 caracteres extraidos con pdfplumber
+2026-06-25 21:27:35 [INFO]   No relevante: N°1576 - Horas Extras - Mesa General de Entradas.-
+2026-06-25 21:27:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160065
+2026-06-25 21:27:37 [INFO] PDF: 1339 caracteres extraidos con pdfplumber
+2026-06-25 21:27:37 [INFO]   No relevante: N°1575 - Horas Extras - Dirección de Administración.-
+2026-06-25 21:27:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160056
+2026-06-25 21:27:39 [INFO] PDF: 1437 caracteres extraidos con pdfplumber
+2026-06-25 21:27:39 [INFO]   No relevante: N°1574 - Horas Extras - Secretaría Judicial N° 2.-
+2026-06-25 21:27:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160059
+2026-06-25 21:27:40 [INFO] PDF: 1458 caracteres extraidos con pdfplumber
+2026-06-25 21:27:40 [INFO]   No relevante: N°1573 - Horas Extras - Cuerpo de Peritos Tasadores Oficiales.-
+2026-06-25 21:27:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160052
+2026-06-25 21:27:42 [INFO] PDF: 1313 caracteres extraidos con pdfplumber
+2026-06-25 21:27:42 [INFO]   No relevante: N°1572 - Prórroga de adscripción - Justo Javier BONNET.-
+2026-06-25 21:27:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160055
+2026-06-25 21:27:44 [INFO] PDF: 1422 caracteres extraidos con pdfplumber
+2026-06-25 21:27:44 [INFO]   No relevante: N°1571 - Prórroga de adscripción - Jésica Estela FERREYRA.-
+2026-06-25 21:27:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160054
+2026-06-25 21:27:46 [INFO] PDF: 1540 caracteres extraidos con pdfplumber
+2026-06-25 21:27:46 [INFO]   No relevante: N°1570 - Prórroga de licencia sin goce de haberes - Juan Ignacio OLLE
+2026-06-25 21:27:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160050
+2026-06-25 21:27:49 [INFO] PDF: 1472 caracteres extraidos con pdfplumber
+2026-06-25 21:27:49 [INFO]   No relevante: N°1569 - Prórroga de licencia sin goce de haberes - Greta María DÓMIN
+2026-06-25 21:27:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160051
+2026-06-25 21:27:51 [INFO] PDF: 1469 caracteres extraidos con pdfplumber
+2026-06-25 21:27:51 [INFO]   No relevante: N°1568 - Prórroga de licencia sin goce de haberes - Yamila CHALI.-
+2026-06-25 21:27:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160053
+2026-06-25 21:27:53 [INFO] PDF: 1580 caracteres extraidos con pdfplumber
+2026-06-25 21:27:53 [INFO]   No relevante: N°1567 - Prórroga de licencia sin goce de haberes - Victoria Soledad 
+2026-06-25 21:27:53 [INFO] Ninguna de las 33 nuevas es relevante
+2026-06-25 21:27:54 [INFO] Telegram: mensaje enviado
+2026-06-25 21:27:54 [INFO] Registro: 1571 resoluciones guardadas
+2026-06-25 21:27:54 [INFO] Completado: 0 relevantes de 33 nuevas
