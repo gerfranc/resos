@@ -78699,3 +78699,197 @@ Call log:
 2026-06-29 21:21:00 [INFO] Navegador cerrado
 2026-06-29 21:21:00 [INFO] Total resoluciones obtenidas: 200
 2026-06-29 21:21:00 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-06-29 22:49:16 [INFO] ============================================================
+2026-06-29 22:49:16 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-06-29 22:49:16 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-29 22:49:16 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-06-29 22:49:16 [INFO] Modo: ejecucion unica
+2026-06-29 22:49:16 [INFO] ============================================================
+2026-06-29 22:49:16 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-06-29 22:49:16 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-06-29 22:49:16 [INFO] Re-verificando 50 resoluciones pendientes...
+2026-06-29 22:49:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160039
+2026-06-29 22:49:47 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160039: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160039 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5415710>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:49:47 [INFO] Telegram: mensaje enviado
+2026-06-29 22:49:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160046
+2026-06-29 22:50:18 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160046: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160046 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc54160d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:50:19 [INFO] Telegram: mensaje enviado
+2026-06-29 22:50:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160044
+2026-06-29 22:50:50 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160044: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160044 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5416e90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:50:50 [INFO] Telegram: mensaje enviado
+2026-06-29 22:50:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160042
+2026-06-29 22:51:22 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160042: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160042 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5411490>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:51:22 [INFO] Telegram: mensaje enviado
+2026-06-29 22:51:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160040
+2026-06-29 22:51:53 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160040: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160040 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5429f50>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:51:54 [INFO] Telegram: mensaje enviado
+2026-06-29 22:51:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160041
+2026-06-29 22:52:25 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160041: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160041 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542a6d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:52:25 [INFO] Telegram: mensaje enviado
+2026-06-29 22:52:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160076
+2026-06-29 22:52:56 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160076: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160076 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5439650>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:52:57 [INFO] Telegram: mensaje enviado
+2026-06-29 22:52:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160078
+2026-06-29 22:53:28 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160078: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160078 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543a7d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:53:29 [INFO] Telegram: mensaje enviado
+2026-06-29 22:53:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160080
+2026-06-29 22:54:00 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160080: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160080 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543b210>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:54:00 [INFO] Telegram: mensaje enviado
+2026-06-29 22:54:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160079
+2026-06-29 22:54:31 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160079: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160079 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5429090>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:54:32 [INFO] Telegram: mensaje enviado
+2026-06-29 22:54:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160082
+2026-06-29 22:55:03 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160082: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160082 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542ae50>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:55:03 [INFO] Telegram: mensaje enviado
+2026-06-29 22:55:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160081
+2026-06-29 22:55:35 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160081: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160081 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc54172d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:55:35 [INFO] Telegram: mensaje enviado
+2026-06-29 22:55:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160077
+2026-06-29 22:56:06 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160077: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160077 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5448d50>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:56:07 [INFO] Telegram: mensaje enviado
+2026-06-29 22:56:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160074
+2026-06-29 22:56:38 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160074: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160074 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542a750>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:56:38 [INFO] Telegram: mensaje enviado
+2026-06-29 22:56:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160071
+2026-06-29 22:57:10 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160071: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160071 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542ad10>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:57:10 [INFO] Telegram: mensaje enviado
+2026-06-29 22:57:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160067
+2026-06-29 22:57:41 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160067: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160067 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5415dd0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:57:42 [INFO] Telegram: mensaje enviado
+2026-06-29 22:57:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160068
+2026-06-29 22:58:13 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160068: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160068 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543bc50>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:58:13 [INFO] Telegram: mensaje enviado
+2026-06-29 22:58:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160073
+2026-06-29 22:58:44 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160073: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160073 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5439250>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:58:45 [INFO] Telegram: mensaje enviado
+2026-06-29 22:58:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160066
+2026-06-29 22:59:16 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160066: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160066 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5449b90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:59:17 [INFO] Telegram: mensaje enviado
+2026-06-29 22:59:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160069
+2026-06-29 22:59:48 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160069: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160069 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543b610>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 22:59:48 [INFO] Telegram: mensaje enviado
+2026-06-29 22:59:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160070
+2026-06-29 23:00:19 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160070: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160070 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5438d10>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:00:20 [INFO] Telegram: mensaje enviado
+2026-06-29 23:00:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160075
+2026-06-29 23:00:51 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160075: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160075 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5415bd0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:00:52 [INFO] Telegram: mensaje enviado
+2026-06-29 23:00:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160072
+2026-06-29 23:01:23 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160072: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160072 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542ad90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:01:23 [INFO] Telegram: mensaje enviado
+2026-06-29 23:01:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160061
+2026-06-29 23:01:55 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160061: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160061 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5411b90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:01:55 [INFO] Telegram: mensaje enviado
+2026-06-29 23:01:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160060
+2026-06-29 23:02:26 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160060: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160060 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc544a850>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:02:27 [INFO] Telegram: mensaje enviado
+2026-06-29 23:02:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160057
+2026-06-29 23:02:58 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160057: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160057 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542a150>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:02:58 [INFO] Telegram: mensaje enviado
+2026-06-29 23:02:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160062
+2026-06-29 23:03:29 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160062: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160062 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5429c90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:03:30 [INFO] Telegram: mensaje enviado
+2026-06-29 23:03:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160063
+2026-06-29 23:04:01 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160063: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160063 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5416bd0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:04:01 [INFO] Telegram: mensaje enviado
+2026-06-29 23:04:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160064
+2026-06-29 23:04:33 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160064: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160064 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc54387d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:04:33 [INFO] Telegram: mensaje enviado
+2026-06-29 23:04:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160058
+2026-06-29 23:05:04 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160058: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160058 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5439990>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:05:05 [INFO] Telegram: mensaje enviado
+2026-06-29 23:05:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160065
+2026-06-29 23:05:36 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160065: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160065 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5448550>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:05:36 [INFO] Telegram: mensaje enviado
+2026-06-29 23:05:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160056
+2026-06-29 23:06:07 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160056: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160056 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543be50>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:06:08 [INFO] Telegram: mensaje enviado
+2026-06-29 23:06:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160059
+2026-06-29 23:06:39 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160059: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160059 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5417a90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:06:39 [INFO] Telegram: mensaje enviado
+2026-06-29 23:06:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160052
+2026-06-29 23:07:11 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160052: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160052 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5411250>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:07:11 [INFO] Telegram: mensaje enviado
+2026-06-29 23:07:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160055
+2026-06-29 23:07:42 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160055: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160055 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5428ed0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:07:43 [INFO] Telegram: mensaje enviado
+2026-06-29 23:07:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160054
+2026-06-29 23:08:14 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160054: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160054 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc544b750>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:08:14 [INFO] Telegram: mensaje enviado
+2026-06-29 23:08:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160050
+2026-06-29 23:08:46 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160050: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160050 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc544b410>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:08:46 [INFO] Telegram: mensaje enviado
+2026-06-29 23:08:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160051
+2026-06-29 23:09:17 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160051: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160051 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc54284d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:09:18 [INFO] Telegram: mensaje enviado
+2026-06-29 23:09:19 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160053
+2026-06-29 23:09:49 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160053: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160053 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5429850>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:09:49 [INFO] Telegram: mensaje enviado
+2026-06-29 23:09:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160096
+2026-06-29 23:10:21 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160096: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160096 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5417390>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:10:21 [INFO] Telegram: mensaje enviado
+2026-06-29 23:10:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160097
+2026-06-29 23:10:52 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160097: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160097 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc54387d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:10:53 [INFO] Telegram: mensaje enviado
+2026-06-29 23:10:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160094
+2026-06-29 23:11:24 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160094: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160094 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc544aa90>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:11:24 [INFO] Telegram: mensaje enviado
+2026-06-29 23:11:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160095
+2026-06-29 23:11:55 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160095: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160095 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5454810>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:11:56 [INFO] Telegram: mensaje enviado
+2026-06-29 23:11:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160100
+2026-06-29 23:12:27 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160100: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160100 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc543af10>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:12:28 [INFO] Telegram: mensaje enviado
+2026-06-29 23:12:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160103
+2026-06-29 23:12:59 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160103: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160103 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5417390>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:12:59 [INFO] Telegram: mensaje enviado
+2026-06-29 23:13:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160102
+2026-06-29 23:13:30 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160102: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160102 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5411790>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:13:31 [INFO] Telegram: mensaje enviado
+2026-06-29 23:13:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160101
+2026-06-29 23:14:02 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160101: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160101 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542a3d0>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:14:02 [INFO] Telegram: mensaje enviado
+2026-06-29 23:14:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160135
+2026-06-29 23:14:33 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160135: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160135 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5448e10>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:14:34 [INFO] Telegram: mensaje enviado
+2026-06-29 23:14:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160134
+2026-06-29 23:15:05 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160134: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160134 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc5455410>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:15:06 [INFO] Telegram: mensaje enviado
+2026-06-29 23:15:07 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160133
+2026-06-29 23:15:37 [WARNING] Error al verificar PDF https://www.csjn.gov.ar/documentos/descargar?ID=160133: HTTPSConnectionPool(host='www.csjn.gov.ar', port=443): Max retries exceeded with url: /documentos/descargar?ID=160133 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.csjn.gov.ar', port=443) at 0x7fbfc542b250>, 'Connection to www.csjn.gov.ar timed out. (connect timeout=30)'))
+2026-06-29 23:15:37 [INFO] Telegram: mensaje enviado
+2026-06-29 23:15:38 [INFO] Pendientes re-verificadas: 50 | Nuevas relevantes: 50 | Expiradas: 0
+2026-06-29 23:15:38 [INFO] Registro: 1582 resoluciones guardadas
+2026-06-29 23:15:39 [INFO] Iniciando navegador Chromium headless...
+2026-06-29 23:15:40 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-06-29 23:17:40 [ERROR] Error: Page.goto: Timeout 120000ms exceeded.
+Call log:
+  - navigating to "https://www.csjn.gov.ar/decisiones/resoluciones", waiting until "domcontentloaded"
+
+2026-06-29 23:17:40 [ERROR] Traceback (most recent call last):
+  File "/home/runner/work/resos/resos/monitor_csjn_dajudeco.py", line 406, in chequear_resoluciones
+    resultados = obtener_todas_las_resoluciones()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/resos/resos/monitor_csjn_dajudeco.py", line 143, in obtener_todas_las_resoluciones
+    page.goto(URL_PAGINA, wait_until="domcontentloaded", timeout=120000)
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/sync_api/_generated.py", line 9770, in goto
+    self._sync(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/_impl/_page.py", line 560, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 156, in goto
+    await self._channel.send(
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 563, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 120000ms exceeded.
+Call log:
+  - navigating to "https://www.csjn.gov.ar/decisiones/resoluciones", waiting until "domcontentloaded"
+
+
+2026-06-29 23:17:40 [INFO] Telegram: mensaje enviado
