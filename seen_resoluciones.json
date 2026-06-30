@@ -16829,5 +16829,77 @@
     "primera_vez": "2026-06-29T16:55:58.871569",
     "expira": "2026-07-04T16:55:58.871569",
     "procesado": "2026-06-29T16:55:58.871569"
+  },
+  "160158": {
+    "numero": "1616",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Autorizar a liquidar y abonar a favor de la Dirección General de Gestión Interna e Infraestructura, la suma de $760.000.-, en concepto de reintegro del fondo especial de indumentaria.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160158",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
+  },
+  "160157": {
+    "numero": "1615",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.292.331,54.-, en concepto de reintegro del fondo especial para viáticos y pasajes.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160157",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
+  },
+  "160156": {
+    "numero": "1614",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Adjudicar a la firma NEWCOM LCS S.A. la provisión de placas para la central telefónica\r\ninstalada en el Palacio de Justicia y la provisión de teléfonos y licencias respectivas, por la suma total de $105.741.801,00.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160156",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
+  },
+  "160155": {
+    "numero": "1613",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Contratar con la firma NSS S.A. la ampliación del ancho de banda del servicio de acceso a internet primario dedicado para la Corte Suprema de Justicia de la Nación, por la suma total de $6.171.000,00.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160155",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
+  },
+  "160154": {
+    "numero": "1612",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Contratar con la firma SILICA NETWORKS ARGENTINA S.A. la ampliación del ancho de banda del servicio de acceso a internet secundario dedicado para la Corte Suprema de Justicia de la Nación, por la suma total de $4.117.872,00.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160154",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
+  },
+  "160153": {
+    "numero": "1611",
+    "fecha": "30 de junio de 2026",
+    "detalle": "Contratar con la firma SECURITON ARGENTINA S.A. el servicio de mantenimiento preventivo y correctivo del sistema de incendios instalado en el edificio de la Corte Suprema de Justicia de la Nación, sito en la calle Bartolomé Mitre 718,CABA, por la suma total de $3.000.000,00.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160153",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-06-30T14:02:29.901376",
+    "expira": "2026-07-05T14:02:29.901376",
+    "procesado": "2026-06-30T14:02:29.901376"
   }
 }
