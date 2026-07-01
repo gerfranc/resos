@@ -26,6 +26,7 @@ import logging
 import sys
 import re
 from datetime import datetime, timedelta
+from logging.handlers import RotatingFileHandler
 
 import requests
 
@@ -38,6 +39,8 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "TU_CHAT_ID_AQUI")
 CHECK_INTERVAL_SECONDS = 7200  # 2 horas
 SEEN_FILE = "seen_resoluciones.json"
 LOG_FILE = "monitor_csjn.log"
+LOG_MAX_BYTES = 512_000  # ~500 KB: evita que el log crezca sin limite
+LOG_BACKUP_COUNT = 1     # se conserva un rotado (monitor_csjn.log.1, gitignoreado)
 FECHA_DESDE = "10/02/2026"
 
 # Palabras clave para filtrar (se buscan en detalle + contenido PDF)
@@ -56,7 +59,12 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
     handlers=[
-        logging.FileHandler(LOG_FILE, encoding="utf-8"),
+        RotatingFileHandler(
+            LOG_FILE,
+            maxBytes=LOG_MAX_BYTES,
+            backupCount=LOG_BACKUP_COUNT,
+            encoding="utf-8",
+        ),
         logging.StreamHandler(sys.stdout)
     ]
 )
@@ -142,7 +150,12 @@ def obtener_todas_las_resoluciones():
         logger.info(f"Navegando a {URL_PAGINA}")
         page.goto(URL_PAGINA, wait_until="domcontentloaded", timeout=120000)
         logger.info("Pagina cargada")
-        page.wait_for_timeout(3000)
+        # Esperar a que la red quede inactiva (captura la respuesta automatica
+        # si la hay) en vez de un timeout fijo. Si nunca queda idle, seguimos.
+        try:
+            page.wait_for_load_state("networkidle", timeout=10000)
+        except Exception:
+            logger.info("networkidle no alcanzado tras carga (se continua)")
 
         # --- Paso 2: Click en Buscar (sin llenar campo de texto) ---
         boton_buscar = None
@@ -162,13 +175,22 @@ def obtener_todas_las_resoluciones():
         if not boton_buscar:
             raise Exception("No se encontro el boton Buscar")
 
+        # --- Paso 3: Click en Buscar y esperar la respuesta de datos ---
+        # En vez de un timeout fijo, esperamos explicitamente la respuesta del
+        # endpoint /resoluciones/data que dispara el click.
         click_realizado = True
-        boton_buscar.click()
-        logger.info("Click en Buscar (sin filtro de texto)")
-
-        # --- Paso 3: Esperar respuesta ---
         logger.info("Esperando resultados...")
-        page.wait_for_timeout(8000)
+        try:
+            with page.expect_response(
+                lambda r: "/resoluciones/data" in r.url,
+                timeout=30000,
+            ) as resp_info:
+                boton_buscar.click()
+                logger.info("Click en Buscar (sin filtro de texto)")
+            resp_info.value  # bloquea hasta que llega la respuesta
+            logger.info("Respuesta de busqueda recibida")
+        except Exception as e:
+            logger.warning(f"No se recibio respuesta tras click en Buscar: {e}")
 
         try:
             page.wait_for_selector("table tbody tr", timeout=15000)
@@ -221,6 +243,36 @@ def contiene_palabras_clave(texto):
     return all(palabra.lower() in texto_lower for palabra in FILTRO_PALABRAS)
 
 
+PDF_REINTENTOS = 3          # cantidad de intentos de descarga
+PDF_TIMEOUT = 30            # timeout por intento (segundos)
+PDF_BACKOFF_BASE = 2        # espera exponencial: 2s, 4s, 8s...
+
+
+def _descargar_pdf(url_pdf):
+    """
+    Descarga el PDF con reintentos y backoff exponencial ante errores de red.
+    Retorna el contenido en bytes o lanza la ultima excepcion si agota intentos.
+    """
+    ultimo_error = None
+    for intento in range(1, PDF_REINTENTOS + 1):
+        try:
+            resp = requests.get(url_pdf, timeout=PDF_TIMEOUT, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            })
+            resp.raise_for_status()
+            return resp.content
+        except Exception as e:
+            ultimo_error = e
+            if intento < PDF_REINTENTOS:
+                espera = PDF_BACKOFF_BASE ** intento
+                logger.warning(
+                    f"Descarga PDF fallo (intento {intento}/{PDF_REINTENTOS}): {e}. "
+                    f"Reintentando en {espera}s..."
+                )
+                time.sleep(espera)
+    raise ultimo_error
+
+
 def verificar_pdf(url_pdf):
     """
     Descarga el PDF y busca las palabras clave en su contenido.
@@ -236,14 +288,7 @@ def verificar_pdf(url_pdf):
     """
     try:
         logger.info(f"Descargando PDF: {url_pdf}")
-        resp = requests.get(url_pdf, timeout=30, headers={
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-        })
-        resp.raise_for_status()
-
-        # Extraer texto del PDF de forma simple
-        # Los PDFs de la CSJN suelen tener texto extraible
-        contenido = resp.content
+        contenido = _descargar_pdf(url_pdf)
 
         # Intentar con pdfplumber si esta disponible
         try:
