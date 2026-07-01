@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+*.test_backup
+seen_resoluciones.backup.json
+
+# Log rotado (el principal, monitor_csjn.log, si se commitea capado a ~500KB)
+monitor_csjn.log.*

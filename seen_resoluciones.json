@@ -10431,11 +10431,12 @@
     "detalle": "Determinar el valor de la Unidad de Medida Arancelaria (UMA), conforme Acordada CSJN N°  <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/acordadas?anioDoc=2026&nroDoc=10\" target='_blank'>10/2026</a>.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159160",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 5,
     "primera_vez": "2026-05-20T21:48:03.998189",
     "expira": "2026-05-25T21:48:03.998189",
-    "procesado": "2026-05-20T21:48:03.998189"
+    "procesado": "2026-05-20T21:48:03.998189",
+    "corregido": "falso_positivo_fail_open"
   },
   "159173": {
     "numero": "1076",
@@ -14256,11 +14257,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes a las Dras. María Laura Aón Bertolino y Laura Bermolen.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159743",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-12T21:44:40.237603",
     "expira": "2026-06-17T21:44:40.237603",
-    "procesado": "2026-06-12T21:44:40.237603"
+    "procesado": "2026-06-12T21:44:40.237603",
+    "corregido": "falso_positivo_fail_open"
   },
   "159754": {
     "numero": "1397",
@@ -14268,11 +14270,12 @@
     "detalle": "Contratar con la firma NACIÓN SEGUROS S.A. los seguros generales para distintos edificios dependientes de la Corte Suprema de Justicia de la Nación,  por la suma de $41.339.055,70.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159754",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 7,
     "primera_vez": "2026-06-16T14:56:02.225730",
     "expira": "2026-06-21T14:56:02.225730",
-    "procesado": "2026-06-16T14:56:02.225730"
+    "procesado": "2026-06-16T14:56:02.225730",
+    "corregido": "falso_positivo_fail_open"
   },
   "159757": {
     "numero": "1399",
@@ -14280,11 +14283,12 @@
     "detalle": "Contratar con la firma MONTIVEROALBERTO RAMÓN la renovación del servicio de mantenimiento preventivo y correctivo de 2 procesadoras automáticas de revelado de películas radiográficas, instaladas en el Servicio de Radiología de la Morgue Judicial, por la suma total de $8.400.000.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159757",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 6,
     "primera_vez": "2026-06-16T19:30:11.509174",
     "expira": "2026-06-21T19:30:11.509174",
-    "procesado": "2026-06-16T19:30:11.509174"
+    "procesado": "2026-06-16T19:30:11.509174",
+    "corregido": "falso_positivo_fail_open"
   },
   "159755": {
     "numero": "1398",
@@ -14292,11 +14296,12 @@
     "detalle": "Autorizar a liquidar y abonar a favor de la Dirección General de Gestión Interna e Infraestructura, la suma de $760.000.-, en concepto de reintegro del fondo especial de indumentaria.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159755",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 6,
     "primera_vez": "2026-06-16T19:30:11.509174",
     "expira": "2026-06-21T19:30:11.509174",
-    "procesado": "2026-06-16T19:30:11.509174"
+    "procesado": "2026-06-16T19:30:11.509174",
+    "corregido": "falso_positivo_fail_open"
   },
   "159761": {
     "numero": "2717/2026",
@@ -14313,11 +14318,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.415.102,98.-, en concepto de reposición del fondo especial para automotores.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159776",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 1,
     "primera_vez": "2026-06-17T16:52:28.032572",
     "expira": "2026-06-22T16:52:28.032572",
-    "procesado": "2026-06-17T16:52:28.032572"
+    "procesado": "2026-06-17T16:52:28.032572",
+    "corregido": "falso_positivo_fail_open"
   },
   "159775": {
     "numero": "1402",
@@ -14325,11 +14331,12 @@
     "detalle": "Autorizar a liquidar y abonar a favor de la Dirección General de Gestión Interna e Infraestructura, la suma de $760.000.-, en concepto de reintegro del fondo especial de indumentaria.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159775",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 1,
     "primera_vez": "2026-06-17T16:52:28.032572",
     "expira": "2026-06-22T16:52:28.032572",
-    "procesado": "2026-06-17T16:52:28.032572"
+    "procesado": "2026-06-17T16:52:28.032572",
+    "corregido": "falso_positivo_fail_open"
   },
   "159774": {
     "numero": "1401",
@@ -14337,11 +14344,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura, una partida especial de $14.481.000.-, destinada a la realización de tareas de mantenimiento y puesta en marcha de automotores.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159774",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 1,
     "primera_vez": "2026-06-17T16:52:28.032572",
     "expira": "2026-06-22T16:52:28.032572",
-    "procesado": "2026-06-17T16:52:28.032572"
+    "procesado": "2026-06-17T16:52:28.032572",
+    "corregido": "falso_positivo_fail_open"
   },
   "159773": {
     "numero": "1400",
@@ -14349,11 +14357,12 @@
     "detalle": "Autorizar al Secretario de Juzgado, al Secretario Electoral y a los Prosecretarios Electorales del Juzgado Nacional en lo Criminal y Correccional Federal N° 1 con competencia electoral en el distrito Capital Federal, a realizar horas extraordinarias, y determinar el valor de las horas autorizadas.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159773",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 1,
     "primera_vez": "2026-06-17T16:52:28.032572",
     "expira": "2026-06-22T16:52:28.032572",
-    "procesado": "2026-06-17T16:52:28.032572"
+    "procesado": "2026-06-17T16:52:28.032572",
+    "corregido": "falso_positivo_fail_open"
   },
   "159817": {
     "numero": "1428",
@@ -14361,11 +14370,12 @@
     "detalle": "Contratar con la firma SMART BUSINESS SOLUTIONS S.A. el servicio de mantenimiento anual para las licencias SPSS con destino a la Dirección de Sistemas de la Corte Suprema de Justicia de la Nación, por la suma total de $29.681.513.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159817",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159816": {
     "numero": "1427",
@@ -14373,11 +14383,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Etios.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159816",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159815": {
     "numero": "1426",
@@ -14385,11 +14396,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159815",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159814": {
     "numero": "1425",
@@ -14397,11 +14409,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Fiat, modelo Toro.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159814",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159813": {
     "numero": "1424",
@@ -14409,11 +14422,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un moto vehículo marca KTM, modelo Adventure 250.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159813",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159812": {
     "numero": "1423",
@@ -14421,11 +14435,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159812",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159811": {
     "numero": "1422",
@@ -14433,11 +14448,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Fiat, modelo Strada Endurance.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159811",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159810": {
     "numero": "1421",
@@ -14445,11 +14461,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación dos automotores marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159810",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159809": {
     "numero": "1420",
@@ -14457,11 +14474,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159809",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159808": {
     "numero": "1419",
@@ -14469,11 +14487,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación dos vehículos marca Volkswagen, modelo Amarok y marca Jeep, modelo Renegade.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159808",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159807": {
     "numero": "1418",
@@ -14481,11 +14500,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Volkswagen, modelo Amarok.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159807",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159806": {
     "numero": "1417",
@@ -14493,11 +14513,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación dos automotores: marca Mercedes Benz, modelo Sprinter y marca Ford, modelo Transit.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159806",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159805": {
     "numero": "1416",
@@ -14505,11 +14526,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Mercedes Benz, modelo C250.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159805",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159804": {
     "numero": "1415",
@@ -14517,11 +14539,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación tres automotores: marca Mercedes Benz modelo C22, marca Toyota modelo Hilux y marca Ford modelo Ranger.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159804",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159803": {
     "numero": "1414",
@@ -14529,11 +14552,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hiace.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159803",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159802": {
     "numero": "1413",
@@ -14541,11 +14565,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159802",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159801": {
     "numero": "1412",
@@ -14553,11 +14578,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Toyota, modelo Hilux.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159801",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159800": {
     "numero": "1411",
@@ -14565,11 +14591,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación dos automotores marca BMW modelo 440I,  y marca Ford modelo Territory.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159800",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159799": {
     "numero": "1410",
@@ -14577,11 +14604,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Ford, modelo Ranger.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159799",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159798": {
     "numero": "1409",
@@ -14589,11 +14617,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Peugeot, modelo Partner.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159798",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159797": {
     "numero": "1408",
@@ -14601,11 +14630,12 @@
     "detalle": "Afectar a la Corte Suprema de Justicia de la Nación un automotor marca Mercedes Benz, modelo Sprinter.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159797",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159796": {
     "numero": "1407",
@@ -14613,11 +14643,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Cámara Argentina de la Construcción la suma total de pesos $2.912.000.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159796",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159795": {
     "numero": "1406",
@@ -14625,11 +14656,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura, una partida especial de $3.407.333,68.-, destinada a la provisión de bienes de uso para distintas dependencias del Tribunal.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159795",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159793": {
     "numero": "1405",
@@ -14637,11 +14669,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección de Sistemas la suma de $306.208,80.- en concepto de reintegro de gastos.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159793",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159794": {
     "numero": "1404",
@@ -14649,11 +14682,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.128.400.- en concepto de reintegro del fondo especial para viáticos y pasajes.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159794",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 9,
     "primera_vez": "2026-06-18T17:04:47.507216",
     "expira": "2026-06-23T17:04:47.507216",
-    "procesado": "2026-06-18T17:04:47.507216"
+    "procesado": "2026-06-18T17:04:47.507216",
+    "corregido": "falso_positivo_fail_open"
   },
   "159819": {
     "numero": "1429",
@@ -14661,11 +14695,12 @@
     "detalle": "Contratar con la firma BIOSYSTEMS S.A. el servicio de chequeo, revisión y embalaje del equipamiento marca Applied Biosystems ABI3500 con destino al Servicio de Genética Forense del Cuerpo Médico Forense, por la suma total de $4.748.595,39.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159819",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 8,
     "primera_vez": "2026-06-18T20:26:41.935684",
     "expira": "2026-06-23T20:26:41.935684",
-    "procesado": "2026-06-18T20:26:41.935684"
+    "procesado": "2026-06-18T20:26:41.935684",
+    "corregido": "falso_positivo_fail_open"
   },
   "159848": {
     "numero": "1445",
@@ -14673,11 +14708,12 @@
     "detalle": "Declaración de interés las Primeras Jornadas del Foro Latinoamericano de Oficiales de Justicia, que se realizarán en la Ciudad Autónoma de Buenos Aires.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159848",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159845": {
     "numero": "1444",
@@ -14685,11 +14721,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Giuliana LARAIA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159845",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159847": {
     "numero": "1443",
@@ -14697,11 +14734,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a María AJURIAGOGEASCOA. Dejar sin efecto la Resolución N° <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/resoluciones?anioDoc=2026&nroDoc=230\" target='_blank'>230/2026</a>.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159847",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159846": {
     "numero": "1442",
@@ -14709,11 +14747,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Agustín HORMAECHE.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159846",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159842": {
     "numero": "1441",
@@ -14730,11 +14769,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Juan Sebastián REY.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159844",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159843": {
     "numero": "1439",
@@ -14742,11 +14782,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Ignacio YACOBUCCI.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159843",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159839": {
     "numero": "1438",
@@ -14754,11 +14795,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - María Verónica REYNOSO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159839",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159840": {
     "numero": "1437",
@@ -14766,11 +14808,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Andrea Mónica RODRÍGUEZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159840",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159841": {
     "numero": "1436",
@@ -14778,11 +14821,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Lucila JOACHIM.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159841",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159835": {
     "numero": "1435",
@@ -14790,11 +14834,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Gonzalo Javier OUTERELO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159835",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159837": {
     "numero": "1434",
@@ -14802,11 +14847,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - María Cecilia Amalia BERTI.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159837",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159838": {
     "numero": "1433",
@@ -14814,11 +14860,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Viviana Helena SÁNCHEZ RODRÍGUEZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159838",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159836": {
     "numero": "1432",
@@ -14826,11 +14873,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Tomás GRÜNWALDT.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159836",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159834": {
     "numero": "1431",
@@ -14838,11 +14886,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Sol Micaela LATASA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159834",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159833": {
     "numero": "1430",
@@ -14850,11 +14899,12 @@
     "detalle": "Considerar en uso de licencia sin goce de haberes a Juan Martín SPRATT.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159833",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 4,
     "primera_vez": "2026-06-19T13:30:38.234334",
     "expira": "2026-06-24T13:30:38.234334",
-    "procesado": "2026-06-19T13:30:38.234334"
+    "procesado": "2026-06-19T13:30:38.234334",
+    "corregido": "falso_positivo_fail_open"
   },
   "159878": {
     "numero": "1476",
@@ -14862,11 +14912,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes al Doctor Pablo Gabriel CAYSSIALS.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159878",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159879": {
     "numero": "1475",
@@ -14874,11 +14925,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes a la Doctora Jésica Romina LARREGAIN.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159879",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159877": {
     "numero": "1474",
@@ -14886,11 +14938,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes al Doctor Federico CALVETE.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159877",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159880": {
     "numero": "1473",
@@ -14898,11 +14951,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes al Doctor Alejandro CASTELLANOS.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159880",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159876": {
     "numero": "1472",
@@ -14910,11 +14964,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes a Josefina FERNÁNDEZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159876",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159874": {
     "numero": "1471",
@@ -14922,11 +14977,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes a la Doctora María Elena LÓPEZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159874",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159873": {
     "numero": "1470",
@@ -14934,11 +14990,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes al Doctor Franco Ezequiel MALIZIA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159873",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159875": {
     "numero": "1469",
@@ -14946,11 +15003,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes a la Doctora Silvia Mónica FARIÑA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159875",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159872": {
     "numero": "1468",
@@ -14958,11 +15016,12 @@
     "detalle": "Considerar en uso de licencia con goce de haberes al Doctor Santiago STRASSERA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159872",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159871": {
     "numero": "1467",
@@ -14970,11 +15029,12 @@
     "detalle": "Autorizar al Doctor Alejo RAMOS PADILLA a ejercer la docencia.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159871",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159870": {
     "numero": "1466",
@@ -14982,11 +15042,12 @@
     "detalle": "Autorizar a la Doctora Ángeles Mariana GÓMEZ MAIORANO a ejercer la docencia.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159870",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159869": {
     "numero": "1465",
@@ -14994,11 +15055,12 @@
     "detalle": "Autorizar a Carolina Ávalos a desempeñar su profesión de psicóloga.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159869",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159868": {
     "numero": "1464",
@@ -15006,11 +15068,12 @@
     "detalle": "No hacer lugar a la avocación planteada por Plinio Mauricio FRIGERIO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159868",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159867": {
     "numero": "1463",
@@ -15018,11 +15081,12 @@
     "detalle": "No hacer lugar a lo solicitado por Francisco Manuel PEREYRA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159867",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159866": {
     "numero": "1462",
@@ -15030,11 +15094,12 @@
     "detalle": "No hacer lugar a lo solicitado por la Doctora Carina GREGORASCHUK. Ratificar la designación efectuada a favor de la agente Lucía MORRA por la Cámara Federal de Apelaciones de Salta mediante Acordada N° <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/acordadas?anioDoc=2024&nroDoc=25\" target='_blank'>25/2024</a>. Confirmar el traslado provisorio de la\r\nnombrada dispuesto por proveído dictado en el expediente CFAS N° 8/2024 en fecha 7 de noviembre de 2024.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159866",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159865": {
     "numero": "1461",
@@ -15042,11 +15107,12 @@
     "detalle": "Horas extras - Oficina de Subastas Judiciales.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159865",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159864": {
     "numero": "1460",
@@ -15054,11 +15120,12 @@
     "detalle": "Declarar inhábil judicial desde el 8 al 22 de junio de 2026 para los Juzgados Nacionales de Primera Instancia en lo Civil Nros. 19 y 20 y, desde el 12 al 26 de junio de 2026 para los\r\nJuzgados Nacionales de Primera Instancia en lo Civil Nros. 11 y 14.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159864",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159863": {
     "numero": "1459",
@@ -15066,11 +15133,12 @@
     "detalle": "Transferir el cargo de escribiente auxiliar, con su actual titular, Doctora Eugenia Victoria\r\nRUSSO TIZEIRA, al Juzgado Nacional de Primera Instancia en lo Civil N° 76.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159863",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159862": {
     "numero": "1458",
@@ -15078,11 +15146,12 @@
     "detalle": "No hacer lugar a lo solicitado por la señora María Laura CORVETTO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159862",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159861": {
     "numero": "1457",
@@ -15090,11 +15159,12 @@
     "detalle": "Compensación funcional y bonificación por antigüedad en el título a favor de Gabriel Alejandro MELE - Ingeniero en mantenimiento industrial.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159861",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159860": {
     "numero": "1456",
@@ -15102,11 +15172,12 @@
     "detalle": "Bonificación adicional por título a favor de Daniel Martín MAIDANA - Técnico en comunicación social con orientación gráfica.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159860",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159859": {
     "numero": "1455",
@@ -15114,11 +15185,12 @@
     "detalle": "Compensación funcional y bonificación por antigüedad en el título a favor de Bárbara Lorena OLANO - Contadora pública nacional.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159859",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159858": {
     "numero": "1454",
@@ -15126,11 +15198,12 @@
     "detalle": "Bonificación por antigüedad en el título a favor de Analía PRIETO - Médica.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159858",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159857": {
     "numero": "1453",
@@ -15138,11 +15211,12 @@
     "detalle": "Adscribir al señor Gabriel David ÁLVAREZ al Tribunal Oral en lo Criminal Federal de Santa Cruz.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159857",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159856": {
     "numero": "1452",
@@ -15150,11 +15224,12 @@
     "detalle": "Adscribir a la señora Macarena María del Pilar FRANCO a la Cámara Federal de Apelaciones de General Roca.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159856",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159855": {
     "numero": "1451",
@@ -15162,11 +15237,12 @@
     "detalle": "Cambio de nombre de contrato - Cámara Nacional de Apelaciones del Trabajo.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159855",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159854": {
     "numero": "1450",
@@ -15174,11 +15250,12 @@
     "detalle": "Cambio de nombre de contrato - Secretaría Electoral de La Pampa.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159854",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159852": {
     "numero": "1448",
@@ -15186,11 +15263,12 @@
     "detalle": "Prórroga y cambio de nombre de contratos - Juzgado Federal en lo Civil, Comercial y Contencioso Administrativo de San Martín N° 1.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159852",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159850": {
     "numero": "1447",
@@ -15198,11 +15276,12 @@
     "detalle": "Autorizar la permuta entre Mariana LAULETTA y Lorena María Claudia GONZALEZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159850",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159849": {
     "numero": "1446",
@@ -15210,11 +15289,12 @@
     "detalle": "Autorizar la permuta entre Juan Ignacio SERRA y María Verónica DÍAZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159849",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159853": {
     "numero": "1449",
@@ -15222,11 +15302,12 @@
     "detalle": "\tPrórroga y cambio de nombre de contratos - Juzgado Federal en lo Criminal y Correccional de San Martín N° 2.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159853",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-19T16:31:11.662520",
     "expira": "2026-06-24T16:31:11.662520",
-    "procesado": "2026-06-19T16:31:11.662520"
+    "procesado": "2026-06-19T16:31:11.662520",
+    "corregido": "falso_positivo_fail_open"
   },
   "159889": {
     "numero": "1485",
@@ -15234,11 +15315,12 @@
     "detalle": "Aceptar la renuncia presentada por el señor Mario Agustín MISSART.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159889",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159888": {
     "numero": "1484",
@@ -15246,11 +15328,12 @@
     "detalle": "Aceptar la renuncia presentada por la señora Verónica Susana AUMANN.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159888",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159887": {
     "numero": "1483",
@@ -15258,11 +15341,12 @@
     "detalle": "Aceptar la renuncia presentada por la señora Andrea Fabiana RAMÍREZ.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159887",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159885": {
     "numero": "1482",
@@ -15270,11 +15354,12 @@
     "detalle": "Prórroga de adscripción - Nadia Anabel RICO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159885",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159886": {
     "numero": "1481",
@@ -15282,11 +15367,12 @@
     "detalle": "Prórroga de adscripción - Malena del Valle DOS SANTOS.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159886",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159884": {
     "numero": "1480",
@@ -15294,11 +15380,12 @@
     "detalle": "Prórroga de adscripción - Carolina LACUNZA RUBIO y Mariano José KEENA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159884",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159883": {
     "numero": "1479",
@@ -15306,11 +15393,12 @@
     "detalle": "Contratar con la firma DROGUERIA DIMAT S.A. la provisión de insumos marca ABBOTT con destino al Laboratorio de Análisis Clínicos Biológicos y Bacteriológicos de la Morgue Judicial, por la suma total de $1.427.059,38.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159883",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159882": {
     "numero": "1478",
@@ -15318,11 +15406,12 @@
     "detalle": "Autorizar a liquidar y abonar a la firma UpToDate la suma total de $2.336.675,00.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159882",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159881": {
     "numero": "1477",
@@ -15330,11 +15419,12 @@
     "detalle": "Contratar con la firma FISCHETTI Y CIA S.R.L. el servicio de dispensers de agua frío-calor y botellones retornables de agua purificada e ionizada con destino a diversas dependencias de la Corte Suprema de Justicia de la Nación, hasta la suma total de $154.440.000.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=159881",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 2,
     "primera_vez": "2026-06-19T19:31:17.746660",
     "expira": "2026-06-24T19:31:17.746660",
-    "procesado": "2026-06-19T19:31:17.746660"
+    "procesado": "2026-06-19T19:31:17.746660",
+    "corregido": "falso_positivo_fail_open"
   },
   "159899": {
     "numero": "1492",
@@ -16227,11 +16317,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.364.434,28.- en concepto de reintegro del fondo especial para viáticos y pasajes.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160039",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 18,
     "primera_vez": "2026-06-25T14:10:49.706403",
     "expira": "2026-06-30T14:10:49.706403",
-    "procesado": "2026-06-25T14:10:49.706403"
+    "procesado": "2026-06-25T14:10:49.706403",
+    "corregido": "falso_positivo_fail_open"
   },
   "160046": {
     "numero": "1566",
@@ -16239,11 +16330,12 @@
     "detalle": "Autorizar a liquidar y abonar a la firma AMX ARGENTINA S.A. la suma total de $2.770.398,40.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160046",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 17,
     "primera_vez": "2026-06-25T18:07:49.053216",
     "expira": "2026-06-30T18:07:49.053216",
-    "procesado": "2026-06-25T18:07:49.053216"
+    "procesado": "2026-06-25T18:07:49.053216",
+    "corregido": "falso_positivo_fail_open"
   },
   "160044": {
     "numero": "1565",
@@ -16251,11 +16343,12 @@
     "detalle": "Autorizar a liquidar y abonar a la firma AMX ARGENTINA S.A. la suma total de $377.556,30.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160044",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 17,
     "primera_vez": "2026-06-25T18:07:49.053216",
     "expira": "2026-06-30T18:07:49.053216",
-    "procesado": "2026-06-25T18:07:49.053216"
+    "procesado": "2026-06-25T18:07:49.053216",
+    "corregido": "falso_positivo_fail_open"
   },
   "160043": {
     "numero": "1564",
@@ -16272,11 +16365,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura, una partida especial de $9.240.000.-, destinada al traslado de automotores afectados al Tribunal.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160042",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 17,
     "primera_vez": "2026-06-25T18:07:49.053216",
     "expira": "2026-06-30T18:07:49.053216",
-    "procesado": "2026-06-25T18:07:49.053216"
+    "procesado": "2026-06-25T18:07:49.053216",
+    "corregido": "falso_positivo_fail_open"
   },
   "160040": {
     "numero": "1562",
@@ -16284,11 +16378,12 @@
     "detalle": "Autorizar a liquidar y abonar a favor de la Dirección General de Gestión Interna e Infraestructura, la suma de $760.000.-, en concepto de reintegro del fondo especial de indumentaria.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160040",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 17,
     "primera_vez": "2026-06-25T18:07:49.053216",
     "expira": "2026-06-30T18:07:49.053216",
-    "procesado": "2026-06-25T18:07:49.053216"
+    "procesado": "2026-06-25T18:07:49.053216",
+    "corregido": "falso_positivo_fail_open"
   },
   "160041": {
     "numero": "1561",
@@ -16296,11 +16391,12 @@
     "detalle": "Autorizar a liquidar y abonar a la firma AMX ARGENTINA S.A. la suma de $39.998,38.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160041",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 17,
     "primera_vez": "2026-06-25T18:07:49.053216",
     "expira": "2026-06-30T18:07:49.053216",
-    "procesado": "2026-06-25T18:07:49.053216"
+    "procesado": "2026-06-25T18:07:49.053216",
+    "corregido": "falso_positivo_fail_open"
   },
   "160076": {
     "numero": "1599",
@@ -16308,11 +16404,12 @@
     "detalle": "Horas Extras - Dirección General de Gestión Interna e Infraestructura.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160076",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160078": {
     "numero": "1598",
@@ -16320,11 +16417,12 @@
     "detalle": "Horas Extras - Dirección General de Gestión Interna e Infraestructura.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160078",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160080": {
     "numero": "1597",
@@ -16332,11 +16430,12 @@
     "detalle": "Horas Extras - Dirección General de Gestión Interna e Infraestructura.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160080",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160079": {
     "numero": "1596",
@@ -16344,11 +16443,12 @@
     "detalle": "Horas Extras - Dirección de Sistemas - Comisión de Gestión Judicial.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160079",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160082": {
     "numero": "1595",
@@ -16356,11 +16456,12 @@
     "detalle": "Horas Extras - Dirección General de Gestión Interna e Infraestructura.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160082",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160081": {
     "numero": "1594",
@@ -16368,11 +16469,12 @@
     "detalle": "Horas Extras - Secretaría Judicial N° 6.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160081",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160077": {
     "numero": "1593",
@@ -16380,11 +16482,12 @@
     "detalle": "Horas Extras - Dirección de Sistemas.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160077",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160074": {
     "numero": "1592",
@@ -16392,11 +16495,12 @@
     "detalle": "Horas Extras - Dirección General de Gestión Interna e Infraestructura.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160074",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160071": {
     "numero": "1591",
@@ -16404,11 +16508,12 @@
     "detalle": "Horas Extras - Dirección de Sistemas.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160071",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160067": {
     "numero": "1590",
@@ -16416,11 +16521,12 @@
     "detalle": "Horas Extras - Dirección General de Control Interno y Auditoría.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160067",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160068": {
     "numero": "1589",
@@ -16428,11 +16534,12 @@
     "detalle": "Horas Extras - Secretaría Judicial N° 7.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160068",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160073": {
     "numero": "1588",
@@ -16440,11 +16547,12 @@
     "detalle": "Horas Extras - Dirección General de Bibliotecas y Museo.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160073",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160066": {
     "numero": "1587",
@@ -16452,11 +16560,12 @@
     "detalle": "Horas Extras - Dirección de Ceremonial y Protocolo.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160066",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160069": {
     "numero": "1586",
@@ -16464,11 +16573,12 @@
     "detalle": "Horas Extras - Dirección de Despacho.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160069",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160070": {
     "numero": "1585",
@@ -16476,11 +16586,12 @@
     "detalle": "Horas Extras - Dirección de Despacho.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160070",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160075": {
     "numero": "1584",
@@ -16488,11 +16599,12 @@
     "detalle": "Horas Extras - Oficina Base General de Datos de Niños, Niñas y Adolescentes.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160075",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160072": {
     "numero": "1583",
@@ -16500,11 +16612,12 @@
     "detalle": "Horas Extras - Secretaría Judicial N° 3.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160072",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160061": {
     "numero": "1582",
@@ -16512,11 +16625,12 @@
     "detalle": "Horas Extras - Cuerpo Médico Forense.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160061",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160060": {
     "numero": "1581",
@@ -16524,11 +16638,12 @@
     "detalle": "Horas Extras - Dirección General de Notificaciones.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160060",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160057": {
     "numero": "1580",
@@ -16536,11 +16651,12 @@
     "detalle": "Horas Extras - Dirección de Comunicación y Gobierno Abierto.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160057",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160062": {
     "numero": "1579",
@@ -16548,11 +16664,12 @@
     "detalle": "Horas Extras - Secretaría Penal Especial.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160062",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160063": {
     "numero": "1578",
@@ -16560,11 +16677,12 @@
     "detalle": "Horas Extras - Secretaría Judicial de Relaciones de Consumo.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160063",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160064": {
     "numero": "1577",
@@ -16572,11 +16690,12 @@
     "detalle": "Horas Extras - Subdirección de Seguridad.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160064",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160058": {
     "numero": "1576",
@@ -16584,11 +16703,12 @@
     "detalle": "Horas Extras - Mesa General de Entradas.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160058",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160065": {
     "numero": "1575",
@@ -16596,11 +16716,12 @@
     "detalle": "Horas Extras - Dirección de Administración.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160065",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160056": {
     "numero": "1574",
@@ -16608,11 +16729,12 @@
     "detalle": "Horas Extras - Secretaría Judicial N° 2.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160056",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160059": {
     "numero": "1573",
@@ -16620,11 +16742,12 @@
     "detalle": "Horas Extras - Cuerpo de Peritos Tasadores Oficiales.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160059",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160052": {
     "numero": "1572",
@@ -16632,11 +16755,12 @@
     "detalle": "Prórroga de adscripción - Justo Javier BONNET.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160052",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160055": {
     "numero": "1571",
@@ -16644,11 +16768,12 @@
     "detalle": "Prórroga de adscripción - Jésica Estela FERREYRA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160055",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160054": {
     "numero": "1570",
@@ -16656,11 +16781,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Juan Ignacio OLLER.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160054",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160050": {
     "numero": "1569",
@@ -16668,11 +16794,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Greta María DÓMINA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160050",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160051": {
     "numero": "1568",
@@ -16680,11 +16807,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Yamila CHALI.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160051",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160053": {
     "numero": "1567",
@@ -16692,11 +16820,12 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Victoria Soledad GÓMEZ ALMEIDA.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160053",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 16,
     "primera_vez": "2026-06-25T21:27:53.616728",
     "expira": "2026-06-30T21:27:53.616728",
-    "procesado": "2026-06-25T21:27:53.616728"
+    "procesado": "2026-06-25T21:27:53.616728",
+    "corregido": "falso_positivo_fail_open"
   },
   "160096": {
     "numero": "1603",
@@ -16704,11 +16833,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $991.746.- en concepto de reintegro de gastos de inscripción registral de automotores.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160096",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-06-26T14:11:21.888481",
     "expira": "2026-07-01T14:11:21.888481",
-    "procesado": "2026-06-26T14:11:21.888481"
+    "procesado": "2026-06-26T14:11:21.888481",
+    "corregido": "falso_positivo_fail_open"
   },
   "160097": {
     "numero": "1602",
@@ -16716,11 +16846,12 @@
     "detalle": "Contratar con la firma INGENIERÍA CAAMAÑO S.A. el servicio de mantenimiento de los ascensores y monta expedientes, por la suma de $19.100.000.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160097",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-06-26T14:11:21.888481",
     "expira": "2026-07-01T14:11:21.888481",
-    "procesado": "2026-06-26T14:11:21.888481"
+    "procesado": "2026-06-26T14:11:21.888481",
+    "corregido": "falso_positivo_fail_open"
   },
   "160094": {
     "numero": "1601",
@@ -16728,11 +16859,12 @@
     "detalle": "Contratar con la firma TELEFÓNICA MÓVILES ARGENTINA S.A. el servicio de telefonía básica, por la suma de $50.294.497,80.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160094",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-06-26T14:11:21.888481",
     "expira": "2026-07-01T14:11:21.888481",
-    "procesado": "2026-06-26T14:11:21.888481"
+    "procesado": "2026-06-26T14:11:21.888481",
+    "corregido": "falso_positivo_fail_open"
   },
   "160095": {
     "numero": "1600",
@@ -16740,11 +16872,12 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $4.861.125.- en concepto de partida especial para viáticos y pasajes.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160095",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-06-26T14:11:21.888481",
     "expira": "2026-07-01T14:11:21.888481",
-    "procesado": "2026-06-26T14:11:21.888481"
+    "procesado": "2026-06-26T14:11:21.888481",
+    "corregido": "falso_positivo_fail_open"
   },
   "160100": {
     "numero": "1607",
@@ -16752,11 +16885,12 @@
     "detalle": "Horas Extras - Secretaría de Jurisprudencia.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160100",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 10,
     "primera_vez": "2026-06-26T17:45:12.344795",
     "expira": "2026-07-01T17:45:12.344795",
-    "procesado": "2026-06-26T17:45:12.344795"
+    "procesado": "2026-06-26T17:45:12.344795",
+    "corregido": "falso_positivo_fail_open"
   },
   "160103": {
     "numero": "1606",
@@ -16764,11 +16898,12 @@
     "detalle": "Horas Extras - Oficina Pericial.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160103",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 10,
     "primera_vez": "2026-06-26T17:45:12.344795",
     "expira": "2026-07-01T17:45:12.344795",
-    "procesado": "2026-06-26T17:45:12.344795"
+    "procesado": "2026-06-26T17:45:12.344795",
+    "corregido": "falso_positivo_fail_open"
   },
   "160102": {
     "numero": "1605",
@@ -16776,11 +16911,12 @@
     "detalle": "Horas Extras - Oficina de Subastas Judiciales.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160102",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 10,
     "primera_vez": "2026-06-26T17:45:12.344795",
     "expira": "2026-07-01T17:45:12.344795",
-    "procesado": "2026-06-26T17:45:12.344795"
+    "procesado": "2026-06-26T17:45:12.344795",
+    "corregido": "falso_positivo_fail_open"
   },
   "160101": {
     "numero": "1604",
@@ -16788,11 +16924,12 @@
     "detalle": "Horas Extras - Vocalía del Doctor Rosatti.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160101",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 10,
     "primera_vez": "2026-06-26T17:45:12.344795",
     "expira": "2026-07-01T17:45:12.344795",
-    "procesado": "2026-06-26T17:45:12.344795"
+    "procesado": "2026-06-26T17:45:12.344795",
+    "corregido": "falso_positivo_fail_open"
   },
   "160135": {
     "numero": "1610",
@@ -16800,11 +16937,12 @@
     "detalle": "Modificar la distribución de los créditos de la Jurisdicción 05 Poder Judicial de la Nación - SAF 320 Consejo de la Magistratura - para el corriente ejercicio financiero.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160135",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-29T16:55:58.871569",
     "expira": "2026-07-04T16:55:58.871569",
-    "procesado": "2026-06-29T16:55:58.871569"
+    "procesado": "2026-06-29T16:55:58.871569",
+    "corregido": "falso_positivo_fail_open"
   },
   "160134": {
     "numero": "1609",
@@ -16812,11 +16950,12 @@
     "detalle": "Aprobar la ampliación del plazo de obra por 65 días corridos. Aceptar la renuncia efectuada por DECONSTRUCCIÓN S.A. a todo reclamo por gastos improductivos y/o lucro cesante que pudiera corresponder en virtud de la mencionada ampliación. Solicitar a la contratista la adecuación de las garantías correspondientes.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160134",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-29T16:55:58.871569",
     "expira": "2026-07-04T16:55:58.871569",
-    "procesado": "2026-06-29T16:55:58.871569"
+    "procesado": "2026-06-29T16:55:58.871569",
+    "corregido": "falso_positivo_fail_open"
   },
   "160133": {
     "numero": "1608",
@@ -16824,11 +16963,12 @@
     "detalle": "Asignar código de dependencia para la percepción de la tasa de justicia dispuesta por ley 23.898 al Juzgado Federal de Victoria, de acuerdo a lo previsto en la Resolución N° 1900/99.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160133",
     "relevante": false,
-    "estado": "relevante",
+    "estado": "no_relevante",
     "intentos": 3,
     "primera_vez": "2026-06-29T16:55:58.871569",
     "expira": "2026-07-04T16:55:58.871569",
-    "procesado": "2026-06-29T16:55:58.871569"
+    "procesado": "2026-06-29T16:55:58.871569",
+    "corregido": "falso_positivo_fail_open"
   },
   "160158": {
     "numero": "1616",
