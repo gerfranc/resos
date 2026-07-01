@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+*.test_backup
+seen_resoluciones.backup.json
