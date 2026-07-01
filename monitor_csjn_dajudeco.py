@@ -224,7 +224,15 @@ def contiene_palabras_clave(texto):
 def verificar_pdf(url_pdf):
     """
     Descarga el PDF y busca las palabras clave en su contenido.
-    Retorna True si las contiene, False si no.
+    Retorna:
+      True  -> el PDF contiene TODAS las palabras clave
+      False -> el PDF NO contiene las palabras clave
+      None  -> no se pudo verificar (error de red/descarga): reintentar luego
+
+    IMPORTANTE: ante un error NO se asume relevante. Si se devolviera True
+    en caso de error, una caida del sitio de la CSJN durante el reproceso
+    marcaria TODAS las pendientes como relevantes de golpe (falsos positivos
+    masivos). Devolver None deja la resolucion como pendiente para reintento.
     """
     try:
         logger.info(f"Descargando PDF: {url_pdf}")
@@ -263,8 +271,8 @@ def verificar_pdf(url_pdf):
 
     except Exception as e:
         logger.warning(f"Error al verificar PDF {url_pdf}: {e}")
-        # En caso de error, no filtrar (incluir por las dudas)
-        return True
+        # No se pudo verificar: NO asumir relevante. Se reintentara luego.
+        return None
 
 
 def parsear_resolucion(item):
@@ -333,7 +341,7 @@ def formatear_mensaje(r):
         msg += f"\U0001F4C1 Exp: {r['expediente']}\n"
     if r.get("url_pdf"):
         msg += f"\n\U0001F517 <a href=\"{r['url_pdf']}\">Descargar PDF</a>\n"
-    msg += f"\n\U0001F50D Filtro: Asistencia Judicial"
+    msg += f"\n\U0001F50D Filtro: {', '.join(FILTRO_PALABRAS)}"
     return msg
 
 
@@ -354,15 +362,20 @@ def rechequear_pendientes(vistas):
     logger.info(f"Re-verificando {len(pendientes)} resoluciones pendientes...")
     nuevas_relevantes = 0
     expiradas = 0
+    no_verificables = 0
 
     for rid, datos in pendientes.items():
-        # Verificar si expiro
-        fecha_expira = datetime.fromisoformat(datos["expira"])
-        if ahora > fecha_expira:
-            datos["estado"] = "no_relevante"
-            expiradas += 1
-            logger.info(f"  Expirada: N°{datos.get('numero', rid)}")
-            continue
+        # Verificar si expiro (tolerante a entradas sin "expira")
+        expira_str = datos.get("expira")
+        if expira_str:
+            try:
+                if ahora > datetime.fromisoformat(expira_str):
+                    datos["estado"] = "no_relevante"
+                    expiradas += 1
+                    logger.info(f"  Expirada: N°{datos.get('numero', rid)}")
+                    continue
+            except ValueError:
+                logger.warning(f"  Fecha 'expira' invalida en N°{datos.get('numero', rid)}: {expira_str}")
 
         # Re-verificar PDF
         url_pdf = datos.get("url_pdf", "")
@@ -370,7 +383,8 @@ def rechequear_pendientes(vistas):
             datos["intentos"] = datos.get("intentos", 0) + 1
             continue
 
-        if verificar_pdf(url_pdf):
+        resultado = verificar_pdf(url_pdf)
+        if resultado is True:
             datos["estado"] = "relevante"
             nuevas_relevantes += 1
             # Notificar con prefijo de re-verificacion
@@ -384,11 +398,18 @@ def rechequear_pendientes(vistas):
             mensaje = "🔄 <b>[Re-verificación]</b>\n\n" + formatear_mensaje(r)
             enviar_telegram(mensaje)
             time.sleep(1)
-        else:
+        elif resultado is False:
+            # Verificado: no contiene las palabras clave
             datos["intentos"] = datos.get("intentos", 0) + 1
+        else:
+            # resultado is None: no se pudo verificar (error de red).
+            # Se mantiene pendiente sin contar intento, para reintentar luego.
+            no_verificables += 1
+            logger.info(f"  No verificable (se reintenta): N°{datos.get('numero', rid)}")
 
     logger.info(f"Pendientes re-verificadas: {len(pendientes)} | "
-                f"Nuevas relevantes: {nuevas_relevantes} | Expiradas: {expiradas}")
+                f"Nuevas relevantes: {nuevas_relevantes} | Expiradas: {expiradas} | "
+                f"No verificables (reintento): {no_verificables}")
 
 
 def chequear_resoluciones():
@@ -436,11 +457,17 @@ def chequear_resoluciones():
                 relevantes.append(r)
             elif r["url_pdf"]:
                 # Si no esta en el detalle, buscar dentro del PDF
-                if verificar_pdf(r["url_pdf"]):
+                resultado = verificar_pdf(r["url_pdf"])
+                if resultado is True:
                     logger.info(f"  MATCH en PDF: N\u00B0{r['numero']} - {r['detalle'][:60]}")
                     relevantes.append(r)
-                else:
+                elif resultado is False:
                     logger.info(f"  No relevante: N\u00B0{r['numero']} - {r['detalle'][:60]}")
+                    no_relevantes.append(r)
+                else:
+                    # None: no se pudo verificar (error de red). Queda pendiente
+                    # para reintentar en el proximo ciclo, no se asume relevante.
+                    logger.info(f"  No verificable (queda pendiente): N\u00B0{r['numero']} - {r['detalle'][:60]}")
                     no_relevantes.append(r)
             else:
                 no_relevantes.append(r)
@@ -483,7 +510,7 @@ def chequear_resoluciones():
             logger.info(f"Ninguna de las {len(no_vistas)} nuevas es relevante")
             enviar_telegram(
                 f"\u2705 Chequeo completado. {len(no_vistas)} resoluciones nuevas "
-                f"procesadas, ninguna menciona Asistencia Judicial."
+                f"procesadas, ninguna menciona {', '.join(FILTRO_PALABRAS)}."
             )
 
         # Paso 6: Guardar registro
@@ -515,6 +542,17 @@ def ejecutar_test():
         logger.info(f"TEST - Telegram simulado: {mensaje}")
         return True
     enviar_telegram = enviar_telegram_test
+
+    # Monkey-patch verificar_pdf para simular respuestas controladas sin red.
+    # Caso 5: URL con "ERROR_TRANSITORIO" simula caida del sitio -> None.
+    global verificar_pdf
+    _verificar_original = verificar_pdf
+    def verificar_pdf_test(url_pdf):
+        if "ERROR_TRANSITORIO" in url_pdf:
+            logger.info("TEST - verificar_pdf simulado: error transitorio (None)")
+            return None
+        return False
+    verificar_pdf = verificar_pdf_test
 
     # Backup del archivo de vistas actual
     backup_vistas = None
@@ -584,6 +622,18 @@ def ejecutar_test():
                 "nroExpe": "",
                 "pathTemas": "",
             },
+            # Caso 5: sin match en detalle, PDF con error transitorio de red.
+            # Debe quedar PENDIENTE (no relevante) para reintentar. Es el bug
+            # que antes marcaba estas resoluciones como relevantes por error.
+            {
+                "docId": "77777",
+                "nroDoc": "77777/2026",
+                "fechaCompleta": "05/04/2026",
+                "detalle": "Resolucion sin match, PDF caido momentaneamente",
+                "descripcionTipo": "Resolucion",
+                "nroExpe": "EXP-2026-005",
+                "pathTemas": "",
+            },
         ]
 
         # Paso 0: Re-verificar pendientes (caso 4: la expirada)
@@ -596,9 +646,12 @@ def ejecutar_test():
         resoluciones = [parsear_resolucion(item) for item in fixtures]
 
         # Caso 2: forzar url_pdf vacia (simula resolucion sin PDF disponible)
+        # Caso 5: url que dispara el error transitorio simulado
         for r in resoluciones:
             if r["id"] == "22222":
                 r["url_pdf"] = ""
+            if r["id"] == "77777":
+                r["url_pdf"] = "https://example.com/ERROR_TRANSITORIO"
 
         no_vistas = [r for r in resoluciones if r["id"] and r["id"] not in vistas]
         logger.info(f"{len(no_vistas)} resoluciones no procesadas, filtrando por contenido...")
@@ -611,11 +664,15 @@ def ejecutar_test():
                 logger.info(f"  MATCH en detalle: N°{r['numero']} - {r['detalle'][:60]}")
                 relevantes.append(r)
             elif r["url_pdf"]:
-                if verificar_pdf(r["url_pdf"]):
+                resultado = verificar_pdf(r["url_pdf"])
+                if resultado is True:
                     logger.info(f"  MATCH en PDF: N°{r['numero']} - {r['detalle'][:60]}")
                     relevantes.append(r)
-                else:
+                elif resultado is False:
                     logger.info(f"  No relevante: N°{r['numero']} - {r['detalle'][:60]}")
+                    no_relevantes.append(r)
+                else:
+                    logger.info(f"  No verificable (queda pendiente): N°{r['numero']} - {r['detalle'][:60]}")
                     no_relevantes.append(r)
             else:
                 logger.info(f"  Sin PDF, no relevante: N°{r['numero']} - {r['detalle'][:60]}")
@@ -684,8 +741,14 @@ def ejecutar_test():
         ok4 = estado4 == "no_relevante"
         logger.info(f"Caso 4 (pendiente expirada):  esperado=no_relevante | obtenido={estado4}    | {'OK' if ok4 else 'FALLO'}")
 
-        total_ok = sum([ok1, ok2, ok3, ok4])
-        logger.info(f"\nResultado: {total_ok}/4 casos correctos")
+        # Caso 5 (bug de reproceso): error transitorio de red NO debe marcar relevante
+        caso5 = vistas_final.get("77777", {})
+        estado5 = caso5.get("estado", "NO ENCONTRADO")
+        ok5 = estado5 == "pendiente"
+        logger.info(f"Caso 5 (PDF error transit.):  esperado=pendiente    | obtenido={estado5}    | {'OK' if ok5 else 'FALLO'}")
+
+        total_ok = sum([ok1, ok2, ok3, ok4, ok5])
+        logger.info(f"\nResultado: {total_ok}/5 casos correctos")
         logger.info("=" * 60)
 
     finally:
@@ -698,8 +761,9 @@ def ejecutar_test():
             if os.path.exists(SEEN_FILE):
                 os.remove(SEEN_FILE)
 
-        # Restaurar enviar_telegram original
+        # Restaurar funciones monkey-patcheadas
         enviar_telegram = _enviar_original
+        verificar_pdf = _verificar_original
 
 
 if __name__ == "__main__":
