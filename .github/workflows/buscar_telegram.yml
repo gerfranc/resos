@@ -1,12 +1,18 @@
-name: Monitor CSJN - DAJUDECO
+name: Buscar CSJN - Telegram Bot
 
 on:
   schedule:
-    - cron: '0 */2 * * 1-5'
-  workflow_dispatch:
+    - cron: '*/5 * * * *'   # cada 5 min: sondea comandos /buscar de Telegram
+  workflow_dispatch:          # disparo manual inmediato
+
+# No cancelar una corrida a medias: podria dejar el offset sin commitear y
+# reprocesar comandos (respuesta duplicada). Las corridas se serializan.
+concurrency:
+  group: buscar-telegram
+  cancel-in-progress: false
 
 jobs:
-  verificar-resoluciones:
+  poll-telegram:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repositorio
@@ -23,25 +29,24 @@ jobs:
           playwright install chromium
           playwright install-deps chromium
 
-      - name: Restaurar registro previo
-        continue-on-error: true
+      - name: Sincronizar repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull origin main --rebase || true
 
-      - name: Ejecutar monitor CSJN
+      - name: Poll de comandos Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python monitor_csjn_dajudeco.py --once
+        run: python monitor_csjn_dajudeco.py --telegram-poll
 
-      - name: Guardar registro de resoluciones vistas
+      - name: Persistir offset de Telegram
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen_resoluciones.json || true
+          git add telegram_state.json || true
           git add monitor_csjn.log || true
-          git diff --staged --quiet || git commit -m "Actualizar registro de resoluciones vistas"
+          git diff --staged --quiet || git commit -m "Actualizar offset Telegram"
           git pull origin main --rebase || true
           git push || true
