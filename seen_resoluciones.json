@@ -17169,7 +17169,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160216",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 22,
+    "intentos": 23,
     "primera_vez": "2026-07-01T19:43:30.118479",
     "expira": "2026-07-06T19:43:30.118479",
     "procesado": "2026-07-01T19:43:30.118479"
@@ -17190,7 +17190,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160237",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 14,
+    "intentos": 15,
     "primera_vez": "2026-07-02T19:13:51.194538",
     "expira": "2026-07-07T19:13:51.194538",
     "procesado": "2026-07-02T19:13:51.194538"
@@ -17202,7 +17202,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160238",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 13,
+    "intentos": 14,
     "primera_vez": "2026-07-02T20:57:36.373532",
     "expira": "2026-07-07T20:57:36.373532",
     "procesado": "2026-07-02T20:57:36.373532"
@@ -17214,7 +17214,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160256",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-07-03T19:07:07.118023",
     "expira": "2026-07-08T19:07:07.118023",
     "procesado": "2026-07-03T19:07:07.118023"
@@ -17235,7 +17235,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160254",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-07-03T19:07:07.118023",
     "expira": "2026-07-08T19:07:07.118023",
     "procesado": "2026-07-03T19:07:07.118023"
@@ -17247,9 +17247,21 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160258",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 4,
+    "intentos": 5,
     "primera_vez": "2026-07-03T20:56:34.586039",
     "expira": "2026-07-08T20:56:34.586039",
     "procesado": "2026-07-03T20:56:34.586039"
+  },
+  "160273": {
+    "numero": "1635",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Prórroga de contratos - Vocalía del Doctor Rosenkrantz.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160273",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T13:39:28.180521",
+    "expira": "2026-07-11T13:39:28.180521",
+    "procesado": "2026-07-06T13:39:28.180521"
   }
 }
