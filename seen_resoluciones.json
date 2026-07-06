@@ -17169,7 +17169,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160216",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 23,
+    "intentos": 24,
     "primera_vez": "2026-07-01T19:43:30.118479",
     "expira": "2026-07-06T19:43:30.118479",
     "procesado": "2026-07-01T19:43:30.118479"
@@ -17190,7 +17190,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160237",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 15,
+    "intentos": 16,
     "primera_vez": "2026-07-02T19:13:51.194538",
     "expira": "2026-07-07T19:13:51.194538",
     "procesado": "2026-07-02T19:13:51.194538"
@@ -17202,7 +17202,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160238",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 14,
+    "intentos": 15,
     "primera_vez": "2026-07-02T20:57:36.373532",
     "expira": "2026-07-07T20:57:36.373532",
     "procesado": "2026-07-02T20:57:36.373532"
@@ -17214,7 +17214,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160256",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-07-03T19:07:07.118023",
     "expira": "2026-07-08T19:07:07.118023",
     "procesado": "2026-07-03T19:07:07.118023"
@@ -17235,7 +17235,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160254",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-07-03T19:07:07.118023",
     "expira": "2026-07-08T19:07:07.118023",
     "procesado": "2026-07-03T19:07:07.118023"
@@ -17247,7 +17247,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160258",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-07-03T20:56:34.586039",
     "expira": "2026-07-08T20:56:34.586039",
     "procesado": "2026-07-03T20:56:34.586039"
@@ -17259,9 +17259,117 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160273",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-07-06T13:39:28.180521",
     "expira": "2026-07-11T13:39:28.180521",
     "procesado": "2026-07-06T13:39:28.180521"
+  },
+  "160282": {
+    "numero": "1644",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Aprobar el modelo de Convenio entre la Corte Suprema de Justicia de la Nación y la Asociación Argentina de Derecho Procesal y autorizar al Señor Presidente del Tribunal, Doctor Horacio Rosatti, a suscribirlo.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160282",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160281": {
+    "numero": "1643",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Aprobar la habilitación horaria dispuesta por el magistrado a cargo del Juzgado Nacional de Primera Instancia en lo Comercial N° 16.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160281",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160280": {
+    "numero": "1642",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Dejar sin efecto la licencia sin goce de haberes oportunamente otorgada mediante\r\nResolución SGA N° 3147/2025 al Dr. Juan Ignacio STAMPALIJA, y considerar al referido funcionario en uso de licencia sin goce de haberes, en los términos del artículo 11 del Régimen de Licencias para Magistrados, Funcionarios y Empleados de la Justicia Nacional.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160280",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160279": {
+    "numero": "1641",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Asignar a la Cámara Nacional de Apelaciones en lo Penal Económico un automotor marca Ford, modelo Ranger Raptor.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160279",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160278": {
+    "numero": "1640",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Dejar sin efecto la asignación dispuesta por Resolución N° <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/resoluciones?anioDoc=2013&nroDoc=1020\" target='_blank'>1020/2013</a>, respecto de un automotor marca Renault modelo Fluence Privilege, y asignar a la Cámara Federal de Apelaciones de Corrientes un automotor marca Volkswagen modelo Amarok.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160278",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160277": {
+    "numero": "1639",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Dejar sin efecto la asignación dispuesta por Resolución N° <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/resoluciones?anioDoc=2013&nroDoc=1642\" target='_blank'>1642/2013</a>, respecto de un automotor marca Renault modelo Fluence Privilege, y asignar a la Cámara Federal de Casación Penal un automotor marca Chevrolet modelo Cruze.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160277",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160276": {
+    "numero": "1638",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Dejar sin efecto la asignación dispuesta por Resolución N° <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/resoluciones?anioDoc=2008&nroDoc=2444\" target='_blank'>2444/2008</a>, respecto de un automotor marca Toyota modelo Hilux, y asignar al Tribunal Oral en lo Criminal Federal N°\r\n1 de Mendoza un automotor marca Ford, modelo Ranger.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160276",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160275": {
+    "numero": "1637",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Bonificación por antigüedad en el título a favor de Ana Inés BIANCHI - Asistente social.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160275",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
+  },
+  "160274": {
+    "numero": "1636",
+    "fecha": "6 de julio de 2026",
+    "detalle": "Modificar la distribución de créditos del SAF 335 -Corte Suprema de Justicia de la Nación- para el corriente ejercicio financiero.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160274",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-07-06T16:49:15.535729",
+    "expira": "2026-07-11T16:49:15.535729",
+    "procesado": "2026-07-06T16:49:15.535729"
   }
 }
