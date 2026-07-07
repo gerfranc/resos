@@ -1494,3 +1494,75 @@
 2026-07-07 13:38:19 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-07 13:38:19 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D
 2026-07-07 13:38:19 [INFO] Sin updates nuevos de Telegram
+2026-07-07 14:11:57 [INFO] ============================================================
+2026-07-07 14:11:57 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-07 14:11:57 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-07 14:11:57 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-07 14:11:57 [INFO] Modo: ejecucion unica
+2026-07-07 14:11:57 [INFO] ============================================================
+2026-07-07 14:11:57 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-07-07 14:11:57 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-07-07 14:11:57 [INFO] Re-verificando 16 resoluciones pendientes...
+2026-07-07 14:11:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160237
+2026-07-07 14:11:58 [INFO] PDF: 1529 caracteres extraidos con pdfplumber
+2026-07-07 14:11:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160238
+2026-07-07 14:11:59 [INFO] PDF: 1987 caracteres extraidos con pdfplumber
+2026-07-07 14:11:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160256
+2026-07-07 14:12:02 [INFO] PDF: 1911 caracteres extraidos con pdfplumber
+2026-07-07 14:12:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160254
+2026-07-07 14:12:03 [INFO] PDF: 1840 caracteres extraidos con pdfplumber
+2026-07-07 14:12:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160258
+2026-07-07 14:12:04 [INFO] PDF: 2467 caracteres extraidos con pdfplumber
+2026-07-07 14:12:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160273
+2026-07-07 14:12:06 [INFO] PDF: 1736 caracteres extraidos con pdfplumber
+2026-07-07 14:12:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160282
+2026-07-07 14:12:08 [INFO] PDF: 6490 caracteres extraidos con pdfplumber
+2026-07-07 14:12:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160281
+2026-07-07 14:12:10 [INFO] PDF: 3016 caracteres extraidos con pdfplumber
+2026-07-07 14:12:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160280
+2026-07-07 14:12:11 [INFO] PDF: 2313 caracteres extraidos con pdfplumber
+2026-07-07 14:12:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160279
+2026-07-07 14:12:13 [INFO] PDF: 3152 caracteres extraidos con pdfplumber
+2026-07-07 14:12:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160278
+2026-07-07 14:12:14 [INFO] PDF: 3366 caracteres extraidos con pdfplumber
+2026-07-07 14:12:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160277
+2026-07-07 14:12:16 [INFO] PDF: 3344 caracteres extraidos con pdfplumber
+2026-07-07 14:12:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160276
+2026-07-07 14:12:17 [INFO] PDF: 3337 caracteres extraidos con pdfplumber
+2026-07-07 14:12:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160275
+2026-07-07 14:12:18 [INFO] PDF: 2036 caracteres extraidos con pdfplumber
+2026-07-07 14:12:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160274
+2026-07-07 14:12:21 [INFO] PDF: 16915 caracteres extraidos con pdfplumber
+2026-07-07 14:12:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160283
+2026-07-07 14:12:22 [INFO] PDF: 3061 caracteres extraidos con pdfplumber
+2026-07-07 14:12:22 [INFO] Pendientes re-verificadas: 16 | Nuevas relevantes: 0 | Expiradas: 0 | No verificables (reintento): 0
+2026-07-07 14:12:22 [INFO] Registro: 1617 resoluciones guardadas
+2026-07-07 14:12:23 [INFO] Iniciando navegador Chromium headless...
+2026-07-07 14:12:23 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-07 14:12:29 [INFO] Pagina cargada
+2026-07-07 14:12:29 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-07 14:12:31 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1619)
+2026-07-07 14:12:31 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-07-07 14:12:31 [INFO] Esperando resultados...
+2026-07-07 14:12:31 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-07 14:12:31 [INFO] Click en Buscar (q='')
+2026-07-07 14:12:32 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1619)
+2026-07-07 14:12:32 [INFO] Respuesta de busqueda recibida
+2026-07-07 14:12:32 [INFO] Tabla con resultados detectada
+2026-07-07 14:12:32 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-07-07 14:12:32 [INFO] Navegador cerrado
+2026-07-07 14:12:32 [INFO] Total resoluciones obtenidas: 200
+2026-07-07 14:12:32 [INFO] 3 resoluciones no procesadas, filtrando por contenido...
+2026-07-07 14:12:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160295
+2026-07-07 14:12:34 [INFO] PDF: 1721 caracteres extraidos con pdfplumber
+2026-07-07 14:12:34 [INFO]   No relevante: N°1648 - Anticipo de jubilación a favor de la Señora Aurora Griselda 
+2026-07-07 14:12:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160294
+2026-07-07 14:12:35 [INFO] PDF: 1668 caracteres extraidos con pdfplumber
+2026-07-07 14:12:35 [INFO]   No relevante: N°1647 - Anticipo de jubilación a favor de la Señora Alicia Susana PA
+2026-07-07 14:12:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160293
+2026-07-07 14:12:36 [INFO] PDF: 1976 caracteres extraidos con pdfplumber
+2026-07-07 14:12:36 [INFO]   No relevante: N°1646 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-07-07 14:12:36 [INFO] Ninguna de las 3 nuevas es relevante
+2026-07-07 14:12:37 [INFO] Telegram: mensaje enviado
+2026-07-07 14:12:37 [INFO] Registro: 1620 resoluciones guardadas
+2026-07-07 14:12:37 [INFO] Completado: 0 relevantes de 3 nuevas
