@@ -5473,3 +5473,170 @@
 2026-07-13 13:05:12 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-13 13:05:13 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D
 2026-07-13 13:05:13 [INFO] Sin updates nuevos de Telegram
+2026-07-13 14:23:25 [INFO] ============================================================
+2026-07-13 14:23:25 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-13 14:23:25 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-13 14:23:25 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-13 14:23:25 [INFO] Modo: ejecucion unica
+2026-07-13 14:23:25 [INFO] ============================================================
+2026-07-13 14:23:25 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-07-13 14:23:25 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-07-13 14:23:25 [INFO] Re-verificando 26 resoluciones pendientes...
+2026-07-13 14:23:25 [INFO]   Expirada: N°1652
+2026-07-13 14:23:25 [INFO]   Expirada: N°1651
+2026-07-13 14:23:25 [INFO]   Expirada: N°1650
+2026-07-13 14:23:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160323
+2026-07-13 14:23:27 [INFO] PDF: 2057 caracteres extraidos con pdfplumber
+2026-07-13 14:23:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160322
+2026-07-13 14:23:28 [INFO] PDF: 1732 caracteres extraidos con pdfplumber
+2026-07-13 14:23:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160321
+2026-07-13 14:23:30 [INFO] PDF: 1751 caracteres extraidos con pdfplumber
+2026-07-13 14:23:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160319
+2026-07-13 14:23:31 [INFO] PDF: 1795 caracteres extraidos con pdfplumber
+2026-07-13 14:23:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160320
+2026-07-13 14:23:33 [INFO] PDF: 1791 caracteres extraidos con pdfplumber
+2026-07-13 14:23:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160318
+2026-07-13 14:23:35 [INFO] PDF: 6695 caracteres extraidos con pdfplumber
+2026-07-13 14:23:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160317
+2026-07-13 14:23:37 [INFO] PDF: 10694 caracteres extraidos con pdfplumber
+2026-07-13 14:23:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160316
+2026-07-13 14:23:39 [INFO] PDF: 5465 caracteres extraidos con pdfplumber
+2026-07-13 14:23:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160331
+2026-07-13 14:23:41 [INFO] PDF: 1917 caracteres extraidos con pdfplumber
+2026-07-13 14:23:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160330
+2026-07-13 14:23:43 [INFO] PDF: 4046 caracteres extraidos con pdfplumber
+2026-07-13 14:23:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160329
+2026-07-13 14:23:45 [INFO] PDF: 2216 caracteres extraidos con pdfplumber
+2026-07-13 14:23:45 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160328
+2026-07-13 14:23:47 [INFO] PDF: 1548 caracteres extraidos con pdfplumber
+2026-07-13 14:23:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160327
+2026-07-13 14:23:50 [INFO] PDF: 1644 caracteres extraidos con pdfplumber
+2026-07-13 14:23:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160326
+2026-07-13 14:23:52 [INFO] PDF: 1660 caracteres extraidos con pdfplumber
+2026-07-13 14:23:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160325
+2026-07-13 14:23:53 [INFO] PDF: 1406 caracteres extraidos con pdfplumber
+2026-07-13 14:23:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160324
+2026-07-13 14:23:55 [INFO] PDF: 2285 caracteres extraidos con pdfplumber
+2026-07-13 14:23:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160338
+2026-07-13 14:23:57 [INFO] PDF: 565 caracteres extraidos con pdfplumber
+2026-07-13 14:23:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160337
+2026-07-13 14:23:59 [INFO] PDF: 1285 caracteres extraidos con pdfplumber
+2026-07-13 14:23:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160332
+2026-07-13 14:24:01 [INFO] PDF: 2397 caracteres extraidos con pdfplumber
+2026-07-13 14:24:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160336
+2026-07-13 14:24:03 [INFO] PDF: 1722 caracteres extraidos con pdfplumber
+2026-07-13 14:24:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160334
+2026-07-13 14:24:04 [INFO] PDF: 1722 caracteres extraidos con pdfplumber
+2026-07-13 14:24:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160333
+2026-07-13 14:24:06 [INFO] PDF: 1726 caracteres extraidos con pdfplumber
+2026-07-13 14:24:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160335
+2026-07-13 14:24:08 [INFO] PDF: 1364 caracteres extraidos con pdfplumber
+2026-07-13 14:24:08 [INFO] Pendientes re-verificadas: 26 | Nuevas relevantes: 0 | Expiradas: 3 | No verificables (reintento): 0
+2026-07-13 14:24:08 [INFO] Registro: 1647 resoluciones guardadas
+2026-07-13 14:24:08 [INFO] Iniciando navegador Chromium headless...
+2026-07-13 14:24:09 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-13 14:24:16 [INFO] Pagina cargada
+2026-07-13 14:24:17 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-13 14:24:18 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1675)
+2026-07-13 14:24:18 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-07-13 14:24:18 [INFO] Esperando resultados...
+2026-07-13 14:24:18 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-13 14:24:18 [INFO] Click en Buscar (q='')
+2026-07-13 14:24:20 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1675)
+2026-07-13 14:24:20 [INFO] Respuesta de busqueda recibida
+2026-07-13 14:24:20 [INFO] Tabla con resultados detectada
+2026-07-13 14:24:20 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-07-13 14:24:20 [INFO] Navegador cerrado
+2026-07-13 14:24:20 [INFO] Total resoluciones obtenidas: 200
+2026-07-13 14:24:20 [INFO] 29 resoluciones no procesadas, filtrando por contenido...
+2026-07-13 14:24:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160380
+2026-07-13 14:24:21 [INFO] PDF: 1664 caracteres extraidos con pdfplumber
+2026-07-13 14:24:21 [INFO]   No relevante: N°1704 - Licencia gremial sin goce de haberes - Leticia María ALBARRA
+2026-07-13 14:24:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160379
+2026-07-13 14:24:22 [INFO] PDF: 2208 caracteres extraidos con pdfplumber
+2026-07-13 14:24:22 [INFO]   No relevante: N°1703 - Licencia gremial sin goce de haberes - varios agentes.-
+2026-07-13 14:24:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160383
+2026-07-13 14:24:24 [INFO] PDF: 1152 caracteres extraidos con pdfplumber
+2026-07-13 14:24:24 [INFO]   No relevante: N°1702 - Licencia gremial - Ulises FERRANDO y Paula J. GROSSO.-
+2026-07-13 14:24:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160382
+2026-07-13 14:24:25 [INFO] PDF: 1167 caracteres extraidos con pdfplumber
+2026-07-13 14:24:25 [INFO]   No relevante: N°1701 - Licencia gremial - Marisa Elizabeth FERNÁNDEZ.-
+2026-07-13 14:24:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160384
+2026-07-13 14:24:27 [INFO] PDF: 1206 caracteres extraidos con pdfplumber
+2026-07-13 14:24:27 [INFO]   No relevante: N°1700 - Licencia gremial - Guillermo SCHIAVO.-
+2026-07-13 14:24:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160381
+2026-07-13 14:24:28 [INFO] PDF: 1135 caracteres extraidos con pdfplumber
+2026-07-13 14:24:28 [INFO]   No relevante: N°1699 - Licencia gremial - Rubén Marcos RODRÍGUEZ.-
+2026-07-13 14:24:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160378
+2026-07-13 14:24:29 [INFO] PDF: 1111 caracteres extraidos con pdfplumber
+2026-07-13 14:24:29 [INFO]   No relevante: N°1698 - Licencia gremial - Eleonora RUTIGLIANO.-
+2026-07-13 14:24:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160374
+2026-07-13 14:24:31 [INFO] PDF: 1163 caracteres extraidos con pdfplumber
+2026-07-13 14:24:31 [INFO]   No relevante: N°1697 - Licencia gremial - Marcelo Adolfo GRAIFF.-
+2026-07-13 14:24:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160373
+2026-07-13 14:24:32 [INFO] PDF: 1137 caracteres extraidos con pdfplumber
+2026-07-13 14:24:32 [INFO]   No relevante: N°1696 - Licencia gremial -  Raymundo Carlos DÍAZ.-
+2026-07-13 14:24:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160377
+2026-07-13 14:24:34 [INFO] PDF: 1147 caracteres extraidos con pdfplumber
+2026-07-13 14:24:34 [INFO]   No relevante: N°1695 - Licencia gremial - Rodrigo Javier HERMOSO.-
+2026-07-13 14:24:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160368
+2026-07-13 14:24:35 [INFO] PDF: 1150 caracteres extraidos con pdfplumber
+2026-07-13 14:24:35 [INFO]   No relevante: N°1694 - Licencia gremial - Gabriel Alberto MANSILLA.-
+2026-07-13 14:24:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160370
+2026-07-13 14:24:37 [INFO] PDF: 1133 caracteres extraidos con pdfplumber
+2026-07-13 14:24:37 [INFO]   No relevante: N°1693 - Licencia gremial - Gustavo PARODY.-
+2026-07-13 14:24:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160376
+2026-07-13 14:24:38 [INFO] PDF: 1116 caracteres extraidos con pdfplumber
+2026-07-13 14:24:38 [INFO]   No relevante: N°1692 - Licencia gremial - Aldo A. BIANCHI.-
+2026-07-13 14:24:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160372
+2026-07-13 14:24:40 [INFO] PDF: 1145 caracteres extraidos con pdfplumber
+2026-07-13 14:24:40 [INFO]   No relevante: N°1691 - Licencia gremial -  Maite Alejandra VIVERO.-
+2026-07-13 14:24:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160375
+2026-07-13 14:24:41 [INFO] PDF: 1150 caracteres extraidos con pdfplumber
+2026-07-13 14:24:41 [INFO]   No relevante: N°1690 - Licencia gremial - Suyai Anahí PULGAR.-
+2026-07-13 14:24:41 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160369
+2026-07-13 14:24:43 [INFO] PDF: 1174 caracteres extraidos con pdfplumber
+2026-07-13 14:24:43 [INFO]   No relevante: N°1689 - Licencia gremial - Aldo A. BIANCHI y Ulises D. FERRANDO.-
+2026-07-13 14:24:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160371
+2026-07-13 14:24:44 [INFO] PDF: 1346 caracteres extraidos con pdfplumber
+2026-07-13 14:24:44 [INFO]   No relevante: N°1688 - Licencia gremial - varios agentes.-
+2026-07-13 14:24:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160367
+2026-07-13 14:24:46 [INFO] PDF: 1592 caracteres extraidos con pdfplumber
+2026-07-13 14:24:46 [INFO]   No relevante: N°1687 - Considerar en uso de licencia con goce de haberes al Doctor 
+2026-07-13 14:24:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160366
+2026-07-13 14:24:47 [INFO] PDF: 1566 caracteres extraidos con pdfplumber
+2026-07-13 14:24:47 [INFO]   No relevante: N°1686 - Considerar en uso de licencia con goce de haberes al Doctor 
+2026-07-13 14:24:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160365
+2026-07-13 14:24:48 [INFO] PDF: 1595 caracteres extraidos con pdfplumber
+2026-07-13 14:24:48 [INFO]   No relevante: N°1685 - Considerar en uso de licencia con goce de haberes al Doctor 
+2026-07-13 14:24:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160363
+2026-07-13 14:24:50 [INFO] PDF: 1587 caracteres extraidos con pdfplumber
+2026-07-13 14:24:50 [INFO]   No relevante: N°1684 - Considerar en uso de licencia con goce de haberes a la Docto
+2026-07-13 14:24:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160364
+2026-07-13 14:24:51 [INFO] PDF: 1545 caracteres extraidos con pdfplumber
+2026-07-13 14:24:51 [INFO]   No relevante: N°1683 - Considerar en uso de licencia con goce de haberes al Doctor 
+2026-07-13 14:24:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160356
+2026-07-13 14:24:53 [INFO] PDF: 2253 caracteres extraidos con pdfplumber
+2026-07-13 14:24:53 [INFO]   No relevante: N°1682 - Bonificación adicional por título a favor de Mariana Cecilia
+2026-07-13 14:24:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160357
+2026-07-13 14:24:54 [INFO] PDF: 2250 caracteres extraidos con pdfplumber
+2026-07-13 14:24:54 [INFO]   No relevante: N°1681 - Bonificación adicional por título a favor de Zaira DECLERCQ 
+2026-07-13 14:24:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160359
+2026-07-13 14:24:55 [INFO] PDF: 2333 caracteres extraidos con pdfplumber
+2026-07-13 14:24:55 [INFO]   No relevante: N°1680 - Bonificación adicional por título a favor de María MOLINA - 
+2026-07-13 14:24:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160360
+2026-07-13 14:24:57 [INFO] PDF: 2389 caracteres extraidos con pdfplumber
+2026-07-13 14:24:57 [INFO]   No relevante: N°1679 - Bonificación adicional por título a favor de María Julieta M
+2026-07-13 14:24:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160362
+2026-07-13 14:24:58 [INFO] PDF: 2329 caracteres extraidos con pdfplumber
+2026-07-13 14:24:58 [INFO]   No relevante: N°1678 - Bonificación adicional por título a favor de Héctor Fabián P
+2026-07-13 14:24:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160361
+2026-07-13 14:25:00 [INFO] PDF: 2422 caracteres extraidos con pdfplumber
+2026-07-13 14:25:00 [INFO]   No relevante: N°1677 - Bonificación adicional por título a favor de Agustina Magalí
+2026-07-13 14:25:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160358
+2026-07-13 14:25:01 [INFO] PDF: 2227 caracteres extraidos con pdfplumber
+2026-07-13 14:25:01 [INFO]   No relevante: N°1676 - Bonificación adicional por título a favor de Laura Estela GI
+2026-07-13 14:25:01 [INFO] Ninguna de las 29 nuevas es relevante
+2026-07-13 14:25:02 [INFO] Telegram: mensaje enviado
+2026-07-13 14:25:02 [INFO] Registro: 1676 resoluciones guardadas
+2026-07-13 14:25:02 [INFO] Completado: 0 relevantes de 29 nuevas
