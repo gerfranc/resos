@@ -5146,3 +5146,12 @@
 2026-07-17 07:57:35 [INFO] Navegador cerrado
 2026-07-17 07:57:35 [INFO] Total resoluciones obtenidas: 200
 2026-07-17 07:57:35 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-07-17 08:13:23 [INFO] ============================================================
+2026-07-17 08:13:23 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-17 08:13:23 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-17 08:13:23 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-17 08:13:23 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-07-17 08:13:23 [INFO] ============================================================
+2026-07-17 08:13:23 [INFO] Polling de comandos Telegram (/buscar)
+2026-07-17 08:13:23 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D
+2026-07-17 08:13:23 [INFO] Sin updates nuevos de Telegram
