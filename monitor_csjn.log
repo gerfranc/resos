@@ -4498,3 +4498,60 @@
 2026-07-22 16:10:06 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-22 16:10:06 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D
 2026-07-22 16:10:06 [INFO] Sin updates nuevos de Telegram
+2026-07-22 17:08:34 [INFO] ============================================================
+2026-07-22 17:08:34 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-22 17:08:34 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-22 17:08:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-22 17:08:34 [INFO] Modo: ejecucion unica
+2026-07-22 17:08:34 [INFO] ============================================================
+2026-07-22 17:08:34 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-07-22 17:08:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-07-22 17:08:34 [INFO] Re-verificando 28 resoluciones pendientes...
+2026-07-22 17:08:34 [INFO]   Expirada: N°1783
+2026-07-22 17:08:34 [INFO]   Expirada: N°1782
+2026-07-22 17:08:34 [INFO]   Expirada: N°1781
+2026-07-22 17:08:34 [INFO]   Expirada: N°1780
+2026-07-22 17:08:34 [INFO]   Expirada: N°1779
+2026-07-22 17:08:34 [INFO]   Expirada: N°1778
+2026-07-22 17:08:34 [INFO]   Expirada: N°1777
+2026-07-22 17:08:34 [INFO]   Expirada: N°1776
+2026-07-22 17:08:34 [INFO]   Expirada: N°1775
+2026-07-22 17:08:34 [INFO]   Expirada: N°1774
+2026-07-22 17:08:34 [INFO]   Expirada: N°1773
+2026-07-22 17:08:34 [INFO]   Expirada: N°1772
+2026-07-22 17:08:34 [INFO]   Expirada: N°1771
+2026-07-22 17:08:34 [INFO]   Expirada: N°1770
+2026-07-22 17:08:34 [INFO]   Expirada: N°1769
+2026-07-22 17:08:34 [INFO]   Expirada: N°1768
+2026-07-22 17:08:34 [INFO]   Expirada: N°1767
+2026-07-22 17:08:34 [INFO]   Expirada: N°1766
+2026-07-22 17:08:34 [INFO]   Expirada: N°1765
+2026-07-22 17:08:34 [INFO]   Expirada: N°1764
+2026-07-22 17:08:34 [INFO]   Expirada: N°1763
+2026-07-22 17:08:34 [INFO]   Expirada: N°1762
+2026-07-22 17:08:34 [INFO]   Expirada: N°1761
+2026-07-22 17:08:34 [INFO]   Expirada: N°1760
+2026-07-22 17:08:34 [INFO]   Expirada: N°1759
+2026-07-22 17:08:34 [INFO]   Expirada: N°1758
+2026-07-22 17:08:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160513
+2026-07-22 17:08:36 [INFO] PDF: 1974 caracteres extraidos con pdfplumber
+2026-07-22 17:08:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160509
+2026-07-22 17:08:37 [INFO] PDF: 814 caracteres extraidos con pdfplumber
+2026-07-22 17:08:37 [INFO] Pendientes re-verificadas: 28 | Nuevas relevantes: 0 | Expiradas: 26 | No verificables (reintento): 0
+2026-07-22 17:08:37 [INFO] Registro: 1757 resoluciones guardadas
+2026-07-22 17:08:38 [INFO] Iniciando navegador Chromium headless...
+2026-07-22 17:08:39 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-22 17:08:46 [INFO] Pagina cargada
+2026-07-22 17:08:46 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-22 17:08:48 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1756)
+2026-07-22 17:08:49 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-07-22 17:08:49 [INFO] Esperando resultados...
+2026-07-22 17:08:49 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-22 17:08:49 [INFO] Click en Buscar (q='')
+2026-07-22 17:08:50 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1756)
+2026-07-22 17:08:50 [INFO] Respuesta de busqueda recibida
+2026-07-22 17:08:50 [INFO] Tabla con resultados detectada
+2026-07-22 17:08:50 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-07-22 17:08:50 [INFO] Navegador cerrado
+2026-07-22 17:08:50 [INFO] Total resoluciones obtenidas: 200
+2026-07-22 17:08:50 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
