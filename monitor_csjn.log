@@ -5082,3 +5082,28 @@
 2026-07-24 03:37:52 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-24 03:37:53 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D
 2026-07-24 03:37:53 [INFO] Sin updates nuevos de Telegram
+2026-07-24 05:20:42 [INFO] ============================================================
+2026-07-24 05:20:42 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-24 05:20:42 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-24 05:20:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-24 05:20:42 [INFO] Modo: ejecucion unica
+2026-07-24 05:20:42 [INFO] ============================================================
+2026-07-24 05:20:42 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-07-24 05:20:42 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-07-24 05:20:42 [INFO] Registro: 1757 resoluciones guardadas
+2026-07-24 05:20:43 [INFO] Iniciando navegador Chromium headless...
+2026-07-24 05:20:44 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-24 05:20:54 [INFO] Pagina cargada
+2026-07-24 05:20:54 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-24 05:20:56 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1756)
+2026-07-24 05:20:56 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-07-24 05:20:56 [INFO] Esperando resultados...
+2026-07-24 05:20:56 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-24 05:20:56 [INFO] Click en Buscar (q='')
+2026-07-24 05:20:57 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1756)
+2026-07-24 05:20:57 [INFO] Respuesta de busqueda recibida
+2026-07-24 05:20:57 [INFO] Tabla con resultados detectada
+2026-07-24 05:20:57 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-07-24 05:20:57 [INFO] Navegador cerrado
+2026-07-24 05:20:57 [INFO] Total resoluciones obtenidas: 200
+2026-07-24 05:20:57 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
