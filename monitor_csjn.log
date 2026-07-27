@@ -5837,3 +5837,28 @@
 2026-07-27 16:08:40 [INFO] ============================================================
 2026-07-27 16:08:40 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-27 16:08:41 [INFO] Sin updates nuevos de Telegram
+2026-07-27 17:37:21 [INFO] ============================================================
+2026-07-27 17:37:21 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-27 17:37:21 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-27 17:37:21 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-27 17:37:21 [INFO] Modo: ejecucion unica
+2026-07-27 17:37:21 [INFO] ============================================================
+2026-07-27 17:37:21 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-07-27 17:37:21 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-07-27 17:37:21 [INFO] Registro: 1757 resoluciones guardadas
+2026-07-27 17:37:21 [INFO] Iniciando navegador Chromium headless...
+2026-07-27 17:37:23 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-27 17:37:31 [INFO] Pagina cargada
+2026-07-27 17:37:31 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-27 17:37:33 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1756)
+2026-07-27 17:37:33 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-07-27 17:37:33 [INFO] Esperando resultados...
+2026-07-27 17:37:33 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-07-27 17:37:33 [INFO] Click en Buscar (q='')
+2026-07-27 17:37:34 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1756)
+2026-07-27 17:37:34 [INFO] Respuesta de busqueda recibida
+2026-07-27 17:37:34 [INFO] Tabla con resultados detectada
+2026-07-27 17:37:34 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-07-27 17:37:34 [INFO] Navegador cerrado
+2026-07-27 17:37:34 [INFO] Total resoluciones obtenidas: 200
+2026-07-27 17:37:34 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
