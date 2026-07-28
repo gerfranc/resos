@@ -58,3 +58,12 @@
 2026-07-28 21:50:13 [INFO] ============================================================
 2026-07-28 21:50:13 [INFO] Polling de comandos Telegram (/buscar)
 2026-07-28 21:50:14 [INFO] Sin updates nuevos de Telegram
+2026-07-28 22:45:11 [INFO] ============================================================
+2026-07-28 22:45:11 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-07-28 22:45:11 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-07-28 22:45:11 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-07-28 22:45:11 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-07-28 22:45:11 [INFO] ============================================================
+2026-07-28 22:45:11 [INFO] Polling de comandos Telegram (/buscar)
+2026-07-28 22:45:31 [ERROR] Error en getUpdates: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=20)
+2026-07-28 22:45:31 [INFO] Sin updates nuevos de Telegram
