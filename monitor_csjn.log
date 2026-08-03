@@ -1654,3 +1654,39 @@
 2026-08-03 20:38:34 [INFO] ============================================================
 2026-08-03 20:38:34 [INFO] Polling de comandos Telegram (/buscar)
 2026-08-03 20:38:35 [INFO] Sin updates nuevos de Telegram
+2026-08-03 20:56:58 [INFO] ============================================================
+2026-08-03 20:56:58 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-03 20:56:58 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-03 20:56:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-03 20:56:58 [INFO] Modo: ejecucion unica
+2026-08-03 20:56:58 [INFO] ============================================================
+2026-08-03 20:56:58 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-08-03 20:56:58 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-08-03 20:56:58 [INFO] Re-verificando 1 resoluciones pendientes...
+2026-08-03 20:56:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160573
+2026-08-03 20:56:59 [INFO] PDF: 1675 caracteres extraidos con pdfplumber
+2026-08-03 20:56:59 [INFO] Pendientes re-verificadas: 1 | Nuevas relevantes: 0 | Expiradas: 0 | No verificables (reintento): 0
+2026-08-03 20:56:59 [INFO] Registro: 1758 resoluciones guardadas
+2026-08-03 20:57:00 [INFO] Iniciando navegador Chromium headless...
+2026-08-03 20:57:00 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-03 20:57:09 [INFO] Pagina cargada
+2026-08-03 20:57:10 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-08-03 20:57:11 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 1758)
+2026-08-03 20:57:12 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-08-03 20:57:12 [INFO] Esperando resultados...
+2026-08-03 20:57:12 [INFO] Request interceptado - q='', fecha=FECHA_DESDE, length=200
+2026-08-03 20:57:12 [INFO] Click en Buscar (q='')
+2026-08-03 20:57:13 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 1758)
+2026-08-03 20:57:13 [INFO] Respuesta de busqueda recibida
+2026-08-03 20:57:13 [INFO] Tabla con resultados detectada
+2026-08-03 20:57:13 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-08-03 20:57:13 [INFO] Navegador cerrado
+2026-08-03 20:57:13 [INFO] Total resoluciones obtenidas: 200
+2026-08-03 20:57:13 [INFO] 1 resoluciones no procesadas, filtrando por contenido...
+2026-08-03 20:57:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=160575
+2026-08-03 20:57:14 [INFO] PDF: 1880 caracteres extraidos con pdfplumber
+2026-08-03 20:57:14 [INFO]   No relevante: N°1786 - Establecer la asignación fija especial Ex Combatiente Islas 
+2026-08-03 20:57:14 [INFO] Ninguna de las 1 nuevas es relevante
+2026-08-03 20:57:15 [INFO] Telegram: mensaje enviado
+2026-08-03 20:57:15 [INFO] Registro: 1759 resoluciones guardadas
+2026-08-03 20:57:15 [INFO] Completado: 0 relevantes de 1 nuevas
