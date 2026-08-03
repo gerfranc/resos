@@ -19048,5 +19048,17 @@
     "primera_vez": "2026-07-17T18:59:09.134380",
     "expira": "2026-07-22T18:59:09.134380",
     "procesado": "2026-07-17T18:59:09.134380"
+  },
+  "160573": {
+    "numero": "1785",
+    "fecha": "3 de agosto de 2026",
+    "detalle": "Determinar el valor de la Unidad de Medida Arancelaria (UMA), conforme Acordada CSJN N°  <a class='text-secondary' href=\"https://www.csjn.gov.ar/decisiones/acordadas?anioDoc=2026&nroDoc=17\" target='_blank'>17/2026</a>.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160573",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-03T19:21:55.628894",
+    "expira": "2026-08-08T19:21:55.628894",
+    "procesado": "2026-08-03T19:21:55.628894"
   }
 }
