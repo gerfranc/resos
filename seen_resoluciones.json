@@ -19056,7 +19056,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160573",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-08-03T19:21:55.628894",
     "expira": "2026-08-08T19:21:55.628894",
     "procesado": "2026-08-03T19:21:55.628894"
@@ -19068,9 +19068,81 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160575",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 8,
+    "intentos": 9,
     "primera_vez": "2026-08-03T20:57:14.946101",
     "expira": "2026-08-08T20:57:14.946101",
     "procesado": "2026-08-03T20:57:14.946101"
+  },
+  "160617": {
+    "numero": "1792",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Prórroga de licencia sin goce de haberes - María Florencia AQUINO.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160617",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160614": {
+    "numero": "1791",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Prórroga de licencia sin goce de haberes - Juana GARCÍA MONTI.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160614",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160616": {
+    "numero": "1790",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Prórroga de licencia sin goce de haberes - Nicolás MAGUIRE VERNENGO.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160616",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160613": {
+    "numero": "1789",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Prórroga de adscripción - Ezequiel Emilio IGLESIAS BERRONDO.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160613",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160615": {
+    "numero": "1788",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Prórroga de adscripción - Alejandra Graciela RACHKOVSKY.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160615",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160618": {
+    "numero": "1787",
+    "fecha": "4 de agosto de 2026",
+    "detalle": "Horas extras - Archivo General del Poder Judicial de la Nación.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160618",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-04T19:20:55.140863",
+    "expira": "2026-08-09T19:20:55.140863",
+    "procesado": "2026-08-04T19:20:55.140863"
   }
 }
