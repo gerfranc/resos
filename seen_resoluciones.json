@@ -19056,7 +19056,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160573",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 19,
+    "intentos": 20,
     "primera_vez": "2026-08-03T19:21:55.628894",
     "expira": "2026-08-08T19:21:55.628894",
     "procesado": "2026-08-03T19:21:55.628894"
@@ -19068,7 +19068,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160575",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 18,
+    "intentos": 19,
     "primera_vez": "2026-08-03T20:57:14.946101",
     "expira": "2026-08-08T20:57:14.946101",
     "procesado": "2026-08-03T20:57:14.946101"
@@ -19080,7 +19080,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160617",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
@@ -19092,7 +19092,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160614",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
@@ -19104,7 +19104,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160616",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
@@ -19116,7 +19116,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160613",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
@@ -19128,7 +19128,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160615",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
@@ -19140,9 +19140,33 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160618",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-08-04T19:20:55.140863",
     "expira": "2026-08-09T19:20:55.140863",
     "procesado": "2026-08-04T19:20:55.140863"
+  },
+  "160639": {
+    "numero": "1794",
+    "fecha": "5 de agosto de 2026",
+    "detalle": "Contratar con la firma TANGOID S.R.L. la provisión de tarjetas de PVC y ribbons con destino a la Dirección Médica de la Morgue Judicial, por la suma total de $1.542.731,70.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160639",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-05T19:18:27.994004",
+    "expira": "2026-08-10T19:18:27.994004",
+    "procesado": "2026-08-05T19:18:27.994004"
+  },
+  "160638": {
+    "numero": "1793",
+    "fecha": "5 de agosto de 2026",
+    "detalle": "Contratar con la firma BIO ANALYTICAL S.R.L. la provisión de kits forenses marca Seratec con destino al Laboratorio de Análisis Clínicos Biológicos y Bacteriológicos de la Morgue Judicial, por la suma total de $11.385.220.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160638",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-05T19:18:27.994004",
+    "expira": "2026-08-10T19:18:27.994004",
+    "procesado": "2026-08-05T19:18:27.994004"
   }
 }
