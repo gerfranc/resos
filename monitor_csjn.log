@@ -3161,3 +3161,11 @@
 2026-08-06 23:53:18 [INFO] Telegram: mensaje enviado
 2026-08-06 23:53:18 [INFO] Registro: 1798 resoluciones guardadas
 2026-08-06 23:53:18 [INFO] Completado: 0 relevantes de 31 nuevas
+2026-08-07 00:22:18 [INFO] ============================================================
+2026-08-07 00:22:18 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-07 00:22:18 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-07 00:22:18 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-07 00:22:18 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-08-07 00:22:18 [INFO] ============================================================
+2026-08-07 00:22:18 [INFO] Polling de comandos Telegram (/buscar)
+2026-08-07 00:22:18 [INFO] Sin updates nuevos de Telegram
