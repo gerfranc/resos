@@ -4911,3 +4911,11 @@
 2026-08-09 03:26:42 [INFO] ============================================================
 2026-08-09 03:26:42 [INFO] Polling de comandos Telegram (/buscar)
 2026-08-09 03:26:42 [INFO] Sin updates nuevos de Telegram
+2026-08-09 04:42:30 [INFO] ============================================================
+2026-08-09 04:42:30 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-09 04:42:30 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-09 04:42:30 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-09 04:42:30 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-08-09 04:42:30 [INFO] ============================================================
+2026-08-09 04:42:30 [INFO] Polling de comandos Telegram (/buscar)
+2026-08-09 04:42:30 [INFO] Sin updates nuevos de Telegram
