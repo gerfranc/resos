@@ -6433,3 +6433,11 @@ Call log:
 
 
 2026-08-10 20:34:43 [INFO] Telegram: mensaje enviado
+2026-08-10 20:37:54 [INFO] ============================================================
+2026-08-10 20:37:54 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-10 20:37:54 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-10 20:37:54 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-10 20:37:54 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-08-10 20:37:54 [INFO] ============================================================
+2026-08-10 20:37:54 [INFO] Polling de comandos Telegram (/buscar)
+2026-08-10 20:37:55 [INFO] Sin updates nuevos de Telegram
