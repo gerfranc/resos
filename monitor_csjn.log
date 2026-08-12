@@ -2506,3 +2506,11 @@
 2026-08-12 20:59:15 [INFO] ============================================================
 2026-08-12 20:59:15 [INFO] Polling de comandos Telegram (/buscar)
 2026-08-12 20:59:15 [INFO] Sin updates nuevos de Telegram
+2026-08-12 21:41:33 [INFO] ============================================================
+2026-08-12 21:41:33 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-12 21:41:33 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-12 21:41:33 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-12 21:41:33 [INFO] Modo: polling de comandos Telegram (/buscar)
+2026-08-12 21:41:33 [INFO] ============================================================
+2026-08-12 21:41:33 [INFO] Polling de comandos Telegram (/buscar)
+2026-08-12 21:41:33 [INFO] Sin updates nuevos de Telegram
