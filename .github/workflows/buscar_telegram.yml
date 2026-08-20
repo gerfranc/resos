@@ -41,11 +41,12 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python monitor_csjn_dajudeco.py --telegram-poll
 
-      - name: Persistir offset de Telegram
+      - name: Persistir estado de Telegram
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add telegram_state.json || true
+          git add telegram_subscribers.json || true
           git add monitor_csjn.log || true
           git diff --staged --quiet || git commit -m "Actualizar offset Telegram"
           git pull origin main --rebase || true

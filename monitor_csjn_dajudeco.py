@@ -14,8 +14,11 @@ REQUISITOS:
   playwright install chromium
 
 USO:
-  python monitor_csjn_dajudeco.py --once    # Una sola vez (GitHub Actions/cron)
-  python monitor_csjn_dajudeco.py            # Loop continuo
+  python monitor_csjn_dajudeco.py --once             # Una sola vez (GitHub Actions/cron)
+  python monitor_csjn_dajudeco.py                    # Loop continuo
+  python monitor_csjn_dajudeco.py --telegram-poll    # Atiende comandos del bot (polling)
+  python monitor_csjn_dajudeco.py --telegram-setup   # Registra comandos/descripcion del bot (una vez)
+  python monitor_csjn_dajudeco.py --test             # Prueba sin scraping real
 =============================================================================
 """
 
@@ -25,6 +28,7 @@ import time
 import logging
 import sys
 import re
+import html
 from datetime import datetime, timedelta
 from logging.handlers import RotatingFileHandler
 
@@ -50,11 +54,13 @@ FILTRO_PALABRAS = ["Delitos Complejos y Crimen Organizado"]
 URL_PAGINA = "https://www.csjn.gov.ar/decisiones/resoluciones"
 URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
 
-# Comando /buscar via Telegram (modo --telegram-poll)
+# Bot de Telegram (modo --telegram-poll)
 TELEGRAM_STATE_FILE = "telegram_state.json"  # persiste el offset de getUpdates
+TELEGRAM_SUBSCRIBERS_FILE = "telegram_subscribers.json"  # chats suscriptos via /start (se commitea)
 TELEGRAM_MAX_LEN = 3800          # margen bajo el limite real de 4096 de Telegram
 MAX_RESULTADOS_RESPUESTA = 20    # tope de resultados listados por respuesta /buscar
 BUSCAR_MAX_RESULTADOS = 200      # length pedido al servidor en /buscar
+MAX_BUSQUEDAS_POR_CORRIDA = 5    # tope de /buscar atendidos por pasada de polling (anti-abuso)
 
 # =============================================================================
 # LOGGING
@@ -491,6 +497,66 @@ def guardar_telegram_state(state):
     logger.info(f"Telegram state guardado: offset={state.get('offset')}")
 
 
+# -----------------------------------------------------------------------------
+# Suscriptores: chats privados que hicieron /start y reciben las alertas del
+# monitor ademas del grupo. El archivo lo escribe SOLO el flujo de polling
+# (--telegram-poll); el monitor lo lee. Asi cada workflow commitea archivos
+# distintos y no se pisan entre si.
+# -----------------------------------------------------------------------------
+
+def cargar_suscriptores():
+    """Lee los chats suscriptos. Devuelve estructura vacia si no existe o esta corrupto."""
+    if not os.path.exists(TELEGRAM_SUBSCRIBERS_FILE):
+        return {"chats": {}}
+    try:
+        with open(TELEGRAM_SUBSCRIBERS_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data.get("chats"), dict):
+            return {"chats": {}}
+        return data
+    except (json.JSONDecodeError, IOError) as e:
+        logger.warning(f"Error al leer {TELEGRAM_SUBSCRIBERS_FILE}: {e}")
+        return {"chats": {}}
+
+
+def guardar_suscriptores(data):
+    with open(TELEGRAM_SUBSCRIBERS_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    logger.info(f"Suscriptores guardados: {len(data.get('chats', {}))}")
+
+
+def suscribir(chat_id, nombre=None):
+    """
+    Alta idempotente de un chat. Devuelve True solo si es un alta nueva.
+    El grupo (TELEGRAM_CHAT_ID) nunca se suscribe: ya recibe las alertas directo.
+    """
+    cid = str(chat_id)
+    if cid == str(TELEGRAM_CHAT_ID):
+        return False
+    data = cargar_suscriptores()
+    if cid in data["chats"]:
+        return False
+    data["chats"][cid] = {
+        "nombre": nombre or "",
+        "desde": datetime.now().isoformat(),
+    }
+    guardar_suscriptores(data)
+    logger.info(f"Suscripto chat {cid} ({nombre})")
+    return True
+
+
+def desuscribir(chat_id):
+    """Baja idempotente. Devuelve True solo si el chat estaba suscripto."""
+    cid = str(chat_id)
+    data = cargar_suscriptores()
+    if cid not in data["chats"]:
+        return False
+    del data["chats"][cid]
+    guardar_suscriptores(data)
+    logger.info(f"Desuscripto chat {cid}")
+    return True
+
+
 def obtener_updates_telegram(offset=None):
     """
     Consulta getUpdates (short polling, timeout=0 porque el proceso es efimero).
@@ -546,9 +612,52 @@ def parsear_comando_buscar(texto_mensaje):
     return resto
 
 
+def parsear_comando_simple(texto_mensaje):
+    """
+    Reconoce los comandos sin argumentos del bot (soporta sufijo @bot):
+      /start [payload]  -> "start" (el payload de deep-link se ignora)
+      /stop | /baja     -> "stop"
+      /ayuda | /help    -> "ayuda"
+    Devuelve el nombre canonico del comando o None si no es ninguno.
+    """
+    if not texto_mensaje:
+        return None
+    m = re.match(r"^/(start|stop|baja|ayuda|help)(?:@\w+)?(?:\s|$)",
+                 texto_mensaje.strip(), re.IGNORECASE)
+    if not m:
+        return None
+    comando = m.group(1).lower()
+    return {"baja": "stop", "help": "ayuda"}.get(comando, comando)
+
+
+def texto_ayuda():
+    """Texto de ayuda comun a /start en el grupo, /ayuda y mensajes no reconocidos."""
+    return (
+        "\U0001F50E Buscá resoluciones de la CSJN en todo el historial:\n"
+        "<code>/buscar \"texto a buscar\"</code>\n"
+        "Ej: <code>/buscar \"German Silva\"</code>\n\n"
+        "⏱ El bot funciona por tandas: las respuestas pueden demorar "
+        "entre 5 y 20 minutos.\n\n"
+        "/stop para dejar de recibir alertas · /ayuda para ver este mensaje"
+    )
+
+
+def texto_bienvenida():
+    """Respuesta al /start en un chat privado (el boton Start manda /start)."""
+    return (
+        "\U0001F44B ¡Hola! Soy el monitor de resoluciones de la CSJN (DAJUDECO).\n\n"
+        f"✅ Quedaste suscripto: te aviso cuando salga una resolución nueva "
+        f"que mencione «{html.escape(', '.join(FILTRO_PALABRAS))}».\n\n"
+        + texto_ayuda()
+    )
+
+
 def formatear_encabezado_busqueda(termino, cantidad, truncado=False, solicitante=None):
     """Encabezado de la respuesta a un /buscar."""
-    quien = f" (pedido por {solicitante})" if solicitante else ""
+    # Escapar texto controlado por el usuario: los mensajes van con parse_mode=HTML
+    # y un termino con '<' haria que Telegram rechace el mensaje completo.
+    termino = html.escape(termino)
+    quien = f" (pedido por {html.escape(solicitante)})" if solicitante else ""
     if cantidad == 0:
         return f"\U0001F50E Búsqueda: «{termino}»{quien}\n\nSin resultados."
     msg = (f"\U0001F50E Búsqueda: «{termino}»{quien}\n"
@@ -564,7 +673,8 @@ def formatear_resultado_compacto(r):
     detalle = (r.get("detalle") or "").strip()
     if len(detalle) > 160:
         detalle = detalle[:157] + "..."
-    linea = f"\n\U0001F4C4 <b>N° {r['numero']}</b> - {r['fecha']}\n{detalle}"
+    linea = (f"\n\U0001F4C4 <b>N° {html.escape(str(r['numero']))}</b> - "
+             f"{html.escape(str(r['fecha']))}\n{html.escape(detalle)}")
     if r.get("url_pdf"):
         linea += f"\n\U0001F517 <a href=\"{r['url_pdf']}\">PDF</a>"
     return linea
@@ -573,15 +683,29 @@ def formatear_resultado_compacto(r):
 def formatear_mensaje(r):
     msg = (
         f"\U0001F514 <b>Nueva Resolucion CSJN - DAJUDECO</b>\n\n"
-        f"\U0001F4C4 Resolucion N\u00B0 {r['numero']} - {r['fecha']}\n"
-        f"\U0001F4DD {r['detalle']}\n"
+        f"\U0001F4C4 Resolucion N\u00B0 {html.escape(str(r['numero']))} - {html.escape(str(r['fecha']))}\n"
+        f"\U0001F4DD {html.escape(str(r['detalle']))}\n"
     )
     if r.get("expediente"):
-        msg += f"\U0001F4C1 Exp: {r['expediente']}\n"
+        msg += f"\U0001F4C1 Exp: {html.escape(str(r['expediente']))}\n"
     if r.get("url_pdf"):
         msg += f"\n\U0001F517 <a href=\"{r['url_pdf']}\">Descargar PDF</a>\n"
     msg += f"\n\U0001F50D Filtro: {', '.join(FILTRO_PALABRAS)}"
     return msg
+
+
+def notificar_alerta(mensaje):
+    """
+    Envia una alerta de resolucion relevante al grupo y a todos los chats
+    suscriptos via /start. Los fallos por suscriptor (p. ej. usuario que
+    bloqueo el bot) solo se loguean: el archivo de suscriptores no se
+    modifica desde aca porque solo lo escribe el flujo de polling.
+    """
+    enviar_telegram(mensaje)  # grupo (destino default)
+    for cid in cargar_suscriptores()["chats"]:
+        time.sleep(1)  # respetar rate limits al enviar a varios chats
+        if not enviar_telegram(mensaje, chat_id=cid):
+            logger.warning(f"No se pudo notificar al suscriptor {cid}")
 
 
 def rechequear_pendientes(vistas):
@@ -635,7 +759,7 @@ def rechequear_pendientes(vistas):
                 "url_pdf": url_pdf,
             }
             mensaje = "🔄 <b>[Re-verificación]</b>\n\n" + formatear_mensaje(r)
-            enviar_telegram(mensaje)
+            notificar_alerta(mensaje)
             time.sleep(1)
         elif resultado is False:
             # Verificado: no contiene las palabras clave
@@ -743,7 +867,7 @@ def chequear_resoluciones():
         if relevantes:
             logger.info(f"{len(relevantes)} resoluciones RELEVANTES encontradas")
             for r in relevantes:
-                enviar_telegram(formatear_mensaje(r))
+                notificar_alerta(formatear_mensaje(r))
                 time.sleep(1)
         else:
             logger.info(f"Ninguna de las {len(no_vistas)} nuevas es relevante")
@@ -801,11 +925,17 @@ def _ejecutar_busqueda(termino, chat_id, message_id, solicitante=None):
 
 def procesar_comandos_telegram():
     """
-    Lee comandos /buscar del grupo autorizado via getUpdates y responde.
+    Lee comandos de Telegram via getUpdates y responde.
+      - Grupo configurado (TELEGRAM_CHAT_ID): /buscar como siempre; /start,
+        /stop y /ayuda responden la ayuda sin suscribir (el grupo ya recibe
+        las alertas directo).
+      - Chats privados (bot compartido por link): /start suscribe a las
+        alertas, /stop da de baja, /ayuda y /buscar abiertos a cualquiera.
+      - Otros grupos donde agreguen al bot: ignorados.
     Persiste el offset en TELEGRAM_STATE_FILE para no reprocesar.
     """
     logger.info("=" * 60)
-    logger.info("Polling de comandos Telegram (/buscar)")
+    logger.info("Polling de comandos Telegram")
 
     if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI" or TELEGRAM_CHAT_ID == "TU_CHAT_ID_AQUI":
         logger.warning("Telegram no configurado; nada que procesar")
@@ -821,6 +951,7 @@ def procesar_comandos_telegram():
     logger.info(f"{len(updates)} updates recibidos")
     max_update_id = offset - 1 if offset is not None else -1
     comandos = 0
+    busquedas = 0
 
     for update in updates:
         update_id = update.get("update_id", -1)
@@ -831,38 +962,137 @@ def procesar_comandos_telegram():
         if not mensaje:
             continue
 
-        # Autorizacion: solo el chat/grupo configurado. En un grupo todos los
-        # mensajes comparten chat.id, asi que esto habilita a todo el grupo.
         chat = mensaje.get("chat", {})
-        if str(chat.get("id")) != str(TELEGRAM_CHAT_ID):
+        chat_id = chat.get("id")
+        es_grupo = str(chat_id) == str(TELEGRAM_CHAT_ID)
+        es_privado = chat.get("type") == "private"
+        # Autorizacion: el grupo configurado o cualquier chat privado (bot
+        # compartible). Otros grupos donde agreguen al bot se ignoran.
+        if not (es_grupo or es_privado):
             continue
         # Ignorar mensajes de bots
         if mensaje.get("from", {}).get("is_bot"):
             continue
 
-        termino = parsear_comando_buscar(mensaje.get("text", ""))
-        if termino is None:
-            continue  # no es /buscar
-
+        texto = mensaje.get("text", "")
         message_id = mensaje.get("message_id")
-        solicitante = mensaje.get("from", {}).get("first_name")
+        remitente = mensaje.get("from", {}).get("first_name")
+
+        # --- Comandos simples: /start, /stop, /ayuda ---
+        simple = parsear_comando_simple(texto)
+        if simple is not None:
+            comandos += 1
+            if simple == "start" and es_privado:
+                # El boton Start de Telegram manda /start: alta + bienvenida.
+                alta_nueva = suscribir(chat_id, remitente)
+                enviar_telegram(texto_bienvenida(), chat_id=chat_id)
+                logger.info(f"/start de chat {chat_id} (alta nueva: {alta_nueva})")
+            elif simple == "stop" and es_privado:
+                if desuscribir(chat_id):
+                    enviar_telegram(
+                        "Listo, no vas a recibir más alertas. "
+                        "Podés volver a suscribirte con /start.",
+                        chat_id=chat_id,
+                    )
+                else:
+                    enviar_telegram(
+                        "No estabas suscripto. Con /start te suscribís a las alertas.",
+                        chat_id=chat_id,
+                    )
+            else:
+                # /ayuda en cualquier chat; /start y /stop en el grupo solo
+                # muestran la ayuda (el grupo no se suscribe).
+                enviar_telegram(
+                    texto_ayuda(),
+                    chat_id=chat_id,
+                    reply_to_message_id=message_id if es_grupo else None,
+                )
+            continue
+
+        # --- /buscar ---
+        termino = parsear_comando_buscar(texto)
+        if termino is None:
+            # En privado, un mensaje de texto que no es comando recibe la ayuda
+            # (quien recibe el bot compartido suele escribir sin la barra).
+            # En el grupo se ignora, como siempre.
+            if es_privado and texto.strip():
+                enviar_telegram(texto_ayuda(), chat_id=chat_id)
+            continue
 
         if termino == "":
             enviar_telegram(
                 "Uso: <code>/buscar \"texto a buscar\"</code>\n"
                 "Ej: <code>/buscar \"German Silva\"</code>",
-                chat_id=chat.get("id"),
+                chat_id=chat_id,
+                reply_to_message_id=message_id,
+            )
+            continue
+
+        # Tope anti-abuso: con acceso abierto, limitar los scrapes por corrida.
+        if busquedas >= MAX_BUSQUEDAS_POR_CORRIDA:
+            enviar_telegram(
+                "⏳ Hay muchas búsquedas en esta pasada. "
+                "Intentá de nuevo en unos minutos.",
+                chat_id=chat_id,
                 reply_to_message_id=message_id,
             )
             continue
 
         comandos += 1
-        _ejecutar_busqueda(termino, chat.get("id"), message_id, solicitante)
+        busquedas += 1
+        # En privado no tiene sentido el "pedido por X" del encabezado.
+        _ejecutar_busqueda(termino, chat_id, message_id,
+                           remitente if es_grupo else None)
 
     # Confirmar todos los updates leidos (incluso ignorados) para no repetir.
     if max_update_id >= 0:
         guardar_telegram_state({"offset": max_update_id + 1})
-    logger.info(f"Comandos /buscar procesados: {comandos}")
+    logger.info(f"Comandos procesados: {comandos} (búsquedas: {busquedas})")
+
+
+def configurar_bot_telegram():
+    """
+    Modo --telegram-setup: registra en Telegram el menu de comandos y las
+    descripciones del bot. Se corre UNA vez a mano (es idempotente) con
+    TELEGRAM_BOT_TOKEN en el entorno; no toca el estado del repo.
+
+    La descripcion (setMyDescription) es clave para compartir el bot: Telegram
+    la muestra al instante arriba del boton Iniciar/Start, asi el usuario lee
+    que hace el bot antes de que llegue la bienvenida (que puede demorar por
+    el polling cada ~5 min).
+    """
+    if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI":
+        logger.error("TELEGRAM_BOT_TOKEN no configurado; no se puede hacer el setup")
+        return
+
+    filtro = ", ".join(FILTRO_PALABRAS)
+    llamadas = [
+        ("setMyCommands", {"commands": json.dumps([
+            {"command": "buscar", "description": "Buscar resoluciones: /buscar \"texto\""},
+            {"command": "ayuda", "description": "Cómo usar el bot"},
+            {"command": "stop", "description": "Dejar de recibir alertas"},
+        ])}),
+        ("setMyDescription", {"description": (
+            f"Monitor de resoluciones de la CSJN. Apretá Iniciar y quedás "
+            f"suscripto a las alertas de resoluciones que mencionen {filtro}. "
+            f"Con /buscar \"texto\" buscás en todo el historial. Las respuestas "
+            f"pueden demorar 5-20 minutos (el bot corre por tandas)."
+        )}),
+        ("setMyShortDescription", {"short_description": (
+            "Alertas y búsqueda de resoluciones de la CSJN (DAJUDECO)."
+        )}),
+    ]
+    for metodo, params in llamadas:
+        try:
+            resp = requests.post(
+                f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/{metodo}",
+                data=params, timeout=15,
+            )
+            resp.raise_for_status()
+            data = resp.json()
+            logger.info(f"{metodo}: {'OK' if data.get('ok') else data}")
+        except Exception as e:
+            logger.error(f"{metodo}: {e}")
 
 
 def ejecutar_test():
@@ -879,8 +1109,8 @@ def ejecutar_test():
     # Monkey-patch enviar_telegram para no enviar mensajes reales
     global enviar_telegram
     _enviar_original = enviar_telegram
-    def enviar_telegram_test(mensaje):
-        logger.info(f"TEST - Telegram simulado: {mensaje}")
+    def enviar_telegram_test(mensaje, chat_id=None, reply_to_message_id=None):
+        logger.info(f"TEST - Telegram simulado (chat={chat_id or 'grupo'}): {mensaje}")
         return True
     enviar_telegram = enviar_telegram_test
 
@@ -900,6 +1130,13 @@ def ejecutar_test():
     if os.path.exists(SEEN_FILE):
         backup_vistas = SEEN_FILE + ".test_backup"
         shutil.copy2(SEEN_FILE, backup_vistas)
+
+    # Backup de suscriptores: el test corre aislado de los suscriptos reales
+    backup_subs = None
+    if os.path.exists(TELEGRAM_SUBSCRIBERS_FILE):
+        backup_subs = TELEGRAM_SUBSCRIBERS_FILE + ".test_backup"
+        shutil.copy2(TELEGRAM_SUBSCRIBERS_FILE, backup_subs)
+    guardar_suscriptores({"chats": {}})
 
     try:
         # Preparar seen_resoluciones.json con datos de test
@@ -1088,8 +1325,32 @@ def ejecutar_test():
         ok5 = estado5 == "pendiente"
         logger.info(f"Caso 5 (PDF error transit.):  esperado=pendiente    | obtenido={estado5}    | {'OK' if ok5 else 'FALLO'}")
 
-        total_ok = sum([ok1, ok2, ok3, ok4, ok5])
-        logger.info(f"\nResultado: {total_ok}/5 casos correctos")
+        # --- Casos Telegram: parser de comandos, suscripcion y escapado HTML ---
+        casos_tg = [
+            ("parser /start", parsear_comando_simple("/start") == "start"),
+            ("parser /start@Bot payload", parsear_comando_simple("/start@MiBot ref123") == "start"),
+            ("parser /STOP", parsear_comando_simple("/STOP") == "stop"),
+            ("parser /baja", parsear_comando_simple("/baja") == "stop"),
+            ("parser /help", parsear_comando_simple("/help") == "ayuda"),
+            ("parser /buscar no es simple", parsear_comando_simple("/buscar algo") is None),
+            ("parser texto comun", parsear_comando_simple("hola /start") is None),
+            ("parser prefijo invalido", parsear_comando_simple("/startx") is None),
+            ("alta suscriptor", suscribir("111", "Test") is True),
+            ("alta idempotente", suscribir("111", "Test") is False),
+            ("grupo nunca se suscribe", suscribir(TELEGRAM_CHAT_ID) is False),
+            ("suscriptor persistido", "111" in cargar_suscriptores()["chats"]),
+            ("baja suscriptor", desuscribir("111") is True),
+            ("baja idempotente", desuscribir("111") is False),
+            ("escape HTML en /buscar", "&lt;b&gt;" in formatear_encabezado_busqueda("<b>x</b>", 0)),
+        ]
+        ok_tg = 0
+        for nombre, ok in casos_tg:
+            ok_tg += 1 if ok else 0
+            logger.info(f"Caso TG ({nombre}): {'OK' if ok else 'FALLO'}")
+
+        total_ok = sum([ok1, ok2, ok3, ok4, ok5]) + ok_tg
+        total_casos = 5 + len(casos_tg)
+        logger.info(f"\nResultado: {total_ok}/{total_casos} casos correctos")
         logger.info("=" * 60)
 
     finally:
@@ -1101,6 +1362,13 @@ def ejecutar_test():
             # No habia archivo original, borrar el de test
             if os.path.exists(SEEN_FILE):
                 os.remove(SEEN_FILE)
+
+        # Restaurar suscriptores originales (o borrar el archivo de test)
+        if backup_subs and os.path.exists(backup_subs):
+            shutil.move(backup_subs, TELEGRAM_SUBSCRIBERS_FILE)
+            logger.info("Archivo telegram_subscribers.json restaurado desde backup")
+        elif os.path.exists(TELEGRAM_SUBSCRIBERS_FILE):
+            os.remove(TELEGRAM_SUBSCRIBERS_FILE)
 
         # Restaurar funciones monkey-patcheadas
         enviar_telegram = _enviar_original
@@ -1117,8 +1385,11 @@ if __name__ == "__main__":
         logger.info("Modo: TEST (sin scraping real)")
         ejecutar_test()
     elif "--telegram-poll" in sys.argv:
-        logger.info("Modo: polling de comandos Telegram (/buscar)")
+        logger.info("Modo: polling de comandos Telegram")
         procesar_comandos_telegram()
+    elif "--telegram-setup" in sys.argv:
+        logger.info("Modo: setup del bot de Telegram (comandos y descripcion)")
+        configurar_bot_telegram()
     elif "--once" in sys.argv:
         logger.info("Modo: ejecucion unica")
         chequear_resoluciones()

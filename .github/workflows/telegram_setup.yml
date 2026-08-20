@@ -1,0 +1,28 @@
+name: Setup bot Telegram
+
+# Solo manual: registra el menu de comandos y la descripcion del bot en
+# Telegram (--telegram-setup) usando el secret ya configurado en el repo.
+# Se corre una vez (es idempotente: re-correrlo solo re-registra lo mismo).
+# No commitea nada.
+on:
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Registrar comandos y descripcion del bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: python monitor_csjn_dajudeco.py --telegram-setup
