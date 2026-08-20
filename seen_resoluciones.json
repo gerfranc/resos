@@ -20298,7 +20298,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160893",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 21,
+    "intentos": 22,
     "primera_vez": "2026-08-18T14:26:24.214694",
     "expira": "2026-08-23T14:26:24.214694",
     "procesado": "2026-08-18T14:26:24.214694"
@@ -20310,7 +20310,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160914",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 20,
+    "intentos": 21,
     "primera_vez": "2026-08-18T20:15:40.305509",
     "expira": "2026-08-23T20:15:40.305509",
     "procesado": "2026-08-18T20:15:40.305509"
@@ -20322,7 +20322,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160915",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 20,
+    "intentos": 21,
     "primera_vez": "2026-08-18T20:15:40.305509",
     "expira": "2026-08-23T20:15:40.305509",
     "procesado": "2026-08-18T20:15:40.305509"
@@ -20334,7 +20334,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160895",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 20,
+    "intentos": 21,
     "primera_vez": "2026-08-18T20:15:40.305509",
     "expira": "2026-08-23T20:15:40.305509",
     "procesado": "2026-08-18T20:15:40.305509"
@@ -20346,7 +20346,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160936",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 12,
+    "intentos": 13,
     "primera_vez": "2026-08-19T14:25:56.523171",
     "expira": "2026-08-24T14:25:56.523171",
     "procesado": "2026-08-19T14:25:56.523171"
@@ -20358,7 +20358,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160941",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20370,7 +20370,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160940",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20382,7 +20382,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160942",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20394,7 +20394,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160943",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20406,7 +20406,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160939",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20418,7 +20418,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160938",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
@@ -20430,9 +20430,30 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160937",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 11,
+    "intentos": 12,
     "primera_vez": "2026-08-19T16:24:53.031363",
     "expira": "2026-08-24T16:24:53.031363",
     "procesado": "2026-08-19T16:24:53.031363"
+  },
+  "160956": {
+    "numero": "1902",
+    "fecha": "20 de agosto de 2026",
+    "detalle": "Contratar con la firma INGENIARG S.A. el servicio de mantenimiento de cabinas de flujo laminar del Servicio de Genética del Cuerpo Médico Forense, por la suma de $1.655.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160956",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-08-20T14:27:58.925163",
+    "expira": "2026-08-25T14:27:58.925163",
+    "procesado": "2026-08-20T14:27:58.925163"
+  },
+  "160954": {
+    "numero": "1901",
+    "fecha": "20 de agosto de 2026",
+    "detalle": "Contratar con la firma ITURRASPE 970 S.R.L. el servicio de mantenimiento del sistema de extinción de incendios instalado en la Dirección de Asistencia Judicial en Delitos Complejos y Crimen Organizado, por la suma de $2.928.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=160954",
+    "relevante": true,
+    "estado": "relevante",
+    "procesado": "2026-08-20T14:27:58.925163"
   }
 }
