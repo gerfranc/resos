@@ -4681,3 +4681,17 @@
 2026-08-21 00:26:43 [INFO] ============================================================
 2026-08-21 00:26:43 [INFO] Polling de comandos Telegram
 2026-08-21 00:26:44 [INFO] Sin updates nuevos de Telegram
+2026-08-21 00:49:06 [INFO] ============================================================
+2026-08-21 00:49:06 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-21 00:49:06 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-21 00:49:06 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-21 00:49:06 [INFO] Modo: polling de comandos Telegram
+2026-08-21 00:49:06 [INFO] ============================================================
+2026-08-21 00:49:06 [INFO] Polling de comandos Telegram
+2026-08-21 00:49:07 [INFO] 1 updates recibidos
+2026-08-21 00:49:07 [INFO] Suscriptores guardados: 3
+2026-08-21 00:49:07 [INFO] Suscripto chat 173184981 (Germán)
+2026-08-21 00:49:07 [INFO] Telegram: mensaje enviado
+2026-08-21 00:49:07 [INFO] /start de chat 173184981 (alta nueva: True)
+2026-08-21 00:49:07 [INFO] Telegram state guardado: offset=337597994
+2026-08-21 00:49:07 [INFO] Comandos procesados: 1
