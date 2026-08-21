@@ -47,12 +47,14 @@ python monitor_csjn_dajudeco.py --telegram-setup
 
 ## Bot de Telegram
 
-El bot atiende dos ámbitos; otros grupos donde lo agreguen se ignoran.
+El bot solo **distribuye las alertas del monitor** (no tiene búsqueda; `/buscar` fue
+discontinuado y responde un aviso). Atiende dos ámbitos; otros grupos donde lo agreguen
+se ignoran.
 
-**Grupo configurado** (`TELEGRAM_CHAT_ID`): recibe las alertas automáticas del monitor y
-cualquier miembro puede usar `/buscar` (comportamiento original). Los comandos que empiezan
-con `/` se entregan al bot aunque el *privacy mode* esté activo; el bot debe estar agregado
-al grupo.
+**Grupo configurado** (`TELEGRAM_CHAT_ID`): recibe las alertas automáticas del monitor.
+`/start`, `/stop` y `/ayuda` en el grupo responden la info sin suscribir (el grupo ya
+recibe todo). Los comandos que empiezan con `/` se entregan al bot aunque el *privacy
+mode* esté activo; el bot debe estar agregado al grupo.
 
 **Chats privados (bot compartible)**: cualquiera que reciba el link `t.me/<usuario_del_bot>`
 puede abrirlo; el botón **Iniciar/Start** que muestra Telegram manda `/start`. Comandos:
@@ -60,9 +62,7 @@ puede abrirlo; el botón **Iniciar/Start** que muestra Telegram manda `/start`. 
 - `/start` → suscribe el chat a las alertas automáticas del monitor y responde la bienvenida
   (idempotente).
 - `/stop` (o `/baja`) → da de baja la suscripción.
-- `/ayuda` (o `/help`) → instrucciones; también se responde ante texto privado que no es comando.
-- `/buscar "German Silva"` → responde con las resoluciones de la CSJN que mencionan ese texto
-  (busca en todo el historial, usando el buscador propio del sitio via `formBusqueda.q`).
+- `/ayuda` (o `/help`) → info del bot; también se responde ante texto privado que no es comando.
 
 Los suscriptos se persisten en `telegram_subscribers.json` (se commitea). **Solo el flujo de
 polling escribe ese archivo**; el monitor lo lee para mandar cada alerta al grupo + suscriptos
@@ -77,9 +77,6 @@ Detalles operativos:
   botón Start y avisa de la demora.
 - El `offset` de Telegram se persiste en `telegram_state.json` (se commitea) para no
   reprocesar mensajes.
-- Anti-abuso: se atienden hasta `MAX_BUSQUEDAS_POR_CORRIDA` (5) búsquedas por pasada de
-  polling; el resto recibe un aviso de reintentar en unos minutos.
-- Se listan hasta `MAX_RESULTADOS_RESPUESTA` (20) resultados por respuesta, avisando si hay más.
 - Los mensajes usan `parse_mode=HTML`: todo texto de usuario o de la CSJN interpolado en
   mensajes se escapa con `html.escape()`.
 

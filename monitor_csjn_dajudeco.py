@@ -57,10 +57,6 @@ URL_BASE_PDF = "https://www.csjn.gov.ar/documentos/descargar?ID="
 # Bot de Telegram (modo --telegram-poll)
 TELEGRAM_STATE_FILE = "telegram_state.json"  # persiste el offset de getUpdates
 TELEGRAM_SUBSCRIBERS_FILE = "telegram_subscribers.json"  # chats suscriptos via /start (se commitea)
-TELEGRAM_MAX_LEN = 3800          # margen bajo el limite real de 4096 de Telegram
-MAX_RESULTADOS_RESPUESTA = 20    # tope de resultados listados por respuesta /buscar
-BUSCAR_MAX_RESULTADOS = 200      # length pedido al servidor en /buscar
-MAX_BUSQUEDAS_POR_CORRIDA = 5    # tope de /buscar atendidos por pasada de polling (anti-abuso)
 
 # =============================================================================
 # LOGGING
@@ -86,20 +82,11 @@ logger = logging.getLogger(__name__)
 # FUNCIONES
 # =============================================================================
 
-def obtener_todas_las_resoluciones(texto="", aplicar_fecha=True, max_resultados=200):
+def obtener_todas_las_resoluciones():
     """
-    Abre la pagina de resoluciones y captura la respuesta JSON.
-
-    Parametros:
-      texto          -> texto a buscar en el campo 'q' de la CSJN.
-                        "" (default) = traer TODO (usado por el monitoreo).
-      aplicar_fecha  -> True (default): filtra desde FECHA_DESDE (monitoreo).
-                        False: sin filtro de fecha (todo el historial, usado
-                        por el comando /buscar).
-      max_resultados -> tope de resultados a pedir (length del DataTables).
-
-    El comportamiento por defecto (texto="", aplicar_fecha=True) reproduce
-    exactamente el monitoreo original.
+    Abre la pagina de resoluciones y captura la respuesta JSON con TODAS las
+    resoluciones recientes desde FECHA_DESDE. El filtrado por palabras clave
+    es local (ver chequear_resoluciones).
     """
     from playwright.sync_api import sync_playwright
 
@@ -119,33 +106,22 @@ def obtener_todas_las_resoluciones(texto="", aplicar_fecha=True, max_resultados=
         # --- Interceptar y modificar el request saliente ---
         def interceptar_request(route, request):
             """
-            Intercepta el POST al endpoint de datos y ajusta el body segun los
-            parametros de la busqueda:
-              - q      = texto (vacio => trae todo)
-              - fecha  = FECHA_DESDE solo si aplicar_fecha; si no, vacio (historial)
-              - length = max_resultados
+            Intercepta el POST al endpoint de datos y ajusta el body:
+            sin filtro de texto (trae todo), desde FECHA_DESDE, length=200.
             """
             if "/resoluciones/data" in request.url and request.method == "POST":
                 try:
                     body = json.loads(request.post_data)
                     if "formBusqueda" in body:
-                        # Filtro de texto (q). qa siempre vacio.
-                        body["formBusqueda"]["q"] = texto
+                        # Sin filtro de texto: el filtrado por palabras es local
+                        body["formBusqueda"]["q"] = ""
                         body["formBusqueda"]["qa"] = ""
-                        # Filtro de fecha: solo si se pide (monitoreo). Para
-                        # /buscar se vacia explicitamente = todo el historial.
-                        if aplicar_fecha:
-                            body["formBusqueda"]["fechaDesde"] = FECHA_DESDE
-                            body["formBusqueda"]["fechaDesde_a"] = FECHA_DESDE
-                        else:
-                            body["formBusqueda"]["fechaDesde"] = ""
-                            body["formBusqueda"]["fechaDesde_a"] = ""
+                        body["formBusqueda"]["fechaDesde"] = FECHA_DESDE
+                        body["formBusqueda"]["fechaDesde_a"] = FECHA_DESDE
                     # Pedir mas resultados
-                    body["length"] = max_resultados
+                    body["length"] = 200
                     logger.info(
-                        f"Request interceptado - q='{texto}', "
-                        f"fecha={'FECHA_DESDE' if aplicar_fecha else 'sin filtro'}, "
-                        f"length={max_resultados}"
+                        f"Request interceptado - fecha desde {FECHA_DESDE}, length=200"
                     )
                     route.continue_(post_data=json.dumps(body))
                 except Exception as e:
@@ -210,29 +186,6 @@ def obtener_todas_las_resoluciones(texto="", aplicar_fecha=True, max_resultados=
         if not boton_buscar:
             raise Exception("No se encontro el boton Buscar")
 
-        # --- Paso 2b: Si hay texto, escribirlo en el input de busqueda ---
-        # Algunos front DataTables reconstruyen formBusqueda.q desde el DOM al
-        # hacer submit y pisarian lo inyectado en el intercept. El intercept
-        # queda igualmente como red de seguridad.
-        if texto:
-            input_encontrado = False
-            for selector in ['input[name="q"]', 'input#q', 'input[name*="q"]',
-                             'input[type="search"]', 'input[type="text"]']:
-                try:
-                    campo = page.query_selector(selector)
-                    if campo and campo.is_visible():
-                        campo.fill(texto)
-                        logger.info(f"Texto '{texto}' escrito en input: {selector}")
-                        input_encontrado = True
-                        break
-                except Exception:
-                    continue
-            if not input_encontrado:
-                logger.warning(
-                    "No se encontro el input de busqueda; se confia solo en el "
-                    "intercept del request para el filtro de texto."
-                )
-
         # --- Paso 3: Click en Buscar y esperar la respuesta de datos ---
         # En vez de un timeout fijo, esperamos explicitamente la respuesta del
         # endpoint /resoluciones/data que dispara el click.
@@ -244,7 +197,7 @@ def obtener_todas_las_resoluciones(texto="", aplicar_fecha=True, max_resultados=
                 timeout=30000,
             ) as resp_info:
                 boton_buscar.click()
-                logger.info(f"Click en Buscar (q='{texto}')")
+                logger.info("Click en Buscar")
             resp_info.value  # bloquea hasta que llega la respuesta
             logger.info("Respuesta de busqueda recibida")
         except Exception as e:
@@ -414,7 +367,8 @@ def enviar_telegram(mensaje, chat_id=None, reply_to_message_id=None):
     Envia un mensaje por Telegram.
       chat_id             -> destino; default a TELEGRAM_CHAT_ID (retrocompatible).
       reply_to_message_id -> si se pasa, el mensaje responde a ese mensaje
-                             (util en grupos para colgar la respuesta del /buscar).
+                             (util en grupos para colgar la respuesta al
+                             mensaje que la origino).
     """
     if TELEGRAM_BOT_TOKEN == "TU_TOKEN_AQUI" or TELEGRAM_CHAT_ID == "TU_CHAT_ID_AQUI":
         logger.warning("Telegram no configurado")
@@ -445,38 +399,8 @@ def enviar_telegram(mensaje, chat_id=None, reply_to_message_id=None):
         return False
 
 
-def enviar_telegram_largo(mensaje, chat_id=None, reply_to_message_id=None):
-    """
-    Envia un mensaje potencialmente largo respetando el limite de Telegram
-    (~4096 chars). Parte por LINEAS (nunca corta en medio de una linea, para
-    no romper etiquetas HTML) en trozos de <= TELEGRAM_MAX_LEN y los envia en
-    secuencia. El reply_to_message_id se aplica solo al primer trozo.
-    """
-    lineas = mensaje.split("\n")
-    trozos = []
-    buffer = ""
-    for linea in lineas:
-        # +1 por el salto de linea que reune las lineas
-        if buffer and len(buffer) + 1 + len(linea) > TELEGRAM_MAX_LEN:
-            trozos.append(buffer)
-            buffer = linea
-        else:
-            buffer = f"{buffer}\n{linea}" if buffer else linea
-    if buffer:
-        trozos.append(buffer)
-
-    enviado_ok = True
-    for i, trozo in enumerate(trozos):
-        reply = reply_to_message_id if i == 0 else None
-        ok = enviar_telegram(trozo, chat_id=chat_id, reply_to_message_id=reply)
-        enviado_ok = enviado_ok and ok
-        if len(trozos) > 1:
-            time.sleep(0.5)  # respetar rate limits al enviar varios trozos
-    return enviado_ok
-
-
 # =============================================================================
-# COMANDO /buscar VIA TELEGRAM (polling de getUpdates)
+# BOT DE TELEGRAM (polling de getUpdates)
 # =============================================================================
 
 def cargar_telegram_state():
@@ -583,35 +507,6 @@ def obtener_updates_telegram(offset=None):
         return []
 
 
-def parsear_comando_buscar(texto_mensaje):
-    """
-    Reconoce un comando /buscar y extrae el termino.
-      /buscar "frase con espacios"  -> 'frase con espacios'
-      /buscar palabra1 palabra2      -> 'palabra1 palabra2'
-      /buscar@MiBot texto            -> 'texto' (soporta sufijo del bot)
-    Devuelve:
-      - el termino (str) si es un /buscar con texto
-      - ""   si es /buscar sin texto (para responder ayuda de uso)
-      - None si el mensaje no es un comando /buscar
-    """
-    if not texto_mensaje:
-        return None
-    texto = texto_mensaje.strip()
-    # Debe empezar con /buscar (opcionalmente /buscar@bot), como palabra
-    m = re.match(r"^/buscar(?:@\w+)?(?:\s+(.*))?$", texto, re.IGNORECASE | re.DOTALL)
-    if not m:
-        return None
-    resto = (m.group(1) or "").strip()
-    if not resto:
-        return ""
-    # Si viene entre comillas (simples o dobles), tomar el contenido
-    comillas = re.match(r'^["“](.*?)["”]\s*$', resto, re.DOTALL) \
-        or re.match(r"^'(.*?)'\s*$", resto, re.DOTALL)
-    if comillas:
-        return comillas.group(1).strip()
-    return resto
-
-
 def parsear_comando_simple(texto_mensaje):
     """
     Reconoce los comandos sin argumentos del bot (soporta sufijo @bot):
@@ -631,14 +526,13 @@ def parsear_comando_simple(texto_mensaje):
 
 
 def texto_ayuda():
-    """Texto de ayuda comun a /start en el grupo, /ayuda y mensajes no reconocidos."""
+    """Info del bot: respuesta a /ayuda, a comandos en el grupo y a texto suelto."""
     return (
-        "\U0001F50E Buscá resoluciones de la CSJN en todo el historial:\n"
-        "<code>/buscar \"texto a buscar\"</code>\n"
-        "Ej: <code>/buscar \"German Silva\"</code>\n\n"
+        f"\U0001F514 Este bot avisa cuando la CSJN publica una resolución nueva "
+        f"que mencione «{html.escape(', '.join(FILTRO_PALABRAS))}».\n\n"
+        "/start para suscribirte · /stop para darte de baja\n\n"
         "⏱ El bot funciona por tandas: las respuestas pueden demorar "
-        "entre 5 y 20 minutos.\n\n"
-        "/stop para dejar de recibir alertas · /ayuda para ver este mensaje"
+        "entre 5 y 20 minutos."
     )
 
 
@@ -648,36 +542,8 @@ def texto_bienvenida():
         "\U0001F44B ¡Hola! Soy el monitor de resoluciones de la CSJN (DAJUDECO).\n\n"
         f"✅ Quedaste suscripto: te aviso cuando salga una resolución nueva "
         f"que mencione «{html.escape(', '.join(FILTRO_PALABRAS))}».\n\n"
-        + texto_ayuda()
+        "/stop para dejar de recibir alertas · /ayuda para ver esta info"
     )
-
-
-def formatear_encabezado_busqueda(termino, cantidad, truncado=False, solicitante=None):
-    """Encabezado de la respuesta a un /buscar."""
-    # Escapar texto controlado por el usuario: los mensajes van con parse_mode=HTML
-    # y un termino con '<' haria que Telegram rechace el mensaje completo.
-    termino = html.escape(termino)
-    quien = f" (pedido por {html.escape(solicitante)})" if solicitante else ""
-    if cantidad == 0:
-        return f"\U0001F50E Búsqueda: «{termino}»{quien}\n\nSin resultados."
-    msg = (f"\U0001F50E Búsqueda: «{termino}»{quien}\n"
-           f"Resultados: {cantidad}")
-    if truncado:
-        msg += (f" (mostrando los primeros {MAX_RESULTADOS_RESPUESTA}; "
-                f"refiná la búsqueda para acotar)")
-    return msg
-
-
-def formatear_resultado_compacto(r):
-    """Formato de una linea/resolucion para listas del /buscar."""
-    detalle = (r.get("detalle") or "").strip()
-    if len(detalle) > 160:
-        detalle = detalle[:157] + "..."
-    linea = (f"\n\U0001F4C4 <b>N° {html.escape(str(r['numero']))}</b> - "
-             f"{html.escape(str(r['fecha']))}\n{html.escape(detalle)}")
-    if r.get("url_pdf"):
-        linea += f"\n\U0001F517 <a href=\"{r['url_pdf']}\">PDF</a>"
-    return linea
 
 
 def formatear_mensaje(r):
@@ -887,50 +753,14 @@ def chequear_resoluciones():
         enviar_telegram(f"\u26A0\uFE0F <b>Error en Monitor CSJN</b>\n\n{str(e)[:500]}")
 
 
-def _ejecutar_busqueda(termino, chat_id, message_id, solicitante=None):
-    """
-    Ejecuta un /buscar: scrapea la CSJN con q=termino (todo el historial) y
-    responde al chat de origen. Aisla los errores para no cortar el resto.
-    """
-    logger.info(f"Ejecutando /buscar '{termino}' para chat {chat_id}")
-    try:
-        crudos = obtener_todas_las_resoluciones(
-            texto=termino, aplicar_fecha=False, max_resultados=BUSCAR_MAX_RESULTADOS
-        )
-        resoluciones = [parsear_resolucion(item) for item in crudos]
-        total = len(resoluciones)
-        truncado = total > MAX_RESULTADOS_RESPUESTA or total >= BUSCAR_MAX_RESULTADOS
-        encabezado = formatear_encabezado_busqueda(
-            termino, total, truncado=truncado, solicitante=solicitante
-        )
-        cuerpo = "".join(
-            formatear_resultado_compacto(r)
-            for r in resoluciones[:MAX_RESULTADOS_RESPUESTA]
-        )
-        enviar_telegram_largo(
-            encabezado + ("\n" + cuerpo if cuerpo else ""),
-            chat_id=chat_id,
-            reply_to_message_id=message_id,
-        )
-    except Exception as e:
-        logger.error(f"Error en /buscar '{termino}': {e}")
-        import traceback
-        logger.error(traceback.format_exc())
-        enviar_telegram(
-            "\u26A0\uFE0F La b\u00FAsqueda fall\u00F3. Intent\u00E1 de nuevo en unos minutos.",
-            chat_id=chat_id,
-            reply_to_message_id=message_id,
-        )
-
-
 def procesar_comandos_telegram():
     """
     Lee comandos de Telegram via getUpdates y responde.
-      - Grupo configurado (TELEGRAM_CHAT_ID): /buscar como siempre; /start,
-        /stop y /ayuda responden la ayuda sin suscribir (el grupo ya recibe
-        las alertas directo).
       - Chats privados (bot compartido por link): /start suscribe a las
-        alertas, /stop da de baja, /ayuda y /buscar abiertos a cualquiera.
+        alertas del monitor, /stop da de baja, /ayuda (o cualquier texto)
+        responde la info del bot.
+      - Grupo configurado (TELEGRAM_CHAT_ID): /start, /stop y /ayuda
+        responden la info sin suscribir (el grupo ya recibe las alertas).
       - Otros grupos donde agreguen al bot: ignorados.
     Persiste el offset en TELEGRAM_STATE_FILE para no reprocesar.
     """
@@ -951,7 +781,6 @@ def procesar_comandos_telegram():
     logger.info(f"{len(updates)} updates recibidos")
     max_update_id = offset - 1 if offset is not None else -1
     comandos = 0
-    busquedas = 0
 
     for update in updates:
         update_id = update.get("update_id", -1)
@@ -978,76 +807,55 @@ def procesar_comandos_telegram():
         message_id = mensaje.get("message_id")
         remitente = mensaje.get("from", {}).get("first_name")
 
-        # --- Comandos simples: /start, /stop, /ayuda ---
-        simple = parsear_comando_simple(texto)
-        if simple is not None:
+        # /buscar fue discontinuado: avisar en vez de ignorar en silencio.
+        if re.match(r"^/buscar(?:@\w+)?(?:\s|$)", texto.strip(), re.IGNORECASE):
             comandos += 1
-            if simple == "start" and es_privado:
-                # El boton Start de Telegram manda /start: alta + bienvenida.
-                alta_nueva = suscribir(chat_id, remitente)
-                enviar_telegram(texto_bienvenida(), chat_id=chat_id)
-                logger.info(f"/start de chat {chat_id} (alta nueva: {alta_nueva})")
-            elif simple == "stop" and es_privado:
-                if desuscribir(chat_id):
-                    enviar_telegram(
-                        "Listo, no vas a recibir más alertas. "
-                        "Podés volver a suscribirte con /start.",
-                        chat_id=chat_id,
-                    )
-                else:
-                    enviar_telegram(
-                        "No estabas suscripto. Con /start te suscribís a las alertas.",
-                        chat_id=chat_id,
-                    )
-            else:
-                # /ayuda en cualquier chat; /start y /stop en el grupo solo
-                # muestran la ayuda (el grupo no se suscribe).
+            enviar_telegram(
+                "La búsqueda se discontinuó: el bot ahora solo avisa cuando "
+                "hay resoluciones nuevas. /ayuda para más info.",
+                chat_id=chat_id,
+                reply_to_message_id=message_id,
+            )
+            continue
+
+        simple = parsear_comando_simple(texto)
+        if simple == "start" and es_privado:
+            # El boton Start de Telegram manda /start: alta + bienvenida.
+            comandos += 1
+            alta_nueva = suscribir(chat_id, remitente)
+            enviar_telegram(texto_bienvenida(), chat_id=chat_id)
+            logger.info(f"/start de chat {chat_id} (alta nueva: {alta_nueva})")
+        elif simple == "stop" and es_privado:
+            comandos += 1
+            if desuscribir(chat_id):
                 enviar_telegram(
-                    texto_ayuda(),
+                    "Listo, no vas a recibir más alertas. "
+                    "Podés volver a suscribirte con /start.",
                     chat_id=chat_id,
-                    reply_to_message_id=message_id if es_grupo else None,
                 )
-            continue
-
-        # --- /buscar ---
-        termino = parsear_comando_buscar(texto)
-        if termino is None:
-            # En privado, un mensaje de texto que no es comando recibe la ayuda
-            # (quien recibe el bot compartido suele escribir sin la barra).
+            else:
+                enviar_telegram(
+                    "No estabas suscripto. Con /start te suscribís a las alertas.",
+                    chat_id=chat_id,
+                )
+        elif simple is not None:
+            # /ayuda en cualquier chat; /start y /stop en el grupo solo
+            # muestran la info (el grupo no se suscribe).
+            comandos += 1
+            enviar_telegram(
+                texto_ayuda(),
+                chat_id=chat_id,
+                reply_to_message_id=message_id if es_grupo else None,
+            )
+        elif es_privado and texto.strip():
+            # En privado, un texto que no es comando recibe la info del bot.
             # En el grupo se ignora, como siempre.
-            if es_privado and texto.strip():
-                enviar_telegram(texto_ayuda(), chat_id=chat_id)
-            continue
-
-        if termino == "":
-            enviar_telegram(
-                "Uso: <code>/buscar \"texto a buscar\"</code>\n"
-                "Ej: <code>/buscar \"German Silva\"</code>",
-                chat_id=chat_id,
-                reply_to_message_id=message_id,
-            )
-            continue
-
-        # Tope anti-abuso: con acceso abierto, limitar los scrapes por corrida.
-        if busquedas >= MAX_BUSQUEDAS_POR_CORRIDA:
-            enviar_telegram(
-                "⏳ Hay muchas búsquedas en esta pasada. "
-                "Intentá de nuevo en unos minutos.",
-                chat_id=chat_id,
-                reply_to_message_id=message_id,
-            )
-            continue
-
-        comandos += 1
-        busquedas += 1
-        # En privado no tiene sentido el "pedido por X" del encabezado.
-        _ejecutar_busqueda(termino, chat_id, message_id,
-                           remitente if es_grupo else None)
+            enviar_telegram(texto_ayuda(), chat_id=chat_id)
 
     # Confirmar todos los updates leidos (incluso ignorados) para no repetir.
     if max_update_id >= 0:
         guardar_telegram_state({"offset": max_update_id + 1})
-    logger.info(f"Comandos procesados: {comandos} (búsquedas: {busquedas})")
+    logger.info(f"Comandos procesados: {comandos}")
 
 
 def configurar_bot_telegram():
@@ -1068,18 +876,17 @@ def configurar_bot_telegram():
     filtro = ", ".join(FILTRO_PALABRAS)
     llamadas = [
         ("setMyCommands", {"commands": json.dumps([
-            {"command": "buscar", "description": "Buscar resoluciones: /buscar \"texto\""},
-            {"command": "ayuda", "description": "Cómo usar el bot"},
+            {"command": "ayuda", "description": "Qué hace el bot"},
             {"command": "stop", "description": "Dejar de recibir alertas"},
         ])}),
         ("setMyDescription", {"description": (
-            f"Monitor de resoluciones de la CSJN. Apretá Iniciar y quedás "
-            f"suscripto a las alertas de resoluciones que mencionen {filtro}. "
-            f"Con /buscar \"texto\" buscás en todo el historial. Las respuestas "
-            f"pueden demorar 5-20 minutos (el bot corre por tandas)."
+            f"Monitor de resoluciones de la CSJN (DAJUDECO). Apretá Iniciar y "
+            f"quedás suscripto: te aviso cuando salga una resolución nueva que "
+            f"mencione {filtro}. La bienvenida puede demorar unos minutos "
+            f"(el bot corre por tandas). /stop para darte de baja."
         )}),
         ("setMyShortDescription", {"short_description": (
-            "Alertas y búsqueda de resoluciones de la CSJN (DAJUDECO)."
+            "Alertas de nuevas resoluciones de la CSJN (DAJUDECO)."
         )}),
     ]
     for metodo, params in llamadas:
@@ -1332,7 +1139,7 @@ def ejecutar_test():
             ("parser /STOP", parsear_comando_simple("/STOP") == "stop"),
             ("parser /baja", parsear_comando_simple("/baja") == "stop"),
             ("parser /help", parsear_comando_simple("/help") == "ayuda"),
-            ("parser /buscar no es simple", parsear_comando_simple("/buscar algo") is None),
+            ("parser comando desconocido", parsear_comando_simple("/buscar algo") is None),
             ("parser texto comun", parsear_comando_simple("hola /start") is None),
             ("parser prefijo invalido", parsear_comando_simple("/startx") is None),
             ("alta suscriptor", suscribir("111", "Test") is True),
@@ -1341,7 +1148,8 @@ def ejecutar_test():
             ("suscriptor persistido", "111" in cargar_suscriptores()["chats"]),
             ("baja suscriptor", desuscribir("111") is True),
             ("baja idempotente", desuscribir("111") is False),
-            ("escape HTML en /buscar", "&lt;b&gt;" in formatear_encabezado_busqueda("<b>x</b>", 0)),
+            ("escape HTML en alerta", "&lt;b&gt;" in formatear_mensaje(
+                {"numero": "1", "fecha": "01/01/2026", "detalle": "<b>x</b>"})),
         ]
         ok_tg = 0
         for nombre, ok in casos_tg:

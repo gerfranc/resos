@@ -1,8 +1,8 @@
-name: Buscar CSJN - Telegram Bot
+name: Bot CSJN - Telegram
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # cada 5 min: sondea comandos /buscar de Telegram
+    - cron: '*/5 * * * *'   # cada 5 min: sondea comandos /start, /stop, /ayuda del bot
   workflow_dispatch:          # disparo manual inmediato
 
 # No cancelar una corrida a medias: podria dejar el offset sin commitear y
