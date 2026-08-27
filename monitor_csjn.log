@@ -1696,3 +1696,184 @@
 2026-08-27 15:27:19 [INFO] ============================================================
 2026-08-27 15:27:19 [INFO] Polling de comandos Telegram
 2026-08-27 15:27:19 [INFO] Sin updates nuevos de Telegram
+2026-08-27 18:42:10 [INFO] ============================================================
+2026-08-27 18:42:10 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-08-27 18:42:10 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-27 18:42:10 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-08-27 18:42:10 [INFO] Modo: ejecucion unica
+2026-08-27 18:42:10 [INFO] ============================================================
+2026-08-27 18:42:10 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-08-27 18:42:10 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-08-27 18:42:10 [INFO] Re-verificando 18 resoluciones pendientes...
+2026-08-27 18:42:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161077
+2026-08-27 18:42:13 [INFO] PDF: 1722 caracteres extraidos con pdfplumber
+2026-08-27 18:42:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161081
+2026-08-27 18:42:15 [INFO] PDF: 1758 caracteres extraidos con pdfplumber
+2026-08-27 18:42:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161082
+2026-08-27 18:42:16 [INFO] PDF: 1691 caracteres extraidos con pdfplumber
+2026-08-27 18:42:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161080
+2026-08-27 18:42:18 [INFO] PDF: 3403 caracteres extraidos con pdfplumber
+2026-08-27 18:42:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161079
+2026-08-27 18:42:20 [INFO] PDF: 1927 caracteres extraidos con pdfplumber
+2026-08-27 18:42:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161078
+2026-08-27 18:42:21 [INFO] PDF: 2525 caracteres extraidos con pdfplumber
+2026-08-27 18:42:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161094
+2026-08-27 18:42:23 [INFO] PDF: 2073 caracteres extraidos con pdfplumber
+2026-08-27 18:42:23 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161093
+2026-08-27 18:42:24 [INFO] PDF: 2837 caracteres extraidos con pdfplumber
+2026-08-27 18:42:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161096
+2026-08-27 18:42:26 [INFO] PDF: 1226 caracteres extraidos con pdfplumber
+2026-08-27 18:42:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161095
+2026-08-27 18:42:27 [INFO] PDF: 2068 caracteres extraidos con pdfplumber
+2026-08-27 18:42:27 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161104
+2026-08-27 18:42:29 [INFO] PDF: 1940 caracteres extraidos con pdfplumber
+2026-08-27 18:42:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161105
+2026-08-27 18:42:31 [INFO] PDF: 1951 caracteres extraidos con pdfplumber
+2026-08-27 18:42:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161117
+2026-08-27 18:42:33 [INFO] PDF: 3245 caracteres extraidos con pdfplumber
+2026-08-27 18:42:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161114
+2026-08-27 18:42:34 [INFO] PDF: 1918 caracteres extraidos con pdfplumber
+2026-08-27 18:42:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161115
+2026-08-27 18:42:36 [INFO] PDF: 2710 caracteres extraidos con pdfplumber
+2026-08-27 18:42:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161116
+2026-08-27 18:42:38 [INFO] PDF: 2770 caracteres extraidos con pdfplumber
+2026-08-27 18:42:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161120
+2026-08-27 18:42:39 [INFO] PDF: 2027 caracteres extraidos con pdfplumber
+2026-08-27 18:42:39 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161119
+2026-08-27 18:42:41 [INFO] PDF: 1886 caracteres extraidos con pdfplumber
+2026-08-27 18:42:41 [INFO] Pendientes re-verificadas: 18 | Nuevas relevantes: 0 | Expiradas: 0 | No verificables (reintento): 0
+2026-08-27 18:42:41 [INFO] Registro: 1976 resoluciones guardadas
+2026-08-27 18:42:41 [INFO] Iniciando navegador Chromium headless...
+2026-08-27 18:42:41 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-08-27 18:42:50 [INFO] Pagina cargada
+2026-08-27 18:42:50 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-08-27 18:42:51 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 2011)
+2026-08-27 18:42:52 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-08-27 18:42:52 [INFO] Esperando resultados...
+2026-08-27 18:42:52 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-08-27 18:42:52 [INFO] Click en Buscar
+2026-08-27 18:42:53 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 2011)
+2026-08-27 18:42:53 [INFO] Respuesta de busqueda recibida
+2026-08-27 18:42:53 [INFO] Tabla con resultados detectada
+2026-08-27 18:42:53 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-08-27 18:42:53 [INFO] Navegador cerrado
+2026-08-27 18:42:53 [INFO] Total resoluciones obtenidas: 200
+2026-08-27 18:42:53 [INFO] 38 resoluciones no procesadas, filtrando por contenido...
+2026-08-27 18:42:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161173
+2026-08-27 18:42:54 [INFO] PDF: 1136 caracteres extraidos con pdfplumber
+2026-08-27 18:42:54 [INFO]   No relevante: N°2040 - Licencia gremial - Mía CHIANALINO.-
+2026-08-27 18:42:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161170
+2026-08-27 18:42:56 [INFO] PDF: 1140 caracteres extraidos con pdfplumber
+2026-08-27 18:42:56 [INFO]   No relevante: N°2039 - Licencia gremial - Eduardo Rubén ELIZONDO.-
+2026-08-27 18:42:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161171
+2026-08-27 18:42:57 [INFO] PDF: 1152 caracteres extraidos con pdfplumber
+2026-08-27 18:42:57 [INFO]   No relevante: N°2038 - Licencia gremial - María Eugenia RAGONESE.-
+2026-08-27 18:42:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161172
+2026-08-27 18:42:58 [INFO] PDF: 1100 caracteres extraidos con pdfplumber
+2026-08-27 18:42:58 [INFO]   No relevante: N°2037 - Licencia gremial - Marta SALDÍA.-
+2026-08-27 18:42:58 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161174
+2026-08-27 18:43:00 [INFO] PDF: 1124 caracteres extraidos con pdfplumber
+2026-08-27 18:43:00 [INFO]   No relevante: N°2036 - Licencia gremial - Ansilta TRIEP.-
+2026-08-27 18:43:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161168
+2026-08-27 18:43:01 [INFO] PDF: 1108 caracteres extraidos con pdfplumber
+2026-08-27 18:43:01 [INFO]   No relevante: N°2035 - Licencia gremial - Silvia Mariel ACOSTA.-
+2026-08-27 18:43:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161165
+2026-08-27 18:43:02 [INFO] PDF: 1096 caracteres extraidos con pdfplumber
+2026-08-27 18:43:02 [INFO]   No relevante: N°2034 - Licencia gremial - Walter PONCE.-
+2026-08-27 18:43:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161166
+2026-08-27 18:43:03 [INFO] PDF: 1131 caracteres extraidos con pdfplumber
+2026-08-27 18:43:03 [INFO]   No relevante: N°2033 - Licencia gremial - Lisandro CASALE.-
+2026-08-27 18:43:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161167
+2026-08-27 18:43:05 [INFO] PDF: 1146 caracteres extraidos con pdfplumber
+2026-08-27 18:43:05 [INFO]   No relevante: N°2032 - Licencia gremial - María Soledad LÓPEZ.-
+2026-08-27 18:43:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161164
+2026-08-27 18:43:06 [INFO] PDF: 2939 caracteres extraidos con pdfplumber
+2026-08-27 18:43:06 [INFO]   No relevante: N°2031 - Contratar con las firmas FARMACIA REX S.R.L. y QUÍMICA CÓRDO
+2026-08-27 18:43:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161161
+2026-08-27 18:43:08 [INFO] PDF: 1699 caracteres extraidos con pdfplumber
+2026-08-27 18:43:08 [INFO]   No relevante: N°2030 - Anticipo de jubilación en favor del Señor Raúl Eduardo GUINO
+2026-08-27 18:43:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161158
+2026-08-27 18:43:09 [INFO] PDF: 1662 caracteres extraidos con pdfplumber
+2026-08-27 18:43:09 [INFO]   No relevante: N°2029 - Anticipo de jubilación a favor de la Señora Cecilia GURRUCHA
+2026-08-27 18:43:09 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161162
+2026-08-27 18:43:10 [INFO] PDF: 1711 caracteres extraidos con pdfplumber
+2026-08-27 18:43:10 [INFO]   No relevante: N°2028 - Anticipo de jubilación en favor del Señor Mario Eduardo CAÑA
+2026-08-27 18:43:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161159
+2026-08-27 18:43:12 [INFO] PDF: 1691 caracteres extraidos con pdfplumber
+2026-08-27 18:43:12 [INFO]   No relevante: N°2027 - Anticipo de jubilación a favor de la Señora Graciela Alicia 
+2026-08-27 18:43:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161160
+2026-08-27 18:43:13 [INFO] PDF: 1664 caracteres extraidos con pdfplumber
+2026-08-27 18:43:13 [INFO]   No relevante: N°2026 - Anticipo de jubilación a favor de la Señora Viviana Ethel MA
+2026-08-27 18:43:13 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161155
+2026-08-27 18:43:14 [INFO] PDF: 1692 caracteres extraidos con pdfplumber
+2026-08-27 18:43:14 [INFO]   No relevante: N°2025 - Anticipo de jubilación a favor de la Señora Sonia Merry RAND
+2026-08-27 18:43:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161157
+2026-08-27 18:43:16 [INFO] PDF: 1674 caracteres extraidos con pdfplumber
+2026-08-27 18:43:16 [INFO]   No relevante: N°2024 - Anticipo de jubilación a favor de la Señora María Teresa PAT
+2026-08-27 18:43:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161156
+2026-08-27 18:43:17 [INFO] PDF: 1707 caracteres extraidos con pdfplumber
+2026-08-27 18:43:17 [INFO]   No relevante: N°2023 - Anticipo de jubilación a favor de la Señora Cristina Beatriz
+2026-08-27 18:43:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161163
+2026-08-27 18:43:18 [INFO] PDF: 1698 caracteres extraidos con pdfplumber
+2026-08-27 18:43:18 [INFO]   No relevante: N°2022 - Anticipo de jubilación en favor del Señor Carlos Gabriel ROC
+2026-08-27 18:43:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161154
+2026-08-27 18:43:20 [INFO] PDF: 1682 caracteres extraidos con pdfplumber
+2026-08-27 18:43:20 [INFO]   No relevante: N°2021 - Anticipo de jubilación en favor del Señor Mario Ángel BOGADO
+2026-08-27 18:43:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161152
+2026-08-27 18:43:21 [INFO] PDF: 1683 caracteres extraidos con pdfplumber
+2026-08-27 18:43:21 [INFO]   No relevante: N°2020 - Anticipo de jubilación a favor de la Señora Marisa Sandra PE
+2026-08-27 18:43:21 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161153
+2026-08-27 18:43:22 [INFO] PDF: 1703 caracteres extraidos con pdfplumber
+2026-08-27 18:43:22 [INFO]   No relevante: N°2019 - Anticipo de jubilación a favor de la Señora María Eugenia PÉ
+2026-08-27 18:43:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161151
+2026-08-27 18:43:24 [INFO] PDF: 2516 caracteres extraidos con pdfplumber
+2026-08-27 18:43:24 [INFO]   No relevante: N°2018 - Bonificación adicional por título a favor de Agustina CAYOL 
+2026-08-27 18:43:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161149
+2026-08-27 18:43:25 [INFO] PDF: 1552 caracteres extraidos con pdfplumber
+2026-08-27 18:43:25 [INFO]   No relevante: N°2017 - Considerar en uso de licencia con goce de haberes al Doctor 
+2026-08-27 18:43:25 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161150
+2026-08-27 18:43:26 [INFO] PDF: 1518 caracteres extraidos con pdfplumber
+2026-08-27 18:43:26 [INFO]   No relevante: N°2016 - Considerar en uso de licencia con goce de haberes a la Docto
+2026-08-27 18:43:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161148
+2026-08-27 18:43:28 [INFO] PDF: 1485 caracteres extraidos con pdfplumber
+2026-08-27 18:43:28 [INFO]   No relevante: N°2015 - Licencia gremial - Juan José ZABALA, Manuel Adrián BAUMAN, P
+2026-08-27 18:43:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161147
+2026-08-27 18:43:30 [INFO] PDF: 652 caracteres extraidos con pdfplumber
+2026-08-27 18:43:30 [INFO]   No relevante: N°2014 - Aceptar la renuncia presentada por el Doctor Nicolás Martín 
+2026-08-27 18:43:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161146
+2026-08-27 18:43:32 [INFO] PDF: 1263 caracteres extraidos con pdfplumber
+2026-08-27 18:43:32 [INFO]   No relevante: N°2013 - Prórroga de adscripción - Catalina María NORIEGA TERÁN.-
+2026-08-27 18:43:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161143
+2026-08-27 18:43:34 [INFO] PDF: 1239 caracteres extraidos con pdfplumber
+2026-08-27 18:43:34 [INFO]   No relevante: N°2012 - Prórroga de adscripción - Valeria Daniela SAÁ.-
+2026-08-27 18:43:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161142
+2026-08-27 18:43:36 [INFO] PDF: 1082 caracteres extraidos con pdfplumber
+2026-08-27 18:43:36 [INFO]   No relevante: N°2011 - Prórroga de adscripción - Hernán Patricio SAUX.-
+2026-08-27 18:43:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161139
+2026-08-27 18:43:38 [INFO] PDF: 1199 caracteres extraidos con pdfplumber
+2026-08-27 18:43:38 [INFO]   No relevante: N°2010 - Prórroga de adscripción - Soledad Aldana RAMOS.-
+2026-08-27 18:43:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161141
+2026-08-27 18:43:40 [INFO] PDF: 1156 caracteres extraidos con pdfplumber
+2026-08-27 18:43:40 [INFO]   No relevante: N°2009 - Prórroga de adscripción - Juan Eduardo BAY.-
+2026-08-27 18:43:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161138
+2026-08-27 18:43:42 [INFO] PDF: 1086 caracteres extraidos con pdfplumber
+2026-08-27 18:43:42 [INFO]   No relevante: N°2008 - Prórroga de adscripción - Salome Florencia ANZARDI.-
+2026-08-27 18:43:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161140
+2026-08-27 18:43:44 [INFO] PDF: 1435 caracteres extraidos con pdfplumber
+2026-08-27 18:43:44 [INFO]   No relevante: N°2007 - Prórroga de adscripción - Marcelo Fabián GINO y Andrea Verón
+2026-08-27 18:43:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161137
+2026-08-27 18:43:46 [INFO] PDF: 1342 caracteres extraidos con pdfplumber
+2026-08-27 18:43:46 [INFO]   No relevante: N°2006 - Prórroga de licencia sin goce de haberes - Jerónimo FREITAS.
+2026-08-27 18:43:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161136
+2026-08-27 18:43:49 [INFO] PDF: 1457 caracteres extraidos con pdfplumber
+2026-08-27 18:43:49 [INFO]   No relevante: N°2005 - Prórroga de licencia sin goce de haberes - Fernando Ernesto 
+2026-08-27 18:43:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161144
+2026-08-27 18:43:51 [INFO] PDF: 593 caracteres extraidos con pdfplumber
+2026-08-27 18:43:51 [INFO]   No relevante: N°2004 - Aceptar la renuncia presentada por la señora Paola Elisabeth
+2026-08-27 18:43:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=161135
+2026-08-27 18:43:53 [INFO] PDF: 593 caracteres extraidos con pdfplumber
+2026-08-27 18:43:53 [INFO]   No relevante: N°2004 - Aceptar la renuncia presentada por la Señora Paola Elizabeth
+2026-08-27 18:43:53 [INFO] Ninguna de las 38 nuevas es relevante
+2026-08-27 18:43:53 [INFO] Telegram: mensaje enviado
+2026-08-27 18:43:53 [INFO] Registro: 2014 resoluciones guardadas
+2026-08-27 18:43:53 [INFO] Completado: 0 relevantes de 38 nuevas
