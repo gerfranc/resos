@@ -513,3 +513,11 @@
 2026-09-04 21:39:22 [INFO] /start de chat 1753058560 (alta nueva: True)
 2026-09-04 21:39:22 [INFO] Telegram state guardado: offset=337597996
 2026-09-04 21:39:22 [INFO] Comandos procesados: 1
+2026-09-04 23:17:00 [INFO] ============================================================
+2026-09-04 23:17:00 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-09-04 23:17:00 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-09-04 23:17:00 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-09-04 23:17:00 [INFO] Modo: polling de comandos Telegram
+2026-09-04 23:17:00 [INFO] ============================================================
+2026-09-04 23:17:00 [INFO] Polling de comandos Telegram
+2026-09-04 23:17:00 [INFO] Sin updates nuevos de Telegram
