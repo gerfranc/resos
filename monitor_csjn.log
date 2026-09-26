@@ -482,3 +482,12 @@
 2026-09-26 00:11:54 [INFO] Polling de comandos Telegram
 2026-09-26 00:11:55 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D&offset=337597996
 2026-09-26 00:11:55 [INFO] Sin updates nuevos de Telegram
+2026-09-26 04:52:37 [INFO] ============================================================
+2026-09-26 04:52:37 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-09-26 04:52:37 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-09-26 04:52:37 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-09-26 04:52:37 [INFO] Modo: polling de comandos Telegram
+2026-09-26 04:52:37 [INFO] ============================================================
+2026-09-26 04:52:37 [INFO] Polling de comandos Telegram
+2026-09-26 04:52:38 [ERROR] Error en getUpdates: 409 Client Error: Conflict for url: https://api.telegram.org/bot8428230942:AAGbtvwCCSb4JBz3NFFWJHu5M4nMt4mivEE/getUpdates?timeout=0&allowed_updates=%5B%22message%22%5D&offset=337597996
+2026-09-26 04:52:38 [INFO] Sin updates nuevos de Telegram
