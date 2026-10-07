@@ -27488,7 +27488,7 @@
     "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura, una partida especial de $13.600.000.-, con el objeto de solventar el gasto de traslado de automotores afectados al Tribunal.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182573",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-10-02T21:42:42.336009",
     "expira": "2026-10-07T21:42:42.336009",
@@ -27500,7 +27500,7 @@
     "detalle": "Autorizar a liquidar y abonar a la firma TOPET ADRIAN HORACIO la suma total de $1.092.600.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182571",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-10-02T21:42:42.336009",
     "expira": "2026-10-07T21:42:42.336009",
@@ -27522,7 +27522,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182596",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 7,
+    "intentos": 8,
     "primera_vez": "2026-10-06T01:15:43.744282",
     "expira": "2026-10-11T01:15:43.744282",
     "procesado": "2026-10-06T01:15:43.744282"
@@ -27534,7 +27534,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182647",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27546,7 +27546,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182646",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27558,7 +27558,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182645",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27570,7 +27570,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182644",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27582,7 +27582,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182640",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27594,7 +27594,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182638",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27606,7 +27606,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182641",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27618,7 +27618,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182643",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27630,7 +27630,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182639",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27642,7 +27642,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182642",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27654,7 +27654,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182635",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
@@ -27666,9 +27666,21 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182634",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 1,
+    "intentos": 2,
     "primera_vez": "2026-10-07T18:14:09.676136",
     "expira": "2026-10-12T18:14:09.676136",
     "procesado": "2026-10-07T18:14:09.676136"
+  },
+  "182650": {
+    "numero": "2505",
+    "fecha": "7 de octubre de 2026",
+    "detalle": "Declarar fracasada la licitación pública N° 111/2026 por falta de ofertas admisibles y convenientes.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182650",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-07T23:57:47.752112",
+    "expira": "2026-10-12T23:57:47.752112",
+    "procesado": "2026-10-07T23:57:47.752112"
   }
 }
