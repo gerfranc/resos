@@ -5572,3 +5572,90 @@
 2026-10-07 15:48:50 [INFO] ============================================================
 2026-10-07 15:48:50 [INFO] Polling de comandos Telegram
 2026-10-07 15:48:50 [INFO] Sin updates nuevos de Telegram
+2026-10-07 18:13:34 [INFO] ============================================================
+2026-10-07 18:13:34 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-10-07 18:13:34 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-10-07 18:13:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-10-07 18:13:34 [INFO] Modo: ejecucion unica
+2026-10-07 18:13:34 [INFO] ============================================================
+2026-10-07 18:13:34 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-10-07 18:13:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-10-07 18:13:34 [INFO] Re-verificando 17 resoluciones pendientes...
+2026-10-07 18:13:34 [INFO]   Expirada: N°2488
+2026-10-07 18:13:34 [INFO]   Expirada: N°2487
+2026-10-07 18:13:34 [INFO]   Expirada: N°2486
+2026-10-07 18:13:34 [INFO]   Expirada: N°2485
+2026-10-07 18:13:34 [INFO]   Expirada: N°2484
+2026-10-07 18:13:34 [INFO]   Expirada: N°2483
+2026-10-07 18:13:34 [INFO]   Expirada: N°2482
+2026-10-07 18:13:34 [INFO]   Expirada: N°2481
+2026-10-07 18:13:34 [INFO]   Expirada: N°2480
+2026-10-07 18:13:34 [INFO]   Expirada: N°2479
+2026-10-07 18:13:34 [INFO]   Expirada: N°2478
+2026-10-07 18:13:34 [INFO]   Expirada: N°2477
+2026-10-07 18:13:34 [INFO]   Expirada: N°2476
+2026-10-07 18:13:34 [INFO]   Expirada: N°2475
+2026-10-07 18:13:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182573
+2026-10-07 18:13:35 [INFO] PDF: 1906 caracteres extraidos con pdfplumber
+2026-10-07 18:13:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182571
+2026-10-07 18:13:36 [INFO] PDF: 1286 caracteres extraidos con pdfplumber
+2026-10-07 18:13:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182596
+2026-10-07 18:13:38 [INFO] PDF: 1956 caracteres extraidos con pdfplumber
+2026-10-07 18:13:38 [INFO] Pendientes re-verificadas: 17 | Nuevas relevantes: 0 | Expiradas: 14 | No verificables (reintento): 0
+2026-10-07 18:13:38 [INFO] Registro: 2467 resoluciones guardadas
+2026-10-07 18:13:38 [INFO] Iniciando navegador Chromium headless...
+2026-10-07 18:13:40 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-10-07 18:13:45 [INFO] Pagina cargada
+2026-10-07 18:13:45 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-10-07 18:13:47 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 2475)
+2026-10-07 18:13:47 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-10-07 18:13:47 [INFO] Esperando resultados...
+2026-10-07 18:13:48 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-10-07 18:13:48 [INFO] Click en Buscar
+2026-10-07 18:13:49 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 2475)
+2026-10-07 18:13:49 [INFO] Respuesta de busqueda recibida
+2026-10-07 18:13:49 [INFO] Tabla con resultados detectada
+2026-10-07 18:13:49 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-10-07 18:13:49 [INFO] Navegador cerrado
+2026-10-07 18:13:49 [INFO] Total resoluciones obtenidas: 200
+2026-10-07 18:13:49 [INFO] 12 resoluciones no procesadas, filtrando por contenido...
+2026-10-07 18:13:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182647
+2026-10-07 18:13:50 [INFO] PDF: 2498 caracteres extraidos con pdfplumber
+2026-10-07 18:13:50 [INFO]   No relevante: N°2504 - Contratar con la firma CASA ROMANELLO BIENES Y SERVICIOS S.A
+2026-10-07 18:13:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182646
+2026-10-07 18:13:51 [INFO] PDF: 2335 caracteres extraidos con pdfplumber
+2026-10-07 18:13:51 [INFO]   No relevante: N°2503 - Autorizar a liquidar y abonar al Archivo General del Poder J
+2026-10-07 18:13:51 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182645
+2026-10-07 18:13:53 [INFO] PDF: 602 caracteres extraidos con pdfplumber
+2026-10-07 18:13:53 [INFO]   No relevante: N°2502 - Aceptar la renuncia presentada por el Señor Juan Antonio LÓP
+2026-10-07 18:13:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182644
+2026-10-07 18:13:55 [INFO] PDF: 595 caracteres extraidos con pdfplumber
+2026-10-07 18:13:55 [INFO]   No relevante: N°2501 - Aceptar la renuncia presentada por el Doctor Santiago Ezequi
+2026-10-07 18:13:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182640
+2026-10-07 18:13:57 [INFO] PDF: 1100 caracteres extraidos con pdfplumber
+2026-10-07 18:13:57 [INFO]   No relevante: N°2500 - Prórroga de adscripción - Viviana Dalma BACARINI.-
+2026-10-07 18:13:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182638
+2026-10-07 18:13:59 [INFO] PDF: 1419 caracteres extraidos con pdfplumber
+2026-10-07 18:13:59 [INFO]   No relevante: N°2499 - Prórroga de adscripción - Soledad MACÍAS.-
+2026-10-07 18:13:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182641
+2026-10-07 18:14:00 [INFO] PDF: 1246 caracteres extraidos con pdfplumber
+2026-10-07 18:14:00 [INFO]   No relevante: N°2498 - Prórroga de adscripción - María Belén BABINI.-
+2026-10-07 18:14:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182643
+2026-10-07 18:14:02 [INFO] PDF: 1327 caracteres extraidos con pdfplumber
+2026-10-07 18:14:02 [INFO]   No relevante: N°2497 - Prórroga de licencia sin goce de haberes - Florencia Ailén B
+2026-10-07 18:14:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182639
+2026-10-07 18:14:04 [INFO] PDF: 1284 caracteres extraidos con pdfplumber
+2026-10-07 18:14:04 [INFO]   No relevante: N°2496 - Prórroga de licencia sin goce de haberes - Agustina LLORENS.
+2026-10-07 18:14:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182642
+2026-10-07 18:14:06 [INFO] PDF: 1434 caracteres extraidos con pdfplumber
+2026-10-07 18:14:06 [INFO]   No relevante: N°2495 - Prórroga de licencia sin goce de haberes - Agustín HORMAECHE
+2026-10-07 18:14:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182635
+2026-10-07 18:14:08 [INFO] PDF: 2430 caracteres extraidos con pdfplumber
+2026-10-07 18:14:08 [INFO]   No relevante: N°2494 - Aplicar una multa por mora en la realización de una visita d
+2026-10-07 18:14:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=182634
+2026-10-07 18:14:09 [INFO] PDF: 1968 caracteres extraidos con pdfplumber
+2026-10-07 18:14:09 [INFO]   No relevante: N°2493 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-10-07 18:14:09 [INFO] Ninguna de las 12 nuevas es relevante
+2026-10-07 18:14:10 [INFO] Telegram: mensaje enviado
+2026-10-07 18:14:10 [INFO] Registro: 2479 resoluciones guardadas
+2026-10-07 18:14:10 [INFO] Completado: 0 relevantes de 12 nuevas
