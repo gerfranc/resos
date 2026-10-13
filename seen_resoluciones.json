@@ -27689,7 +27689,7 @@
     "detalle": "Modificar la distribución de créditos del SAF 335 -Corte Suprema de Justicia de la Nación- para el corriente ejercicio financiero.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182674",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-10-08T12:34:26.472892",
     "expira": "2026-10-13T12:34:26.472892",
@@ -27701,7 +27701,7 @@
     "detalle": "Autorizar a la Dirección de Administración a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura una partida especial con destino a las Primeras Jornadas del Foro Latinoamericano de Oficiales de Justicia, por la suma de $29.310.000.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182673",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 11,
     "primera_vez": "2026-10-08T12:34:26.472892",
     "expira": "2026-10-13T12:34:26.472892",
@@ -27723,7 +27723,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182681",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27735,7 +27735,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182680",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27747,7 +27747,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182679",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27759,7 +27759,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182676",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27771,7 +27771,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182677",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27783,7 +27783,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182675",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27795,7 +27795,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182678",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 10,
+    "intentos": 11,
     "primera_vez": "2026-10-08T19:46:29.060161",
     "expira": "2026-10-13T19:46:29.060161",
     "procesado": "2026-10-08T19:46:29.060161"
@@ -27807,7 +27807,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182694",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 7,
+    "intentos": 8,
     "primera_vez": "2026-10-09T16:45:01.387309",
     "expira": "2026-10-14T16:45:01.387309",
     "procesado": "2026-10-09T16:45:01.387309"
@@ -27828,7 +27828,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182700",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-10-09T22:05:15.741099",
     "expira": "2026-10-14T22:05:15.741099",
     "procesado": "2026-10-09T22:05:15.741099"
@@ -27840,9 +27840,93 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182699",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-10-09T22:05:15.741099",
     "expira": "2026-10-14T22:05:15.741099",
     "procesado": "2026-10-09T22:05:15.741099"
+  },
+  "182719": {
+    "numero": "2526",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.264.442,60.- en concepto de reintegro del fondo especial para viáticos y pasajes.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182719",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182718": {
+    "numero": "2525",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Contratar con las firmas REFRIGERACION MENZA SRL, REFRIGERACION OMAR SRL, SPM S.A.S., PEREZ CARLOS ALBERTO y GARGANO TOMAS EDUARDO la adquisición de artículos de refrigeración con destino a la Oficina de Servicios Generales de la Morgue Judicial, por la suma total de $8.387.018,96.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182718",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182717": {
+    "numero": "2524",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Aprobar el modelo de Convenio Marco de Colaboración entre la Secretaría de Innovación, Ciencia y Tecnología dependiente de la Jefatura de Gabinete de Ministros y la Corte Suprema de Justicia de la Nación, y autorizar al Doctor Juan Pablo LAHITOU a suscribirlo.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182717",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182716": {
+    "numero": "2523",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Autorizar a Mariana RAIBERTI a desempeñar su profesión de arquitecta.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182716",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182715": {
+    "numero": "2522",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Conceder autorización para ejercer la docencia a la Doctora Sabrina NAMER.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182715",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182714": {
+    "numero": "2521",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Bonificación adicional por título a favor de Martín Ezequiel DINATALE - Profesorado en Historia.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182714",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
+  },
+  "182713": {
+    "numero": "2520",
+    "fecha": "13 de octubre de 2026",
+    "detalle": "Modificar la distribución de los créditos de la Jurisdicción 05 Poder Judicial de la Nación - SAF 320 Consejo de la Magistratura - para el corriente ejercicio financiero.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182713",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-13T18:43:34.675980",
+    "expira": "2026-10-18T18:43:34.675980",
+    "procesado": "2026-10-13T18:43:34.675980"
   }
 }
