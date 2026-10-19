@@ -3542,3 +3542,11 @@
 2026-10-19 16:47:05 [INFO] Navegador cerrado
 2026-10-19 16:47:05 [INFO] Total resoluciones obtenidas: 200
 2026-10-19 16:47:05 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
+2026-10-19 17:09:31 [INFO] ============================================================
+2026-10-19 17:09:31 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-10-19 17:09:31 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-10-19 17:09:31 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-10-19 17:09:31 [INFO] Modo: polling de comandos Telegram
+2026-10-19 17:09:31 [INFO] ============================================================
+2026-10-19 17:09:31 [INFO] Polling de comandos Telegram
+2026-10-19 17:09:31 [INFO] Sin updates nuevos de Telegram
