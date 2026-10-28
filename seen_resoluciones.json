@@ -29666,7 +29666,7 @@
     "detalle": "Autorizar a liquidar y abonar al Departamento de Medicina Preventiva y Laboral, una partida especial de $5.784.184,30.-, con el objeto de solventar el gasto  de adquisición de vacunas.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182995",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 13,
     "primera_vez": "2026-10-23T14:35:12.395829",
     "expira": "2026-10-28T14:35:12.395829",
@@ -29678,7 +29678,7 @@
     "detalle": "Contratar con RAMOS FRANCISCO DOMINGO la provisión e instalación de un foco led para el Servicio de Odontología del Cuerpo Médico Forense, por la suma de $1.197.900.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182994",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 13,
     "primera_vez": "2026-10-23T14:35:12.395829",
     "expira": "2026-10-28T14:35:12.395829",
@@ -29690,7 +29690,7 @@
     "detalle": "Prórroga de licencia sin goce de haberes - Nicolás MAGUIRE VERNENGO.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=182993",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 13,
     "primera_vez": "2026-10-23T14:35:12.395829",
     "expira": "2026-10-28T14:35:12.395829",
@@ -29703,7 +29703,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183034",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 8,
+    "intentos": 9,
     "primera_vez": "2026-10-26T16:25:24.288986",
     "expira": "2026-10-31T16:25:24.288986",
     "procesado": "2026-10-26T16:25:24.288986"
@@ -29715,7 +29715,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183033",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 8,
+    "intentos": 9,
     "primera_vez": "2026-10-26T16:25:24.288986",
     "expira": "2026-10-31T16:25:24.288986",
     "procesado": "2026-10-26T16:25:24.288986"
@@ -29727,7 +29727,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183055",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 4,
+    "intentos": 5,
     "primera_vez": "2026-10-27T15:39:55.093173",
     "expira": "2026-11-01T15:39:55.093173",
     "procesado": "2026-10-27T15:39:55.093173"
@@ -29739,7 +29739,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183053",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 4,
+    "intentos": 5,
     "primera_vez": "2026-10-27T15:39:55.093173",
     "expira": "2026-11-01T15:39:55.093173",
     "procesado": "2026-10-27T15:39:55.093173"
@@ -29751,9 +29751,54 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183073",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 3,
+    "intentos": 4,
     "primera_vez": "2026-10-27T20:20:37.314776",
     "expira": "2026-11-01T20:20:37.314776",
     "procesado": "2026-10-27T20:20:37.314776"
+  },
+  "183096": {
+    "numero": "2683",
+    "fecha": "28 de octubre de 2026",
+    "detalle": "Contratar con la firma ASC TELESI S.R.L. el servicio de mantenimiento integral, preventivo y correctivo de los ascensores electromecánicos instalados en los edificios sitos en las calles Hipólito Yrigoyen 2041 y Jean Jaures 545, de la Ciudad Autónoma de Buenos Aires, así como de la plataforma hidráulica instalada en este último inmueble, por la suma total de $7.300.000.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183096",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-28T14:44:46.333712",
+    "expira": "2026-11-02T14:44:46.333712",
+    "procesado": "2026-10-28T14:44:46.333712"
+  },
+  "183095": {
+    "numero": "2682",
+    "fecha": "28 de octubre de 2026",
+    "detalle": "Contratar con la firma ASCENSORES LA PLATA S.R.L. el servicio de mantenimiento del ascensor instalado en el edificio sito en la calle Lavalle Nº 1250 de la Ciudad Autónoma de Buenos Aires, por la suma total de $4.974.240.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183095",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-28T14:44:46.333712",
+    "expira": "2026-11-02T14:44:46.333712",
+    "procesado": "2026-10-28T14:44:46.333712"
+  },
+  "183094": {
+    "numero": "2681",
+    "fecha": "28 de octubre de 2026",
+    "detalle": "Desestimar la impugnación al dictamen de preadjudicación interpuesta por la firma AUSQUI HORACIO LUIS. Contratar con la firma CONSTRUCTORA SANTA ROSA S.A. la realización de trabajos menores para el retiro, provisión y colocación de carpinterías de aluminio en el edificio de la Dirección de Asistencia Judicial en Delitos Complejos y Crimen Organizado del Poder Judicial de la Nación, por la suma total de $179.954.679,29.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183094",
+    "relevante": true,
+    "estado": "relevante",
+    "procesado": "2026-10-28T14:44:46.333712"
+  },
+  "183093": {
+    "numero": "2680",
+    "fecha": "28 de octubre de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.160.258,06.-, en concepto de reintegro del fondo especial para viáticos y pasajes.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183093",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-10-28T14:44:46.333712",
+    "expira": "2026-11-02T14:44:46.333712",
+    "procesado": "2026-10-28T14:44:46.333712"
   }
 }
