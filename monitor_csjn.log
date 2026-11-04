@@ -4378,3 +4378,201 @@
 2026-11-04 15:26:47 [INFO] ============================================================
 2026-11-04 15:26:47 [INFO] Polling de comandos Telegram
 2026-11-04 15:26:48 [INFO] Sin updates nuevos de Telegram
+2026-11-04 17:40:34 [INFO] ============================================================
+2026-11-04 17:40:34 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-11-04 17:40:34 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-04 17:40:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-11-04 17:40:34 [INFO] Modo: ejecucion unica
+2026-11-04 17:40:34 [INFO] ============================================================
+2026-11-04 17:40:34 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-11-04 17:40:34 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-11-04 17:40:34 [INFO] Re-verificando 17 resoluciones pendientes...
+2026-11-04 17:40:34 [INFO]   Expirada: N°2754
+2026-11-04 17:40:34 [INFO]   Expirada: N°2753
+2026-11-04 17:40:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183207
+2026-11-04 17:40:35 [INFO] PDF: 4277 caracteres extraidos con pdfplumber
+2026-11-04 17:40:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183206
+2026-11-04 17:40:37 [INFO] PDF: 4145 caracteres extraidos con pdfplumber
+2026-11-04 17:40:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183205
+2026-11-04 17:40:38 [INFO] PDF: 4421 caracteres extraidos con pdfplumber
+2026-11-04 17:40:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183204
+2026-11-04 17:40:40 [INFO] PDF: 4037 caracteres extraidos con pdfplumber
+2026-11-04 17:40:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183203
+2026-11-04 17:40:42 [INFO] PDF: 3449 caracteres extraidos con pdfplumber
+2026-11-04 17:40:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183199
+2026-11-04 17:40:43 [INFO] PDF: 1960 caracteres extraidos con pdfplumber
+2026-11-04 17:40:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183198
+2026-11-04 17:40:44 [INFO] PDF: 1847 caracteres extraidos con pdfplumber
+2026-11-04 17:40:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183197
+2026-11-04 17:40:46 [INFO] PDF: 3029 caracteres extraidos con pdfplumber
+2026-11-04 17:40:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183196
+2026-11-04 17:40:49 [INFO] PDF: 134 caracteres extraidos con pdfplumber
+2026-11-04 17:40:49 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183195
+2026-11-04 17:40:50 [INFO] PDF: 3655 caracteres extraidos con pdfplumber
+2026-11-04 17:40:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183218
+2026-11-04 17:40:52 [INFO] PDF: 3438 caracteres extraidos con pdfplumber
+2026-11-04 17:40:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183216
+2026-11-04 17:40:53 [INFO] PDF: 702 caracteres extraidos con pdfplumber
+2026-11-04 17:40:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183217
+2026-11-04 17:40:54 [INFO] PDF: 1946 caracteres extraidos con pdfplumber
+2026-11-04 17:40:54 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183214
+2026-11-04 17:40:56 [INFO] PDF: 2923 caracteres extraidos con pdfplumber
+2026-11-04 17:40:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183213
+2026-11-04 17:40:58 [INFO] PDF: 2860 caracteres extraidos con pdfplumber
+2026-11-04 17:40:58 [INFO] Pendientes re-verificadas: 17 | Nuevas relevantes: 0 | Expiradas: 2 | No verificables (reintento): 0
+2026-11-04 17:40:58 [INFO] Registro: 2744 resoluciones guardadas
+2026-11-04 17:40:58 [INFO] Iniciando navegador Chromium headless...
+2026-11-04 17:40:58 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-04 17:41:06 [INFO] Pagina cargada
+2026-11-04 17:41:06 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-04 17:41:08 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 2785)
+2026-11-04 17:41:08 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-11-04 17:41:08 [INFO] Esperando resultados...
+2026-11-04 17:41:08 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-04 17:41:08 [INFO] Click en Buscar
+2026-11-04 17:41:09 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 2785)
+2026-11-04 17:41:09 [INFO] Respuesta de busqueda recibida
+2026-11-04 17:41:09 [INFO] Tabla con resultados detectada
+2026-11-04 17:41:09 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-11-04 17:41:10 [INFO] Navegador cerrado
+2026-11-04 17:41:10 [INFO] Total resoluciones obtenidas: 200
+2026-11-04 17:41:10 [INFO] 45 resoluciones no procesadas, filtrando por contenido...
+2026-11-04 17:41:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183321
+2026-11-04 17:41:12 [INFO] PDF: 1477 caracteres extraidos con pdfplumber
+2026-11-04 17:41:12 [INFO]   No relevante: N°2814 - Prórroga de contratos - Tribunal Oral en lo Criminal Federal
+2026-11-04 17:41:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183319
+2026-11-04 17:41:14 [INFO] PDF: 1549 caracteres extraidos con pdfplumber
+2026-11-04 17:41:14 [INFO]   No relevante: N°2813 - Prórroga de contrato - Juzgado Federal de Necochea.-
+2026-11-04 17:41:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183320
+2026-11-04 17:41:16 [INFO] PDF: 1651 caracteres extraidos con pdfplumber
+2026-11-04 17:41:16 [INFO]   No relevante: N°2812 - Prórroga de contrato - Cámara Nacional de Apelaciones del Tr
+2026-11-04 17:41:16 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183316
+2026-11-04 17:41:18 [INFO] PDF: 1892 caracteres extraidos con pdfplumber
+2026-11-04 17:41:18 [INFO]   No relevante: N°2811 - Prórroga de contratos - Cámara Nacional de Apelaciones del T
+2026-11-04 17:41:18 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183317
+2026-11-04 17:41:20 [INFO] PDF: 1701 caracteres extraidos con pdfplumber
+2026-11-04 17:41:20 [INFO]   No relevante: N°2810 - Prórroga de contrato - Juzgado Nacional de Primera Instancia
+2026-11-04 17:41:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183318
+2026-11-04 17:41:22 [INFO] PDF: 1626 caracteres extraidos con pdfplumber
+2026-11-04 17:41:22 [INFO]   No relevante: N°2809 - Prórroga de contrato - Juzgado Nacional de Primera Instancia
+2026-11-04 17:41:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183314
+2026-11-04 17:41:25 [INFO] PDF: 1566 caracteres extraidos con pdfplumber
+2026-11-04 17:41:26 [INFO]   No relevante: N°2808 - Prórroga de contrato - Juzgado Federal de Resistencia N° 1.-
+2026-11-04 17:41:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183313
+2026-11-04 17:41:28 [INFO] PDF: 1864 caracteres extraidos con pdfplumber
+2026-11-04 17:41:28 [INFO]   No relevante: N°2807 - Prórroga de contrato - Cámara Federal de la Seguridad Social
+2026-11-04 17:41:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183315
+2026-11-04 17:41:30 [INFO] PDF: 1553 caracteres extraidos con pdfplumber
+2026-11-04 17:41:30 [INFO]   No relevante: N°2806 - Prórroga de contrato - Juzgado Federal de Resistencia N° 2.-
+2026-11-04 17:41:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183311
+2026-11-04 17:41:33 [INFO] PDF: 1573 caracteres extraidos con pdfplumber
+2026-11-04 17:41:33 [INFO]   No relevante: N°2805 - Prórroga de contrato - Cámara Nacional de Apelaciones en lo 
+2026-11-04 17:41:33 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183310
+2026-11-04 17:41:35 [INFO] PDF: 1560 caracteres extraidos con pdfplumber
+2026-11-04 17:41:35 [INFO]   No relevante: N°2804 - Prórroga de contratos - Cámara Federal de Apelaciones de San
+2026-11-04 17:41:35 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183312
+2026-11-04 17:41:37 [INFO] PDF: 1636 caracteres extraidos con pdfplumber
+2026-11-04 17:41:37 [INFO]   No relevante: N°2803 - Prórroga de contrato - Juzgado Nacional en lo Criminal y Cor
+2026-11-04 17:41:37 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183306
+2026-11-04 17:41:38 [INFO] PDF: 1956 caracteres extraidos con pdfplumber
+2026-11-04 17:41:38 [INFO]   No relevante: N°2802 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-11-04 17:41:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183298
+2026-11-04 17:41:40 [INFO] PDF: 1509 caracteres extraidos con pdfplumber
+2026-11-04 17:41:40 [INFO]   No relevante: N°2801 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183304
+2026-11-04 17:41:43 [INFO] PDF: 1487 caracteres extraidos con pdfplumber
+2026-11-04 17:41:43 [INFO]   No relevante: N°2800 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:43 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183299
+2026-11-04 17:41:46 [INFO] PDF: 1500 caracteres extraidos con pdfplumber
+2026-11-04 17:41:46 [INFO]   No relevante: N°2799 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:46 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183303
+2026-11-04 17:41:48 [INFO] PDF: 1471 caracteres extraidos con pdfplumber
+2026-11-04 17:41:48 [INFO]   No relevante: N°2798 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:48 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183300
+2026-11-04 17:41:50 [INFO] PDF: 1481 caracteres extraidos con pdfplumber
+2026-11-04 17:41:50 [INFO]   No relevante: N°2797 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183302
+2026-11-04 17:41:52 [INFO] PDF: 1446 caracteres extraidos con pdfplumber
+2026-11-04 17:41:52 [INFO]   No relevante: N°2796 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:52 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183305
+2026-11-04 17:41:57 [INFO] PDF: 1583 caracteres extraidos con pdfplumber
+2026-11-04 17:41:57 [INFO]   No relevante: N°2795 - Prórroga de contratos - Cámara Federal de Casación Penal.-
+2026-11-04 17:41:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183301
+2026-11-04 17:42:00 [INFO] PDF: 1471 caracteres extraidos con pdfplumber
+2026-11-04 17:42:00 [INFO]   No relevante: N°2794 - Prórroga de contrato - Cámara Federal de Casación Penal.-
+2026-11-04 17:42:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183295
+2026-11-04 17:42:02 [INFO] PDF: 1719 caracteres extraidos con pdfplumber
+2026-11-04 17:42:02 [INFO]   No relevante: N°2793 - Prórroga de contrato - Juzgado Federal de Primera Instancia 
+2026-11-04 17:42:02 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183297
+2026-11-04 17:42:04 [INFO] PDF: 1494 caracteres extraidos con pdfplumber
+2026-11-04 17:42:04 [INFO]   No relevante: N°2792 - Prórroga de contrato - Juzgado Nacional de Primera Instancia
+2026-11-04 17:42:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183296
+2026-11-04 17:42:06 [INFO] PDF: 1576 caracteres extraidos con pdfplumber
+2026-11-04 17:42:06 [INFO]   No relevante: N°2791 - Prórroga de contrato - Juzgado Federal de Mar del Plata N° 4
+2026-11-04 17:42:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183292
+2026-11-04 17:42:08 [INFO] PDF: 1518 caracteres extraidos con pdfplumber
+2026-11-04 17:42:08 [INFO]   No relevante: N°2790 - Prórroga de contrato - Juzgado Nacional de Primera Instancia
+2026-11-04 17:42:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183291
+2026-11-04 17:42:10 [INFO] PDF: 1798 caracteres extraidos con pdfplumber
+2026-11-04 17:42:10 [INFO]   No relevante: N°2789 - Prórroga de contratos - Cámara Nacional de Apelaciones en lo
+2026-11-04 17:42:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183293
+2026-11-04 17:42:12 [INFO] PDF: 1556 caracteres extraidos con pdfplumber
+2026-11-04 17:42:12 [INFO]   No relevante: N°2788 - Prórroga de contrato - Juzgado Nacional de Primera Instancia
+2026-11-04 17:42:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183294
+2026-11-04 17:42:14 [INFO] PDF: 1457 caracteres extraidos con pdfplumber
+2026-11-04 17:42:14 [INFO]   No relevante: N°2787 - Prórroga de contrato - Cámara Federal de Apelaciones de Bahí
+2026-11-04 17:42:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183289
+2026-11-04 17:42:17 [INFO] PDF: 1647 caracteres extraidos con pdfplumber
+2026-11-04 17:42:17 [INFO]   No relevante: N°2786 - Prórroga de contrato - Juzgado Federal de Gualeguaychú.-
+2026-11-04 17:42:17 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183287
+2026-11-04 17:42:20 [INFO] PDF: 1494 caracteres extraidos con pdfplumber
+2026-11-04 17:42:20 [INFO]   No relevante: N°2785 - Prórroga de contrato - Tribunal Oral en lo Criminal Federal 
+2026-11-04 17:42:20 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183288
+2026-11-04 17:42:22 [INFO] PDF: 1637 caracteres extraidos con pdfplumber
+2026-11-04 17:42:22 [INFO]   No relevante: N°2784 - Prórroga de contrato - Tribunal Oral en lo Criminal y Correc
+2026-11-04 17:42:22 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183290
+2026-11-04 17:42:24 [INFO] PDF: 1485 caracteres extraidos con pdfplumber
+2026-11-04 17:42:24 [INFO]   No relevante: N°2783 - Prórroga de contrato - Tribunal Oral en lo Criminal y Correc
+2026-11-04 17:42:24 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183286
+2026-11-04 17:42:26 [INFO] PDF: 585 caracteres extraidos con pdfplumber
+2026-11-04 17:42:26 [INFO]   No relevante: N°2782 - Aceptar la renuncia presentada por el Señor José Alcides STA
+2026-11-04 17:42:26 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183285
+2026-11-04 17:42:28 [INFO] PDF: 1998 caracteres extraidos con pdfplumber
+2026-11-04 17:42:28 [INFO]   No relevante: N°2781 - Autorizar a liquidar y abonar a la Dirección General de Gest
+2026-11-04 17:42:28 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183284
+2026-11-04 17:42:30 [INFO] PDF: 1368 caracteres extraidos con pdfplumber
+2026-11-04 17:42:30 [INFO]   No relevante: N°2780 - Prórroga de contrato - Cámara Federal de la Seguridad Social
+2026-11-04 17:42:30 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183283
+2026-11-04 17:42:32 [INFO] PDF: 1545 caracteres extraidos con pdfplumber
+2026-11-04 17:42:32 [INFO]   No relevante: N°2779 - Prórroga de contratos - Cámara Federal de Apelaciones de Tuc
+2026-11-04 17:42:32 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183281
+2026-11-04 17:42:34 [INFO] PDF: 1625 caracteres extraidos con pdfplumber
+2026-11-04 17:42:34 [INFO]   No relevante: N°2778 - Prórroga de contratos - Cámara Nacional de Apelaciones en lo
+2026-11-04 17:42:34 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183282
+2026-11-04 17:42:36 [INFO] PDF: 1490 caracteres extraidos con pdfplumber
+2026-11-04 17:42:36 [INFO]   No relevante: N°2777 - Prórroga de contrato - Juzgado Federal de Santiago del Ester
+2026-11-04 17:42:36 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183279
+2026-11-04 17:42:38 [INFO] PDF: 1509 caracteres extraidos con pdfplumber
+2026-11-04 17:42:38 [INFO]   No relevante: N°2776 - Prórroga de contrato - Cámara Federal de Apelaciones de Como
+2026-11-04 17:42:38 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183280
+2026-11-04 17:42:40 [INFO] PDF: 1610 caracteres extraidos con pdfplumber
+2026-11-04 17:42:40 [INFO]   No relevante: N°2775 - Prórroga de contrato - Tribunal Oral en lo Criminal y Correc
+2026-11-04 17:42:40 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183278
+2026-11-04 17:42:42 [INFO] PDF: 1563 caracteres extraidos con pdfplumber
+2026-11-04 17:42:42 [INFO]   No relevante: N°2774 - Prórroga de contrato - Cámara Federal de Apelaciones de Como
+2026-11-04 17:42:42 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183277
+2026-11-04 17:42:44 [INFO] PDF: 1551 caracteres extraidos con pdfplumber
+2026-11-04 17:42:44 [INFO]   No relevante: N°2773 - Prórroga de contrato - Juzgado Federal de Rawson N° 1.-
+2026-11-04 17:42:44 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183275
+2026-11-04 17:42:47 [INFO] PDF: 1523 caracteres extraidos con pdfplumber
+2026-11-04 17:42:47 [INFO]   No relevante: N°2772 - Prórroga de contrato - Juzgado Federal de Concepción del Uru
+2026-11-04 17:42:47 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183276
+2026-11-04 17:42:50 [INFO] PDF: 1600 caracteres extraidos con pdfplumber
+2026-11-04 17:42:50 [INFO]   No relevante: N°2771 - Prórroga de contrato - Tribunal Oral en lo Criminal y Correc
+2026-11-04 17:42:50 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183274
+2026-11-04 17:42:51 [INFO] PDF: 4187 caracteres extraidos con pdfplumber
+2026-11-04 17:42:51 [INFO]   No relevante: N°2770 - No hacer lugar a la avocación solicitada por Tomás Ramón TOR
+2026-11-04 17:42:51 [INFO] Ninguna de las 45 nuevas es relevante
+2026-11-04 17:42:52 [INFO] Telegram: mensaje enviado
+2026-11-04 17:42:52 [INFO] Registro: 2789 resoluciones guardadas
+2026-11-04 17:42:52 [INFO] Completado: 0 relevantes de 45 nuevas
