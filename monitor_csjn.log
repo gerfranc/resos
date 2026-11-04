@@ -4193,3 +4193,103 @@
 2026-11-03 20:58:19 [INFO] ============================================================
 2026-11-03 20:58:19 [INFO] Polling de comandos Telegram
 2026-11-03 20:58:19 [INFO] Sin updates nuevos de Telegram
+2026-11-04 00:17:53 [INFO] ============================================================
+2026-11-04 00:17:53 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-11-04 00:17:53 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-04 00:17:53 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-11-04 00:17:53 [INFO] Modo: ejecucion unica
+2026-11-04 00:17:53 [INFO] ============================================================
+2026-11-04 00:17:53 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-11-04 00:17:53 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-11-04 00:17:53 [INFO] Re-verificando 56 resoluciones pendientes...
+2026-11-04 00:17:53 [INFO]   Expirada: N°2752
+2026-11-04 00:17:53 [INFO]   Expirada: N°2751
+2026-11-04 00:17:53 [INFO]   Expirada: N°2750
+2026-11-04 00:17:53 [INFO]   Expirada: N°2748
+2026-11-04 00:17:53 [INFO]   Expirada: N°2747
+2026-11-04 00:17:53 [INFO]   Expirada: N°2746
+2026-11-04 00:17:53 [INFO]   Expirada: N°2745
+2026-11-04 00:17:53 [INFO]   Expirada: N°2744
+2026-11-04 00:17:53 [INFO]   Expirada: N°2743
+2026-11-04 00:17:53 [INFO]   Expirada: N°2742
+2026-11-04 00:17:53 [INFO]   Expirada: N°2741
+2026-11-04 00:17:53 [INFO]   Expirada: N°2740
+2026-11-04 00:17:53 [INFO]   Expirada: N°2739
+2026-11-04 00:17:53 [INFO]   Expirada: N°2738
+2026-11-04 00:17:53 [INFO]   Expirada: N°2737
+2026-11-04 00:17:53 [INFO]   Expirada: N°2736
+2026-11-04 00:17:53 [INFO]   Expirada: N°2735
+2026-11-04 00:17:53 [INFO]   Expirada: N°2734
+2026-11-04 00:17:53 [INFO]   Expirada: N°2733
+2026-11-04 00:17:53 [INFO]   Expirada: N°2732
+2026-11-04 00:17:53 [INFO]   Expirada: N°2731
+2026-11-04 00:17:53 [INFO]   Expirada: N°2730
+2026-11-04 00:17:53 [INFO]   Expirada: N°2729
+2026-11-04 00:17:53 [INFO]   Expirada: N°2728
+2026-11-04 00:17:53 [INFO]   Expirada: N°2727
+2026-11-04 00:17:53 [INFO]   Expirada: N°2726
+2026-11-04 00:17:53 [INFO]   Expirada: N°2725
+2026-11-04 00:17:53 [INFO]   Expirada: N°2724
+2026-11-04 00:17:53 [INFO]   Expirada: N°2723
+2026-11-04 00:17:53 [INFO]   Expirada: N°2722
+2026-11-04 00:17:53 [INFO]   Expirada: N°2721
+2026-11-04 00:17:53 [INFO]   Expirada: N°2719
+2026-11-04 00:17:53 [INFO]   Expirada: N°2718
+2026-11-04 00:17:53 [INFO]   Expirada: N°2717
+2026-11-04 00:17:53 [INFO]   Expirada: N°2716
+2026-11-04 00:17:53 [INFO]   Expirada: N°2715
+2026-11-04 00:17:53 [INFO]   Expirada: N°2714
+2026-11-04 00:17:53 [INFO]   Expirada: N°2713
+2026-11-04 00:17:53 [INFO]   Expirada: N°2712
+2026-11-04 00:17:53 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183194
+2026-11-04 00:17:55 [INFO] PDF: 4286 caracteres extraidos con pdfplumber
+2026-11-04 00:17:55 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183193
+2026-11-04 00:17:56 [INFO] PDF: 4232 caracteres extraidos con pdfplumber
+2026-11-04 00:17:56 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183207
+2026-11-04 00:17:57 [INFO] PDF: 4277 caracteres extraidos con pdfplumber
+2026-11-04 00:17:57 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183206
+2026-11-04 00:17:59 [INFO] PDF: 4145 caracteres extraidos con pdfplumber
+2026-11-04 00:17:59 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183205
+2026-11-04 00:18:00 [INFO] PDF: 4421 caracteres extraidos con pdfplumber
+2026-11-04 00:18:00 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183204
+2026-11-04 00:18:01 [INFO] PDF: 4037 caracteres extraidos con pdfplumber
+2026-11-04 00:18:01 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183203
+2026-11-04 00:18:03 [INFO] PDF: 3449 caracteres extraidos con pdfplumber
+2026-11-04 00:18:03 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183199
+2026-11-04 00:18:04 [INFO] PDF: 1960 caracteres extraidos con pdfplumber
+2026-11-04 00:18:04 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183198
+2026-11-04 00:18:05 [INFO] PDF: 1847 caracteres extraidos con pdfplumber
+2026-11-04 00:18:05 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183197
+2026-11-04 00:18:06 [INFO] PDF: 3029 caracteres extraidos con pdfplumber
+2026-11-04 00:18:06 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183196
+2026-11-04 00:18:08 [INFO] PDF: 134 caracteres extraidos con pdfplumber
+2026-11-04 00:18:08 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183195
+2026-11-04 00:18:10 [INFO] PDF: 3655 caracteres extraidos con pdfplumber
+2026-11-04 00:18:10 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183218
+2026-11-04 00:18:11 [INFO] PDF: 3438 caracteres extraidos con pdfplumber
+2026-11-04 00:18:11 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183216
+2026-11-04 00:18:12 [INFO] PDF: 702 caracteres extraidos con pdfplumber
+2026-11-04 00:18:12 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183217
+2026-11-04 00:18:14 [INFO] PDF: 1946 caracteres extraidos con pdfplumber
+2026-11-04 00:18:14 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183214
+2026-11-04 00:18:15 [INFO] PDF: 2923 caracteres extraidos con pdfplumber
+2026-11-04 00:18:15 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183213
+2026-11-04 00:18:16 [INFO] PDF: 2860 caracteres extraidos con pdfplumber
+2026-11-04 00:18:16 [INFO] Pendientes re-verificadas: 56 | Nuevas relevantes: 0 | Expiradas: 39 | No verificables (reintento): 0
+2026-11-04 00:18:16 [INFO] Registro: 2744 resoluciones guardadas
+2026-11-04 00:18:17 [INFO] Iniciando navegador Chromium headless...
+2026-11-04 00:18:17 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-04 00:18:26 [INFO] Pagina cargada
+2026-11-04 00:18:26 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-04 00:18:28 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 2740)
+2026-11-04 00:18:28 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-11-04 00:18:28 [INFO] Esperando resultados...
+2026-11-04 00:18:28 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-04 00:18:28 [INFO] Click en Buscar
+2026-11-04 00:18:30 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 2740)
+2026-11-04 00:18:30 [INFO] Respuesta de busqueda recibida
+2026-11-04 00:18:30 [INFO] Tabla con resultados detectada
+2026-11-04 00:18:30 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-11-04 00:18:30 [INFO] Navegador cerrado
+2026-11-04 00:18:30 [INFO] Total resoluciones obtenidas: 200
+2026-11-04 00:18:30 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
