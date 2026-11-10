@@ -31403,7 +31403,7 @@
     "detalle": "Prórroga de adscripción - Betina Rosa VICHACHI.-",
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183334",
     "relevante": false,
-    "estado": "pendiente",
+    "estado": "no_relevante",
     "intentos": 10,
     "primera_vez": "2026-11-05T13:52:21.141038",
     "expira": "2026-11-10T13:52:21.141038",
@@ -31416,7 +31416,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183345",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31428,7 +31428,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183344",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31440,7 +31440,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183338",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31452,7 +31452,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183341",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31464,7 +31464,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183340",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31476,7 +31476,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183339",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31488,7 +31488,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183337",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 9,
+    "intentos": 10,
     "primera_vez": "2026-11-05T21:04:19.788023",
     "expira": "2026-11-10T21:04:19.788023",
     "procesado": "2026-11-05T21:04:19.788023"
@@ -31500,7 +31500,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183378",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31521,7 +31521,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183375",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31533,7 +31533,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183374",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31545,7 +31545,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183376",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31557,7 +31557,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183372",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31569,7 +31569,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183373",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31581,7 +31581,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183371",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31593,7 +31593,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183370",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31605,7 +31605,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183369",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31617,7 +31617,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183367",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31629,7 +31629,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183368",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31641,7 +31641,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183366",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31653,7 +31653,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183363",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31665,7 +31665,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183364",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31677,7 +31677,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183365",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31689,7 +31689,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183361",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31701,7 +31701,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183362",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31713,7 +31713,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183360",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31725,7 +31725,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183359",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31737,7 +31737,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183357",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31749,7 +31749,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183358",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31761,7 +31761,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183356",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31773,7 +31773,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183355",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31785,7 +31785,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183354",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31797,7 +31797,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183353",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 6,
+    "intentos": 7,
     "primera_vez": "2026-11-06T17:07:13.347887",
     "expira": "2026-11-11T17:07:13.347887",
     "procesado": "2026-11-06T17:07:13.347887"
@@ -31809,7 +31809,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183387",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-11-06T22:39:34.701592",
     "expira": "2026-11-11T22:39:34.701592",
     "procesado": "2026-11-06T22:39:34.701592"
@@ -31821,7 +31821,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183386",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-11-06T22:39:34.701592",
     "expira": "2026-11-11T22:39:34.701592",
     "procesado": "2026-11-06T22:39:34.701592"
@@ -31833,7 +31833,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183384",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-11-06T22:39:34.701592",
     "expira": "2026-11-11T22:39:34.701592",
     "procesado": "2026-11-06T22:39:34.701592"
@@ -31845,7 +31845,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183383",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-11-06T22:39:34.701592",
     "expira": "2026-11-11T22:39:34.701592",
     "procesado": "2026-11-06T22:39:34.701592"
@@ -31866,7 +31866,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183380",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 5,
+    "intentos": 6,
     "primera_vez": "2026-11-06T22:39:34.701592",
     "expira": "2026-11-11T22:39:34.701592",
     "procesado": "2026-11-06T22:39:34.701592"
