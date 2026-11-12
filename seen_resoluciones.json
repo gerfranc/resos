@@ -31878,7 +31878,7 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183396",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 3,
+    "intentos": 4,
     "primera_vez": "2026-11-11T17:36:33.395991",
     "expira": "2026-11-16T17:36:33.395991",
     "procesado": "2026-11-11T17:36:33.395991"
@@ -31890,9 +31890,33 @@
     "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183395",
     "relevante": false,
     "estado": "pendiente",
-    "intentos": 3,
+    "intentos": 4,
     "primera_vez": "2026-11-11T17:36:33.395991",
     "expira": "2026-11-16T17:36:33.395991",
     "procesado": "2026-11-11T17:36:33.395991"
+  },
+  "183438": {
+    "numero": "2861",
+    "fecha": "12 de noviembre de 2026",
+    "detalle": "Contratar con la firma TECNOLAB S.A. la provisión de insumos y consumibles -kits de identificación y purificación- marca QIAGEN con destino al Servicio de Genética Forense del Cuerpo Médico Forense, por la suma total de $46.769.699,32.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183438",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-11-12T14:23:27.566965",
+    "expira": "2026-11-17T14:23:27.566965",
+    "procesado": "2026-11-12T14:23:27.566965"
+  },
+  "183436": {
+    "numero": "2860",
+    "fecha": "12 de noviembre de 2026",
+    "detalle": "Autorizar a liquidar y abonar a la Dirección General de Gestión Interna e Infraestructura la suma de $3.257.136,77.-, en concepto de reintegro del fondo especial para viáticos y pasajes.-",
+    "url_pdf": "https://www.csjn.gov.ar/documentos/descargar?ID=183436",
+    "relevante": false,
+    "estado": "pendiente",
+    "intentos": 1,
+    "primera_vez": "2026-11-12T14:23:27.566965",
+    "expira": "2026-11-17T14:23:27.566965",
+    "procesado": "2026-11-12T14:23:27.566965"
   }
 }
