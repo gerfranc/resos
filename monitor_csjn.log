@@ -1038,3 +1038,34 @@
 2026-11-12 03:34:12 [INFO] ============================================================
 2026-11-12 03:34:12 [INFO] Polling de comandos Telegram
 2026-11-12 03:34:12 [INFO] Sin updates nuevos de Telegram
+2026-11-12 05:08:29 [INFO] ============================================================
+2026-11-12 05:08:29 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-11-12 05:08:29 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-12 05:08:29 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-11-12 05:08:29 [INFO] Modo: ejecucion unica
+2026-11-12 05:08:29 [INFO] ============================================================
+2026-11-12 05:08:29 [INFO] Iniciando chequeo de resoluciones CSJN
+2026-11-12 05:08:29 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado'] | Desde: 10/02/2026
+2026-11-12 05:08:29 [INFO] Re-verificando 2 resoluciones pendientes...
+2026-11-12 05:08:29 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183396
+2026-11-12 05:08:31 [INFO] PDF: 1957 caracteres extraidos con pdfplumber
+2026-11-12 05:08:31 [INFO] Descargando PDF: https://www.csjn.gov.ar/documentos/descargar?ID=183395
+2026-11-12 05:08:32 [INFO] PDF: 1836 caracteres extraidos con pdfplumber
+2026-11-12 05:08:32 [INFO] Pendientes re-verificadas: 2 | Nuevas relevantes: 0 | Expiradas: 0 | No verificables (reintento): 0
+2026-11-12 05:08:32 [INFO] Registro: 2834 resoluciones guardadas
+2026-11-12 05:08:32 [INFO] Iniciando navegador Chromium headless...
+2026-11-12 05:08:33 [INFO] Navegando a https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-12 05:08:42 [INFO] Pagina cargada
+2026-11-12 05:08:42 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-12 05:08:44 [INFO] Respuesta capturada (auto): 200 resultados (total segun servidor: 2830)
+2026-11-12 05:08:45 [INFO] Boton encontrado: button:has-text("Buscar")
+2026-11-12 05:08:45 [INFO] Esperando resultados...
+2026-11-12 05:08:45 [INFO] Request interceptado - fecha desde 10/02/2026, length=200
+2026-11-12 05:08:45 [INFO] Click en Buscar
+2026-11-12 05:08:46 [INFO] Respuesta capturada (buscar): 200 resultados (total segun servidor: 2830)
+2026-11-12 05:08:46 [INFO] Respuesta de busqueda recibida
+2026-11-12 05:08:46 [INFO] Tabla con resultados detectada
+2026-11-12 05:08:46 [INFO] Fuente auto: 200 resultados | Fuente buscar: 200 resultados | Merge: 200 unicos
+2026-11-12 05:08:46 [INFO] Navegador cerrado
+2026-11-12 05:08:46 [INFO] Total resoluciones obtenidas: 200
+2026-11-12 05:08:46 [INFO] Sin novedades. 200 resoluciones, todas ya procesadas.
