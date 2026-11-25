@@ -5747,3 +5747,11 @@
 2026-11-25 20:56:19 [INFO] Telegram: mensaje enviado
 2026-11-25 20:56:20 [INFO] Registro: 3042 resoluciones guardadas
 2026-11-25 20:56:20 [INFO] Completado: 0 relevantes de 28 nuevas
+2026-11-25 23:18:33 [INFO] ============================================================
+2026-11-25 23:18:33 [INFO] MONITOR CSJN - DAJUDECO (Playwright)
+2026-11-25 23:18:33 [INFO] Pagina: https://www.csjn.gov.ar/decisiones/resoluciones
+2026-11-25 23:18:33 [INFO] Filtro: ['Delitos Complejos y Crimen Organizado']
+2026-11-25 23:18:33 [INFO] Modo: polling de comandos Telegram
+2026-11-25 23:18:33 [INFO] ============================================================
+2026-11-25 23:18:33 [INFO] Polling de comandos Telegram
+2026-11-25 23:18:34 [INFO] Sin updates nuevos de Telegram
